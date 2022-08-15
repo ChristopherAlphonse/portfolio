@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+:root {
+  --accent-color: #7fc7eb;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #575658 #121212;
+  font-family: "fira code", monospace !important;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #353434;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  border: 3px solid #363535;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 120%;
+  font-family: "Courgette", cursive !important;
+}
+
+.cc {
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+}
+
+.cp3 {
+  width: 200px;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+/* a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+} */
+/* a:hover:after {
+  width: 100%;
+  left: 0;
+} */
+
+.shi {
+  cursor: pointer;
+  filter: sepia(10%) hue-rotate(150deg) saturate(300%);
+}
+
+.chi {
+  letter-spacing: 0.15em;
+}
+
+.hero_title {
+  font-family: "Londrina Outline", "fira code", monospace !important;
+}

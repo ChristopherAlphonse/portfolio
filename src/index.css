@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-paragraph leading-6 bg-gray-200;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-white font-primary;
+  }
+  .section {
+    @apply py-12 lg:py-32;
+  }
+  .section-title {
+    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
+  }
+  .subtitle {
+    @apply text-base text-paragraph mb-16 lg:mb-24 max-w-[520px];
+  }
+  .btn {
+    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-accent-hover transition-all;
+  }
+  .btn-lg {
+    @apply h-[54px];
+  }
+  .btn-md {
+    @apply h-[48px];
+  }
+  .input {
+    @apply bg-secondary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 focus:outline-accent;
+  }
+  .textarea {
+    @apply bg-secondary resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-accent;
+  }
+  .active {
+    @apply text-accent;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+.notificationWrapper {
+  @apply flex flex-row items-center justify-between w-96 bg-gray-900 px-4 py-6 text-white shadow-2xl hover:shadow-none transform-gpu translate-y-0 hover:translate-y-1 rounded-xl relative transition-all duration-500 ease-in-out;
+}
+.iconWrapper {
+  @apply text-xl;
+}
+.contentWrapper {
+  @apply flex flex-col items-start justify-center ml-4 cursor-default;
+}
+.contentWrapper h1 {
+  @apply text-base text-gray-200 font-semibold leading-none tracking-wider;
+}
+.contentWrapper p {
+  @apply text-sm text-gray-400 mt-2 leading-relaxed tracking-wider;
+}
+.closeIcon {
+  @apply absolute top-2 right-2 cursor-pointer text-lg;
+}
