@@ -10,10 +10,10 @@ import {
   About,
 } from "./components/CompIndex";
 
-
 const HomePage = () => {
   return (
     <>
+      <BackTopBtn />
       <SocialIcons />
       <Header />
       <SoundBar />
@@ -21,9 +21,7 @@ const HomePage = () => {
       <About />
       <Portfolio />
       <Contact />
-      <BackTopBtn />
       <Footer />
-  
     </>
   );
 };

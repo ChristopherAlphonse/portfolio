@@ -8,6 +8,5 @@ export { default as NavMobile } from "./NavMobile";
 export { default as Portfolio } from "./Portfolio";
 export { default as Projects } from "./Projects";
 export { default as Project } from "./Project";
-export { default as Socials } from "./Socials";
 export { default as SocialIcons } from "./SocialIcons";
 export { default as SoundBar } from "./SoundBar";

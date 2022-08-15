@@ -1,14 +1,3 @@
-import {
-  FiYoutube,
-  FiInstagram,
-  FiGithub,
-  FiDribbble,
-  FiLayout,
-  FiSettings,
-  FiPenTool,
-  FiTag,
-} from "react-icons/fi";
-
 // projects images
 import Project1 from "./assets/img/projects/p1.webp";
 import Project2 from "./assets/img/projects/p2.webp";
@@ -16,29 +5,6 @@ import Project3 from "./assets/img/projects/p3.webp";
 // import Project4 from "./assets/img/projects/p4.webp";
 // import Project5 from "./assets/img/projects/p5.webp";
 // import Project6 from "./assets/img/projects/p6.webp";
-
-
-
-// social
-export const social = [
-  {
-    icon: <FiYoutube />,
-    href: "",
-  },
-  {
-    icon: <FiInstagram />,
-    href: "",
-  },
-  {
-    icon: <FiGithub />,
-    href: "",
-  },
-  {
-    icon: <FiDribbble />,
-    href: "",
-  },
-];
-
 // projects
 export const projectsData = [
   {
@@ -78,9 +44,6 @@ export const projectsNav = [
   {
     name: "all",
   },
-  // {
-  //   name: "UI/UX Design",
-  // },
   {
     name: "web development",
   },
@@ -88,32 +51,6 @@ export const projectsNav = [
     name: "Contribution",
   },
 ];
-
-// services
-export const services = [
-  {
-    icon: <FiLayout />,
-    name: "Web Design",
-    description: "1",
-  },
-  {
-    icon: <FiSettings />,
-    name: "Web Development",
-    description: "rice",
-  },
-  {
-    icon: <FiPenTool />,
-    name: "Branding",
-    description: "cake.",
-  },
-  {
-    icon: <FiTag />,
-    name: "SEO",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.",
-  },
-];
-
 export const navigation = [
   {
     name: "home",

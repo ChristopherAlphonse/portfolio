@@ -1,21 +1,9 @@
 import React, { useState } from "react";
 import file from "../../src/assets/img/LOGO.png";
-
-// import icons
-// import { XIcon } from "@heroicons/react/outline";
 import { MdClose } from "react-icons/md";
-// import { MenuAlt3Icon } from "@heroicons/react/outline";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import navigation data
 import { navigation } from "../data";
-
-// import components
-import Socials from "./Socials";
-
-// import framer
 import { motion } from "framer-motion";
-
-// import Link
 import { Link } from "react-scroll";
 
 const NavMobile = () => {
@@ -96,7 +84,6 @@ const NavMobile = () => {
             Download Resume
           </a>
         </button>
-        <Socials />
       </motion.ul>
     </nav>
   );
