@@ -10,12 +10,12 @@ import {
 } from "react-icons/fi";
 
 // projects images
-// import Project1 from "./assets/img/projects/p1.webp";
+import Project1 from "./assets/img/projects/p1.webp";
 import Project2 from "./assets/img/projects/p2.webp";
-// import Project3 from "./assets/img/projects/p3.webp";
-import Project4 from "./assets/img/projects/p4.webp";
-import Project5 from "./assets/img/projects/p5.webp";
-import Project6 from "./assets/img/projects/p6.webp";
+import Project3 from "./assets/img/projects/p3.webp";
+// import Project4 from "./assets/img/projects/p4.webp";
+// import Project5 from "./assets/img/projects/p5.webp";
+// import Project6 from "./assets/img/projects/p6.webp";
 
 
 
@@ -44,7 +44,7 @@ export const projectsData = [
   {
     id: "1",
     name: "Project 1",
-    image: Project2,
+    image: Project1,
     category: "Web development",
     description: "This is prod 1",
     stack: ["SASS", "TypeScript", "React"],
@@ -54,7 +54,7 @@ export const projectsData = [
   {
     id: "2",
     name: "Project 2",
-    image: Project4,
+    image: Project2,
     category: "contribution",
     description: "This is prod 2",
     stack: ["SASS", "TypeScript", "React"],
@@ -64,7 +64,7 @@ export const projectsData = [
   {
     id: "3",
     name: "Project 3",
-    image: Project5,
+    image: Project3,
     category: "contribution",
     description: "This is prod 3",
     stack: ["SASS", "TypeScript", "React"],

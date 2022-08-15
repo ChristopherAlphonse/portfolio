@@ -21,8 +21,9 @@ const HomePage = () => {
       <About />
       <Portfolio />
       <Contact />
-      <Footer />
       <BackTopBtn />
+      <Footer />
+  
     </>
   );
 };
