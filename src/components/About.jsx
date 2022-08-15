@@ -22,7 +22,7 @@ const About = () => {
                 cupiditate ratione esse maxime eum recusandae ducimus.
               </p>
 
-              <div class="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 <div>
                   <span className="text-cyan-600"> {">"} </span> JavaScript {""}
                   {"(ES6+)"}
