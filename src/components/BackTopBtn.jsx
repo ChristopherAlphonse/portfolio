@@ -20,7 +20,7 @@ const BackTopBtn = () => {
           onClick={() => scrollToTop()}
           className="bg-none md:block  text-white w-9 h-9 rounded-full fixed right-24 bottom-24 cursor-pointer flex justify-center items-center transition-all"
         >
-          <FaChevronUp className="w-6 h-6" />
+          <FaChevronUp className="w-6 h-6 text-blue-300" />
         </button>
       )
     );

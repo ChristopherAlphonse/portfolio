@@ -26,7 +26,7 @@ const Line = styled(motion.span)`
   background-color: transparent;
 `;
 
-const SocialIcons = (props) => {
+const SocialIcons = () => {
   return (
     <Icons className="hidden md:block ">
       <motion.div
