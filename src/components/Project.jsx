@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRocket, FaGithub } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Project = ({ item }) => {
   return (
@@ -8,10 +9,12 @@ const Project = ({ item }) => {
       className="flex flex-col items-center text-center transform transition duration-700 hover:scale-110"
     >
       <div className="mb-8">
-        <img
-          className="rounded-3xl w-[25rem] h-[15rem]"
+        <LazyLoadImage
+          className="rounded-3xl"
+          alt={item.id}
+          height="272px"
+          width="368px"
           src={item.image}
-          alt="project "
         />
       </div>
       <p className="capitalize text-accent text-sm mb-2">{item.category}</p>
