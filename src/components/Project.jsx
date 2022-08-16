@@ -9,7 +9,7 @@ const Project = ({ item }) => {
     >
       <div className="mb-8">
         <img
-          className="rounded-3xl w-[25rem]"
+          className="rounded-3xl w-[25rem] h-[15rem]"
           src={item.image}
           alt="project "
         />
