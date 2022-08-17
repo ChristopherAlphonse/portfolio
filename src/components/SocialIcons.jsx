@@ -88,24 +88,10 @@ const SocialIcons = () => {
         initial={{ transform: "scale(0)" }}
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: "spring", duration: 1, delay: 1.6 }}
-      >
-        {/* <NavLink
-          style={{ color: "inherit" }}
-          target="_blank"
-          to={{ pathname: "https://codepen.io/christopheralphonse" }}
-        >
-          <Codepen
-            width={30}
-            height={30}
-            fill="#000000"
-            className="hidden md:block "
-          />
-        </NavLink> */}
-      </motion.div>
+      ></motion.div>
 
       <Line
         className="hidden md:block text-cyan-400"
-        
         initial={{
           height: 1,
         }}
