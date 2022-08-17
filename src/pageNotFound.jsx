@@ -46,7 +46,7 @@ const PageNotFound = () => {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse | Web Developer | Software Engineer</title>
+        <title>Christopher Alphonse | 404 </title>
         <link rel="canonical" href="/404" />
         <meta
           property="og:title"
@@ -76,11 +76,11 @@ const PageNotFound = () => {
         <div className="copy-container center-xy cursor-pointer relative top-[11rem] right-5">
           <Link
             to="/portfolio"
-            class="inline-flex items-center text-blue-600 hover:text-blue-600/75"
+            className="inline-flex items-center text-blue-600 hover:text-blue-600/75"
           >
             return home
             <svg
-              class="ml-2 w-5 h-5"
+              className="ml-2 w-5 h-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
