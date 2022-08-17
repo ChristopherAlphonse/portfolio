@@ -4,7 +4,7 @@ import NavMobile from "./NavMobile";
 import { SoundBar } from "./CompIndex";
 import Logo from "../assets/img/LOGO.png";
 import Nav from "./Nav";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Header = () => {
   const [bg, setBg] = useState(false);
 
@@ -22,7 +22,7 @@ const Header = () => {
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         <div className="shi">
-          <img src={Logo} alt="logo" width="200" height="200" />
+          <LazyLoadImage alt="logo" height="200" width="200" src={Logo} />
         </div>
         <SoundBar />
         <div className="hidden lg:block">

@@ -12,8 +12,8 @@ const Project = ({ item }) => {
         <LazyLoadImage
           className="rounded-3xl"
           alt={item.id}
-          height="272px"
-          width="368px"
+          height="272"
+          width="368"
           src={item.image}
         />
       </div>
