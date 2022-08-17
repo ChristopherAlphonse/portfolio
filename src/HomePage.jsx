@@ -16,7 +16,7 @@ const HomePage = () => {
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
         <title>Christopher Alphonse | Web Developer | Software Engineer</title>
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="/portfolio" />
         <meta
           property="og:title"
           content="Christopher Alphonse software/web developer"
