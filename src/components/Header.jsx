@@ -22,7 +22,7 @@ const Header = () => {
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         <div className="shi">
-          <img src={Logo} alt="logo" className="cp3 " />
+          <img src={Logo} alt="logo" width="200" height="200" />
         </div>
         <SoundBar />
         <div className="hidden lg:block">

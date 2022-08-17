@@ -68,14 +68,14 @@ const Contact = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
-          <h1 className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15  text-zinc-800 chi ">
+          <p className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15  text-zinc-800 chi ">
             Contact Me
-          </h1>
+          </p>
 
-          <h6 className="text-zinc-600 py-5 ">
+          <h2 className="text-zinc-600 py-5 ">
             Would like to work together? Shoot a message I will get back to you
             as soon as I can.
-          </h6>
+          </h2>
         </div>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row mt-10 justify-center">
           <form

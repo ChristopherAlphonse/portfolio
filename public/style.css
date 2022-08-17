@@ -36,11 +36,6 @@
   background-color: transparent;
   border: 1px solid var(--accent-color);
 }
-
-.cp3 {
-  width: 200px;
-}
-
 a {
   color: #fff;
   text-transform: uppercase;
