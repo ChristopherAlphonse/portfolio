@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { SocialIcons } from "./components/CompIndex";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import React, { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
-import { HelmetProvider, Helmet } from "react-helmet-async";
+import { SocialIcons } from "./components/CompIndex";
+import { motion } from "framer-motion";
 
 const PageNotFound = () => {
   const [mousePos, setMousePos] = useState({
