@@ -1,8 +1,8 @@
-import React, { useRef, useEffect } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useEffect, useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 import classNames from "classnames";
+import emailjs from "@emailjs/browser";
 import styles from "../index.css";
 
 const Contact = () => {

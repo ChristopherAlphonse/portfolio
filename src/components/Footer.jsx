@@ -1,5 +1,5 @@
-import React from "react";
 import { MdMail } from "react-icons/md";
+import React from "react";
 
 const Footer = () => {
   return (

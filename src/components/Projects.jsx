@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react";
-
-
-import { projectsData } from "../data";
-import { projectsNav } from "../data";
-
+import React, { useEffect, useState } from "react";
 
 import Project from "./Project";
+import { projectsData } from "../data";
+import { projectsNav } from "../data";
 
 const Projects = () => {
   const [item, setItem] = useState({ name: "all" });
@@ -13,7 +10,6 @@ const Projects = () => {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-
     if (item.name === "all") {
       setProjects(projectsData);
     } else {

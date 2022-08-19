@@ -75,9 +75,6 @@ const SoundBar = () => {
       <Line click={click} className="hidden md:block " />
       <audio src={music} ref={ref} loop volume="1" />
       {/* <p className="ml-2 mx-2 md:block hidden">Play</p> */}
-     
-     
-  
     </Box>
   );
 };

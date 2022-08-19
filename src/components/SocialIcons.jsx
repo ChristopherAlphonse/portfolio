@@ -1,8 +1,9 @@
-import { motion } from "framer-motion";
-import React from "react";
+import { Github, Linkedin, Twitter } from "./AllSvgs";
+
 import { NavLink } from "react-router-dom";
+import React from "react";
+import { motion } from "framer-motion";
 import styled from "styled-components";
-import { Github, Twitter, Linkedin } from "./AllSvgs";
 
 const Icons = styled.div`
   display: flex;

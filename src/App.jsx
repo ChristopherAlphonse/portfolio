@@ -1,7 +1,8 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import HomePage from "./HomePage";
 import PageNotFound from "./PageNotFound";
+import React from "react";
 
 const App = () => {
   return (

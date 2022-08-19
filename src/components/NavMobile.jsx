@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import file from "../../src/assets/img/LOGO.png";
-import { MdClose } from "react-icons/md";
+
 import { GiHamburgerMenu } from "react-icons/gi";
-import { navigation } from "../data";
-import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { MdClose } from "react-icons/md";
+import file from "../../src/assets/img/LOGO.png";
+import { motion } from "framer-motion";
+import { navigation } from "../data";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);

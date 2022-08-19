@@ -1,7 +1,8 @@
 /* eslint-disable no-lone-blocks */
-import React, { useState, useEffect } from "react";
-import { animateScroll as scroll } from "react-scroll";
+import React, { useEffect, useState } from "react";
+
 import { FaChevronUp } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 
 const BackTopBtn = () => {
   const [show, setShow] = useState(false);

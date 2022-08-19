@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import NavMobile from "./NavMobile";
-import { SoundBar } from "./CompIndex";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Logo from "../assets/img/LOGO.png";
 import Nav from "./Nav";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import NavMobile from "./NavMobile";
+import { SoundBar } from "./CompIndex";
+
 const Header = () => {
   const [bg, setBg] = useState(false);
 

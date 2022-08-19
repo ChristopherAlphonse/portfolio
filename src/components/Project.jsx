@@ -1,6 +1,7 @@
-import React from "react";
-import { FaRocket, FaGithub } from "react-icons/fa";
+import { FaGithub, FaRocket } from "react-icons/fa";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import React from "react";
 
 const Project = ({ item }) => {
   return (

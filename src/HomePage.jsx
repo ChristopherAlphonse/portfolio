@@ -1,15 +1,16 @@
-import React from "react";
-import { HelmetProvider, Helmet } from "react-helmet-async";
-import { SocialIcons, SoundBar } from "./components/CompIndex";
 import {
-  Footer,
-  Hero,
-  Header,
-  Contact,
-  BackTopBtn,
-  Portfolio,
   About,
+  BackTopBtn,
+  Contact,
+  Footer,
+  Header,
+  Hero,
+  Portfolio,
 } from "./components/CompIndex";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import { SocialIcons, SoundBar } from "./components/CompIndex";
+
+import React from "react";
 
 const HomePage = () => {
   return (

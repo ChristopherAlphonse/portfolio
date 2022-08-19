@@ -1,15 +1,13 @@
+// import Link
+import { Link } from "react-scroll";
 import React from "react";
 import file from "../../src/assets/img/LOGO.png";
-
 // import navigation data
 import { navigation } from "../data";
 
-// import Link
-import { Link } from "react-scroll";
-
 const Nav = () => {
   return (
-    <nav >
+    <nav>
       <ul className="flex space-x-8 capitalize text-[15px]">
         {navigation.map((item, idx) => {
           return (

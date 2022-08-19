@@ -55,9 +55,6 @@ export const Linkedin = (props) => {
   );
 };
 
-
-
-
 // export const Codepen = (props) => {
 //   return (
 //     <svg

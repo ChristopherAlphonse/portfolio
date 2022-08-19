@@ -1,5 +1,5 @@
-import React from "react";
 import Projects from "./Projects";
+import React from "react";
 const Portfolio = () => {
   return (
     <section id="portfolio" className="section bg-zinc-800 min-h-[1400px]">
@@ -9,7 +9,8 @@ const Portfolio = () => {
             My latest work
           </h2>
           <p className="subtitle">
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est et aperiam, eius accusamus ipsam eaque quidem similique 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est et
+            aperiam, eius accusamus ipsam eaque quidem similique
           </p>
         </div>
         <Projects />
