@@ -30,8 +30,10 @@ const Contact = () => {
     );
 
   useEffect(() => {
-    console.log("on reload");
-    return () => console.log("unmounting...");
+    // console.log("on reload");
+    return () => {
+      console.log("Email sent..... now unmounting");
+    };
   }, []);
 
   const sendEmail = (e) => {
@@ -47,7 +49,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("sent email successfully");
+          // console.log("sent email successfully");
         },
         (error) => {
           console.log(error.text);
@@ -56,7 +58,7 @@ const Contact = () => {
   };
 
   const handleSubmit = (event) => {
-    console.log("handleSubmit ran");
+    // console.log("handleSubmit ran");
     event.preventDefault();
     event.target.reset();
   };
