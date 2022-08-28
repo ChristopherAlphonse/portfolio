@@ -49,21 +49,6 @@ const PageNotFound = () => {
       <Helmet prioritizeSeoTags>
         <title>Christopher Alphonse | 404 </title>
         <link rel="canonical" href="/404" />
-        <meta
-          property="og:title"
-          content="Christopher Alphonse software/web developer"
-        />
-        <meta
-          name="description"
-          property="og:description"
-          content="Christopher Alphonse specialize in JavaScript libraries and framework "
-        />
-        <meta
-          name="image"
-          property="og:image"
-          content="author image"
-          href="%SRC_URL%/assets/images/Author.jpg"
-        />
       </Helmet>
       <div className="h-screen w-full flex flex-col justify-center items-center bg-zinc-900 cursor-none">
         <SocialIcons />
@@ -76,7 +61,7 @@ const PageNotFound = () => {
         </h1>
         <div className="copy-container center-xy cursor-pointer relative top-[11rem] right-5">
           <Link
-            to="/portfolio"
+            to="/"
             className="inline-flex items-center text-blue-600 hover:text-blue-600/75"
           >
             return home

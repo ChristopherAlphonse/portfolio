@@ -1,48 +1,42 @@
-import {
-  About,
-  BackTopBtn,
-  Contact,
-  Footer,
-  Header,
-  Hero,
-  Portfolio,
-} from "./components/CompIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { SocialIcons, SoundBar } from "./components/CompIndex";
+import { Suspense, lazy } from "react";
 
-import React from "react";
+const Hero = lazy(() => import("./components/Hero"));
+const Header = lazy(() => import("./components/Header"));
+const About = lazy(() => import("./components/About"));
+const BackTopBtn = lazy(() => import("./components/BackTopBtn"));
+const Contact = lazy(() => import("./components/Contact"));
+const Portfolio = lazy(() => import("./components/Portfolio"));
+const SoundBar = lazy(() => import("./components/SoundBar"));
+const SocialIcons = lazy(() => import("./components/SocialIcons"));
+const Footer = lazy(() => import("./components/Footer"));
+
+const renderLoader = () => <p>Loading</p>;
 
 const HomePage = () => {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse | Web Developer | Software Engineer</title>
-        <link rel="canonical" href="/portfolio" />
-        <meta
-          property="og:title"
-          content="Christopher Alphonse software/web developer"
-        />
+        <title>
+          Christopher Alphonse | Software Developer | Software Engineer
+        </title>
+
         <meta
           name="description"
-          property="og:description"
-          content="Christopher Alphonse specialize in JavaScript libraries and framework "
-        />
-        <meta
-          name="image"
-          property="og:image"
-          content="author image"
-          href="%SRC_URL%/assets/images/Author.jpg"
+          content="Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications."
         />
       </Helmet>
-      <BackTopBtn />
-      <SocialIcons />
-      <Header />
-      <SoundBar />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <Suspense fallback={renderLoader()}>
+        <SoundBar />
+        <SocialIcons />
+        <Header />
+        <Hero />
+        <About />
+        <Portfolio />
+        <Contact />
+        <Footer />
+        <BackTopBtn />
+      </Suspense>
     </HelmetProvider>
   );
 };

@@ -11,10 +11,10 @@ const Project = ({ item }) => {
     >
       <div className="mb-8">
         <LazyLoadImage
-          className="rounded-3xl"
+          className="rounded-3xl w-[20rem] md:w-[30rem] "
           alt={item.id}
-          height="272"
-          width="368"
+          height="250"
+          width="300"
           src={item.image}
         />
       </div>
@@ -38,7 +38,7 @@ const Project = ({ item }) => {
         </a>
         <a href={item.livePreview} aria-label="live preview" className="icon">
           <FaRocket />
-        </a>{" "}
+        </a>
       </div>
     </div>
   );

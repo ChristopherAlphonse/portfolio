@@ -13,8 +13,9 @@ const Hero = () => {
               Christopher Alphonse
             </h1>
             <p className="pt-3 pb-7 md:pt-5 md:pb-11  text-md text-center  ">
-              I'm a Software Engineer based in Boston, Massachusets, and i'm
-              extremely passionate about building computers and making apps.
+              I'm a Software Engineer based in Boston, Massachusets, and I'm
+              extremely passionate about building computers and building
+              web/desktop facing apps.
             </p>
           </div>
         </div>

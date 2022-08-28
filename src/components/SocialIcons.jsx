@@ -38,13 +38,13 @@ const SocialIcons = () => {
         <NavLink
           style={{ color: "inherit" }}
           target="_blank"
-          to={{ pathname: "https://www.linkedin.com/in/christopher-alphonse/" }}
+          to="https://www.linkedin.com/in/christopher-alphonse/"
         >
           <Linkedin
             width={25}
             height={25}
             fill="#000000"
-            className="hidden md:block hover:accent-amber-500 "
+            className="hidden md:block "
           />
         </NavLink>
       </motion.div>

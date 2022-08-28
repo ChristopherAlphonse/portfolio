@@ -1,0 +1,31 @@
+{
+  "name": "Christopher Alphonse Developer",
+  "short_name": "Software Engineer Chris A",
+  "description": "Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications.",
+  "background_color": "#1c1c1f",
+  "display": "browser",
+  "shortcuts": [
+    {
+      "name": "portfolio",
+      "url": "/",
+      "description": "Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications."
+    },
+    {
+      "name": "Page not found",
+      "url": "/404"
+    }
+  ],
+  "theme_color": "#1c1c1f",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    { "src": "/log.webp", "type": "image/png", "sizes": "192x192" },
+    { "src": "/log.webp", "type": "image/png", "sizes": "512x512" },
+    {
+      "src": "/android-maskable-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    }
+  ]
+}
