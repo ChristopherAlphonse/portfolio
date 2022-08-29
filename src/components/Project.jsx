@@ -7,9 +7,9 @@ const Project = ({ item }) => {
       key={item.id}
       className="flex flex-col items-center text-center transform transition duration-700 hover:scale-110"
     >
-      <div className="mb-8">
+      <div className="mb-8 hover:"  >
         <LazyLoadImage
-          className="rounded-2xl w-[20rem] md:w-[30rem] "
+          className=" w-[20rem] md:w-[30rem] "
           alt={item.id}
           height="250"
           width="300"
