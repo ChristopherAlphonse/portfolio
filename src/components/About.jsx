@@ -12,7 +12,7 @@ const About = () => {
               </h2>
               <p className="mb-4 text-cyan-600 ">Software Developer</p>
               <hr className="mb-8 opacity-5" />
-              <p className="mb-8 text-gray-700/75">
+              <p className="mb-8 text-gray-700/75 text-sm md:text-[16px]">
                 I'm a software developer with full stack development experience
                 using JavaScript libraries and frameworks. <br /> I am very
                 enthusiastic about creating and connecting with technology. I'm
@@ -29,11 +29,11 @@ const About = () => {
                 mission-driven company that values making a positive effect
                 through the development of innovative technologies and services.
               </p>
-              <h1 className="text-center pb-6 text-gray-700 font-italic ">
+              <h1 className="text-center pb-6 text-gray-700 font-italic md:text-xl">
                 Tools | Libraries | Framework
               </h1>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 text-sm md:text-[16px]">
                 <div>
                   <span className="text-cyan-600"> {">"} </span> JavaScript
                   {"(ES6+)"}

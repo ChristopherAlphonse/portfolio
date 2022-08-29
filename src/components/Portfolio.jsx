@@ -9,8 +9,9 @@ const Portfolio = () => {
             My latest work
           </h2>
           <p className="subtitle">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est et
-            aperiam, eius accusamus ipsam eaque quidem similique
+            Past few months I have been working on optimizing performance and
+            SEO, while using frameworks like NextJS for full-stack facing web
+            development and Sanity.io as a CMS for clients.
           </p>
         </div>
         <Projects />
