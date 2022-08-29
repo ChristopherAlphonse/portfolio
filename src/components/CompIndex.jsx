@@ -10,3 +10,4 @@ export { default as Projects } from "./Projects";
 export { default as Project } from "./Project";
 export { default as SocialIcons } from "./SocialIcons";
 export { default as SoundBar } from "./SoundBar";
+export { default as Nav } from "./Nav";

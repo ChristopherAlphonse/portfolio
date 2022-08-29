@@ -7,8 +7,7 @@ const About = lazy(() => import("./components/About"));
 const BackTopBtn = lazy(() => import("./components/BackTopBtn"));
 const Contact = lazy(() => import("./components/Contact"));
 const Portfolio = lazy(() => import("./components/Portfolio"));
-const SoundBar = lazy(() => import("./components/SoundBar"));
-const SocialIcons = lazy(() => import("./components/SocialIcons"));
+
 const Footer = lazy(() => import("./components/Footer"));
 
 const renderLoader = () => <p>Loading</p>;
@@ -27,15 +26,12 @@ const HomePage = () => {
         />
       </Helmet>
       <Suspense fallback={renderLoader()}>
-        <SoundBar />
-        <SocialIcons />
         <Header />
         <Hero />
         <About />
         <Portfolio />
         <Contact />
         <Footer />
-        <BackTopBtn />
       </Suspense>
     </HelmetProvider>
   );

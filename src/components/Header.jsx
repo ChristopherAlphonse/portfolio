@@ -1,10 +1,8 @@
+import { BackTopBtn, Nav, NavMobile, SocialIcons, SoundBar } from "./CompIndex";
 import React, { useEffect, useState } from "react";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Logo from "../assets/img/LOGO.png";
-import Nav from "./Nav";
-import NavMobile from "./NavMobile";
-import { SoundBar } from "./CompIndex";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -25,9 +23,12 @@ const Header = () => {
         <div className="shi">
           <LazyLoadImage alt="logo" height="200" width="200" src={Logo} />
         </div>
-        <SoundBar />
+
         <div className="hidden lg:block">
           <Nav />
+          <SoundBar />
+          <SocialIcons />
+          <BackTopBtn />
         </div>
         <div className="lg:hidden">
           <NavMobile />

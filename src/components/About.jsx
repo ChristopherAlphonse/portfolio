@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <section className="section bg-zinc-200" id="about">
-      <div className="container mx-auto">
+      <div className="container ">
         <div className="flex flex-col md:flex-col gap-24">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left ">
             <div className="flex flex-col">
@@ -12,7 +12,7 @@ const About = () => {
               </h2>
               <p className="mb-4 text-cyan-600 ">Software Developer</p>
               <hr className="mb-8 opacity-5" />
-              <p className="mb-8 text-gray-700/75 text-sm md:text-[16px]">
+              <p className="mb-8 text-gray-700/75 text-sm md:text-[16px] container">
                 I'm a software developer with full stack development experience
                 using JavaScript libraries and frameworks. <br /> I am very
                 enthusiastic about creating and connecting with technology. I'm
@@ -29,7 +29,7 @@ const About = () => {
                 mission-driven company that values making a positive effect
                 through the development of innovative technologies and services.
               </p>
-              <h1 className="text-center pb-6 text-gray-700 font-italic md:text-xl">
+              <h1 className="text-center pb-6 text-gray-700 font-italic md:text-xl mb-5">
                 Tools | Libraries | Framework
               </h1>
 
