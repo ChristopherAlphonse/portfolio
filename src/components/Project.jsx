@@ -7,7 +7,7 @@ const Project = ({ item }) => {
       key={item.id}
       className="flex flex-col items-center text-center transform transition duration-700 hover:scale-110"
     >
-      <div className="mb-8 hover:"  >
+      <div className="mb-8 hover:">
         <LazyLoadImage
           className=" w-[20rem] md:w-[30rem] "
           alt={item.id}
@@ -34,6 +34,7 @@ const Project = ({ item }) => {
       <div className="hover:text-cyan-500 cursor-pointer">
         <div className="copy-container cursor-pointer ">
           <a
+            target="_blank"
             href={item.livePreview}
             aria-label="live preview"
             className="inline-flex items-center text-blue-600 hover:text-blue-600/75 icon"

@@ -11,23 +11,21 @@ const About = () => {
                 About Me
               </h2>
               <p className="mb-4 text-cyan-600 ">Software Developer</p>
-              <hr className="mb-8 opacity-5" />
-              <p className="mb-8 text-gray-700/75 text-sm md:text-[16px] container">
-                I'm a software developer with full stack development experience
-                using JavaScript libraries and frameworks. <br /> I am very
-                enthusiastic about creating and connecting with technology. I'm
-                a positive person who enjoys being hands-on.
-                <br /> I spent four years in the pharmaceutical industry before
-                deciding it was time to pursue my passion in technology, where I
-                can explore opportunities and share my excitement for
-                technology.
-                <br />
-                I recently completed a tough 14-week coding boot camp that
-                enhanced my understanding of full-stack software development.
-                <br /> I'm excited to contribute my skills and knowledge to a
-                dynamic and cooperative team. <br /> I'm excited to be joining a
-                mission-driven company that values making a positive effect
-                through the development of innovative technologies and services.
+             
+              <p className="mb-8 text-gray-700/75 text-sm md:text-[16px] container mx-auto">
+                I'm a software engineer with experience using JavaScript
+                libraries and frameworks for full stack development. I have a
+                great enthusiasm for creating and interacting with technology.
+                I'm a positive person who appreciates being very hands-on. I
+                worked in the pharmaceutical business for 4 years before
+                deciding it was time to pursue my interest in tech, where I can
+                explore prospects and share my enthusiasm for technology. I just
+                finished a rigorous 14-week coding boot program that improved my
+                understanding of full-stack software development. I'm eager to
+                contribute my talents and knowledge to a team that is vibrant
+                and cooperative. I'm looking forward to joining a mission-driven
+                firm that prioritizes making a good impact via the development
+                of new technology and services.
               </p>
               <h1 className="text-center pb-6 text-gray-700 font-italic md:text-xl mb-5">
                 Tools | Libraries | Framework
