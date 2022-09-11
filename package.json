@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "devi": "yarn global add npm-check-updates && npm-check-updates -u && yarn install"
+    "devi": "yarn global add npm-check-updates && ncu -u && yarn install"
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
