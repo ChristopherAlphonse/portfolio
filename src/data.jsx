@@ -12,8 +12,7 @@ export const projectsData = [
     name: "Benivi",
     image: Project1,
     category: "Store-front",
-    description:
-      "Benivi Clothing is made using Shopify and Sanity.io for CMS. Priority was a slick design, I used Hydrogen which is a react base framework for the Front-end",
+    description: "Benivi Clothing is a modern/urban shopify store-front",
     stack: ["Stripe"],
     stack2: ["Sanity"],
     stack3: ["Hydrogen"],
@@ -26,7 +25,7 @@ export const projectsData = [
     image: Project2,
     category: "Store-front",
     description:
-      "Mellisa And Lexis is a smoothy website  made using squareSpace no code Headless API and SEO and google analytics manage by me",
+      "Melissa And Lexis is a smoothy website  made using SquareSpace, SEO and maintenance maintained by me, V2 will be utilizing NextJS  ",
     // stack: ["Hydrogen"],
     // stack2: ["TypeScript"],
     // stack3: ["Tailwind"],
@@ -37,9 +36,8 @@ export const projectsData = [
     id: "3",
     name: "Funkyjunkie",
     image: Project3,
-    category: "Store-front",
-    description:
-      "Funkyjunkie is a Urban clothing store from Boston, we approach this project with a minimalistic approach.",
+    category: "Web development",
+    description: "Funkyjunkie is a Urban clothing store from Boston.",
     stack: ["Tailwind"],
     stack2: ["TypeScript"],
     stack3: ["Hydrogen"],

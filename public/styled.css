@@ -1,0 +1,75 @@
+.top {
+  margin-top: 10%;
+}
+.portfolio .left {
+  width: 40%;
+  background: #d0d5db;
+  margin: 20px;
+}
+
+.portfolio .right {
+  width: 60%;
+  margin: 20px;
+  position: relative;
+}
+
+.portfolio .right .img {
+  background: #d0d5db;
+  overflow: hidden;
+}
+
+.portfolio .box {
+  position: relative;
+  width: 340px;
+  height: 340px;
+}
+
+.portfolio .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.portfolio .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.portfolio .box:hover .image {
+  opacity: 0.3;
+  transform: scale(1.2);
+}
+
+.portfolio .box:hover .middle {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.portfolio .right .text {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  width: 340px;
+  height: 340px;
+}
+
+.portfolio .right .text h4 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.portfolio .right .text h3 {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.portfolio .left .text {
+  margin-top: 40%;
+}
