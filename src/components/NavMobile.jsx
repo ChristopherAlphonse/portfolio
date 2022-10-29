@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
 import { MdClose } from "react-icons/md";
-import file from "../../src/assets/img/LOGO.png";
+import file from "../../src/assets/img/Christopher resume.docx.pdf";
 import { motion } from "framer-motion";
 import { navigation } from "../data";
 

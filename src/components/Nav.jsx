@@ -1,8 +1,7 @@
 // import Link
 import { Link } from "react-scroll";
 import React from "react";
-import file from "../../src/assets/img/LOGO.png";
-// import navigation data
+import file from "../../src/assets/img/Christopher resume.docx.pdf";
 import { navigation } from "../data";
 
 const Nav = () => {
