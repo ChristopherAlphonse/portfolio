@@ -7,7 +7,9 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "devi": "yarn global add npm-check-updates && ncu -u && yarn install"
+    "devi": "yarn global add npm-check-updates && ncu -u && yarn install",
+    "deploy": " vite build && firebase deploy --only hosting",
+    "firebase":"firebase login && firebase init"
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
