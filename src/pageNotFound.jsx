@@ -33,7 +33,7 @@ const PageNotFound = () => {
     default: {
       x: mousePos.x - 1,
       y: mousePos.y - 1,
-      backgroundColor: "#0000FF",
+      backgroundColor: "#1684A3",
       mixBlendMode: "difference",
     },
     text: {
@@ -59,10 +59,10 @@ const PageNotFound = () => {
         >
           404
         </h1>
-        <div className="copy-container center-xy cursor-pointer relative top-[11rem] right-5">
+        <div className="copy-container center-xy cursor-pointer relative top-[10rem] right-1">
           <Link
             to="/"
-            className="inline-flex items-center text-blue-600 hover:text-blue-600/75"
+            className="inline-flex items-center text-blue-600/50 hover:text-blue-600/75"
           >
             return home
             <svg
