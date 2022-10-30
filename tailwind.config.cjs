@@ -8,12 +8,12 @@ module.exports = {
     },
     container: {
       padding: {
-        DEFAULT: "1rem",
-        lg: "3rem",
+        DEFAULT: ".9rem",
+        lg: "2.5rem",
       },
     },
     screens: {
-      sm: "599px",
+      sm: "620px",
       md: "899px",
       lg: "1350px",
       xl: "2280px",

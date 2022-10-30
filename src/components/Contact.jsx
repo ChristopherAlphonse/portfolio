@@ -18,15 +18,17 @@ const Contact = () => {
         <div
           className={classNames([
             styles.notificationWrapper,
-            t.visible ? "bottom-0" : "bottom-96",
+            t.visible ? "bottom-0" : "bottom-10",
           ])}
         >
           <div className={styles.contentWrapper}>
-            <h1 className="text-accent drop-shadow-2xl mb-20">Message Sent</h1>
+            <h1 className="text-blue-900 drop-shadow-2xl mb-20 ">
+              Message Sent
+            </h1>
           </div>
         </div>
       ),
-      { id: "unique-notification", position: "bottom-left" }
+      { id: "unique-notification", position: "bottom-right" }
     );
 
   useEffect(() => {
@@ -70,13 +72,12 @@ const Contact = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
-          <p className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15  text-zinc-800 chi ">
-            Contact Me
+          <p className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15  text-zinc-800 chi title-heading">
+            Get in Touch
           </p>
 
-          <h2 className="text-zinc-600 py-5 ">
-            Would like to work together? Shoot a message I will get back to you
-            as soon as I can.
+          <h2 className="text-zinc-600 py-5 title-para">
+            Have a question or just want to get in touch? Let's chat.
           </h2>
         </div>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row mt-10 justify-center">

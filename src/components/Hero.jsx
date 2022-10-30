@@ -9,13 +9,13 @@ const Hero = () => {
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
           <div className="flex-1 flex flex-col items-center lg:items-center">
-            <h1 className=" text-5xl leading-[50px] md:text-5xl text-center md:leading-tight lg:text-8xl xl:text-9xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
+            <h1 className=" text-5xl leading-[50px] md:text-5xl text-center md:leading-tight lg:text-8xl xl:text-9xl lg:leading-[1.2] font-bold md:tracking-[-2px] title-heading">
               Christopher Alphonse
             </h1>
-            <p className="pt-3 pb-7 md:pt-5 md:pb-11  text-md text-center  ">
-              I'm a Software Engineer based in Boston, Massachusets, and I'm
-              extremely passionate about building computers and building
-              web/desktop facing apps.
+            <p className="pt-3 pb-7 md:pt-5 md:pb-11 title-para text-md text-center  ">
+              Software Engineer based in Boston, Massachusets, and I'm extremely
+              passionate about building computers, and developing web/desktop
+              facing applications .
             </p>
           </div>
         </div>

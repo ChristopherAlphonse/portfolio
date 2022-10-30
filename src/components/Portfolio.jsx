@@ -5,13 +5,13 @@ const Portfolio = () => {
     <section id="portfolio" className="section bg-zinc-800 min-h-[1400px]">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
-          <h2 className="section-title  relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block">
+          <h2 className="section-title  relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block title-heading">
             My latest work
           </h2>
-          <p className="subtitle">
-            Past few months I have been working on optimizing performance and
-            SEO, while using frameworks like NextJS for full-stack facing web
-            development and Sanity.io as a CMS for clients.
+          <p className="title-para subtitle">
+            Knowledgeable on Content management systems(CMS), search engine
+            optimization (SEO), lighthouse performance metrics for mobile
+            optimization.
           </p>
         </div>
         <Projects />

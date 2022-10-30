@@ -7,10 +7,10 @@ const Project = ({ item }) => {
       key={item.id}
       className="flex flex-col items-center text-center transform transition duration-300 "
     >
-      <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800/25 dark:border-gray-700">
+      <div className="max-w-xs bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800/25 dark:border-gray-700">
         <a href="#">
           <LazyLoadImage
-            className=" rounded-t-lg object-cover h-45 w-96"
+            className=" rounded-t-lg object-cover h-50 w-96"
             alt={item.id}
             height="250"
             width="300"
@@ -28,7 +28,7 @@ const Project = ({ item }) => {
           </p>
           <a
             href={item.livePreview}
-            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700/50 rounded-lg hover:bg-blue-800/50 focus:ring-4 focus:outline-none focus:ring-blue-300/50 dark:bg-blue-600/50 dark:hover:bg-blue-700 dark:focus:ring-blue-800/50"
+            className="inline-flex items-center py-2 px-6 text-sm font-medium text-center text-white bg-blue-700/25 rounded-lg hover:bg-blue-800/50 focus:ring-4 focus:outline-none focus:ring-blue-300/50 dark:bg-blue-600/50 dark:hover:bg-blue-700 dark:focus:ring-blue-800/50"
           >
             Live
             <svg
