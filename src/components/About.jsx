@@ -11,10 +11,11 @@ const About = () => {
                 About Me
               </h2>
               <p className="mb-4 text-cyan-600 ">Software Developer</p>
-
+             
               <p className="mb-8 text-gray-700/75 text-sm md:text-[16px] container mx-auto">
-                Software engineer with experience using JavaScript libraries and
-                frameworks for full stack development. .
+                Software engineer with experience using JavaScript
+                libraries and frameworks for full stack development.
+             
               </p>
               <h1 className="text-center pb-6 text-gray-700 font-italic md:text-xl mb-5">
                 Tools | Libraries | Framework
