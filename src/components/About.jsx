@@ -11,21 +11,10 @@ const About = () => {
                 About Me
               </h2>
               <p className="mb-4 text-cyan-600 ">Software Developer</p>
-             
+
               <p className="mb-8 text-gray-700/75 text-sm md:text-[16px] container mx-auto">
-                I'm a software engineer with experience using JavaScript
-                libraries and frameworks for full stack development. I have a
-                great enthusiasm for creating and interacting with technology.
-                I'm a positive person who appreciates being very hands-on. I
-                worked in the pharmaceutical business for 4 years before
-                deciding it was time to pursue my interest in tech, where I can
-                explore prospects and share my enthusiasm for technology. I just
-                finished a rigorous 14-week coding boot program that improved my
-                understanding of full-stack software development. I'm eager to
-                contribute my talents and knowledge to a team that is vibrant
-                and cooperative. I'm looking forward to joining a mission-driven
-                firm that prioritizes making a good impact via the development
-                of new technology and services.
+                Software engineer with experience using JavaScript libraries and
+                frameworks for full stack development. .
               </p>
               <h1 className="text-center pb-6 text-gray-700 font-italic md:text-xl mb-5">
                 Tools | Libraries | Framework

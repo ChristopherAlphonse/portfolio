@@ -6,13 +6,30 @@ import Project3 from "./assets/img/projects/Funkyjunkie/Funkyjunkie.webp";
 // import Project5 from "./assets/img/projects/p5.webp";
 // import Project6 from "./assets/img/projects/p6.webp";
 // projects
+
+const Project4 =
+  "https://res.cloudinary.com/img-api-pager-2/image/upload/v1667087192/Aza%20Theme/aza_nuv0gn.jpg";
+
 export const projectsData = [
   {
     id: "1",
+    name: "Azalais Dark Theme",
+    image: Project4,
+    category: "Web development",
+    description: "Dark theme for VS Code",
+    stack: ["Stripe"],
+    stack2: ["Sanity"],
+    stack3: ["Hydrogen"],
+    sourceCode: "https://github.com",
+    livePreview:
+      "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
+  },
+  {
+    id: "2",
     name: "Benivi",
     image: Project1,
     category: "Store-front",
-    description: "Benivi Clothing is a modern/urban shopify store-front",
+    description: "Urban shopify store-front",
     stack: ["Stripe"],
     stack2: ["Sanity"],
     stack3: ["Hydrogen"],
@@ -20,12 +37,12 @@ export const projectsData = [
     livePreview: "https://beniviclothing.com/",
   },
   {
-    id: "2",
+    id: "3",
     name: "Mellisa and Lexis",
     image: Project2,
     category: "Store-front",
     description:
-      "Melissa And Lexis is a smoothy website  made using SquareSpace, SEO and maintenance maintained by me, V2 will be utilizing NextJS  ",
+      "SquareSpace, SEO and maintenance maintained by me, V2 will be utilizing NextJS  ",
     // stack: ["Hydrogen"],
     // stack2: ["TypeScript"],
     // stack3: ["Tailwind"],
@@ -33,11 +50,11 @@ export const projectsData = [
     livePreview: "https://melissaandlexis.square.site/",
   },
   {
-    id: "3",
+    id: "4",
     name: "Funkyjunkie",
     image: Project3,
     category: "Web development",
-    description: "Funkyjunkie is a Urban clothing store from Boston.",
+    description: "Urban clothing store from Boston.",
     stack: ["Tailwind"],
     stack2: ["TypeScript"],
     stack3: ["Hydrogen"],

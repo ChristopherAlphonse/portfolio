@@ -1,5 +1,6 @@
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { lazy, useEffect, useState } from "react";
-import BarLoader from "react-spinners/BarLoader";
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 const Hero = lazy(() => import("./components/Hero"));
 const Header = lazy(() => import("./components/Header"));
@@ -12,27 +13,52 @@ const HomePage = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(True);
+    setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2022);
   }, []);
 
   return (
-    <div>
-      {loading ? (
-        <BarLoader color={color} loading={loading} css={override} size={150} />
-      ) : (
-        <div>
-          <Header />
-          <Hero />
-          <About />
-          <Portfolio />
-          <Contact />
-          <Footer />
-        </div>
-      )}
-    </div>
+    <HelmetProvider>
+      <Helmet prioritizeSeoTags>
+        <title>
+          Christopher Alphonse | Software Developer | Software Engineer
+        </title>
+
+        <meta
+          name="description"
+          content="Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications."
+        />
+      </Helmet>
+      <div>
+        {loading ? (
+          <PropagateLoader
+            color="#36c8d6"
+            size={20}
+            speedMultiplier={2}
+            cssOverride={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              minHeight: "100vh",
+              width: "100%",
+              background: "#3f3f46",
+            }}
+          />
+        ) : (
+          <>
+            <Header />
+            <Hero />
+            <About />
+            <Portfolio />
+            <Contact />
+            <Footer />
+          </>
+        )}
+      </div>
+    </HelmetProvider>
   );
 };
 

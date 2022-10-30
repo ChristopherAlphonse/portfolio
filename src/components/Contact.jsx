@@ -64,7 +64,7 @@ const Contact = () => {
   };
   return (
     <section
-      className="section bg-zinc-300 md:h-[100vh] "
+      className="section  bg-zinc-800/20   md:h-[100vh] "
       id="contact"
       onSubmit={handleSubmit}
     >

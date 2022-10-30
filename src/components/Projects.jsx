@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <div>
       <nav className="mb-12 max-w-xl mx-auto">
-        <ul className="flex flex-col md:flex-row justify-evenly items-center text-white">
+        <ul className="flex flex-col lg:flex-row justify-evenly items-center text-white">
           {projectsNav.map((item, index) => {
             return (
               <li
@@ -47,7 +47,7 @@ const Projects = () => {
         </ul>
       </nav>
 
-      <section className="grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8 ">
+      <section className="grid gap-y-11 lg:grid-cols-5 lg:gap-x-12 lg:gap-y-12 ">
         {projects.map((item) => {
           return <Project item={item} key={item.id} />;
         })}

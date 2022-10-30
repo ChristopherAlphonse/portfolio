@@ -81,7 +81,7 @@ const NavMobile = () => {
           );
         })}
         <button>
-          <a href={file} download={file} className="hover:active    ">
+          <a href={file} download={file} className="hover:active test target">
             Download Resume
           </a>
         </button>

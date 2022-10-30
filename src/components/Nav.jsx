@@ -29,7 +29,12 @@ const Nav = () => {
           );
         })}
         <button>
-          <a href={file} download={file} className="hover:active target ">
+          <a
+           
+            href={file}
+            download={file}
+            className="hover:active target "
+          >
             Download Resume
           </a>
         </button>
