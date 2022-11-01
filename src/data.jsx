@@ -1,11 +1,7 @@
-// projects images
 import Project1 from "./assets/img/projects/Benivi/Benivi.webp";
 import Project2 from "./assets/img/projects/melissaandlexis/Mellisa and Lexis.webp";
 import Project3 from "./assets/img/projects/Funkyjunkie/Funkyjunkie.webp";
-// import Project4 from "./assets/img/projects/p4.webp";
-// import Project5 from "./assets/img/projects/p5.webp";
-// import Project6 from "./assets/img/projects/p6.webp";
-// projects
+import Project5 from "./assets/img/projects/Admindashboard/prev.webp";
 
 const Project4 =
   "https://res.cloudinary.com/img-api-pager-2/image/upload/v1667087192/Aza%20Theme/aza_nuv0gn.jpg";
@@ -13,19 +9,31 @@ const Project4 =
 export const projectsData = [
   {
     id: "1",
+    name: "Admin Dashboard",
+    image: Project5,
+    category: "Web development",
+    description: "Dark theme for VS Code",
+    stack: [""],
+    stack2: [""],
+    stack3: [""],
+    sourceCode: "https://github.com/ChristopherAlphonse/admindashboard",
+    livePreview: "https://github.com/ChristopherAlphonse/admindashboard",
+  },
+  {
+    id: "2",
     name: "Azalais Dark Theme",
     image: Project4,
     category: "Web development",
     description: "Dark theme for VS Code",
-    stack: ["Stripe"],
-    stack2: ["Sanity"],
-    stack3: ["Hydrogen"],
+    stack: [""],
+    stack2: [""],
+    stack3: [""],
     sourceCode: "https://github.com",
     livePreview:
       "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
   },
   {
-    id: "2",
+    id: "3",
     name: "Benivi",
     image: Project1,
     category: "Store-front",
@@ -37,7 +45,7 @@ export const projectsData = [
     livePreview: "https://beniviclothing.com/",
   },
   {
-    id: "3",
+    id: "4",
     name: "Mellisa and Lexis",
     image: Project2,
     category: "Store-front",
@@ -50,7 +58,7 @@ export const projectsData = [
     livePreview: "https://melissaandlexis.square.site/",
   },
   {
-    id: "4",
+    id: "5",
     name: "Funkyjunkie",
     image: Project3,
     category: "Web development",

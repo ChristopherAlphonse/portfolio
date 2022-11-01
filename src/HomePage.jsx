@@ -16,7 +16,7 @@ const HomePage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2022);
+    }, 1500);
   }, []);
 
   return (
