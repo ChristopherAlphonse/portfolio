@@ -12,7 +12,7 @@
     "firebase":"firebase login && firebase init"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.7.0",
+    "@emailjs/browser": "^3.9.0",
     "classnames": "^2.3.2",
     "dotenv": "^16.0.3",
     "framer-motion": "^7.6.2",
