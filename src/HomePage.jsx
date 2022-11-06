@@ -1,12 +1,13 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { lazy, useEffect, useState } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
+import Projects from "./components/Projects";
 
 const Hero = lazy(() => import("./components/Hero"));
 const Header = lazy(() => import("./components/Header"));
-const About = lazy(() => import("./components/About"));
+
 const Contact = lazy(() => import("./components/Contact"));
-const Portfolio = lazy(() => import("./components/Portfolio"));
+
 const Footer = lazy(() => import("./components/Footer"));
 
 const HomePage = () => {
@@ -16,7 +17,7 @@ const HomePage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 300);
   }, []);
 
   return (
@@ -51,8 +52,8 @@ const HomePage = () => {
           <>
             <Header />
             <Hero />
-            {/* <About /> */}
-            <Portfolio />
+
+            <Projects />
             <Contact />
             <Footer />
           </>

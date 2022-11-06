@@ -54,12 +54,3 @@ a {
 .chi {
   letter-spacing: 0.15em;
 }
-
-.title-heading {
-  font-family: var(--font-face) !important;
-}
-
-.title-para {
-  font-family: var(--font-face-secondary) !important;
-}
-

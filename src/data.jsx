@@ -13,60 +13,50 @@ export const projectsData = [
     image: Project5,
     category: "Web development",
     description: "Dashboard for management",
-    stack: [""],
-    stack2: [""],
-    stack3: [""],
+    stack: ["Vite, TS, Node.."],
     sourceCode: "https://github.com/ChristopherAlphonse/admindashboard",
-    livePreview: "https://github.com/ChristopherAlphonse/admindashboard",
+    livePreview: null,
   },
   {
     id: "2",
     name: "Azalais Dark Theme",
     image: Project4,
-    category: "Web development",
+    category: "theme",
     description: "Dark theme for VS Code",
-    stack: [""],
-    stack2: [""],
-    stack3: [""],
+    stack: ["JSON, Yo code ..."],
     sourceCode: "https://github.com",
     livePreview:
       "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
   },
   {
     id: "3",
-    name: "Benivi",
+    name: "BENIVI",
     image: Project1,
     category: "Store-front",
     description: "Urban shopify store-front",
-    stack: ["Stripe"],
-    stack2: ["Sanity"],
-    stack3: ["Hydrogen"],
-    sourceCode: "https://github.com",
+    stack: ["Stripe, Shopify"],
+    sourceCode: null,
     livePreview: "https://beniviclothing.com/",
   },
   {
     id: "4",
-    name: "Mellisa and Lexis",
+    name: "Melissa and Lexis",
     image: Project2,
     category: "Store-front",
     description:
       "SquareSpace, SEO and maintenance maintained by me, V2 will be utilizing NextJS  ",
-    // stack: ["Hydrogen"],
-    // stack2: ["TypeScript"],
-    // stack3: ["Tailwind"],
-    sourceCode: "https://github.com",
+    stack: ["SquareSpace, Contentful"],
+    sourceCode: null,
     livePreview: "https://melissaandlexis.square.site/",
   },
   {
     id: "5",
-    name: "Funkyjunkie",
+    name: "Funky Junkie",
     image: Project3,
-    category: "Web development",
+    category: "Store-front",
     description: "Urban clothing store from Boston.",
-    stack: ["Tailwind"],
-    stack2: ["TypeScript"],
-    stack3: ["Hydrogen"],
-    sourceCode: "https://github.com",
+    stack: ["HydrogenJS, TS"],
+    sourceCode: null,
     livePreview: "https://www.funkyjunkieco.com/",
   },
 ];
@@ -74,13 +64,16 @@ export const projectsData = [
 // projects
 export const projectsNav = [
   {
-    name: "all",
+    name: "All",
   },
   {
     name: "Store-front",
   },
   {
     name: "Web development",
+  },
+  {
+    name: "Theme",
   },
 ];
 export const navigation = [
@@ -91,10 +84,6 @@ export const navigation = [
   {
     name: "about",
     href: "about",
-  },
-  {
-    name: "projects",
-    href: "portfolio",
   },
   {
     name: "contact",

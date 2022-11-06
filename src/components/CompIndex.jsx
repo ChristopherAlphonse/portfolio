@@ -5,7 +5,6 @@ export { default as Footer } from "./Footer";
 export { default as Header } from "./Header";
 export { default as Hero } from "./Hero";
 export { default as NavMobile } from "./NavMobile";
-export { default as Portfolio } from "./Portfolio";
 export { default as Projects } from "./Projects";
 export { default as Project } from "./Project";
 export { default as SocialIcons } from "./SocialIcons";

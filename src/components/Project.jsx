@@ -5,34 +5,45 @@ const Project = ({ item }) => {
   return (
     <div
       key={item.id}
-      className="flex flex-col items-center text-center transform transition duration-300 max-w-xs"
+      className=" mt-8 md:mt-16 md:grid-cols-2 border-2 border-gray-700  rounded-lg  text-white  shadow-md xl:grid-cols-3"
     >
-      <div className="max-w-xs bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800/25 dark:border-gray-700">
-        <a href="#">
-          <LazyLoadImage
-            className=" rounded-t-lg object-cover h-50 w-96"
-            alt={item.id}
-            height="250"
-            width="300"
-            src={item.image}
-          />
-        </a>
-        <div className="mb-2">
+      <div className="text-center">
+        <div className="relative  ">
           <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {item.name}
-            </h5>
+            <LazyLoadImage
+              className=" object-cover object-center w-full h-64 rounded-lg lg:h-80"
+              alt={item.id}
+              height="250"
+              width="600"
+              src={item.image}
+            />
           </a>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {item.description}
-          </p>
-          <a
-            href={item.livePreview}
-            className="inline-flex items-center py-2 px-6 text-sm font-medium text-center text-white bg-blue-700/25 rounded-lg "
-          >
-            Live
-          </a>
+
+          <div className="absolute bottom-0 flex p-1  bg-gray-900/70 text-black ">
+            <div className="mx-1">
+              <h1 className="text-sm text-gray-100 font-body ">{item.stack}</h1>
+              <a
+                href={item.sourceCode}
+                className="text-sm text-gray-500  py-1 hover:text-white "
+              >
+                Source
+              </a>
+            </div>
+          </div>
         </div>
+
+        <h1 className="mt-6 text-xl font-semibold text-gray-200 ">
+          {item.name}
+        </h1>
+
+        <p className="text-sm text-gray-500 ">{item.description}</p>
+
+        <a
+          href={item.livePreview}
+          className="inline-block px-6 py-2 mb-3 mt-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-900/60 rounded-md hover:bg-blue-900 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 "
+        >
+          View
+        </a>
       </div>
     </div>
   );

@@ -2,9 +2,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      primary: "Playfair Display",
-      secondary: "Londrina Outline",
-      body: "Work Sans",
+      primary: "Playfair Display SC",
+      secondary: "Forum",
+      body: "Forum",
     },
     container: {
       padding: {
