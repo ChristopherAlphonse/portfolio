@@ -31,7 +31,7 @@ const HomePage = () => {
           content="Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications."
         />
       </Helmet>
-      <div>
+      <div className="">
         {loading ? (
           <PropagateLoader
             color="#36c8d6"

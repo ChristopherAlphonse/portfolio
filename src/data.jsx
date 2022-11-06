@@ -12,7 +12,7 @@ export const projectsData = [
     name: "Admin Dashboard",
     image: Project5,
     category: "Web development",
-    description: "Dark theme for VS Code",
+    description: "Dashboard for management",
     stack: [""],
     stack2: [""],
     stack3: [""],
