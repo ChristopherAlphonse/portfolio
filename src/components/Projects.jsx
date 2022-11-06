@@ -33,7 +33,7 @@ const Projects = () => {
             My latest work
           </h1>
 
-          <p className="max-w-lg mx-auto mt-4 text-gray-500">
+          <p className="max-w-lg mx-auto mt-4 text-paragraph">
             Knowledgeable on Content management systems(CMS), search engine
             optimization (SEO), lighthouse performance metrics for mobile
             optimization.

@@ -5,7 +5,7 @@ const Project = ({ item }) => {
   return (
     <div
       key={item.id}
-      className=" mt-8 md:mt-16 md:grid-cols-2 border-2 border-gray-700  rounded-lg  text-white  shadow-md xl:grid-cols-3"
+      className=" mt-8 md:mt-16 md:grid-cols-2 border-2 border-white/25  rounded-lg  text-white  shadow-md xl:grid-cols-3"
     >
       <div className="text-center">
         <div className="relative  ">
@@ -36,7 +36,7 @@ const Project = ({ item }) => {
           {item.name}
         </h1>
 
-        <p className="text-sm text-gray-500 ">{item.description}</p>
+        <p className="text-sm text-paragraph ">{item.description}</p>
 
         <a
           href={item.livePreview}

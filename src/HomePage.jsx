@@ -4,6 +4,7 @@ import PropagateLoader from "react-spinners/PropagateLoader";
 import Projects from "./components/Projects";
 import BackTopBtn from "./components/BackTopBtn";
 
+
 const Hero = lazy(() => import("./components/Hero"));
 const Header = lazy(() => import("./components/Header"));
 
@@ -51,13 +52,13 @@ const HomePage = () => {
           />
         ) : (
           <>
-            <BackTopBtn />
+           
             <Header />
             <Hero />
-
             <Projects />
             <Contact />
             <Footer />
+            <BackTopBtn />
           </>
         )}
       </div>

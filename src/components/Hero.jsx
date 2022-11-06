@@ -1,4 +1,5 @@
 import React from "react";
+import DownBtn from "./DownBtn";
 
 const Hero = () => {
   return (
@@ -17,6 +18,7 @@ const Hero = () => {
               passionate about building computers, and developing web/desktop
               facing applications .
             </p>
+            <DownBtn />
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ module.exports = {
           DEFAULT: "#7FC7EB",
           hover: "#639CB8",
         },
-        paragraph: "#878e99",
+        paragraph: "#D1D1D1",
       },
     },
   },
