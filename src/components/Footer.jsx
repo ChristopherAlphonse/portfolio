@@ -1,6 +1,7 @@
 import { MdMail } from "react-icons/md";
 import React from "react";
 
+
 const Footer = () => {
   return (
     <footer className="bg-tertiary py-5">
@@ -12,6 +13,7 @@ const Footer = () => {
           <MdMail className="w-6 h-6 mx-3 opacity-80" /> Christopher Alphonse
         </a>
       </div>
+    
     </footer>
   );
 };

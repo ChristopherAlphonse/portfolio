@@ -2,6 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { lazy, useEffect, useState } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import Projects from "./components/Projects";
+import BackTopBtn from "./components/BackTopBtn";
 
 const Hero = lazy(() => import("./components/Hero"));
 const Header = lazy(() => import("./components/Header"));
@@ -50,6 +51,7 @@ const HomePage = () => {
           />
         ) : (
           <>
+            <BackTopBtn />
             <Header />
             <Hero />
 

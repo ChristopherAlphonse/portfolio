@@ -24,7 +24,7 @@ export const projectsData = [
     category: "theme",
     description: "Dark theme for VS Code",
     stack: ["JSON, Yo code ..."],
-    sourceCode: "https://github.com",
+    sourceCode: "https://github.com/ChristopherAlphonse/azalais-dark-",
     livePreview:
       "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
   },

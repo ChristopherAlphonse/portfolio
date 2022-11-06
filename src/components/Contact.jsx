@@ -52,22 +52,21 @@ const Contact = () => {
     };
   }, []);
 
-
-
   return (
     <section
       onSubmit={sendEmail}
-      className="section  bg-zinc-800/20   md:h-[100vh] "
+      className="section bg-[#3b3b3f]  md:h-[100vh] "
       id="contact"
     >
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
-          <p className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15  text-zinc-800 chi title-heading">
+          <p className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15 font-primary chi title-heading text-white">
             Get in Touch
           </p>
 
-          <h2 className="text-zinc-600 py-5 title-para">
-            Have a question or just want to get in touch? Let's chat.
+          <h2 className="text-zinc-100 py-2 title-para font-body">
+            I'd be delighted to hear from you. Please message me. As soon as it
+            is received, I will reply.
           </h2>
         </div>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row mt-10 justify-center">

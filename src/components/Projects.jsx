@@ -26,7 +26,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="bg-[#27272a] ">
+    <section className="bg-[#27272af5] ">
       <div className="container px-6 py-10 mx-auto">
         <div className="text-center">
           <h1 className="text-3xl font-semibold front-primary text-gray-100 capitalize lg:text-4xl">
