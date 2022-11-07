@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-scroll";
 import { MdClose } from "react-icons/md";
 import file from "../../src/assets/img/Christopher resume.docx.pdf";
 import { motion } from "framer-motion";
-import { navigation } from "../data";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +13,7 @@ const NavMobile = () => {
       scale: 0,
     },
     visible: {
-      scale: 180,
+      scale: 300,
       transition: {
         type: "spring",
         stiffness: 160,
@@ -65,21 +63,7 @@ const NavMobile = () => {
         >
           <MdClose className="w-8 h-8" />
         </div>
-        {navigation.map((item, idx) => {
-          return (
-            <li key={idx} className="mb-8">
-              <Link
-                to={item.href}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                className="text-xl cursor-pointer capitalize"
-              >
-                {item.name}
-              </Link>
-            </li>
-          );
-        })}
+
         <button>
           <a href={file} download={file} className="hover:active test target">
             Download Resume

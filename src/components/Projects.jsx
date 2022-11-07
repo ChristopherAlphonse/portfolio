@@ -27,7 +27,7 @@ const Projects = () => {
 
   return (
     <section className="bg-[#27272af5] ">
-      <div className="container px-6 py-10 mx-auto">
+      <div className="container px-1 py-10 mx-auto">
         <div className="text-center">
           <h1 className="text-3xl font-semibold front-primary text-gray-100 capitalize lg:text-4xl">
             My latest work
@@ -69,7 +69,7 @@ const Projects = () => {
             })}
           </ul>
         </nav>
-        <section className="grid gap-y-2 gap-x-8   md:grid-cols-2  lg:grid-cols-3 lg:gap-x-7 lg:gap-y-7 ">
+        <section className="grid gap-x-8  md:grid-cols-2  lg:grid-cols-3 lg:gap-x-7 lg:gap-y-7 ">
           {projects.map((item) => {
             return <Project item={item} key={item.id} />;
           })}

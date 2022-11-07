@@ -76,17 +76,3 @@ export const projectsNav = [
     name: "Theme",
   },
 ];
-export const navigation = [
-  {
-    name: "home",
-    href: "home",
-  },
-  {
-    name: "about",
-    href: "about",
-  },
-  {
-    name: "contact",
-    href: "contact",
-  },
-];

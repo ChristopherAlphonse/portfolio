@@ -61,6 +61,7 @@
 }
 
 .test {
-  color: rgb(255, 255, 255) !important   ;
-  background-color: rgb(48, 117, 196) !important;
+  font-weight: 900;
+  background-color: rgb(55, 54, 54);
+  border-radius: 2rem;
 }

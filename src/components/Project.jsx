@@ -8,10 +8,10 @@ const Project = ({ item }) => {
       className=" mt-8 md:mt-16 md:grid-cols-2 border-2 border-white/25  rounded-lg  text-white  shadow-md xl:grid-cols-3"
     >
       <div className="text-center">
-        <div className="relative  ">
+        <div className="relative">
           <a href="#">
             <LazyLoadImage
-              className=" object-cover object-center w-full h-64 rounded-lg lg:h-80"
+              className=" object-fill object-center w-full h-64 rounded-lg lg:h-80"
               alt={item.id}
               height="250"
               width="600"
@@ -20,11 +20,11 @@ const Project = ({ item }) => {
           </a>
 
           <div className="absolute bottom-0 flex p-1  bg-gray-900/70 text-black ">
-            <div className="mx-1">
+            <div className="mx-6">
               <h1 className="text-sm text-gray-100 font-body ">{item.stack}</h1>
               <a
                 href={item.sourceCode}
-                className="text-sm text-gray-500  py-1 hover:text-white "
+                className="text-sm text-gray-300/70  py-1 hover:text-white "
               >
                 Source
               </a>
