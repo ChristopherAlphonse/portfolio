@@ -2,7 +2,7 @@ import { BackTopBtn, Nav, NavMobile, SocialIcons, SoundBar } from "./CompIndex";
 import React, { useEffect, useState } from "react";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Logo from "../assets/img/LOGO.png";
+import Logo from "../assets/Logo.png";
 
 const Header = () => {
   const [bg, setBg] = useState(false);

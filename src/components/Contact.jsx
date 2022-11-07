@@ -55,7 +55,7 @@ const Contact = () => {
   return (
     <section
       onSubmit={sendEmail}
-      className="section bg-[#3b3b3f]  md:h-[100vh] "
+      className="section bg-[#3b3b3f]  md:h-[80vh] "
       id="contact"
     >
       <div className="container mx-auto">

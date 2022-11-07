@@ -48,7 +48,7 @@ a {
 
 .shi {
   cursor: pointer;
-  filter: sepia(10%) hue-rotate(150deg) saturate(300%);
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
 
 .chi {
