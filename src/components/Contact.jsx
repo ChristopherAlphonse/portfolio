@@ -60,7 +60,10 @@ const Contact = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
-          <p className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15 font-primary chi title-heading text-white">
+          <p
+            className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15 font-primary chi title-heading text-white     bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-200 italic
+              "
+          >
             Get in Touch
           </p>
 

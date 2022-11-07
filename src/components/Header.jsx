@@ -2,7 +2,7 @@ import { BackTopBtn, Nav, NavMobile, SocialIcons, SoundBar } from "./CompIndex";
 import React, { useEffect, useState } from "react";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Logo from "../assets/Logo.png";
+import Logo from "../../public/picture/Logo Files/svg/logo-no-background.svg";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -20,9 +20,7 @@ const Header = () => {
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
-        <div className="shi">
-          <LazyLoadImage alt="logo" height="200" width="200" src={Logo} />
-        </div>
+        <h1 className="text-3xl">{"< CHRIS />"}</h1>
 
         <div className="hidden lg:block">
           <Nav />

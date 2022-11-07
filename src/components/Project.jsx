@@ -42,7 +42,7 @@ const Project = ({ item }) => {
           href={item.livePreview}
           className="inline-block px-6 py-2 mb-3 mt-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-900/60 rounded-md hover:bg-blue-900 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 "
         >
-          View
+          VIEW
         </a>
       </div>
     </div>

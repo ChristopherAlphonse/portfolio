@@ -29,7 +29,10 @@ const Projects = () => {
     <section className="bg-[#27272af5] ">
       <div className="container px-1 py-10 mx-auto">
         <div className="text-center">
-          <h1 className="text-3xl font-semibold front-primary text-gray-100 capitalize lg:text-4xl">
+          <h1
+            className="text-3xl font-semibold front-primary text-gray-100 capitalize lg:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-200 italic
+              "
+          >
             My latest work
           </h1>
 

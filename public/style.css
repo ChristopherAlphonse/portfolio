@@ -46,11 +46,6 @@ a {
   position: relative;
 }
 
-.shi {
-  cursor: pointer;
-  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
-}
-
 .chi {
   letter-spacing: 0.15em;
 }
