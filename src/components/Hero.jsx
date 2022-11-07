@@ -2,6 +2,21 @@ import React from "react";
 import DownBtn from "./DownBtn";
 
 const Hero = () => {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch("resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "resume.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <section
       id="home"
@@ -25,6 +40,14 @@ const Hero = () => {
               passionate about building computers, and developing web/desktop
               facing applications .
             </p>
+
+            <a
+              onClick={onButtonClick}
+              className="hover:active target px-9 lg:hidden cursor-cell"
+            >
+              Download Resume
+            </a>
+
             <DownBtn />
           </div>
         </div>

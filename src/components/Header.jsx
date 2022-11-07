@@ -1,4 +1,4 @@
-import { BackTopBtn, Nav, NavMobile } from "./CompIndex";
+import { BackTopBtn, Nav } from "./CompIndex";
 import React, { useEffect, useState } from "react";
 
 const Header = () => {
@@ -17,15 +17,12 @@ const Header = () => {
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
-        <h1 className="text-3xl">{"< CHRIS />"}</h1>
+        <h1 className="text-xl">{"< CHRIS />"}</h1>
 
         <div className="hidden lg:block">
           <Nav />
 
           <BackTopBtn />
-        </div>
-        <div className="lg:hidden">
-          <NavMobile />
         </div>
       </div>
     </header>
