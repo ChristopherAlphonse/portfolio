@@ -1,89 +1,44 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import { Link } from "react-router-dom";
-import { SocialIcons } from "./components/CompIndex";
-import { motion } from "framer-motion";
-
-const PageNotFound = () => {
-  const [mousePos, setMousePos] = useState({
-    x: 5,
-    y: 5,
-  });
-  // console.log(mousePos);
-
-  const [cursorVar, setCursorVar] = useState("default");
-
-  useEffect(() => {
-    const mouseMove = (e) => {
-      setMousePos({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-
-    window.addEventListener("mousemove", mouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
-
-  const variants = {
-    default: {
-      x: mousePos.x - 1,
-      y: mousePos.y - 1,
-      backgroundColor: "#1684A3",
-      mixBlendMode: "difference",
-    },
-    text: {
-      height: 150,
-      width: 150,
-    },
-  };
-  const textEnter = () => setCursorVar("text");
-  const textLeave = () => setCursorVar("default");
-
+const pageNotFound = () => {
   return (
-    <HelmetProvider>
-      <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse | 404 </title>
-        <link rel="canonical" href="/404" />
-      </Helmet>
-      <div className="h-screen w-full flex flex-col justify-center items-center bg-zinc-900 cursor-none">
-        <SocialIcons />
-        <h1
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
-          className="text-[10rem] md:text-[30rem] font-extrabold text-white tracking-widest pointer-events-none "
-        >
-          404
-        </h1>
-        <div className="copy-container center-xy cursor-pointer relative top-[10rem] right-1">
-          <Link
-            to="/"
-            className="inline-flex items-center text-blue-600/50 hover:text-blue-600/75"
+    <div>
+      <section className="bg-white dark:bg-gray-900">
+        <div className="container flex flex-col items-center px-4 py-12 mx-auto text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-600 dark:text-white">
+            Page Not Found
+          </h2>
+
+          <a
+            href="https://christopheralphonse.com/"
+            className="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
           >
-            return home
-            <svg
-              className="ml-2 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
-              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
-            </svg>
-          </Link>
+            Please return to the home page
+          </a>
+
+          <div className="mt-6">
+            <div className="inline-flex w-full overflow-hidden rounded-lg shadow sm:w-auto sm:mx-3">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-600 sm:w-auto"
+              >
+                <span className="mx-2">Get it on the App Store</span>
+              </a>
+            </div>
+
+            <div className="inline-flex w-full mt-4 overflow-hidden rounded-lg shadow sm:w-auto sm:mx-3 sm:mt-0">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white transition-colors duration-150 transform sm:w-auto bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-600 hover:to-blue-600"
+              >
+                <span className="mx-2">Get it on Google Play</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <motion.div
-          variants={variants}
-          animate={cursorVar}
-          className="bg-[#111] h-[32px] w-[32px] rounded-full fixed top-0 left-0 "
-        ></motion.div>
-      </div>
-    </HelmetProvider>
+      </section>
+    </div>
   );
 };
 
-export default PageNotFound;
+export default pageNotFound;

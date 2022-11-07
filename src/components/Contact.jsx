@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 import emailjs from "@emailjs/browser";
-import styles from "../index.css";
 
 const Service = import.meta.env.VITE_SERVICE_ID;
 const Template = import.meta.env.VITE_TEMPLATE_ID;

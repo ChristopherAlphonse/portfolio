@@ -65,3 +65,7 @@
   background-color: rgb(55, 54, 54);
   border-radius: 2rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}

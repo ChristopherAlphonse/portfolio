@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import file from "../../src/assets/img/Christopher resume.docx.pdf";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,14 +42,14 @@ const NavMobile = () => {
       </div>
 
       {/* circle */}
-      <motion.div
+      <m.div
         variants={circleVariants}
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
         className="w-4 h-4 rounded-full bg-accent fixed top-0 right-0"
-      ></motion.div>
+      ></m.div>
 
-      <motion.ul
+      <m.ul
         variants={ulVariants}
         initial="hidden"
         animate={isOpen ? "visible" : ""}
@@ -69,7 +69,7 @@ const NavMobile = () => {
             Download Resume
           </a>
         </button>
-      </motion.ul>
+      </m.ul>
     </nav>
   );
 };

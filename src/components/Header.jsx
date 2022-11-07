@@ -1,8 +1,5 @@
-import { BackTopBtn, Nav, NavMobile, SocialIcons, SoundBar } from "./CompIndex";
+import { BackTopBtn, Nav, NavMobile } from "./CompIndex";
 import React, { useEffect, useState } from "react";
-
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import Logo from "../../public/picture/Logo Files/svg/logo-no-background.svg";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -24,8 +21,7 @@ const Header = () => {
 
         <div className="hidden lg:block">
           <Nav />
-          <SoundBar />
-          <SocialIcons />
+
           <BackTopBtn />
         </div>
         <div className="lg:hidden">

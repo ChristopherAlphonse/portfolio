@@ -1,17 +1,15 @@
-import Project1 from "./assets/img/projects/Benivi/Benivi.webp";
-import Project2 from "./assets/img/projects/melissaandlexis/Mellisa and Lexis.webp";
-import Project3 from "./assets/img/projects/Funkyjunkie/Funkyjunkie.webp";
-import Project5 from "./assets/img/projects/Admindashboard/prev.webp";
-
-
-const Project4 =
-  "https://res.cloudinary.com/img-api-pager-2/image/upload/v1667087192/Aza%20Theme/aza_nuv0gn.jpg";
+import Project1 from "./assets/img/Projects-images/Dash.png.webp";
+import Project2 from "./assets/img/Projects-images/Benivi.png.webp";
+import Project3 from "./assets/img/Projects-images/Benivi.png.webp";
+import Project4 from "./assets/img/Projects-images/Benivi.png.webp";
+import Project5 from "./assets/img/Projects-images/Benivi.png.webp";
+import Project6 from "./assets/img/Projects-images/Benivi.png.webp";
 
 export const projectsData = [
   {
     id: "1",
     name: "Admin Dashboard",
-    image: Project5,
+    image: Project1,
     category: "Web development",
     description: "Dashboard for management",
     stack: ["Vite, TS, Node.."],
@@ -21,7 +19,7 @@ export const projectsData = [
   {
     id: "2",
     name: "Azalais Dark Theme",
-    image: Project4,
+    image: Project2,
     category: "theme",
     description: "Dark theme for VS Code",
     stack: ["JSON, Yo code ..."],
@@ -32,7 +30,7 @@ export const projectsData = [
   {
     id: "3",
     name: "BENIVI",
-    image: Project1,
+    image: Project3,
     category: "Store-front",
     description: "Urban shopify store-front",
     stack: ["Stripe, Shopify"],
@@ -42,7 +40,7 @@ export const projectsData = [
   {
     id: "4",
     name: "Melissa and Lexis",
-    image: Project2,
+    image: Project4,
     category: "Store-front",
     description:
       "SquareSpace, SEO and maintenance maintained by me, V2 will be utilizing NextJS  ",
@@ -53,12 +51,23 @@ export const projectsData = [
   {
     id: "5",
     name: "Funky Junkie",
-    image: Project3,
+    image: Project5,
     category: "Store-front",
     description: "Urban clothing store from Boston.",
     stack: ["HydrogenJS, TS"],
     sourceCode: null,
     livePreview: "https://www.funkyjunkieco.com/",
+  },
+  {
+    id: "6",
+    name: "Noted",
+    image: Project6,
+    category: "Web development",
+    description:
+      "Note taking app with verification for sign in/out and forgot password",
+    stack: ["Vite, TS, Node, Nodemailer, MongoDB"],
+    sourceCode: "https://github.com/ChristopherAlphonse/Noted",
+    livePreview: null,
   },
 ];
 

@@ -9,8 +9,6 @@ const App = () => {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
-
- 
     </BrowserRouter>
   );
 };
