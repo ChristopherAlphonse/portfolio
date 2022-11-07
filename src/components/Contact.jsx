@@ -44,12 +44,7 @@ const Contact = () => {
     e.target.reset();
   };
 
-  useEffect(() => {
-    // console.log("on reload");
-    return () => {
-      console.log("Email sent..... now unmounting");
-    };
-  }, []);
+
 
   return (
     <section

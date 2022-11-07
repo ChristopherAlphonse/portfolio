@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite build && vite preview ",
     "devi": "yarn global add npm-check-updates && ncu -u && yarn install",
     "deploy": " vite build && firebase deploy --only hosting",
-    "firebase": "firebase login && firebase init"
+    "firebase": "firebase login && firebase init",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
@@ -30,6 +31,7 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "@sentry/webpack-plugin": "^1.20.0",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",

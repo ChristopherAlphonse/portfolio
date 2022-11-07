@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./styled.css" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000" />
@@ -16,7 +16,12 @@
       name="copyright"
       content="Copyright 2022. All rights reserved for Christopher Alphonse"
     />
-    <link rel="stylesheet" href=".//style.css" />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+      href="./style.css"
+    />
     <link rel="icon" sizes="196x196" href="/picture/logo.webp" />
     <link rel="shortcut icon" href="/picture/logo.webp" />
     <link rel="icon" sizes="16x16 32x32 64x64" href="/picture/logo.webp" />
@@ -45,7 +50,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="/picture/logo.webp" />
     <link rel="apple-touch-icon" sizes="152x152" href="/picture/logo.webp" />
     <link rel="apple-touch-icon" sizes="180x180" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" href="/picture/logo.webp" />
+    <link rel="apple-touch-icon" href="./src/assets/img/logo.webp" />
     <title>Christopher Alphonse | Web Developer</title>
     <meta
       name="description"
@@ -71,6 +76,8 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@Christopheralphonse" />
+
+    <noscript> <link rel="stylesheet" href="./src/index.css""> </noscript>
   </head>
 
   <body>

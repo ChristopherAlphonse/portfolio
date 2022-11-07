@@ -6,7 +6,9 @@ import BackTopBtn from "./components/BackTopBtn";
 
 const Hero = lazy(() => import("./components/Hero"));
 const Header = lazy(() => import("./components/Header"));
+
 const Contact = lazy(() => import("./components/Contact"));
+
 const Footer = lazy(() => import("./components/Footer"));
 
 const HomePage = () => {
