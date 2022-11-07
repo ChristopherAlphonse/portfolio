@@ -1,9 +1,11 @@
 import Project1 from "./assets/img/Projects-images/Dash.png.webp";
-import Project2 from "./assets/img/Projects-images/Benivi.png.webp";
+import Project2 from "./assets/img/Projects-images/aza.png.webp";
 import Project3 from "./assets/img/Projects-images/Benivi.png.webp";
-import Project4 from "./assets/img/Projects-images/Benivi.png.webp";
-import Project5 from "./assets/img/Projects-images/Benivi.png.webp";
-import Project6 from "./assets/img/Projects-images/Benivi.png.webp";
+import Project4 from "./assets/img/Projects-images/Mel.png.webp";
+import Project5 from "./assets/img/Projects-images/Funky.png.webp";
+import Project6 from "./assets/img/Projects-images/Noted.png.webp";
+
+
 
 export const projectsData = [
   {
@@ -29,7 +31,7 @@ export const projectsData = [
   },
   {
     id: "3",
-    name: "BENIVI",
+    name: "Benivi",
     image: Project3,
     category: "Store-front",
     description: "Urban shopify store-front",

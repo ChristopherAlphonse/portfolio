@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, lazy } from "react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
-import file from "../../src/assets/img/Christopher resume.docx.pdf";
 import { m } from "framer-motion";
+
+const Resume = lazy(() => import("../assets/resume.docx.pdf"));
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +66,7 @@ const NavMobile = () => {
         </div>
 
         <button>
-          <a href={file} download={file} className="hover:active test target">
+          <a href="/" download={Resume} className="hover:active test target">
             Download Resume
           </a>
         </button>
