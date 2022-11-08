@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 import emailjs from "@emailjs/browser";
@@ -43,8 +43,6 @@ const Contact = () => {
     );
     e.target.reset();
   };
-
-
 
   return (
     <section

@@ -1,5 +1,6 @@
 import { BackTopBtn, Nav } from "./CompIndex";
 import React, { useEffect, useState } from "react";
+import log from "../assets/img/logo.webp";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -17,7 +18,8 @@ const Header = () => {
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
-        <h1 className="text-xl">{"< CHRIS />"}</h1>
+        <h1 className="text-xl md:text-[20px]">{"< CHRIS />"}</h1>
+        {/* <img src={log} alt="logo" className="w-8 lg:w-16 rounded-full" /> */}
 
         <div className="hidden lg:block">
           <Nav />

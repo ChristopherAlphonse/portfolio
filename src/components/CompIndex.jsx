@@ -1,4 +1,4 @@
-export { default as About } from "./About";
+
 export { default as BackTopBtn } from "./BackTopBtn";
 export { default as Contact } from "./Contact";
 export { default as Footer } from "./Footer";

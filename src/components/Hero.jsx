@@ -3,12 +3,9 @@ import DownBtn from "./DownBtn";
 
 const Hero = () => {
   const onButtonClick = () => {
-    // using Java Script method to get PDF file
     fetch("resume.pdf").then((response) => {
       response.blob().then((blob) => {
-        // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
         alink.download = "resume.pdf";
@@ -31,14 +28,14 @@ const Hero = () => {
               bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-200 italic
               
               
-              text-5xl leading-[50px] md:text-5xl text-center md:leading-tight lg:text-8xl xl:text-9xl lg:leading-[1.2] font-bold md:tracking-[-2px] title-heading"
+              text-5xl leading-[50px] md:text-5xl text-center md:leading-tight lg:text-8xl xl:text-9xl lg:leading-[1.2] font-bold md:tracking-[-2px] title-heading cursor-pointer"
             >
               Christopher Alphonse
             </h1>
             <p className="pt-3 pb-7 md:pt-5 md:pb-11 title-para text-md text-center  ">
-              Software Engineer based in Boston, Massachusets, and I'm extremely
-              passionate about building computers, and developing web/desktop
-              facing applications .
+              Software Engineer based in Boston, Massachusetts, and I'm
+              extremely passionate about building computers, and developing
+              web/desktop facing applications .
             </p>
 
             <a
