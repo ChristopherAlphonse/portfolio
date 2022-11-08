@@ -5,8 +5,6 @@ import Project4 from "./assets/img/Projects-images/Mel.png.webp";
 import Project5 from "./assets/img/Projects-images/Funky.png.webp";
 import Project6 from "./assets/img/Projects-images/Noted.png.webp";
 
-
-
 export const projectsData = [
   {
     id: "1",

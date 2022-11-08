@@ -1,11 +1,12 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { lazy, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
-import Projects from "./components/Projects";
-import BackTopBtn from "./components/BackTopBtn";
+
 
 import "./index.css";
 
+const Projects = lazy(() => import("./components/Projects"));
+const BackTopBtn = lazy(() => import("./components/BackTopBtn"));
 const Hero = lazy(() => import("./components/Hero"));
 const Header = lazy(() => import("./components/Header"));
 const Contact = lazy(() => import("./components/Contact"));
@@ -38,7 +39,7 @@ const HomePage = () => {
           <PropagateLoader
             color="#36c8d6"
             size={20}
-            speedMultiplier={2}
+            speedMultiplier={3}
             cssOverride={{
               display: "flex",
               justifyContent: "center",
@@ -51,12 +52,24 @@ const HomePage = () => {
           />
         ) : (
           <>
-            <Header />
-            <Hero />
-            <Projects />
-            <Contact />
-            <Footer />
-            <BackTopBtn />
+            <Suspense fallback={<div />}>
+              <Header />
+            </Suspense>
+            <div id="main">
+              <Hero />
+              <main>
+                <Suspense fallback={<div />}>
+                  <Projects />
+                </Suspense>
+                <Suspense fallback={<div />}>
+                  <Contact />
+                </Suspense>
+              </main>
+            </div>
+            <Suspense fallback={<div />}>
+              <Footer />
+              <BackTopBtn />
+            </Suspense>
           </>
         )}
       </div>

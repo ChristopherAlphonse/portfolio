@@ -4,6 +4,9 @@ import React, { useEffect, useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
 import { animateScroll as scroll } from "react-scroll";
 
+
+
+
 const BackTopBtn = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -11,6 +14,8 @@ const BackTopBtn = () => {
       return window.scrollY > 1000 ? setShow(true) : setShow(false);
     });
   });
+
+
   const scrollToTop = () => {
     scroll.scrollToTop();
   };

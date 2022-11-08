@@ -43,25 +43,3 @@
   }
 }
 
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-}
-
-.target {
-  color: #7fc7eb;
-  background-color: #7fc7eb36;
-}
-.target:hover {
-  color: #9bdeff;
-  background-color: #7fc7eb4e;
-}
-
-.test {
-  font-weight: 900;
-  background-color: rgb(55, 54, 54);
-  border-radius: 2rem;
-}
