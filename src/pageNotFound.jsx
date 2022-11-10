@@ -16,7 +16,7 @@ const pageNotFound = () => {
           </p>
           <a
             rel="noopener noreferrer"
-            href="/v2/"
+            href="/v1/"
             className="px-8 py-3 font-semibold rounded dark:bg-[#7FC7EB] dark:text-gray-900"
           >
             Back to homepage
