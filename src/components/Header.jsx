@@ -48,7 +48,7 @@ const Header = () => {
         <nav>
           <section className=" flex lg:hidden">
             <div
-              className=" space-y-2"
+              className=" space-y-2 transition-all duration-300"
               onClick={() => setIsNavOpen((prev) => !prev)}
             >
               <span className="block h-0.5 w-8 animate-pulse bg-gray-500"></span>
@@ -58,7 +58,7 @@ const Header = () => {
 
             <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
               <div
-                className="absolute top-0 right-0 px-8 py-8"
+                className="absolute top-0 right-0 px-8 py-8 transition-all duration-300"
                 onClick={() => setIsNavOpen(false)}
               >
                 <svg
@@ -75,7 +75,7 @@ const Header = () => {
                 </svg>
               </div>
               <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                <li className="border-b border-gray-400 my-8 uppercase">
+                <li className="my-8 uppercase">
                   <div
                     onClick={ButtonResume}
                     className="hover:active  cursor-cell text-xl hovertext"
@@ -84,7 +84,7 @@ const Header = () => {
                     Resume
                   </div>
                 </li>
-                <li className="border-b border-gray-400 my-8 uppercase ">
+                <li className="my-8 uppercase ">
                   <div
                     onClick={ButtonCover}
                     className="hover:active  cursor-cell text-xl hovertext"
@@ -123,14 +123,19 @@ const Header = () => {
     display: none;
   }
   .showMenuNav {
+
+
+
+    transition: ease-in-out duration-300;
+
     display: block;
     position: absolute;
-    width: 100%;
+    width: 60%;
     height: 100vh;
     top: 0;
-    left: 0;
+  right: 0;
   	background-color: rgb(31 41 55);
-    z-index: 10;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
