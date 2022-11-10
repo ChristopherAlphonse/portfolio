@@ -9,7 +9,7 @@ const Project = ({ item }) => {
     >
       <div className="text-center">
         <div className="relative">
-          <a href="#">
+          <div>
             <LazyLoadImage
               className=" object-fill object-center w-full h-64 rounded-lg lg:h-80"
               alt={item.id}
@@ -17,7 +17,7 @@ const Project = ({ item }) => {
               width="600"
               src={item.image}
             />
-          </a>
+          </div>
 
           <div className="absolute bottom-0 flex p-1  bg-gray-900/70 text-black ">
             <div className="mx-6">

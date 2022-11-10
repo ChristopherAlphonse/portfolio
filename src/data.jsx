@@ -7,7 +7,7 @@ import Project6 from "./assets/img/Projects-images/Noted.png.webp";
 
 export const projectsData = [
   {
-    id: "1",
+    id: "Admin Dashboard",
     name: "Admin Dashboard",
     image: Project1,
     category: "Web development",
@@ -17,7 +17,18 @@ export const projectsData = [
     livePreview: null,
   },
   {
-    id: "2",
+    id: "Noted",
+    name: "Noted",
+    image: Project6,
+    category: "Web development",
+    description:
+      "Note taking app with verification for sign in/out and forgot password",
+    stack: ["Vite, TS, Node, Nodemailer, MongoDB"],
+    sourceCode: "https://github.com/ChristopherAlphonse/Noted",
+    livePreview: null,
+  },
+  {
+    id: "Azalais Dark Theme",
     name: "Azalais Dark Theme",
     image: Project2,
     category: "theme",
@@ -28,7 +39,7 @@ export const projectsData = [
       "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
   },
   {
-    id: "3",
+    id: "Benivi",
     name: "Benivi",
     image: Project3,
     category: "Store-front",
@@ -38,7 +49,7 @@ export const projectsData = [
     livePreview: "https://beniviclothing.com/",
   },
   {
-    id: "4",
+    id: "Melissa and Lexis",
     name: "Melissa and Lexis",
     image: Project4,
     category: "Store-front",
@@ -49,7 +60,7 @@ export const projectsData = [
     livePreview: "https://melissaandlexis.square.site/",
   },
   {
-    id: "5",
+    id: "Funky Junkie",
     name: "Funky Junkie",
     image: Project5,
     category: "Store-front",
@@ -57,17 +68,6 @@ export const projectsData = [
     stack: ["HydrogenJS, TS"],
     sourceCode: null,
     livePreview: "https://www.funkyjunkieco.com/",
-  },
-  {
-    id: "6",
-    name: "Noted",
-    image: Project6,
-    category: "Web development",
-    description:
-      "Note taking app with verification for sign in/out and forgot password",
-    stack: ["Vite, TS, Node, Nodemailer, MongoDB"],
-    sourceCode: "https://github.com/ChristopherAlphonse/Noted",
-    livePreview: null,
   },
 ];
 
