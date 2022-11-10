@@ -2,7 +2,6 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { lazy, Suspense, useEffect, useState } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
 
-
 import "./index.css";
 
 const Projects = lazy(() => import("./components/Projects"));
