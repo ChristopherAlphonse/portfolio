@@ -15,7 +15,6 @@ const BackBottomBtn = () => {
       show && (
         <a
           href="#section2"
-          onClick={() => scrollToBottom()}
           className="bg-none md:block  text-white w-6 h-6 rounded-full fixed right-5 bottom-24 cursor-pointer flex justify-end items-center transition-all shadow-orange-50"
         >
           <BsArrowDown className="w-6 h-6 text-blue-300" />

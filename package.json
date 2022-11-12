@@ -9,8 +9,7 @@
     "preview": "vite build && vite preview ",
     "devi": "yarn global add npm-check-updates && ncu -u && yarn install && yarn autoclean --force",
     "deploy": " vite build && firebase deploy --only hosting",
-    "firebase": "firebase login && firebase init",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "firebase": "firebase login && firebase init"
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
