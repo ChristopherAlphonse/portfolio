@@ -54,17 +54,19 @@ const HomePage = () => {
             <Suspense fallback={<div />}>
               <Header />
             </Suspense>
-            <div id="main">
+
+            <Suspense fallback={<div />}>
               <Hero />
-              <main>
-                <Suspense fallback={<div />}>
-                  <Projects />
-                </Suspense>
-                <Suspense fallback={<div />}>
-                  <Contact />
-                </Suspense>
-              </main>
-            </div>
+            </Suspense>
+
+            <Suspense fallback={<div />}>
+              <Projects />
+            </Suspense>
+            
+            <Suspense fallback={<div />}>
+              <Contact />
+            </Suspense>
+
             <Suspense fallback={<div />}>
               <Footer />
               <BackTopBtn />
