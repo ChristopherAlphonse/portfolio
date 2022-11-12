@@ -1,15 +1,20 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import HomePage from "./HomePage";
-import PageNotFound from "./PageNotFound";
+
+import React, { Suspense, lazy } from "react";
+
+const HomePage = lazy(() => import("./HomePage"));
+const PageNotFound = lazy(() => import("./PageNotFound"));
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/v1/" element={<HomePage />} />
-        <Route path="/" element={<Navigate to="/v1/" />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/v1/" element={<HomePage />} />
+          <Route path="/" element={<Navigate to="/v1/" />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 };

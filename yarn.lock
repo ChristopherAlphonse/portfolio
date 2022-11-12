@@ -303,7 +303,7 @@
 
 "@fullhuman/postcss-purgecss@^5.0.0":
   version "5.0.0"
-  resolved "https://registry.npmjs.org/@fullhuman/postcss-purgecss/-/postcss-purgecss-5.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-5.0.0.tgz#70db9a537c73750fbcf745b49573db758daba1d8"
   integrity sha512-onDS/b/2pMRzqSoj4qOs2tYFmOpaspjTAgvACIHMPiicu1ptajiBruTrjBzTKdxWdX0ldaBb7wj8nEaTLyFkJw==
   dependencies:
     purgecss "^5.0.0"
@@ -1620,7 +1620,7 @@ postcss-calc@^8.2.3:
 
 postcss-cli@^10.0.0:
   version "10.0.0"
-  resolved "https://registry.npmjs.org/postcss-cli/-/postcss-cli-10.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/postcss-cli/-/postcss-cli-10.0.0.tgz#404e468d1ff39fb5ead3f707e2021be7cd3f8c9f"
   integrity sha512-Wjy/00wBBEgQqnSToznxLWDnATznokFGXsHtF/3G8glRZpz5KYlfHcBW/VMJmWAeF2x49zjgy4izjM3/Wx1dKA==
   dependencies:
     chokidar "^3.3.0"

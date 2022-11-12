@@ -1,5 +1,8 @@
-import { Nav } from "./CompIndex";
 import React, { useEffect, useState } from "react";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+import Logo from "../assets/img/png/logo-no-background.png";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -39,14 +42,17 @@ const Header = () => {
 
   return (
     <div
-
-
       className={`${
         bg ? "bg-tertiary h-20" : "h-24"
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
-        <h1 className="text-xl md:text-[20px]">{"< CHRIS />"}</h1>
+        {/* <h1 className="text-xl md:text-[20px]">{"< CHRIS />"}</h1>
+         */}
+
+        <div>
+          <LazyLoadImage src={Logo} width={60} height={60} alt="Image Alt" />
+        </div>
         <nav>
           <section className=" flex lg:hidden">
             <div

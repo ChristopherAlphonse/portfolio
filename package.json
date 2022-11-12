@@ -9,7 +9,24 @@
     "preview": "vite build && vite preview ",
     "devi": "yarn global add npm-check-updates && ncu -u && yarn install && yarn autoclean --force",
     "deploy": " vite build && firebase deploy --only hosting",
-    "firebase": "firebase login && firebase init"
+    "firebase": "firebase login && firebase init",
+
+
+
+
+
+    
+    "build:css": "postcss ./src/style/tailwind.css -o ./dist/main.css",
+    "prod:build": "set NODE_ENV=production yarn build:css &&  yarn build",
+    "watch:css": " npx tailwindcss -i ./src/style/tailwind.css -o ./dist/main.css --watch"
+
+
+
+
+
+
+
+
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",

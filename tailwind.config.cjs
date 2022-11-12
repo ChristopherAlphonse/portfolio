@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx,md,html}"],
+  darkMode: "media", // or 'class'
   theme: {
     fontFamily: {
       primary: "Playfair Display SC",
@@ -13,10 +14,10 @@ module.exports = {
       },
     },
     screens: {
-      sm: "620px",
-      md: "899px",
-      lg: "1350px",
-      xl: "2280px",
+      sm: "700px",
+      md: "900px",
+      lg: "1400px",
+      xl: "2300px",
     },
     extend: {
       content: {
