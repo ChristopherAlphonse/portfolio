@@ -17,7 +17,7 @@ const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
   return (
-    <footer className="flex flex-col items-center justify-between p-6 bg-[#27272a] dark:bg-gray-900 sm:flex-row md:h-[10vh]">
+    <footer id="section2" className="flex flex-col items-center justify-between p-6 bg-[#27272a] dark:bg-gray-900 sm:flex-row md:h-[10vh]">
       <div className="items-center grid-flow-col">
         <p>Copyright © 2022 - {year} - All right reserved</p>
       </div>

@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <section
-      id="home"
+      id="section1"
       className="h-[100vh] containerr flex items-center bg-zinc-800 lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
       <div className="container mx-auto h-full">

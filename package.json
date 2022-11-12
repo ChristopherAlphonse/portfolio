@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "build:prod": "set NODE_ENV=production build --prod",
     "preview": "vite build && vite preview ",
-    "devi": "yarn global add npm-check-updates && ncu -u && yarn install",
+    "devi": "yarn global add npm-check-updates && ncu -u && yarn install && yarn autoclean --force",
     "deploy": " vite build && firebase deploy --only hosting",
     "firebase": "firebase login && firebase init",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
