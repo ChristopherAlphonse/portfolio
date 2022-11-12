@@ -50,7 +50,7 @@ const Header = () => {
         {/* <h1 className="text-xl md:text-[20px]">{"< CHRIS />"}</h1>
          */}
 
-        <div>
+        <div className="img-change">
           <LazyLoadImage src={Logo} width={60} height={60} alt="Image Alt" />
         </div>
         <nav>
