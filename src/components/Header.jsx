@@ -40,6 +40,10 @@ const Header = () => {
     });
   });
 
+  const Reload = () => {
+    window.location.reload();
+  };
+
   return (
     <div
       className={`${
@@ -50,13 +54,13 @@ const Header = () => {
         {/* <h1 className="text-xl md:text-[20px]">{"< CHRIS />"}</h1>
          */}
 
-        <div className="img-change">
+        <div className="img-change cursor-pointer" onClick={Reload}>
           <LazyLoadImage src={Logo} width={60} height={60} alt="Image Alt" />
         </div>
         <nav>
           <section className=" flex lg:hidden">
             <div
-              className=" space-y-2 transition-all duration-300"
+              className=" space-y-2 transition-all duration-300 cursor-pointer"
               onClick={() => setIsNavOpen((prev) => !prev)}
             >
               <span className="block h-0.5 w-8 animate-pulse bg-gray-500"></span>
@@ -66,7 +70,7 @@ const Header = () => {
 
             <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
               <div
-                className="absolute top-0 right-0 px-8 py-8 transition-all duration-300"
+                className="absolute top-0 right-0 px-8 py-8 transition-all duration-300 cursor-pointer"
                 onClick={() => setIsNavOpen(false)}
               >
                 <svg
@@ -134,7 +138,7 @@ const Header = () => {
 
 
 
-    transition: ease-in-out duration-300;
+    transition: ease-in-out duration-900;
 
     display: block;
     position: absolute;
