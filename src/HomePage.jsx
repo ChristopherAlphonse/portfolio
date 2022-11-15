@@ -62,7 +62,7 @@ const HomePage = () => {
             <Suspense fallback={<div />}>
               <Projects />
             </Suspense>
-            
+
             <Suspense fallback={<div />}>
               <Contact />
             </Suspense>
