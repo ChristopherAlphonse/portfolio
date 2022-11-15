@@ -6,6 +6,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Logo from "../assets/img/png/logo-no-background.png";
 
 import React, { useEffect, useState } from "react";
+
 const navigation = [
   { name: "Home", href: "/", current: true },
   {
@@ -103,6 +104,8 @@ const Header = () => {
                       <a
                         key={item.name}
                         href={item.href}
+                        rel="noopener noreferrer"
+                        target="_blank"
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
@@ -127,6 +130,8 @@ const Header = () => {
                   key={item.name}
                   as="a"
                   href={item.href}
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"

@@ -11,7 +11,7 @@ const Project = ({ item }) => {
         <div className="relative">
           <div>
             <LazyLoadImage
-              className=" object-fill object-center w-full h-64 rounded-lg lg:h-80"
+              className=" block object-cover object-center w-full h-full rounded-lg"
               alt={item.id}
               height="250"
               width="600"
