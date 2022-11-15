@@ -39,6 +39,11 @@ const navigation = [
     href: "https://github.com/ChristopherAlphonse/Powershell",
     current: false,
   },
+  {
+    name: "Windows 10",
+    href: "https://github.com/builtbybel/privatezilla",
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
