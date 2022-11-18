@@ -40,7 +40,7 @@ const navigation = [
     current: false,
   },
   {
-    name: "Windows 10",
+    name: "Recommended",
     href: "https://github.com/builtbybel/privatezilla",
     current: false,
   },
