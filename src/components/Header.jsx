@@ -75,7 +75,7 @@ const Header = () => {
       as="nav"
       className={`${
         bg ? "bg-tertiary  h-20" : "h-24 "
-      }  fixed top-0 w-full text-white z-10 transition-all duration-300 `}
+      }  fixed top-0 w-full dark:text-black text-white z-10 transition-all duration-300 `}
     >
       {({ open }) => (
         <>
@@ -120,7 +120,7 @@ const Header = () => {
                         target="_blank"
                         className={classNames(
                           item.current
-                            ? "bg-gray-900/40   text-white dark:bg-gray-100/40 dark:text-gray-900"
+                            ? "bg-gray-900  text-white dark:bg-gray-100/20 dark:text-gray-900"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-900 dark:hover:bg-gray-100 dark:hover:text-black ",
                           "px-3 py-2 rounded-md text-sm font-medium  "
                         )}

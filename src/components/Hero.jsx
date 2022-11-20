@@ -25,7 +25,7 @@ const Hero = () => {
             <h1
               className=" 
               
-              bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-200 italic
+              bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-200 italic  dark:from-blue-600 dark:to-blue-300 
               
               
               text-5xl leading-[50px] md:text-5xl text-center md:leading-tight lg:text-8xl xl:text-9xl lg:leading-[1.2] font-bold md:tracking-[-2px] title-heading cursor-pointer dark:text-"
