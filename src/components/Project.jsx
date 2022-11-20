@@ -57,7 +57,7 @@ const Project = ({ item }) => {
           class="inline-flex px-6 py-2 mb-5 mt-2 items-center justify-center ml-3 text-base font-medium text-center text-slate-500 rounded-lg bg-primary-700 hover:bg-primary-800 
           
           
-          border-zinc-900/10 shadow border border-blue-900 hover:bg-blue-900
+          border-zinc-900/10 shadow border border-blue-900 hover:bg-blue-900 dark:hover:text-gray-900
            "
         >
           Learn More

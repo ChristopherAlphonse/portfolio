@@ -46,11 +46,11 @@ const navigation = [
     href: "https://github.com/builtbybel/privatezilla",
     current: false,
   },
-  {
-    name: <Theme />,
-    href: null,
-    current: false,
-  },
+  // {
+  //   name: <Theme />,
+  //   href: null,
+  //   current: false,
+  // },
 ];
 
 function classNames(...classes) {
@@ -87,19 +87,19 @@ const Header = () => {
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <GrClose
-                      className="block h-6 w-6 animate-pulse invert  opacity-5"
+                      className="block h-6 w-6 animate-pulse  opacity-5"
                       aria-hidden="true"
                     />
                   ) : (
                     <GrMenu
-                      className="block h-6 w-6 animate-pulse  invert opacity-5"
+                      className="block h-6 w-6 animate-pulse opacity-5"
                       aria-hidden="true"
                     />
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ">
-                <div className="flex flex-shrink-0 items-center"></div>
+              <div className="flex flex-1 items-center sm:items-stretch justify-evenly ">
+                <div className=" flex-shrink-0  flex justify-between"></div>
 
                 <div className="img-change cursor-pointer" onClick={Reload}>
                   <LazyLoadImage
@@ -131,6 +131,9 @@ const Header = () => {
                     ))}
                   </div>
                 </div>
+              </div>
+              <div>
+                <Theme />
               </div>
             </div>
           </div>
