@@ -11,7 +11,6 @@ const Header = lazy(() => import("./components/Header"));
 const Contact = lazy(() => import("./components/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 
-
 const HomePage = () => {
   const [loading, setLoading] = useState(false);
 
@@ -19,19 +18,18 @@ const HomePage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 300);
+    }, 100);
   }, []);
 
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>
-          Christopher Alphonse | Software Developer | Software Engineer
-        </title>
+        <title>Christopher Alphonse - Full Stack Developer</title>
 
         <meta
           name="description"
-          content="Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications."
+          content=" Full Stack Developer and PC enthusiast. I want to focus on writing
+              clean, efficient code, and user friendly UI/UX experiences"
         />
       </Helmet>
       <div className="">
@@ -53,7 +51,6 @@ const HomePage = () => {
         ) : (
           <>
             <Suspense fallback={<div />}>
-             
               <Header />
             </Suspense>
 

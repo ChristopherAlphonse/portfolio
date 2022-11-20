@@ -32,15 +32,24 @@ const Hero = () => {
             >
               Christopher Alphonse
             </h1>
-            <p className="pt-3 pb-7 md:pt-5 md:pb-11 title-para text-md text-center  dark:text-zinc-900 ">
-              Software Engineer based in Boston, Massachusetts, and I'm
-              extremely passionate about building computers, and developing
-              web/desktop facing applications .
+            <p className="pt-3 pb-7 md:pt-5 md:pb-11 title-para text-md text-center font-[500] dark:text-zinc-900 md:text-lg lg-text-xl">
+              Full Stack Developer and PC enthusiast. I want to focus on writing
+              clean, efficient code, and user friendly UI/UX experiences
             </p>
 
             <a
               onClick={onButtonClick}
-              className="hover:active target px-9 lg:hidden cursor-cell"
+              type="button"
+              className="inline-flex items-center font-extrabold text-sm md:text-md lg:text-xl md:px-8 md:py-2 cursor-cell py-2.5 px-4 mr-2 mb-2 focus:outline-none
+              
+              
+               bg-blue-400/50 text-gray-50 rounded-lg   hover:bg-blue-400/60 hover:text-gray-300 
+              
+              
+               dark:bg-blue-500/70 dark:text-gray-50    dark:hover:bg-blue-500/60 dark:hover:text-gray-200 
+               
+             
+               "
             >
               Download Resume
             </a>

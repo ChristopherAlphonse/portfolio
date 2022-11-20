@@ -40,7 +40,7 @@ export const projectsData = [
   },
   {
     id: "Benivi",
-    name: "Benivi, NO SOURCE CODE",
+    name: "Benivi",
     image: Project3,
     category: "Store-front",
     description: "Urban shopify store-front, build with Shopify.",
@@ -50,7 +50,7 @@ export const projectsData = [
   },
   {
     id: "Melissa and Lexis",
-    name: "Melissa and Lexis, NO SOURCE CODE",
+    name: "Melissa and Lexis",
     image: Project4,
     category: "Store-front",
     description:
@@ -61,7 +61,7 @@ export const projectsData = [
   },
   {
     id: "Funky Junkie",
-    name: "Funky Junkie, NO SOURCE CODE",
+    name: "Funky Junkie",
     image: Project5,
     category: "Store-front",
     description: "Urban clothing store from Boston, build with Shopify.",

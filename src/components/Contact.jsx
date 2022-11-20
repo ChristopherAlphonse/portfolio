@@ -45,17 +45,17 @@ const Contact = () => {
   };
 
   return (
-    <section className="h-[100vh] containerr flex items-center bg-zinc-800 lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden">
+    <section className="h-[100vh] containerr flex items-center bg-zinc-800 dark:bg-slate-50 lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <p
-            className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15 font-primary chi title-heading text-white     bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-200 italic
+            className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15 font-primary chi title-heading text-white    bg-clip-text text-transparent bg-gradient-to-r  from-blue-400 to-blue-200 italic  dark:from-blue-600 dark:to-blue-300  text-5xl
               "
           >
             Get in Touch
           </p>
 
-          <h2 className="text-zinc-100 py-2 title-para font-body">
+          <h2 className="text-slate-100 dark:text-slate-900 py-2 title-para font-body">
             I'd be delighted to hear from you. Please message me. As soon as it
             is received, I will reply.
           </h2>
