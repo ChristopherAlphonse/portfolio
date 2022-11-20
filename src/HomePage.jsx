@@ -11,6 +11,7 @@ const Header = lazy(() => import("./components/Header"));
 const Contact = lazy(() => import("./components/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 
+
 const HomePage = () => {
   const [loading, setLoading] = useState(false);
 
@@ -52,6 +53,7 @@ const HomePage = () => {
         ) : (
           <>
             <Suspense fallback={<div />}>
+             
               <Header />
             </Suspense>
 

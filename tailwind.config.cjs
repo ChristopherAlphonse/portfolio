@@ -1,6 +1,11 @@
+/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx,md,html}"],
-  darkMode: "media", // or 'class'
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx,md,html}",
+    "./node_modules/flowbite/**/*.js",
+  ],
+  darkMode: "class",
   theme: {
     fontFamily: {
       primary: "Playfair Display SC",
@@ -20,11 +25,6 @@ module.exports = {
       xl: "2300px",
     },
     extend: {
-      content: {
-        about: 'url("/src/assets/img/outline-text/about.svg")',
-        portfolio: 'url("/src/assets/img/outline-text/portfolio.svg")',
-        contact: 'url("/src/assets/img/outline-text/contact.svg")',
-      },
       colors: {
         primary: "#050402",
         secondary: "#1C1D24",
@@ -37,5 +37,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

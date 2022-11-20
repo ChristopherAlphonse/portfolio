@@ -5,7 +5,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import Logo from "../assets/img/png/logo-no-background.png";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy } from "react";
+
+const Theme = lazy(() => import("../comp/ThemeToggle"));
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -44,6 +46,11 @@ const navigation = [
     href: "https://github.com/builtbybel/privatezilla",
     current: false,
   },
+  {
+    name: <Theme />,
+    href: null,
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
@@ -67,7 +74,7 @@ const Header = () => {
     <Disclosure
       as="nav"
       className={`${
-        bg ? "bg-tertiary h-20" : "h-24 "
+        bg ? "bg-tertiary  h-20" : "h-24 "
       }  fixed top-0 w-full text-white z-10 transition-all duration-300 `}
     >
       {({ open }) => (
@@ -103,7 +110,7 @@ const Header = () => {
                   />
                 </div>
 
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden sm:ml-6 sm:block ">
                   <div className="flex space-x-4 ">
                     {navigation.map((item) => (
                       <a
@@ -113,8 +120,8 @@ const Header = () => {
                         target="_blank"
                         className={classNames(
                           item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white ",
+                            ? "bg-gray-900/40   text-white dark:bg-gray-100/40 dark:text-gray-900"
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-900 dark:hover:bg-gray-100 dark:hover:text-black ",
                           "px-3 py-2 rounded-md text-sm font-medium  "
                         )}
                         aria-current={item.current ? "page" : undefined}
