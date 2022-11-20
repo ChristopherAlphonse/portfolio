@@ -46,7 +46,7 @@ const Projects = () => {
         </div>
 
         <nav
-          className="mb-1 max-w-xl mx-auto md:shadow md:bg-gray-900 md:border md:border-gray-900 dark:md:bg-gray-400 dark:md:border-gray-400 
+          className="mb-1 max-w-xl mx-auto md:shadow md:bg-gray-900 md:border md:border-gray-900 dark:md:bg-gray-200 dark:md:border-gray-200  
           
           
           md:py-1 md:rounded-full md:mt-4
@@ -66,7 +66,7 @@ const Projects = () => {
                   }}
                   className={`${
                     active === index
-                      ? "active h-10 px-4 py-2 -mb-px text-sm text-center text-blue-600 bg-transparent border-b-2 border-blue-500 dark:text-blue-800 dark:border-blue-700 first-letter:sm:text-base  whitespace-nowrap focus:outline-none"
+                      ? "active h-10 px-4 py-2 -mb-px text-sm text-center text-blue-600 bg-transparent border-b-2 border-blue-500 dark:text-blue-800 dark:border-blue-700 first-letter:sm:text-base  whitespace-nowrap focus:outline-none "
                       : ""
                   } h-10 px-4 py-2 -mb-px text-sm text-center text-gray-100 dark:text-gray-900 bg-transparent border-b-2 border-transparent sm:text-base dark:text-gray-500whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400 cursor-pointer`}
                   key={index}

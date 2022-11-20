@@ -69,12 +69,13 @@ const Contact = () => {
             <div className="flex gap-8 ">
               <input
                 ref={fullRef}
-                className="input bg-zinc-200"
+                className="input bg-zinc-200   "
                 placeholder="Your name"
                 type="text"
                 name="user_name"
                 id="user_name"
               />
+
               <input
                 ref={emailRef}
                 className="input bg-zinc-200"

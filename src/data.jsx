@@ -5,6 +5,8 @@ import Project4 from "./assets/img/Projects-images/Mel.png.webp";
 import Project5 from "./assets/img/Projects-images/Funky.png.webp";
 import Project6 from "./assets/img/Projects-images/Noted.png.webp";
 
+// if  livePreview === null then move sourceCode href to livePreview
+
 export const projectsData = [
   {
     id: "Admin Dashboard",

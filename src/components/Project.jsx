@@ -26,17 +26,15 @@ const Project = ({ item }) => {
             <div className="mx-6">{item.stack}</div>
           </div>
         </div>
-
         <h1 className="mt-6 text-xl font-semibold text-white dark:text-black ">
           {item.name}
         </h1>
-
         <p className="max-w-2xl mb-6  font-[400] text-slate-300 dark:text-slate-900  lg:mb-8 md:text-lg lg:text-xl ">
           {item.description}
         </p>
-
         <a
-          href="#"
+          target="_blank"
+          href={item.livePreview}
           class="inline-flex px-6 py-2 mb-5 mt-2 items-center justify-center text-base font-medium text-center  border 
           
           bg-blue-400/50 text-gray-50 rounded-lg  hover:bg-blue-400/60 hover:text-gray-300 
@@ -51,13 +49,13 @@ const Project = ({ item }) => {
         >
           View
         </a>
-
+        // learn more will nav to project description page via routing
         <a
-          href="#"
+          href=""
           class="inline-flex px-6 py-2 mb-5 mt-2 items-center justify-center ml-3 text-base font-medium text-center text-slate-500 rounded-lg bg-primary-700 hover:bg-primary-800 
           
           
-          border-zinc-900/10 shadow border border-blue-900 hover:bg-blue-900 dark:hover:text-gray-900
+          border-zinc-900/10 shadow border border-blue-900 hover:bg-blue-900 dark:hover:text-gray-00
            "
         >
           Learn More
