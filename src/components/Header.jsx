@@ -46,11 +46,11 @@ const navigation = [
     href: "https://github.com/builtbybel/privatezilla",
     current: false,
   },
-  // {
-  //   name: <Theme />,
-  //   href: null,
-  //   current: false,
-  // },
+  {
+    name: <Theme />,
+    href: null,
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
@@ -131,9 +131,6 @@ const Header = () => {
                     ))}
                   </div>
                 </div>
-              </div>
-              <div>
-                <Theme />
               </div>
             </div>
           </div>
