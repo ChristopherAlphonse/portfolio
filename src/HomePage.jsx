@@ -24,7 +24,7 @@ const HomePage = () => {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse - Full Stack Developer</title>
+        <title>Christopher Alphonse | Full Stack Developer</title>
 
         <meta
           name="description"

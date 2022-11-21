@@ -29,7 +29,34 @@
         border-radius: 2rem;
       }
     </style>
+    <style type="text/css">
+      html {
+        scroll-behavior: smooth;
+      }
 
+      .App {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+      }
+
+      .target {
+        color: #7fc7eb;
+        background-color: #7fc7eb36;
+      }
+      .target:hover {
+        color: #9bdeff;
+        background-color: #7fc7eb4e;
+      }
+
+      .test {
+        font-weight: 900;
+        background-color: rgb(55, 54, 54);
+        border-radius: 2rem;
+      }
+    </style>
     <style type="text/css">
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,700&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
@@ -45,7 +72,6 @@
         scrollbar-color: #575658 #121212;
       }
 
-      /* Chrome, Edge, and Safari */
       *::-webkit-scrollbar {
         width: 12px;
       }
@@ -187,9 +213,11 @@
         visibility: visible;
       }
     </style>
-
     <meta charset="UTF-8" />
-
+    <meta
+      name="copyright"
+      content="Copyright 2022. All rights reserved for Christopher Alphonse"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000" />
@@ -198,19 +226,18 @@
     <meta
       name="keywords"
       content="
-      javascript debugger,react developers,
-      node js debugger,
-      javascript developer, 
-      node js for backend,
-      react front end,
-      software engineer, 
-      software developer,
-      entry level software engineer, 
-      software engineer resume,
-      full stack engineer,
-      	
+    javascript debugger,
+    react developers,
+    node js debugger,
+    javascript developer, 
+    node js for backend,
+    react front end,
+    software engineer, 
+    software developer,
+    entry level software engineer, 
+    software engineer resume,
+    full stack engineer,
 junior javascript developer,
-      	
 full stack javascript developer
 entry level javascript developer ,
 christopher alphonse boston,
@@ -219,85 +246,63 @@ christopher alphonse engineer,
 christopher alphonse full stack,
 christopher alphonse software engineer,
 christopher alphonse node js,
-christopher alphonse front end developer apprenticeship,
+christopher alphonse front end developer apprentice,
 christopher alphonse coding dojo,
 christopher alphonse linkedin,
 christopher alphonse github,
 christopher alphonse codepen,
 christopher alphonse twitter,
-
-      
-      "
+    "
     />
-    <meta
-      name="copyright"
-      content="Copyright 2022. All rights reserved for Christopher Alphonse"
-    />
-
-    <link rel="icon" sizes="196x196" href="/picture/logo.webp" />
-    <link rel="shortcut icon" href="/picture/logo.webp" />
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/picture/logo.webp" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="160x160"
-      href="/picture/logo.webp"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="196x196"
-      href="/picture/logo.webp"
-    />
-    <link rel="icon" type="image/png" sizes="96x96" href="/picture/logo.webp" />
-    <link rel="icon" type="image/png" sizes="64x64" href="/picture/logo.webp" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/picture/logo.webp" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/picture/logo.webp" />
-    <link rel="apple-touch-icon" href="/assets/logo.1e617b20.webp" />
-    <title>Christopher Alphonse - Full Stack Developer</title>
+    <title>Christopher Alphonse | Full Stack Developer</title>
     <meta
       name="description"
-      content="Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications."
+      content=" Full Stack Developer and PC enthusiast.
+    I want to focus on writing clean, efficient code, and user friendly UI/UX
+    experiences"
     />
     <meta
       name="robots"
       content="index, follow, max-snippet:-1, max-image-preview:medium, max-video-preview:-1"
     />
-    <link rel="canonical" href="https://Christopheralphonse.com/" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://christopheralphonse.com/v1/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/picture/logo.webp" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/picture/logo.webp" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/picture/logo.webp" />
+    <link rel="manifest" href="./public/mainifest.json" />
+
+    <base href="https://christopheralphonse.com/v1/" />
+    <meta name="referrer" content="origin" />
+    <link rel="canonical" href="https://christopheralphonse.com/" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Christopher Alphonse" />
+    <meta name="apple-mobile-web-app-title" content="Christopher Alphonse" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="home" href="https://christopheralphonse.com/" />
+    <link
+      rel="msapplication-starturl"
+      href="https://christopheralphonse.com/v1/"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       property="og:title"
-      content=" Christopher Alphonse | Software Developer | Software Engineer"
+      content="Christopher Alphonse | Full Stack Developer"
     />
+    <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications."
+      content=" Full Stack Developer and PC enthusiast.
+      I want to focus on writing clean, efficient code, and user friendly UI/UX
+      experiences"
     />
-    <meta property="og:url" content="https://Christopheralphonse.com/" />
-    <meta property="og:site_name" content="Christopheralphonse" />
-    <meta property="og:image" content="/picture/logo.webp" />
-    <meta property="og:image:width" content="2560" />
-    <meta property="og:image:height" content="1920" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@Christopheralphonse" />
-
-    <noscript> <link rel="stylesheet" href="./src/index.css""> </noscript>
+    <meta property="og:url" content="https://christopheralphonse.com/" />
+    <meta property="og:site_name" content="Christopher Alphonse" />
   </head>
-
   <body>
     <div id="root"></div>
-
     <script type="module" src="/src/index.jsx"></script>
   </body>
 </html>

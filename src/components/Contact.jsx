@@ -69,7 +69,7 @@ const Contact = () => {
             <div className="flex gap-8 ">
               <input
                 ref={fullRef}
-                className="input bg-zinc-200   "
+                className="input bg-zinc-100 text-gray-800  "
                 placeholder="Your name"
                 type="text"
                 name="user_name"
@@ -78,7 +78,7 @@ const Contact = () => {
 
               <input
                 ref={emailRef}
-                className="input bg-zinc-200"
+                className="input bg-zinc-100 text-gray-800"
                 placeholder="Your email"
                 type="email"
                 name="user_email"
@@ -87,7 +87,7 @@ const Contact = () => {
             </div>
             <input
               ref={subjectRef}
-              className="input bg-zinc-200"
+              className="input bg-zinc-100 text-gray-800"
               placeholder="Subject"
               type="text"
               name="user_subject"
@@ -96,7 +96,7 @@ const Contact = () => {
 
             <textarea
               ref={messageRef}
-              className="textarea bg-zinc-200"
+              className="textarea bg-zinc-100 text-gray-800"
               placeholder="Your message"
               name="message"
               id="message"
