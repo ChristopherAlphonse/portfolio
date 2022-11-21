@@ -1,7 +1,7 @@
 import { Disclosure } from "@headlessui/react";
 
 import { GrClose, GrMenu } from "react-icons/gr";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 import Logo from "../assets/img/png/logo-no-background.png";
 
@@ -99,18 +99,20 @@ const Header = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center sm:items-stretch justify-evenly ">
-                <div className=" flex-shrink-0  flex justify-between"></div>
-
-                <div className="img-change cursor-pointer" onClick={Reload}>
-                  <LazyLoadImage
-                    src={Logo}
-                    width={60}
-                    height={60}
-                    alt="Image Alt"
-                  />
+                <div className="img-change cursor-pointer " onClick={Reload}>
+                  <a href="/">
+                    <img
+                      src={Logo}
+                      alt="logo"
+                      width="60px"
+                      height="60px"
+                      loading="lazy"
+                    />
+                  </a>
                 </div>
+                <div className=" flex-shrink-0  flex  items-center justify-center"></div>
 
-                <div className="hidden sm:ml-6 sm:block ">
+                <div className="hidden sm:ml-6 sm:block mt-2">
                   <div className="flex space-x-4 font-[600]">
                     {navigation.map((item) => (
                       <a
@@ -120,9 +122,9 @@ const Header = () => {
                         target="_blank"
                         className={classNames(
                           item.current
-                            ? "bg-gray-900  text-white dark:bg-gray-100 dark:text-gray-800"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-800 dark:hover:bg-gray-100 dark:hover:text-black ",
-                          "px-3 py-2 rounded-md text-sm font-900  "
+                            ? "bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-800"
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white dark:text-gray-800 dark:hover:bg-gray-100 dark:hover:text-black",
+                          " rounded-md text-sm font-900"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >

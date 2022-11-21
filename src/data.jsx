@@ -5,8 +5,6 @@ import Project4 from "./assets/img/Projects-images/Mel.png.webp";
 import Project5 from "./assets/img/Projects-images/Funky.png.webp";
 import Project6 from "./assets/img/Projects-images/Noted.png.webp";
 
-// if  livePreview === null then move sourceCode href to livePreview
-
 export const projectsData = [
   {
     id: "Admin Dashboard",
@@ -14,9 +12,11 @@ export const projectsData = [
     image: Project1,
     category: "Web development",
     description: "Dashboard for management/workflow helper",
+    description2:
+      "The Admin Dashboard displays tabs for multiple pages that provide a personalized view of BI performance, data correctness, required cube maintenance and required administrative actions. These pages contain the results of detailed analyses, represented by links, images, graphs, pie charts and BI reports.",
     stack: ["Vite, TS, Node, Sass"],
-    sourceCode: "https://github.com/ChristopherAlphonse/admindashboard",
-    livePreview: null,
+    view: "https://github.com/ChristopherAlphonse/admindashboard",
+    learnMore: "/admindashboard",
   },
   {
     id: "Noted",
@@ -26,8 +26,10 @@ export const projectsData = [
     description:
       "Note taking app Build with Full stack methodology for both web and desktop Native capability, with password reset capability, Sign In/Up, Still on working progress",
     stack: ["Vite, TS, Node, Rust, Tauri, Tailwind"],
-    sourceCode: "https://github.com/ChristopherAlphonse/Noted",
-    livePreview: null,
+    description2:
+      "Notes is the best place to jot down quick thoughts or to save longer notes filled with checklists, images, web links, scanned documents, handwritten notes, or sketches. And with iCloud, it is easy to keep all your devices in sync, so you'll always have your notes with you.",
+    view: "https://github.com/ChristopherAlphonse/Noted",
+    learnMore: "/projects/note-app",
   },
   {
     id: "Azalais Dark Theme",
@@ -35,10 +37,11 @@ export const projectsData = [
     image: Project2,
     category: "theme",
     description: "Dark theme made for the eye, aka my daily theme for VS Code",
+    description2: "",
     stack: ["JSON, Yo code ..."],
-    sourceCode: "https://github.com/ChristopherAlphonse/azalais-dark-",
-    livePreview:
-      "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
+
+    view: "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
+    learnMore: "/azalais-dark-theme",
   },
   {
     id: "Benivi",
@@ -46,9 +49,10 @@ export const projectsData = [
     image: Project3,
     category: "Store-front",
     description: "Urban shopify store-front, build with Shopify.",
+    description2: "",
     stack: ["Stripe, Shopify"],
-    sourceCode: null,
-    livePreview: "https://beniviclothing.com/",
+    view: "https://beniviclothing.com/",
+    learnMore: "/benivi",
   },
   {
     id: "Melissa and Lexis",
@@ -58,8 +62,9 @@ export const projectsData = [
     description:
       "SquareSpace, SEO and maintenance maintained by me, V2 will be utilizing NextJS  ",
     stack: ["SquareSpace, Contentful"],
-    sourceCode: null,
-    livePreview: "https://melissaandlexis.square.site/",
+    description2: "",
+    view: "https://melissaandlexis.square.site/",
+    learnMore: "",
   },
   {
     id: "Funky Junkie",
@@ -67,9 +72,10 @@ export const projectsData = [
     image: Project5,
     category: "Store-front",
     description: "Urban clothing store from Boston, build with Shopify.",
+    description2: "",
     stack: ["HydrogenJS, TS"],
-    sourceCode: null,
-    livePreview: "https://www.funkyjunkieco.com/",
+    view: "https://www.funkyjunkieco.com/",
+    learnMore: "",
   },
 ];
 

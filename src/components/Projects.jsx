@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Project from "./Project";
+
 import { projectsData } from "../data";
 import { projectsNav } from "../data";
 
@@ -39,9 +40,8 @@ const Projects = () => {
 
           <p className="max-w-[550px] mx-auto mt-4 text-paragraph dark:text-gray-500">
             Although I am a self taught developer with some bootcamp training, I
-            took it upon myself to stay knowledgeable on Content management
-            systems(CMS), search engine optimization (SEO), lighthouse
-            performance metrics for mobile optimization.
+            took it upon myself to stay knowledgeable on numerous technologies,
+            such as TypeScript, TauriJS, HydrogenJS, NextJS, Vite etc..
           </p>
         </div>
 

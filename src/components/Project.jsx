@@ -34,7 +34,7 @@ const Project = ({ item }) => {
         </p>
         <a
           target="_blank"
-          href={item.livePreview}
+          href={item.view}
           class="inline-flex px-6 py-2 mb-5 mt-2 items-center justify-center text-base font-medium text-center  border 
           
           bg-blue-400/50 text-gray-50 rounded-lg  hover:bg-blue-400/60 hover:text-gray-300 
@@ -49,9 +49,9 @@ const Project = ({ item }) => {
         >
           View
         </a>
-        {/* // learn more will nav to project description page via routing */}
+        
         <a
-          href=""
+          href={item.learnMore}
           class="inline-flex px-6 py-2 mb-5 mt-2 items-center justify-center ml-3 text-base font-medium text-center text-slate-500 rounded-lg bg-primary-700 hover:bg-primary-800 
           
           
