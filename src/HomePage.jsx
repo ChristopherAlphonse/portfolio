@@ -1,15 +1,17 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { lazy, Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import PropagateLoader from "react-spinners/PropagateLoader";
 
 import "./index.css";
 
-const Projects = lazy(() => import("./components/Projects"));
-const BackTopBtn = lazy(() => import("./components/BackTopBtn"));
-const Hero = lazy(() => import("./components/Hero"));
-const Header = lazy(() => import("./components/Header"));
-const Contact = lazy(() => import("./components/Contact"));
-const Footer = lazy(() => import("./components/Footer"));
+import {
+  Projects,
+  Header,
+  Hero,
+  BackTopBtn,
+  Footer,
+  Contact,
+} from "./components/compIndex";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(false);

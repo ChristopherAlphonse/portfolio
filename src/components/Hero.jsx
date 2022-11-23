@@ -1,5 +1,5 @@
 import React from "react";
-import DownBtn from "./DownBtn";
+import { DownBtn } from "./compIndex";
 
 const Hero = () => {
   const onButtonClick = () => {
@@ -58,7 +58,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
     </section>
   );
 };

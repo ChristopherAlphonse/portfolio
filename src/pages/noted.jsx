@@ -1,15 +1,11 @@
-import React, { lazy } from "react";
-import { HarleyCover, HarleyWebsite } from "../assets";
-
+import React from "react";
+import { HarleyCover } from "../assets";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-
-const Header = lazy(() => import("../components/Header"));
-const Footer = lazy(() => import("../components/Footer"));
-
+import { Header, Footer } from "../components/compIndex";
 import { projectsData } from "../data";
 const Items = Object.entries(projectsData);
 
-console.log(Items[1][1].description);
+console.log(Items[1][1]); //loggin data
 
 function Harley() {
   return (

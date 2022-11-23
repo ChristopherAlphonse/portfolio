@@ -1,10 +1,6 @@
 import { Disclosure } from "@headlessui/react";
-
 import { GrClose, GrMenu } from "react-icons/gr";
-
-
 import Logo from "../assets/img/png/logo-no-background.png";
-
 import React, { useEffect, useState, lazy } from "react";
 
 const Theme = lazy(() => import("../comp/ThemeToggle"));
