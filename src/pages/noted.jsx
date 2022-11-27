@@ -1,13 +1,15 @@
-import React from "react";
-import { HarleyCover } from "../assets";
+import { Footer, Header } from "../components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Header, Footer } from "../components/compIndex";
+
+import { HarleyCover } from "../assets";
+import React from "react";
 import { projectsData } from "../data";
+
 const Items = Object.entries(projectsData);
 
 console.log(Items[1][1]); //loggin data
 
-function Harley() {
+function Noted() {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
@@ -16,7 +18,7 @@ function Harley() {
           rel="Noted"
           href="https://christopheralphonse.com/v1/projects/note-app"
         />
-        <title>Christopher Alphonse | Full Stack Developer</title>
+        <title>Christopher Alphonse | Noted App</title>
 
         <meta
           name="description"
@@ -96,4 +98,4 @@ function Harley() {
   );
 }
 
-export default Harley;
+export default Noted;

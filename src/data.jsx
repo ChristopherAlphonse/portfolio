@@ -1,3 +1,5 @@
+import { PureByMelGif, PureByMelPic } from "../src/assets/index";
+
 import Project1 from "./assets/img/Projects-images/Dash.png.webp";
 import Project2 from "./assets/img/Projects-images/aza.png.webp";
 import Project3 from "./assets/img/Projects-images/Benivi.png.webp";
@@ -6,6 +8,19 @@ import Project5 from "./assets/img/Projects-images/Funky.png.webp";
 import Project6 from "./assets/img/Projects-images/Noted.png.webp";
 
 export const projectsData = [
+  {
+    id: "Pure by Mel",
+    name: "Pure by Mel",
+    image: PureByMelPic,
+    category: "Web development",
+    description:
+      "A smoothy store base in Randolph, MA. Focus on providing sweet to your love ones for the holiday",
+    description2:
+      "Our Mission is to make every guests day better by serving great tasting products as a celebration of health and happiness.",
+    stack: ["NextJS, TailwindCSS, TypeScript, Stripe, etc.."],
+    view: "https://github.com/ChristopherAlphonse/ye",
+    learnMore: "/projects/purebymel",
+  },
   {
     id: "Admin Dashboard",
     name: "Admin Dashboard",
@@ -16,7 +31,7 @@ export const projectsData = [
       "The Admin Dashboard displays tabs for multiple pages that provide a personalized view of BI performance, data correctness, required cube maintenance and required administrative actions. These pages contain the results of detailed analyses, represented by links, images, graphs, pie charts and BI reports.",
     stack: ["Vite, TS, Node, Sass"],
     view: "https://github.com/ChristopherAlphonse/admindashboard",
-    learnMore: "/admindashboard",
+    learnMore: "/projects/admindashboard",
   },
   {
     id: "Noted",
@@ -52,7 +67,7 @@ export const projectsData = [
     description2: "",
     stack: ["Stripe, Shopify"],
     view: "https://beniviclothing.com/",
-    learnMore: "/benivi",
+    learnMore: "/projects/benivi",
   },
   {
     id: "Melissa and Lexis",
