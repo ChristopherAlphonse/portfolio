@@ -1,11 +1,10 @@
-import { PureByMelGif, PureByMelPic } from "../src/assets/index";
-
 import Project1 from "./assets/img/Projects-images/Dash.png.webp";
 import Project2 from "./assets/img/Projects-images/aza.png.webp";
 import Project3 from "./assets/img/Projects-images/Benivi.png.webp";
 import Project4 from "./assets/img/Projects-images/Mel.png.webp";
 import Project5 from "./assets/img/Projects-images/Funky.png.webp";
 import Project6 from "./assets/img/Projects-images/Noted.png.webp";
+import { PureByMelPic } from "../src/assets/index";
 
 export const projectsData = [
   {

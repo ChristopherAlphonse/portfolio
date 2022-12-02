@@ -29,21 +29,6 @@ const navigation = [
     current: false,
   },
   {
-    name: "My Theme",
-    href: "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
-    current: false,
-  },
-  {
-    name: "My PWSH Settings",
-    href: "https://github.com/ChristopherAlphonse/Powershell",
-    current: false,
-  },
-  {
-    name: "Recommended",
-    href: "https://github.com/builtbybel/privatezilla",
-    current: false,
-  },
-  {
     name: <Theme />,
     href: null,
     current: false,
@@ -59,7 +44,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      return window.scrollY > 50 ? setBg(true) : setBg(false);
+      return window.scrollY > 10 ? setBg(true) : setBg(false);
     });
   });
 
