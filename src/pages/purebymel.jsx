@@ -9,6 +9,50 @@ const Items = Object.entries(projectsData);
 
 // console.log({ Items });
 
+const navigation = [
+  { name: "Home", href: "/", current: true },
+  {
+    name: "Resume",
+    href: "https://drive.google.com/file/d/1CsOt5QC-eNyWjDZ0MpDCNhyuMW7LRea9/view?usp=sharing",
+    current: false,
+  },
+  {
+    name: "Cert",
+    href: "https://drive.google.com/file/d/1k1qrYWQeJOyMB743MuDphaMmcZG5hTlR/view?usp=sharing",
+    current: false,
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/ChristopherAlphonse",
+    current: false,
+  },
+  {
+    name: "linkedin",
+    href: "https://www.linkedin.com/in/christopher-alphonse-834989161/",
+    current: false,
+  },
+  {
+    name: "My Theme",
+    href: "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
+    current: false,
+  },
+  {
+    name: "My PWSH Settings",
+    href: "https://github.com/ChristopherAlphonse/Powershell",
+    current: false,
+  },
+  {
+    name: "Recommended",
+    href: "https://github.com/builtbybel/privatezilla",
+    current: false,
+  },
+  {
+    name: <Theme />,
+    href: null,
+    current: false,
+  },
+];
+
 const data = {
   cat: Items[0][1].category,
 
@@ -42,68 +86,90 @@ function Pure() {
 
       <Header />
 
-      <section
-        className="text-white py-28 bg-center bg-cover"
-        style={{ backgroundImage: "url(" + HarleyCover + ")" }}
-      >
-        <div className="hidden sm:ml-6 sm:block mt-2">
-          <div className="flex space-x-4 font-[600]"></div>
-        </div>
+      <section class="bg-white dark:bg-gray-900">
+        <div class="relative flex">
+          <div class="min-h-screen lg:w-1/3"></div>
+          <div class="hidden w-3/4 min-h-screen bg-gray-100 dark:bg-gray-800 lg:block"></div>
 
-        <div className="container mx-auto px-4">
-          <h2 className="text-lg font-bold uppercase">{data.title}</h2>
-          <h1 className="text-4xl lg:text-5xl xl:text-7xl font-bold mb-6"></h1>
+          <div class="container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
+            <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">
+              What our <span class="text-blue-500">customers</span> <br /> are
+              saying
+            </h1>
 
-          <div className="text-lg md:flex gap-12">
-            <div className="mb-4 md:mb-0">
-              <span className="font-bold block mb-4">Role</span>
-              Website Design
+            <div class="mt-10 lg:mt-20 lg:flex lg:items-center">
+              <img
+                class="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96"
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt=""
+              />
+
+              <div class="mt-8 lg:px-10 lg:mt-0">
+                <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:w-72">
+                  Help us improve our productivity
+                </h1>
+
+                <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
+                  “ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Tempore quibusdam ducimus libero ad tempora doloribus expedita
+                  laborum saepe voluptas perferendis delectus assumenda rerum,
+                  culpa aperiam dolorum, obcaecati corrupti aspernatur a. ”
+                </p>
+
+                <h3 class="mt-6 text-lg font-medium text-blue-500">
+                  Ronik Ederson
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Marketing Manager at Stech
+                </p>
+              </div>
             </div>
 
-            <div>
-              <span className="font-bold block mb-4">Visit Website</span>
-              <a
-                target="_blank"
-                href="htts://halrey-davidson.com"
-                rel="noopener noreferrer"
-                className="hover:underline"
+            <div class="flex items-center justify-between mt-12 lg:justify-start">
+              <button
+                title="left arrow"
+                class="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100"
               >
-                www.harley-davison.com
-              </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+              <button
+                title="right arrow"
+                class="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:mx-6 hover:bg-gray-100"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        className="border-black border-t-2 py-16  
-      
-      dark:bg-white  bg-gray-800  
-        
-         dark:border-gray-700   "
-      >
-        <div className="container mx-auto px-4">
-          <h1 className="text-6xl font-bold mb-4 text-slate-500 dark:text-slate-800">
-            {data.title}
-          </h1>
-          <p className="text-lg max-w-xl mb-16 text-slate-500 dark:text-slate-800">
-            {data.des}
-          </p>
-
-          <img
-            src={data.img}
-            alt="Harley Davidson website"
-            width="1053"
-            height="539"
-            loading="lazy"
-            className="mx-auto mb-16"
-          />
-
-          <p className="text-lg max-w-xl mb-16 text-slate-500 dark:text-slate-800">
-            {data.des2}
-          </p>
-        </div>
-      </section>
       <Footer />
     </HelmetProvider>
   );

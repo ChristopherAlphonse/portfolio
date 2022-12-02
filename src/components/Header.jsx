@@ -1,7 +1,8 @@
-import { Disclosure } from "@headlessui/react";
 import { GrClose, GrMenu } from "react-icons/gr";
+import React, { lazy, useEffect, useState } from "react";
+
+import { Disclosure } from "@headlessui/react";
 import Logo from "../assets/img/png/logo-no-background.png";
-import React, { useEffect, useState, lazy } from "react";
 
 const Theme = lazy(() => import("../comp/ThemeToggle"));
 
@@ -94,7 +95,7 @@ const Header = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center sm:items-stretch justify-evenly ">
+              <div className="flex flex-1 items-center sm:items-stretch justify-center ">
                 <div className="img-change cursor-pointer " onClick={Reload}>
                   <a href="/">
                     <img
@@ -134,7 +135,7 @@ const Header = () => {
           </div>
 
           <Disclosure.Panel className="sm:hidden ">
-            <div className="space-y-1 px-2 pt-2 pb-3 bg-tertiary shadow-gray-100">
+            <div className="space-y-1 px-2 pt-1 pb-1 bg-tertiary shadow-gray-100">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
