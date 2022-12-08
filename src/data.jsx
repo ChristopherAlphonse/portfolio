@@ -8,17 +8,6 @@ import { PureByMelPic } from "../src/assets/index";
 
 export const projectsData = [
   {
-    name: "Pure by Mel",
-    image: PureByMelPic,
-    category: "Web development",
-    description:
-      "A smoothy store base in Randolph, MA. Focus on providing sweet to your love ones for the holiday",
-    description2:
-      "Our Mission is to make every guests day better by serving great tasting products as a celebration of health and happiness.",
-    stack: ["NextJS, TailwindCSS, TypeScript, Stripe, etc.."],
-    view: "https://github.com/ChristopherAlphonse/ye",
-  },
-  {
     name: "Admin Dashboard",
     image: Project1,
     category: "Web development",
@@ -51,6 +40,17 @@ export const projectsData = [
 
     view: "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
     learnMore: "/azalais-dark-theme",
+  },
+  {
+    name: "Pure by Mel",
+    image: PureByMelPic,
+    category: "Web development",
+    description:
+      "A smoothy store base in Randolph, MA. Focus on providing sweet to your love ones for the holiday",
+    description2:
+      "Our Mission is to make every guests day better by serving great tasting products as a celebration of health and happiness.",
+    stack: ["NextJS, TailwindCSS, TypeScript, Stripe, etc.."],
+    view: "https://github.com/ChristopherAlphonse/ye",
   },
   {
     name: "Benivi",

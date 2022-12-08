@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite build && vite preview ",
     "devi": "yarn global add npm-check-updates && ncu -u && yarn install && yarn autoclean --force",
-    "deploy": "party && vite build && firebase deploy --only hosting",
+    "deploy": "yarn party && vite build && firebase deploy --only hosting",
     "firebase": "firebase login && firebase init",
     "party": "partytown copylib public/~partytown"
   },
