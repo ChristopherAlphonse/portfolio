@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { projectsData, projectsNav } from "../data";
 
 import Project from "./Project";
-
-import { projectsData, projectsNav } from "../data";
 
 const Projects = () => {
   const [item, setItem] = useState({ name: "all" });

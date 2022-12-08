@@ -1,17 +1,17 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Suspense, useEffect, useState } from "react";
-import PropagateLoader from "react-spinners/PropagateLoader";
-
 import "./index.css";
 
 import {
-  Projects,
+  BackTopBtn,
+  Contact,
+  Footer,
   Header,
   Hero,
-  BackTopBtn,
-  Footer,
-  Contact,
+  Projects,
 } from "./components/compIndex";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Suspense, useEffect, useState } from "react";
+
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(false);

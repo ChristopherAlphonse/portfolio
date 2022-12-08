@@ -10,7 +10,7 @@ const navigation = [
   { name: "Home", href: "/", current: true },
   {
     name: "Resume",
-    href: "https://drive.google.com/file/d/1CsOt5QC-eNyWjDZ0MpDCNhyuMW7LRea9/view?usp=sharing",
+    href: "https://drive.google.com/drive/u/0/my-drive?ths=true",
     current: false,
   },
   {
@@ -25,7 +25,7 @@ const navigation = [
   },
   {
     name: "linkedin",
-    href: "https://www.linkedin.com/in/christopher-alphonse-834989161/",
+    href: "https://www.linkedin.com/in/christopher-alphonse",
     current: false,
   },
   {

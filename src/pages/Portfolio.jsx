@@ -17,18 +17,11 @@ function Pure() {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <link rel="canonical" href="/projects/purebymel" />
-        <link
-          rel="pure by mel"
-          href="https://christopheralphonse.com/v1/projects/purebymel"
-        />
-        <title>Christopher Alphonse | Pure by Mel </title>
+        <link rel="canonical" href={Array.id} />
+        <link rel={Array.id} href={Array.view} />
+        <title>Christopher Alphonse | {Array.name} </title>
 
-        <meta
-          name="description"
-          content=" Full Stack Developer and PC enthusiast. I want to focus on writing
-              clean, efficient code, and user friendly UI/UX experiences"
-        />
+        <meta name="description" content={Array.description2} />
       </Helmet>
 
       <Header />
