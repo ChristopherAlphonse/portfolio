@@ -3,58 +3,57 @@ import { Footer, Header } from "../components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import React from "react";
-import { projectsData } from "../data";
 
-const Items = Object.entries(projectsData);
-
-const found = Items.find((items) => {
-  return items !== { id: "Pure by Mel" };
-});
-const Array = found[1];
-console.log(Array.id);
-
-function Pure() {
+const Portfolio = ({
+  view,
+  name,
+  description,
+  description2,
+  image,
+  id,
+  stack,
+}) => {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <link rel="canonical" href={Array.id} />
-        <link rel={Array.id} href={Array.view} />
-        <title>Christopher Alphonse | {Array.name} </title>
+        <link rel="canonical" href={id} />
+        <link rel={id} href={view} />
+        <title>Christopher Alphonse | {name} </title>
 
-        <meta name="description" content={Array.description2} />
+        <meta name="description" content={description2} />
       </Helmet>
 
       <Header />
 
-      <section class="bg-white dark:bg-gray-900 h-[90vh]" key={Array.id}>
+      <section class="bg-white dark:bg-gray-900 h-[90vh]" key={id}>
         <div class="relative flex">
           <div class="min-h-screen lg:w-1/3"></div>
           <div class="hidden w-3/3 min-h-screen bg-gray-100 dark:bg-gray-800 lg:block"></div>
 
           <div class="max-w-[1200px] flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
             <h1 class="text-6xl font-semibold text-gray-800 capitalize lg:text-9xl dark:text-white">
-              {Array.name}
+              {name}
             </h1>
 
             <div class="mt-10 lg:mt-20 lg:flex lg:items-center">
               <img
                 class="object-cover shadow-lg object-center w-full lg:w-[32rem] rounded-lg h-96"
-                src={Array.image}
-                alt={Array.name}
+                src={image}
+                alt={name}
               />
 
               <div class="mt-8 lg:px-10 lg:mt-0">
                 <p class="max-w-lg mt-6 text-xl text-gray-600 dark:text-gray-400">
-                  {Array.description}
+                  {description}
                 </p>
 
                 <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
-                  “ {Array.description2} ”
+                  “ {description2} ”
                 </p>
 
                 <p class="mt-6 text-lg font-medium text-gray-500 dark:text-gray-400">
                   Technology used:{" "}
-                  <span className="text-blue-500">{Array.stack} </span>
+                  <span className="text-blue-500">{stack} </span>
                 </p>
                 <div className=" pt-2">
                   <a
@@ -79,6 +78,6 @@ function Pure() {
       <Footer />
     </HelmetProvider>
   );
-}
+};
 
-export default Pure;
+export default Portfolio;

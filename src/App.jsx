@@ -13,7 +13,7 @@ const App = () => {
           <Route path="/v1/" element={<HomePage />} />
           <Route path="/" element={<Navigate to="/v1/" />} />
           <Route path="*" element={<PageNotFound />} />
-          <Route path="/projects/:id" element={<Portfolio />} />
+          <Route path="/:id" element={<Portfolio />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
