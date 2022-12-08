@@ -3,6 +3,7 @@ import React, { lazy, useEffect, useState } from "react";
 
 import { Disclosure } from "@headlessui/react";
 import Logo from "../assets/img/png/logo-no-background.png";
+import { Resume } from "../../src/assets";
 
 const Theme = lazy(() => import("../comp/ThemeToggle"));
 
@@ -10,7 +11,7 @@ const navigation = [
   { name: "Home", href: "/", current: true },
   {
     name: "Resume",
-    href: "https://drive.google.com/drive/u/0/my-drive?ths=true",
+    href: `${Resume}`,
     current: false,
   },
   {

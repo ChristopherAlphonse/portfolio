@@ -6,16 +6,7 @@ const BackTopBtn = lazy(() => import("./BackTopBtn"));
 const DownBtn = lazy(() => import("./DownBtn"));
 const Contact = lazy(() => import("./Contact"));
 const Footer = lazy(() => import("./Footer"));
-const Header = lazy(() => import("./Header"));
+const Head = lazy(() => import("./Head"));
 const Hero = lazy(() => import("./Hero"));
 
-export {
-  Project,
-  Projects,
-  BackTopBtn,
-  DownBtn,
-  Contact,
-  Footer,
-  Header,
-  Hero,
-};
+export { Project, Projects, BackTopBtn, DownBtn, Contact, Footer, Head, Hero };

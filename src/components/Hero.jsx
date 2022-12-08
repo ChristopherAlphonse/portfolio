@@ -1,27 +1,13 @@
 import { DownBtn } from "./compIndex";
 import Head from "./head";
-import Header from "./Header";
 import React from "react";
 
 const Hero = () => {
-  const onButtonClick = () => {
-    fetch("resume.pdf").then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "resume.pdf";
-        alink.click();
-      });
-    });
-  };
-
   return (
     <section
       id="section1"
       className="h-[100vh] containerr flex items-center bg-zinc-800 dark:bg-slate-200 lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
-      {/* <Header /> */}
       <Head />
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
@@ -40,23 +26,6 @@ const Hero = () => {
               Full Stack Developer, Software Engineer, Front end & App
               Developer.
             </p>
-
-            <a
-              onClick={onButtonClick}
-              type="button"
-              className="inline-flex items-center font-extrabold text-sm md:text-md lg:text-xl md:px-8 md:py-2 cursor-cell py-2.5 px-4 mr-2 mb-2 focus:outline-none
-              
-              
-               bg-blue-400/50 text-gray-50 rounded-lg   hover:bg-blue-400/60 hover:text-gray-300 
-              
-              
-               dark:bg-blue-500/70 dark:text-gray-50    dark:hover:bg-blue-500/60 dark:hover:text-gray-200 
-               
-             
-               "
-            >
-              Download Resume
-            </a>
 
             <DownBtn />
           </div>
