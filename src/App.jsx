@@ -3,7 +3,6 @@ import React, { Suspense, lazy } from "react";
 
 const HomePage = lazy(() => import("./HomePage"));
 const PageNotFound = lazy(() => import("./PageNotFound"));
-const Portfolio = lazy(() => import("./pages/Portfolio"));
 
 const App = () => {
   return (
@@ -13,7 +12,6 @@ const App = () => {
           <Route path="/v1/" element={<HomePage />} />
           <Route path="/" element={<Navigate to="/v1/" />} />
           <Route path="*" element={<PageNotFound />} />
-          <Route path="/:id" element={<Portfolio />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

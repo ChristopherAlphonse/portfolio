@@ -4,7 +4,6 @@ import {
   BackTopBtn,
   Contact,
   Footer,
-  Header,
   Hero,
   Projects,
 } from "./components/compIndex";
@@ -26,7 +25,10 @@ const HomePage = () => {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse | Full Stack Developer</title>
+        <title>
+          Christopher Alphonse | Full Stack Developer, Software Engineer, Front
+          end & App Developer.
+        </title>
 
         <meta
           name="description"
@@ -52,10 +54,6 @@ const HomePage = () => {
           />
         ) : (
           <>
-            <Suspense fallback={<div />}>
-              <Header />
-            </Suspense>
-
             <Suspense fallback={<div />}>
               <Hero />
             </Suspense>

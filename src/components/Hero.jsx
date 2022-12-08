@@ -1,5 +1,6 @@
-import React from "react";
 import { DownBtn } from "./compIndex";
+import Header from "./Header";
+import React from "react";
 
 const Hero = () => {
   const onButtonClick = () => {
@@ -19,6 +20,7 @@ const Hero = () => {
       id="section1"
       className="h-[100vh] containerr flex items-center bg-zinc-800 dark:bg-slate-200 lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
+      <Header />
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
           <div className="flex-1 flex flex-col items-center lg:items-center">
@@ -28,13 +30,13 @@ const Hero = () => {
               bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-200 italic  dark:from-blue-600 dark:to-blue-300 
               
               
-              text-5xl leading-[50px] md:text-5xl text-center md:leading-tight lg:text-8xl xl:text-9xl lg:leading-[1.2] font-bold md:tracking-[-2px] title-heading cursor-pointer dark:text-"
+              text-[46px] leading-[50px] md:text-[60px] text-center md:leading-tight lg:text-8xl xl:text-9xl lg:leading-[1.2] font-bold md:tracking-[-2px] title-heading cursor-pointer dark:text-"
             >
               Christopher Alphonse
             </h1>
-            <p className="pt-3 pb-7 md:pt-5 md:pb-11 title-para text-md text-center font-[500] dark:text-zinc-900 md:text-lg lg-text-xl">
-              Full Stack Developer and PC enthusiast. I want to focus on writing
-              clean, efficient code, and user friendly UI/UX experiences
+            <p className="text-[14px] lg-text[40px] pt-3 pb-7 md:pt-5 md:pb-11 title-para text-md text-center font-[500] dark:text-zinc-900 md:text-lg lg-text-xl">
+              Full Stack Developer, Software Engineer, Front end & App
+              Developer.
             </p>
 
             <a

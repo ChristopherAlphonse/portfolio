@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { projectsData, projectsNav } from "../data";
 
-import Portfolio from "../pages/Portfolio";
 import Project from "./Project";
 
 const Projects = () => {
@@ -93,23 +92,6 @@ const Projects = () => {
             );
           })}
         </section>
-        <div>
-          {projects.map((item) => {
-            return (
-              <Portfolio
-                key={item.id}
-                name={item.name}
-                image={item.image}
-                category={item.category}
-                description={item.description}
-                description2={item.description2}
-                stack={item.stack}
-                view={item.view}
-                learnMore={item.learnMore}
-              />
-            );
-          })}
-        </div>
       </div>
     </section>
   );

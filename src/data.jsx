@@ -8,7 +8,6 @@ import { PureByMelPic } from "../src/assets/index";
 
 export const projectsData = [
   {
-    id: "Pure by Mel",
     name: "Pure by Mel",
     image: PureByMelPic,
     category: "Web development",
@@ -18,10 +17,8 @@ export const projectsData = [
       "Our Mission is to make every guests day better by serving great tasting products as a celebration of health and happiness.",
     stack: ["NextJS, TailwindCSS, TypeScript, Stripe, etc.."],
     view: "https://github.com/ChristopherAlphonse/ye",
-    learnMore: "/projects/purebymel",
   },
   {
-    id: "Admin Dashboard",
     name: "Admin Dashboard",
     image: Project1,
     category: "Web development",
@@ -33,7 +30,6 @@ export const projectsData = [
     learnMore: "/projects/admindashboard",
   },
   {
-    id: "Noted",
     name: "Noted",
     image: Project6,
     category: "Web development",
@@ -46,7 +42,6 @@ export const projectsData = [
     learnMore: "/projects/note-app",
   },
   {
-    id: "Azalais Dark Theme",
     name: "Azalais Dark Theme",
     image: Project2,
     category: "theme",
@@ -58,7 +53,6 @@ export const projectsData = [
     learnMore: "/azalais-dark-theme",
   },
   {
-    id: "Benivi",
     name: "Benivi",
     image: Project3,
     category: "Store-front",
@@ -69,7 +63,6 @@ export const projectsData = [
     learnMore: "/projects/benivi",
   },
   {
-    id: "Melissa and Lexis",
     name: "Melissa and Lexis",
     image: Project4,
     category: "Store-front",
@@ -81,7 +74,6 @@ export const projectsData = [
     learnMore: "",
   },
   {
-    id: "Funky Junkie",
     name: "Funky Junkie",
     image: Project5,
     category: "Store-front",

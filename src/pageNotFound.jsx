@@ -6,7 +6,7 @@ const pageNotFound = () => {
   return (
     <div className="grid h-screen px-4 bg-white place-content-center">
       <h1 className="tracking-widest text-gray-500 uppercase">
-        404 | Not Found
+        404 | The page you are looking for does not exist.
       </h1>
       <button>
         <a
