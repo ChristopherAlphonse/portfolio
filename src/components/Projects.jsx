@@ -36,11 +36,11 @@ const Projects = () => {
             My latest work
           </h1>
 
-          <p className="max-w-[550px] mx-auto mt-4 text-paragraph dark:text-gray-500">
+          {/* <p className="max-w-[550px] mx-auto mt-4 text-paragraph dark:text-gray-500">
             Although I am a self taught developer with some bootcamp training, I
             took it upon myself to stay knowledgeable on numerous technologies,
             such as TypeScript, TauriJS, HydrogenJS, NextJS, Vite etc..
-          </p>
+          </p> */}
         </div>
 
         <nav
@@ -87,7 +87,6 @@ const Projects = () => {
                 description2={item.description2}
                 stack={item.stack}
                 view={item.view}
-                learnMore={item.learnMore}
               />
             );
           })}

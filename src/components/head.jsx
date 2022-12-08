@@ -61,7 +61,7 @@ const Header = () => {
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8  lg:flex">
+          <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8  lg:flex justify-center">
             <div className="relative flex h-16 items-center justify-between ">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">
                 {/* Mobile menu button*/}
@@ -81,7 +81,21 @@ const Header = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center sm:items-stretch justify-center ">
-                <div className="img-change cursor-pointer " onClick={Reload}>
+                {/* <div className="img-change cursor-pointer " onClick={Reload}>
+                  <a href="/">
+                    <img
+                      src={Logo}
+                      alt="logo"
+                      width="60px"
+                      height="60px"
+                      loading="lazy"
+                    />
+                  </a>
+                </div> */}
+                <div
+                  className="img-change cursor-pointer block sm:hidden "
+                  onClick={Reload}
+                >
                   <a href="/">
                     <img
                       src={Logo}
@@ -92,8 +106,6 @@ const Header = () => {
                     />
                   </a>
                 </div>
-                <div className=" flex-shrink-0  flex  items-center justify-center"></div>
-
                 <div className="hidden sm:ml-6 sm:block mt-6">
                   <div className="flex space-x-4 font-[600]">
                     {navigation.map((item) => (
