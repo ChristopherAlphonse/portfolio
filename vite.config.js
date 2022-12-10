@@ -16,7 +16,7 @@ export default defineConfig({
         background_color: "#000000",
         lang: "en",
         scope: "/",
-        start_url: "https://www.christopheralphonse.com/",
+        start_url: "https://christopheralphonse.com/v1/",
         icons: [
           {
             src: "/logo_files/android-chrome-192x192.png",
