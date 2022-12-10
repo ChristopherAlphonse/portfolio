@@ -1,20 +1,15 @@
-import Project1 from "./assets/img/Projects-images/Dash.png.webp";
-import Project3 from "./assets/img/Projects-images/Benivi.png.webp";
-import Project4 from "./assets/img/Projects-images/Mel.png.webp";
-import Project5 from "./assets/img/Projects-images/Funky.png.webp";
-import { PureByMelPic } from "../src/assets/index";
-
 export const projectsData = [
   {
-    name: "Admin Dashboard",
-    image: Project1,
-    category: "Web development",
-    description: "Dashboard for management/workflow helper",
-    description2:
-      "The Admin Dashboard displays tabs for multiple pages that provide a personalized view of BI performance, data correctness, required cube maintenance and required administrative actions. These pages contain the results of detailed analyses, represented by links, images, graphs, pie charts and BI reports.",
-    stack: ["Vite, TS, Node, Sass"],
-    view: "https://github.com/ChristopherAlphonse/admindashboard",
-    learnMore: "/projects/admindashboard",
+    name: "Azalais Dark Theme",
+    image:
+      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670386320/Aza%20Theme/SERVER_zayubs.jpg",
+    category: "theme",
+    description: "Dark theme made for the eye, aka my daily theme for VS Code",
+    description2: "",
+    stack: ["JSON, Yo code ..."],
+
+    view: "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
+    learnMore: "/azalais-dark-theme",
   },
   {
     name: "Noted",
@@ -30,20 +25,20 @@ export const projectsData = [
     learnMore: "/projects/note-app",
   },
   {
-    name: "Azalais Dark Theme",
+    name: "Funky Junkie",
     image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670386320/Aza%20Theme/SERVER_zayubs.jpg",
-    category: "theme",
-    description: "Dark theme made for the eye, aka my daily theme for VS Code",
+      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/funy_x5ygvq.jpg",
+    category: "Store-front",
+    description: "Urban clothing store from Boston, build with Shopify.",
     description2: "",
-    stack: ["JSON, Yo code ..."],
-
-    view: "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
-    learnMore: "/azalais-dark-theme",
+    stack: ["HydrogenJS, TS"],
+    view: "https://www.funkyjunkieco.com/",
+    learnMore: "",
   },
   {
     name: "Pure by Mel",
-    image: PureByMelPic,
+    image:
+      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1655672313/cld-sample-4.jpg",
     category: "Web development",
     description:
       "A smoothy store base in Randolph, MA. Focus on providing sweet to your love ones for the holiday",
@@ -54,7 +49,8 @@ export const projectsData = [
   },
   {
     name: "Benivi",
-    image: Project3,
+    image:
+      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/BENIVI_xkjp6l.jpg",
     category: "Store-front",
     description: "Urban shopify store-front, build with Shopify.",
     description2: "",
@@ -64,7 +60,8 @@ export const projectsData = [
   },
   {
     name: "Melissa and Lexis",
-    image: Project4,
+    image:
+      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/me_cjagc2.jpg",
     category: "Store-front",
     description:
       "SquareSpace, SEO and maintenance maintained by me, V2 will be utilizing NextJS  ",
@@ -74,14 +71,16 @@ export const projectsData = [
     learnMore: "",
   },
   {
-    name: "Funky Junkie",
-    image: Project5,
-    category: "Store-front",
-    description: "Urban clothing store from Boston, build with Shopify.",
-    description2: "",
-    stack: ["HydrogenJS, TS"],
-    view: "https://www.funkyjunkieco.com/",
-    learnMore: "",
+    name: "Admin Dashboard",
+    image:
+      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656382/screenshot1_gthucf.png",
+    category: "Web development",
+    description: "Dashboard for management/workflow helper",
+    description2:
+      "The Admin Dashboard displays tabs for multiple pages that provide a personalized view of BI performance, data correctness, required cube maintenance and required administrative actions. These pages contain the results of detailed analyses, represented by links, images, graphs, pie charts and BI reports.",
+    stack: ["Vite, TS, Node, Sass"],
+    view: "https://github.com/ChristopherAlphonse/admindashboard",
+    learnMore: "/projects/admindashboard",
   },
 ];
 
