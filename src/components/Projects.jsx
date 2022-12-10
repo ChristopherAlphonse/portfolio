@@ -79,7 +79,7 @@ const Projects = () => {
           {projects.map((item) => {
             return (
               <Project
-                key={item.id}
+                key={item.name}
                 name={item.name}
                 image={item.image}
                 category={item.category}

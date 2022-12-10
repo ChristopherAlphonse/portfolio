@@ -19,7 +19,7 @@ const HomePage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 100);
+    }, 1200);
   }, []);
 
   return (
@@ -41,7 +41,7 @@ const HomePage = () => {
           <PropagateLoader
             color="#36c8d6"
             size={20}
-            speedMultiplier={3}
+            speedMultiplier={2}
             cssOverride={{
               display: "flex",
               justifyContent: "center",

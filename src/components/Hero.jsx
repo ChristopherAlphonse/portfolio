@@ -22,7 +22,7 @@ const Hero = () => {
             >
               Christopher Alphonse
             </h1>
-            <p className="text-[14px] lg-text[40px] pt-3 pb-7 md:pt-5 md:pb-11 title-para text-md text-center font-[500] dark:text-zinc-900 md:text-lg lg-text-xl">
+            <p className="text-[14px] lg-text[40px]  pb-7 md:pt-5 md:pb-11 title-para text-md text-center font-[500] dark:text-zinc-900 md:text-lg lg-text-xl">
               Full Stack Developer, Software Engineer, Front end & App
               Developer.
             </p>

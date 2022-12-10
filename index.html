@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" class="dark">
   <head>
+    <link rel="preload" as="style" href="./src/index.css" />
     <style type="text/css">
       html {
         scroll-behavior: smooth;
@@ -304,7 +305,9 @@ christopher alphonse twitter,
   <body>
     <div id="root"></div>
 
-    <link rel="preload" href="./src/index.css" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="./src/preload.css" />
+
     <script type="module" src="./src/index.jsx"></script>
 
     <script type="module">
