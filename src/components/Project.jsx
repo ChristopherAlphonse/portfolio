@@ -32,7 +32,7 @@ const Project = ({ name, image, stack, description, view }) => {
             <h1 className="mt-6 text-xl font-semibold text-white dark:text-black ">
               {name}
             </h1>
-            <p className="max-w-2xl mb-6 text-[10px] font-[400] text-slate-300 dark:text-slate-900   ">
+            <p className="max-w-2xl mb-6 text-md font-bold text-slate-300 dark:text-slate-900   ">
               {description}
             </p>
             <a

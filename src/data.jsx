@@ -1,9 +1,7 @@
 import Project1 from "./assets/img/Projects-images/Dash.png.webp";
-import Project2 from "./assets/img/Projects-images/aza.png.webp";
 import Project3 from "./assets/img/Projects-images/Benivi.png.webp";
 import Project4 from "./assets/img/Projects-images/Mel.png.webp";
 import Project5 from "./assets/img/Projects-images/Funky.png.webp";
-import Project6 from "./assets/img/Projects-images/Noted.png.webp";
 import { PureByMelPic } from "../src/assets/index";
 
 export const projectsData = [
@@ -20,7 +18,8 @@ export const projectsData = [
   },
   {
     name: "Noted",
-    image: Project6,
+    image:
+      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1667619885/Noted/logo-white_scpd27.png",
     category: "Web development",
     description:
       "Note taking app Build with Full stack methodology for both web and desktop Native capability, with password reset capability, Sign In/Up, Still on working progress",
@@ -32,7 +31,8 @@ export const projectsData = [
   },
   {
     name: "Azalais Dark Theme",
-    image: Project2,
+    image:
+      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670386320/Aza%20Theme/SERVER_zayubs.jpg",
     category: "theme",
     description: "Dark theme made for the eye, aka my daily theme for VS Code",
     description2: "",
