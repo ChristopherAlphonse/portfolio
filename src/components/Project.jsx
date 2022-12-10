@@ -1,5 +1,10 @@
 import React from "react";
 
+const logoProps = {
+  height: 96,
+  width: 96,
+};
+
 const Project = ({ name, image, stack, description, view }) => {
   return (
     <>
@@ -11,11 +16,9 @@ const Project = ({ name, image, stack, description, view }) => {
                 <img
                   className=" block object-cover object-center w-full h-full rounded-lg hover:scale-44 ease-in duration-500"
                   alt={name}
-                  height="50"
-                  width="50"
-                  sizes="(max-width: 200px) 200px, 300px"
                   src={image}
                   loading="lazy"
+                  {...logoProps}
                 />
               </div>
 
