@@ -8,13 +8,15 @@ export default defineConfig({
     VitePWA(),
     VitePWA({
       manifest: {
-        name: "vite-react-ts-100",
-        short_name: "vite-react-ts-100",
-        start_url: "/",
+        name: "Christopher Alphonse Developer",
+        short_name: "Christopher Alphonse",
+        description:
+          "Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications.",
         display: "standalone",
         background_color: "#000000",
         lang: "en",
         scope: "/",
+        start_url: "https://www.christopheralphonse.com/",
         icons: [
           {
             src: "/logo_files/android-chrome-192x192.png",

@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "build": "vite build ",
+    "preview": "yarn party && vite build && yarn vite preview",
     "devi": "yarn global add npm-check-updates && ncu -u && yarn install && yarn autoclean --force",
     "deploy": "yarn party && vite build && firebase deploy --only hosting",
     "firebase": "firebase login && firebase init",
