@@ -16,7 +16,6 @@
     }
   ],
   "theme_color": "#1c1c1f",
-  "start_url": "/",
   "scope": "/",
   "icons": [
     { "src": "/log.webp", "type": "image/png", "sizes": "192x192" },

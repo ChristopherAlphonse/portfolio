@@ -2,7 +2,6 @@ import { GrClose, GrMenu } from "react-icons/gr";
 import React, { lazy, useEffect, useState } from "react";
 
 import { Disclosure } from "@headlessui/react";
-import Logo from "../assets/img/png/logo-no-background.png";
 import { Resume } from "../../src/assets";
 
 const Theme = lazy(() => import("../comp/ThemeToggle"));
@@ -66,7 +65,7 @@ const Header = () => {
             <div className="relative flex h-16 items-center justify-between ">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md  text-gray-400  hover:text-white ">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md  text-gray-900  hover:text-white ">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <GrClose
@@ -82,31 +81,6 @@ const Header = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center sm:items-stretch justify-center ">
-                {/* <div className="img-change cursor-pointer " onClick={Reload}>
-                  <a href="/">
-                    <img
-                      src={Logo}
-                      alt="logo"
-                      width="60px"
-                      height="60px"
-                      loading="lazy"
-                    />
-                  </a>
-                </div> */}
-                <div
-                  className="img-change cursor-pointer block sm:hidden "
-                  onClick={Reload}
-                >
-                  <a href="/">
-                    <img
-                      src={Logo}
-                      alt="logo"
-                      width="60px"
-                      height="60px"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
                 <div className="hidden sm:ml-6 sm:block mt-6">
                   <div className="flex space-x-4 font-[600]">
                     {navigation.map((item) => (

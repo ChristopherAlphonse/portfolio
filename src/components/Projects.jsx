@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { projectsData, projectsNav } from "../data";
 
 import Project from "./Project";
@@ -8,7 +8,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
 
-  useEffect(() => {
+  useMemo(() => {
     if (item.name === "all") {
       setProjects(projectsData);
     } else {

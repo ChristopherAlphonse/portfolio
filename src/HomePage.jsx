@@ -8,14 +8,14 @@ import {
   Projects,
 } from "./components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useState } from "react";
 
 import PropagateLoader from "react-spinners/PropagateLoader";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
