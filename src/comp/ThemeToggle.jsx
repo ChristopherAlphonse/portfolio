@@ -16,9 +16,9 @@ const Toggle = () => {
 
   const icon =
     theme === "light" ? (
-      <BsFillMoonFill size={20} color="#000080" />
-    ) : (
       <BsFillSunFill size={20} color="#c69f26" />
+    ) : (
+      <BsFillMoonFill size={20} color="#000080" />
     );
 
   return (

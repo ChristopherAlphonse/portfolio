@@ -69,7 +69,7 @@ const Contact = () => {
             <div className="flex gap-8 ">
               <input
                 ref={fullRef}
-                className="input bg-zinc-100 text-gray-800  "
+                className="input bg-zinc-100 text-zinc-800  "
                 placeholder="Your name"
                 type="text"
                 name="user_name"
@@ -78,7 +78,7 @@ const Contact = () => {
 
               <input
                 ref={emailRef}
-                className="input bg-zinc-100 text-gray-800"
+                className="input bg-zinc-100 text-zinc-800"
                 placeholder="Your email"
                 type="email"
                 name="user_email"
@@ -87,7 +87,7 @@ const Contact = () => {
             </div>
             <input
               ref={subjectRef}
-              className="input bg-zinc-100 text-gray-800"
+              className="input bg-zinc-100 text-zinc-800"
               placeholder="Subject"
               type="text"
               name="user_subject"
@@ -102,7 +102,17 @@ const Contact = () => {
               id="message"
             ></textarea>
             <button
-              className="btn btn-lg bg-accent hover:bg-secondary-hover chi"
+              className="btn btn-lg bg-zinc-100 hover:bg-zinc-100/90 text-zinc-900
+              dark:text-zinc-100
+              dark:bg-zinc-900 dark:hover:bg-zinc-900/90
+              
+              
+              
+              
+              first-letter:
+              
+              
+              chi"
               onSubmit={sendEmail}
               value="send"
               type="submit"

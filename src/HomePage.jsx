@@ -11,6 +11,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import React, { Suspense, useState } from "react";
 
 import PropagateLoader from "react-spinners/PropagateLoader";
+import { ResponsiveNavBar } from "./components/head";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(false);
@@ -55,6 +56,8 @@ const HomePage = () => {
         ) : (
           <>
             <Suspense fallback={<div />}>
+              <ResponsiveNavBar />
+
               <Hero />
             </Suspense>
 
