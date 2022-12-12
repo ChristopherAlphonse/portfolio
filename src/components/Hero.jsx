@@ -1,34 +1,33 @@
 import { DownBtn } from "./compIndex";
 import React from "react";
-import { ResponsiveNavBar } from "./head";
 
 const Hero = () => {
   return (
     <section
       id="section1"
-      className="h-[100vh] containerr flex items-center bg-zinc-800 dark:bg-slate-200 lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
+      className="h-[100vh] containerr flex items-center  dark:bg-zinc-50 bg-zinc-900 lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
       <div className="container mx-auto h-full">
         <div className="flex items-center h-full pt-8">
           <div className="flex-1 flex flex-col items-center lg:items-center">
-            <h1
-              className=" 
-              
-              bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-200 italic  dark:from-blue-600 dark:to-blue-300 
-              
-              
-              text-[46px] leading-[50px] md:text-[60px] text-center md:leading-tight lg:text-8xl xl:text-9xl lg:leading-[1.2] font-bold md:tracking-[-2px] title-heading cursor-pointer dark:text-"
-            >
-              Christopher Alphonse
-            </h1>
-            <p className="text-[14px] lg-text[40px]  pb-7 md:pt-5 md:pb-11 title-para text-md text-center font-[500] dark:text-zinc-900 md:text-lg lg-text-xl">
-              Full Stack Developer, Software Engineer, Front end & App
-              Developer.
+            <p className="text-lg text-accent text-md mb-[22px] dark:text-blue-600">
+              Hey, I'm Chris 👋
             </p>
-
-            <DownBtn />
+            <h1 className="text-4xl  dark:text-zinc-900 leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
+              I Build & Design <br /> Web Applications.
+            </h1>
+            <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-3xl text-lg text-center lg:text-left dark:text-zinc-900">
+              I'm a Full-Stack software engineer who specializes in designing
+              and building amazing digital experiences. At the moment, I'm
+              concentrating on learning new technologies and improving
+              human-centered services.
+            </p>
+            <button className="btn btn-md bg-blue-600  hover:bg-blue-600/50 md:btn-lg transition-all ">
+              <a href="#contact"> Work with me</a>
+            </button>
           </div>
         </div>
+        <DownBtn />
       </div>
     </section>
   );

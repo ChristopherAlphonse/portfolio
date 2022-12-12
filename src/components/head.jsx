@@ -93,7 +93,7 @@ const MobileMenu = ({ children }) => (
   <nav className="p-4 flex flex-col space-y-3 md:hidden ">{children}</nav>
 );
 
-const FireSvg = () => <img src={Logo} alt="logo" className="h-15 w-20 " />;
+const FireSvg = () => <img src={Logo} alt="logo" className="h-12 w-12 " />;
 
 const MenuAlt4Svg = ({ menuOpen }) => (
   <svg

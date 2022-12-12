@@ -18,13 +18,18 @@ module.exports = {
         lg: "2.5rem",
       },
     },
+
     screens: {
-      sm: "700px",
-      md: "900px",
-      lg: "1400px",
-      xl: "2300px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
     },
+
     extend: {
+      content: {
+        about: 'url("/src/assets/PDF/pic/logo-no-background.svg")',
+      },
       colors: {
         primary: "#050402",
         secondary: "#1C1D24",
