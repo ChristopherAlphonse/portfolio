@@ -22,7 +22,12 @@ const Hero = () => {
               concentrating on learning new technologies and improving
               human-centered services.
             </p>
-            <button className="btn btn-md bg-blue-600  hover:bg-blue-600/50 md:btn-lg transition-all ">
+            <button
+              className="btn btn-md bg-blue-600  hover:bg-blue-600/50
+            dark:bg-blue-700 dark:hover:bg-blue-700/70
+            
+            md:btn-lg transition-all "
+            >
               <a href="#contact"> Work with me</a>
             </button>
           </div>

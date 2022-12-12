@@ -11,7 +11,7 @@ const Project = ({ project }) => {
   return (
     <>
       <div>
-        <div className=" mt-8 md:mt-16 md:grid-cols-2  rounded-lg  text-white dark:text-black  xl:grid-cols-3 bg-[#27272a] dark:bg-gray-100  shadow-lg  md:hover:scale-110 transition duration-300 ease-in-out">
+        <div className=" mt-8 md:mt-16 md:grid-cols-2  rounded-lg  text-white dark:text-black  xl:grid-cols-3 bg-zinc-900/70 dark:bg-zinc-300 drop-shadow-9xl md:hover:scale-110 transition duration-300 ease-in-out">
           <div className="text-center">
             <div className="relative  ">
               <div>
@@ -49,7 +49,8 @@ const Project = ({ project }) => {
 
                 <a
                   href={`/project/${id}`}
-                  className="inline-flex items-center justify-center w-full px-5 py-3 mt-4 overflow-hidden text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+                  className="inline-flex items-center justify-center w-full px-5 py-3 mt-4 overflow-hidden text-white transition-colors duration-300  rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 bg-blue-600  hover:bg-blue-600/50
+                  dark:bg-blue-700 dark:hover:bg-blue-700/70     "
                 >
                   <span className="mx-2">Learn More</span>
                 </a>

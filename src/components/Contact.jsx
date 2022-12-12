@@ -52,8 +52,8 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <p
-            className="section-title  relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block lg:mb-15 font-primary chi title-heading text-white    bg-clip-text text-transparent bg-gradient-to-r  from-blue-400 to-blue-200 italic  dark:from-blue-600 dark:to-blue-300  text-5xl
-              "
+            className="font-semibold front-primary capitalize lg:text-4xl bg-clip-text text-transparent bg-gradient-to-r  from-blue-400 to-blue-200 italic  dark:from-blue-600 dark:to-blue-300  text-5xl
+            "
           >
             Get in Touch
           </p>
@@ -105,9 +105,8 @@ const Contact = () => {
               id="message"
             ></textarea>
             <button
-              className="btn btn-lg bg-zinc-100 hover:bg-zinc-100/90 text-zinc-900
-              dark:text-zinc-100
-              dark:bg-zinc-900 dark:hover:bg-zinc-900/90
+              className="btn btn-lg  bg-blue-600  hover:bg-blue-600/50
+              dark:bg-blue-700 dark:hover:bg-blue-700/70  
               
               
               

@@ -8,9 +8,8 @@ module.exports = {
   darkMode: "class",
   theme: {
     fontFamily: {
-      primary: "Playfair Display SC",
-      secondary: "Forum",
-      body: "Forum",
+      primary: "Playfair Display",
+      body: "Work Sans",
     },
     container: {
       padding: {
