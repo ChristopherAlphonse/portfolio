@@ -26,8 +26,6 @@ const navigation = [
   },
 ];
 
-console.log(navigation);
-
 export const ResponsiveNavBar = () => {
   const [bg, setBg] = useState(false);
 

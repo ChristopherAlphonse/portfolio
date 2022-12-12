@@ -8,5 +8,16 @@ const Contact = lazy(() => import("./Contact"));
 const Footer = lazy(() => import("./Footer"));
 const Head = lazy(() => import("./Head"));
 const Hero = lazy(() => import("./Hero"));
+const ProjectDetails = lazy(() => import("./ProjectDetails"));
 
-export { Project, Projects, BackTopBtn, DownBtn, Contact, Footer, Head, Hero };
+export {
+  Project,
+  Projects,
+  BackTopBtn,
+  DownBtn,
+  Contact,
+  Footer,
+  Head,
+  Hero,
+  ProjectDetails,
+};

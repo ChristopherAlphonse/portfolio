@@ -5,17 +5,19 @@ const logoProps = {
   width: 96,
 };
 
-const Project = ({ name, image, stack, description, view }) => {
+const Project = ({ project }) => {
+  const { id, image, description, stack, view, name } = project;
+
   return (
     <>
       <div>
-        <div className=" mt-8 md:mt-16 md:grid-cols-2  rounded-lg  text-white dark:text-black  xl:grid-cols-3 bg-[#27272a] dark:bg-gray-100  shadow-lg  hover:scale-110 transition duration-300 ease-in-out">
+        <div className=" mt-8 md:mt-16 md:grid-cols-2  rounded-lg  text-white dark:text-black  xl:grid-cols-3 bg-[#27272a] dark:bg-gray-100  shadow-lg  md:hover:scale-110 transition duration-300 ease-in-out">
           <div className="text-center">
             <div className="relative  ">
               <div>
                 <img
-                  className=" block object-cover object-center w-full h-full rounded-lg hover:scale-44 ease-in duration-500"
-                  alt={name}
+                  className=" block object-cover object-center w-full h-full rounded-lg  hover:scale-44 ease-in duration-500"
+                  alt={id}
                   src={image}
                   loading="lazy"
                   {...logoProps}
@@ -35,22 +37,24 @@ const Project = ({ name, image, stack, description, view }) => {
             <p className="max-w-2xl mb-6 text-md font-bold text-slate-300 dark:text-slate-900   ">
               {description}
             </p>
-            <a
-              target="_blank"
-              href={view}
-              className="inline-flex px-6 py-2 mb-5 mt-2 items-center justify-center text-base font-medium text-center  border 
-          
-          bg-blue-400/50 text-gray-50 rounded-lg  hover:bg-blue-400/60 hover:text-gray-300 
 
-          border-zinc-900/10 shadow
-              
-              dark:bg-blue-500/70 dark:text-gray-50    dark:hover:bg-blue-500/60 dark:hover:text-gray-200
+            <div className="container flex flex-col items-center px-4 py-2 mx-auto xl:flex-row">
+              <div className="mt-6 sm:-mx-2">
+                <a
+                  href={view}
+                  className="inline-flex items-center justify-center w-full px-5 py-3 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
+                >
+                  <span className="mx-2">Visit</span>
+                </a>
 
-          
-          "
-            >
-              View
-            </a>
+                <a
+                  href={`/project/${id}`}
+                  className="inline-flex items-center justify-center w-full px-5 py-3 mt-4 overflow-hidden text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+                >
+                  <span className="mx-2">Learn More</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

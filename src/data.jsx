@@ -1,17 +1,19 @@
 export const projectsData = [
   {
+    id: "Azalais-Dark-Theme",
     name: "Azalais Dark Theme",
     image:
       "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670386320/Aza%20Theme/SERVER_zayubs.jpg",
     category: "theme",
     description: "Dark theme made for the eye, aka my daily theme for VS Code",
-    description2: "",
+    description2: "1",
     stack: ["JSON, Yo code ..."],
 
     view: "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
     learnMore: "/azalais-dark-theme",
   },
   {
+    id: "Noted",
     name: "Noted",
     image:
       "https://res.cloudinary.com/img-api-pager-2/image/upload/v1667619885/Noted/logo-white_scpd27.png",
@@ -25,17 +27,19 @@ export const projectsData = [
     learnMore: "/projects/note-app",
   },
   {
+    id: "Funky-Junkie",
     name: "Funky Junkie",
     image:
       "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/funy_x5ygvq.jpg",
     category: "Store-front",
     description: "Urban clothing store from Boston, build with Shopify.",
-    description2: "",
+    description2: "1",
     stack: ["HydrogenJS, TS"],
     view: "https://www.funkyjunkieco.com/",
     learnMore: "",
   },
   {
+    id: "Pure-by-Mel",
     name: "Pure by Mel",
     image:
       "https://res.cloudinary.com/img-api-pager-2/image/upload/v1655672313/cld-sample-4.jpg",
@@ -48,17 +52,19 @@ export const projectsData = [
     view: "https://github.com/ChristopherAlphonse/ye",
   },
   {
+    id: "Benivi",
     name: "Benivi",
     image:
       "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/BENIVI_xkjp6l.jpg",
     category: "Store-front",
     description: "Urban shopify store-front, build with Shopify.",
-    description2: "",
+    description2: "1",
     stack: ["Stripe, Shopify"],
     view: "https://beniviclothing.com/",
     learnMore: "/projects/benivi",
   },
   {
+    id: "Melissa-and-Lexis",
     name: "Melissa and Lexis",
     image:
       "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/me_cjagc2.jpg",
@@ -66,11 +72,12 @@ export const projectsData = [
     description:
       "SquareSpace, SEO and maintenance maintained by me, V2 will be utilizing NextJS  ",
     stack: ["SquareSpace, Contentful"],
-    description2: "",
+    description2: "1",
     view: "https://melissaandlexis.square.site/",
     learnMore: "",
   },
   {
+    id: "Admin-Dashboard",
     name: "Admin Dashboard",
     image:
       "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656382/screenshot1_gthucf.png",
