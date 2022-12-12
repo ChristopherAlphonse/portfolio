@@ -45,7 +45,7 @@ const ProjectDetails = () => {
                   />
                   <img
                     className="mt-4 w-full lg:mt-10 rounded-lg"
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+                    src={z.image}
                     alt="office content 2"
                   />
                 </div>
