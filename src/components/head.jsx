@@ -75,7 +75,9 @@ const navLinks = navigation.map((page) => (
 const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className="flex items-center justify-between p-4">
     <div className="flex items-center">
-      <FireSvg />
+      <a href="/" className="p-0">
+        <FireSvg />
+      </a>
     </div>
     <nav className="hidden md:block space-x-6">{navLinks}</nav>
     <button

@@ -75,7 +75,7 @@ const Projects = () => {
             })}
           </ul>
         </nav>
-        <section className="grid gap-x-8  md:grid-cols-2  lg:grid-cols-3 lg:gap-x-7 lg:gap-y-7 ">
+        <section className="grid gap-x-8  md:grid-cols-2  lg:grid-cols-2 lg:gap-x-9 lg:gap-y-5 ">
           {projects.map((item) => {
             return <Project key={item.id} project={item} />;
           })}
