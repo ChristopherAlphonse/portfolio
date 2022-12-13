@@ -1,3 +1,6 @@
+import { LazyMotion, domAnimation, m } from "framer-motion";
+import { fadeIn, transition } from "../FramerVariant/variants";
+
 import React from "react";
 
 const logoProps = {
@@ -9,9 +12,15 @@ const Project = ({ project }) => {
   const { id, image, description, stack, view, name } = project;
 
   return (
-    <>
+    <LazyMotion features={domAnimation}>
       <div>
-        <div className=" bg-gradient-to-b from-blue-900 to-indigo-900 p-1 shadow-xl mt-8 md:mt-16 md:grid-cols-2  rounded-xl  text-white dark:text-black  xl:grid-cols-3 bg-zinc-900/70 dark:bg-zinc-300 drop-shadow-9xl xl:hover:scale-110 transition duration-300 ease-in-out ">
+        <m.div
+          variants={transition("up")}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.6 }}
+          className=" bg-gradient-to-b from-blue-900 to-indigo-900 p-1 shadow-xl mt-8 md:mt-16 md:grid-cols-2  rounded-xl  text-white dark:text-black  xl:grid-cols-3 bg-zinc-900/70 dark:bg-zinc-300 drop-shadow-9xl xl:hover:scale-110 transition duration-300 ease-in-out "
+        >
           <div className="text-center bg-zinc-900 dark:bg-zinc-200">
             <div className="relative ">
               <div>
@@ -39,7 +48,13 @@ const Project = ({ project }) => {
             </p>
 
             <div className="container flex flex-col items-center px-4 py-2 mx-auto xl:flex-row">
-              <div className="mt-6 sm:-mx-2">
+              <m.div
+                variants={fadeIn("up")}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.2 }}
+                className="mt-6 sm:-mx-2"
+              >
                 <a
                   href={view}
                   className="inline-flex items-center justify-center w-full px-5 py-3 overflow-hidden text-white transition-colors duration-300 bg-gray-900 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
@@ -54,12 +69,12 @@ const Project = ({ project }) => {
                 >
                   <span className="mx-2">Learn More</span>
                 </a>
-              </div>
+              </m.div>
             </div>
           </div>
-        </div>
+        </m.div>
       </div>
-    </>
+    </LazyMotion>
   );
 };
 

@@ -1,3 +1,5 @@
+import { IoMdArrowForward } from "react-icons/io";
+
 export const projectsData = [
   {
     id: "Azalais-Dark-Theme",
@@ -106,3 +108,13 @@ export const projectsNav = [
     name: "Theme",
   },
 ];
+
+export const aboutData = {
+  title: "About Me:",
+  subtitle1:
+    "In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.",
+  subtitle2:
+    "Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.",
+  btnText: "Know more",
+  btnIcon: <IoMdArrowForward />,
+};
