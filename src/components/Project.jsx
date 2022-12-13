@@ -19,7 +19,7 @@ const Project = ({ project }) => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.6 }}
-          className=" bg-gradient-to-b from-blue-900 to-indigo-900 p-1 shadow-xl mt-8 md:mt-16 md:grid-cols-2  rounded-xl  text-white dark:text-black  xl:grid-cols-3 bg-zinc-900/70 dark:bg-zinc-300 drop-shadow-9xl xl:hover:scale-110 transition duration-300 ease-in-out "
+          className="  p-1 shadow-xl mt-8 md:mt-16 md:grid-cols-2  rounded-lg  text-white dark:text-black  xl:grid-cols-3 bg-zinc-900/70 dark:bg-zinc-300 drop-shadow-9xl xl:hover:scale-110 transition duration-300 ease-in-out "
         >
           <div className="text-center bg-zinc-900 dark:bg-zinc-200">
             <div className="relative ">
