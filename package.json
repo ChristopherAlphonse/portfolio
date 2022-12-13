@@ -23,7 +23,7 @@
     "cssnano": "^5.1.14",
     "dotenv": "^16.0.3",
     "flowbite": "^1.5.5",
-    "framer-motion": "^7.7.2",
+    "framer-motion": "^7.8.0",
     "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

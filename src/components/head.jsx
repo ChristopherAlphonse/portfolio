@@ -62,7 +62,7 @@ const navLinks = navigation.map((page) => (
   <a
     key={page.name}
     className="no-underline
-     text-zinc-500 font-semibold
+     text-accent font-semibold
      hover:text-zinc-100  
     
     dark:text-zinc-800
