@@ -26,9 +26,6 @@ module.exports = {
     },
 
     extend: {
-      content: {
-        about: 'url("/src/assets/PDF/pic/logo-no-background.svg")',
-      },
       colors: {
         primary: "#050402",
         secondary: "#1C1D24",

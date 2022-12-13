@@ -7,7 +7,7 @@ import { fadeIn } from "../FramerVariant/variants";
 const Hero = () => {
   return (
     <LazyMotion features={domAnimation}>
-      <m.section
+      <section
         id="section1"
         className="h-[100vh] containerr flex items-center  dark:bg-zinc-50 bg-zinc-900 lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
       >
@@ -54,9 +54,10 @@ const Hero = () => {
               </button>
             </div>
           </div>
+
           <DownBtn />
         </div>
-      </m.section>
+      </section>
     </LazyMotion>
   );
 };

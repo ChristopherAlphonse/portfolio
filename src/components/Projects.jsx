@@ -86,13 +86,7 @@ const Projects = () => {
               })}
             </ul>
           </m.nav>
-          <section
-            variants={fadeIn("left")}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.6 }}
-            className="grid gap-x-8  md:grid-cols-2  lg:grid-cols-2 lg:gap-x-9 lg:gap-y-5 "
-          >
+          <section className="grid gap-x-8  md:grid-cols-2  lg:grid-cols-2 lg:gap-x-9 lg:gap-y-5 ">
             {projects.map((item) => {
               return <Project key={item.id} project={item} />;
             })}

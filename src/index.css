@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.ye {
+  opacity: 0.9;
+}
+.ye:hover {
+  opacity: 1;
+}
+
 @layer base {
   body {
     @apply font-body text-paragraph leading-6 bg-gray-200;

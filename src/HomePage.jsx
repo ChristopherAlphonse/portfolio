@@ -1,6 +1,7 @@
 import "./index.css";
 
 import {
+  About,
   BackTopBtn,
   Contact,
   Footer,
@@ -50,7 +51,7 @@ const HomePage = () => {
               textAlign: "center",
               minHeight: "100vh",
               width: "100%",
-              background: "#3f3f46",
+              background: "#18181b",
             }}
           />
         ) : (
@@ -59,6 +60,7 @@ const HomePage = () => {
               <ResponsiveNavBar />
 
               <Hero />
+              <About />
             </Suspense>
 
             <Suspense fallback={<div />}>
