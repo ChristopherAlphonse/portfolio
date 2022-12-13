@@ -38,12 +38,12 @@ export const ResponsiveNavBar = () => {
   return (
     <div
       className={`${
-        bg ? "bg-tertiary dark:bg-zinc-100 shadow-md h-20 " : "h-24 "
-      }  fixed top-0 w-full dark:text-black text-white  z-10 transition-all duration-300 `}
+        bg ? "bg-zinc-900  dark:bg-zinc-100 shadow-md h-20 " : "h-24 "
+      }  fixed top-0 w-full dark:text-zinc-700 text-white  z-10 transition-all duration-300 `}
     >
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div
-        className="bg-zinc-900/90  dark:bg-zinc-900/50
+        className="bg-zinc-900/90  dark:bg-zinc-100/90 
       
       
       
@@ -61,11 +61,13 @@ export const ResponsiveNavBar = () => {
 const navLinks = navigation.map((page) => (
   <a
     key={page.name}
-    className="no-underline text-zinc-200 font-semibold hover:text-zinc-200/50  
+    className="no-underline
+     text-zinc-500 font-semibold
+     hover:text-zinc-100  
     
+    dark:text-zinc-800
     
-    
-    dark:text-zinc-800 dark:hover:text-zinc-800/50"
+     dark:hover:text-blue-600"
     href={page.href}
   >
     {page.name}

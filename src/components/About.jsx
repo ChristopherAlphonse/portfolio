@@ -41,7 +41,7 @@ const About = () => {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView={"show"}
-                  className="mb-8  dark:text-zinc-900"
+                  className="mb-8  dark:text-zinc-900 text-xl"
                 >
                   As a programmer with experience in front and back end
                   development, I specialize in creating engaging online user

@@ -75,7 +75,7 @@ const Project = ({ project }) => {
               >
                 <a
                   href={view}
-                  className="inline-flex  justify-center w-full px-5 py-3 mt-4 overflow-hidden  transition-colors duration-300  rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 border-2
+                  className=" justify-center  px-5 py-3 mt-4 overflow-hidden  transition-colors duration-300  rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 border-2
                   hover:bg-blue-600/50  dark:hover:bg-blue-600
                   border-blue-600/50 
                   
@@ -88,7 +88,7 @@ const Project = ({ project }) => {
 
                 <a
                   href={`/project/${id}`}
-                  className="inline-flex  justify-center w-full px-5 py-3 mt-4 overflow-hidden  transition-colors duration-300  rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0
+                  className=" justify-center  px-5 py-3 mt-4 overflow-hidden  transition-colors duration-300  rounded-lg shadow sm:w-auto mx-2 sm:mt-0
                   border-2 text-zinc-100 dark:hover:text-zinc-900 
 bg-blue-600
 hover:bg-zinc-900

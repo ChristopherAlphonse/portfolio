@@ -28,7 +28,7 @@ const Hero = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.6 }}
-                className="text-4xl  dark:text-zinc-900 leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
+                className="text-5xl sm:text-6xl   dark:text-zinc-900 leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]"
               >
                 I Build & Design <br /> Web Applications.
               </m.h1>
@@ -37,12 +37,39 @@ const Hero = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.6 }}
-                className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-3xl text-lg text-center lg:text-left dark:text-zinc-900"
+                className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-3xl text-lg text-center lg:text-left text-zinc-500 dark:text-zinc-600"
               >
-                I'm a Full-Stack software engineer who specializes in designing
-                and building amazing digital experiences. At the moment, I'm
-                concentrating on learning new technologies and improving
-                human-centered services.
+                I specialize in{" "}
+                <span className="text-accent dark:text-blue-600">
+                  {" "}
+                  designing
+                </span>{" "}
+                and{" "}
+                <span className="text-accent dark:text-blue-600">
+                  {" "}
+                  building{" "}
+                </span>{" "}
+                amazing digital experiences that are both{" "}
+                <span className="text-accent dark:text-blue-600">
+                  functional
+                </span>{" "}
+                and{" "}
+                <span className="text-accent dark:text-blue-600">
+                  {" "}
+                  engaging
+                </span>
+                .
+                <br /> At the moment, I'm concentrating on{" "}
+                <span className="text-accent dark:text-blue-600">
+                  {" "}
+                  learning
+                </span>{" "}
+                new technologies and improving{" "}
+                <span className="text-accent dark:text-blue-600">
+                  {" "}
+                  human-centered{" "}
+                </span>
+                services .
               </m.p>
               <button
                 className="btn btn-md bg-blue-600  hover:bg-blue-600/50
