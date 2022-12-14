@@ -1,4 +1,4 @@
-import './index.css'
+import '../index.css'
 
 import {
   About,
@@ -34,8 +34,8 @@ const HomePage = () => {
 
         <meta
           name="description"
-          content=" Full Stack Developer and PC enthusiast. I want to focus on writing
-              clean, efficient code, and user friendly UI/UX experiences"
+          content=" I specialize in designing and building amazing digital experiences that are both functional and engaging.
+          At the moment, I'm concentrating on learning new technologies and improving human-centered services ."
         />
       </Helmet>
       <div className="">

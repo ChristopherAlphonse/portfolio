@@ -8,7 +8,6 @@ const Contact = lazy(() => import('./Contact'))
 const Footer = lazy(() => import('./Footer'))
 const Head = lazy(() => import('./Head'))
 const Hero = lazy(() => import('./Hero'))
-const ProjectDetails = lazy(() => import('./ProjectDetails'))
 const About = lazy(() => import('./About'))
 
 export {
@@ -20,6 +19,5 @@ export {
   Footer,
   Head,
   Hero,
-  ProjectDetails,
   About
 }

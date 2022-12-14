@@ -103,14 +103,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <style type="text/css">
-      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,700&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
       :root {
         --accent-color: #7fc7eb;
-        --font-face: "Playfair Display SC", serif;
-        --font-face-secondary: "Forum", cursive;
+        --font-face-primary: 'Playfair Display SC', serif;
+        --font-face-secondary: 'Open Sans', sans-serif;
       }
 
       * {
@@ -304,9 +316,8 @@ christopher alphonse twitter,
     <title>Christopher Alphonse | Full Stack Developer</title>
     <meta
       name="description"
-      content=" Full Stack Developer and PC enthusiast.
-    I want to focus on writing clean, efficient code, and user friendly UI/UX
-    experiences"
+      content="I specialize in designing and building amazing digital experiences that are both functional and engaging.
+      At the moment, I'm concentrating on learning new technologies and improving human-centered services ."
     />
     <meta
       name="robots"
@@ -347,11 +358,11 @@ christopher alphonse twitter,
     <script type="module" src="./src/index.jsx"></script>
 
     <script type="module">
-      import { partytownSnippet } from "@builder.io/partytown/integration";
-      const snippetText = partytownSnippet();
-      const foo = document.createElement("script");
-      foo.innerText = snippetText;
-      document.body.appendChild(foo);
+      import { partytownSnippet } from '@builder.io/partytown/integration'
+      const snippetText = partytownSnippet()
+      const foo = document.createElement('script')
+      foo.innerText = snippetText
+      document.body.appendChild(foo)
     </script>
   </body>
 </html>

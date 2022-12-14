@@ -1,9 +1,9 @@
 import { LazyMotion, domAnimation, m } from 'framer-motion'
 import React, { useMemo, useState } from 'react'
+import { fadeIn, transition } from '../FramerVariant/variants'
 import { projectsData, projectsNav } from '../data'
 
 import Project from './Project'
-import { fadeIn } from '../FramerVariant/variants'
 
 const Projects = () => {
   const [item, setItem] = useState({ name: 'all' })
@@ -36,18 +36,12 @@ const Projects = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className=" front-primary bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-5xl font-semibold  capitalize italic text-transparent  dark:from-blue-600 dark:to-blue-300  lg:text-4xl
+              className=" bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text font-primary text-5xl font-semibold  capitalize italic text-transparent  dark:from-blue-600 dark:to-blue-300  lg:text-4xl
             
               "
             >
               My latest work
             </m.h1>
-
-            {/* <p className="max-w-[550px] mx-auto mt-4 text-paragraph dark:text-gray-500">
-            Although I am a self taught developer with some bootcamp training, I
-            took it upon myself to stay knowledgeable on numerous technologies,
-            such as TypeScript, TauriJS, HydrogenJS, NextJS, Vite etc..
-          </p> */}
           </div>
 
           <m.nav
@@ -55,12 +49,12 @@ const Projects = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className="mx-auto mb-1 max-w-xl md:mt-4 md:rounded-full md:border md:border-gray-900 md:bg-gray-900 md:py-1  
+            className="mx-auto mb-1 max-w-xl text-xl md:mt-4 md:rounded-full md:border md:border-gray-900 md:bg-gray-900  
           
           
-          md:shadow dark:md:border-gray-200 dark:md:bg-gray-200
+          md:py-1 md:shadow dark:md:border-gray-200
         
-        
+        dark:md:bg-gray-200
         "
           >
             <ul
@@ -77,7 +71,7 @@ const Projects = () => {
                       active === index
                         ? 'active -mb-px h-10 whitespace-nowrap border-b-2 border-blue-500 bg-transparent px-4 py-2 text-center text-sm text-blue-600 focus:outline-none dark:border-blue-700  dark:text-blue-800 first-letter:sm:text-base '
                         : ''
-                    } dark:text-gray-500whitespace-nowrap cursor-base -mb-px h-10 cursor-pointer border-b-2 border-transparent bg-transparent px-4 py-2 text-center text-sm text-gray-100 hover:border-gray-400 focus:outline-none dark:text-gray-900 sm:text-base`}
+                    } cursor-base text-md -mb-px h-10 cursor-pointer whitespace-nowrap border-b-2 border-transparent bg-transparent px-4 py-2 text-center text-gray-100 hover:border-gray-400 focus:outline-none dark:text-gray-500  sm:text-base`}
                     key={index}
                   >
                     {item.name}

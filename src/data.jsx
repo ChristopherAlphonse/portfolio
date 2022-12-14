@@ -1,120 +1,99 @@
-import { IoMdArrowForward } from "react-icons/io";
-
 export const projectsData = [
   {
-    id: "Azalais-Dark-Theme",
-    name: "Azalais Dark Theme",
+    id: 'Azalais-Dark-Theme',
+    name: 'Azalais Dark Theme',
     image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670386320/Aza%20Theme/SERVER_zayubs.jpg",
-    category: "theme",
-    description: "Dark theme made for the eye, aka my daily theme for VS Code",
-    description2: "1",
-    stack: ["JSON, Yo code ..."],
+      'https://res.cloudinary.com/img-api-pager-2/image/upload/v1670386320/Aza%20Theme/SERVER_zayubs.jpg',
+    category: 'theme',
+    description:
+      "Azalais Dark Theme is the perfect solution for anyone who spends a lot of time in a text editor. I designed it to be easy on the eyes and reduce eye fatigue, and it's become my daily theme for VS Code.",
+    description2:
+      " I am constantly on the lookout for ways to improve my workflow and reduce eye strain. That's why I created Azalais Dark Theme for VS Code - a custom color scheme that is designed to be easy on the eyes and suitable for users with color blindness. I did extensive research on the best colors for these purposes, and I used Yo Code, XML, and JSON to create the theme. The result is a visually appealing and functional theme that has received positive feedback from users. I am proud to offer this theme on the VS Code marketplace, and I will continue to maintain and improve it for the benefit of other users.",
+    stack: ['JSON, XML, Yo code ...'],
 
-    view: "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview",
-    learnMore: "/azalais-dark-theme",
+    view: 'https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview'
   },
   {
-    id: "Noted",
-    name: "Noted",
+    id: 'Noted',
+    name: 'Noted',
     image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1667619885/Noted/logo-white_scpd27.png",
-    category: "Web development",
+      'https://res.cloudinary.com/img-api-pager-2/image/upload/v1667619885/Noted/logo-white_scpd27.png',
+    category: 'Web development',
     description:
-      "Note taking app Build with Full stack methodology for both web and desktop Native capability, with password reset capability, Sign In/Up, Still on working progress",
-    stack: ["Vite, TS, Node, Rust, Tauri, Tailwind"],
+      'Note taking app with full stack for web and desktop. Native features include password reset and sign in/up. Still in development ',
+    stack: ['Vite, TypeScript, Node, Rust, TauriJS, Tailwind, MongoDB'],
     description2:
-      "Notes is the best place to jot down quick thoughts or to save longer notes filled with checklists, images, web links, scanned documents, handwritten notes, or sketches. And with iCloud, it is easy to keep all your devices in sync, so you'll always have your notes with you.",
-    view: "https://github.com/ChristopherAlphonse/Noted",
-    learnMore: "/projects/note-app",
+      'I have completed the landing page for my note taking app, which includes features like time-sensitive password reset and encryption using JWT, bcrypt, and CORS. My goal is to wrap the app with Rust for the desktop version, but I have noticed a performance hit. The main languages and frameworks I am using are TauriJS, Vite, TypeScript, Rust, Tailwind, JWT, bcrypt, Nodemailer, and Node. I am dedicated to my note taking app and have big plans for its development. I have implemented best practices and am approaching the project as a SAAS, rather than a disposable project. I want to push myself and give it my all in order to realize my vision for the app. I have a long way to go, but I am determined and excited to see where this project takes me.',
+    view: 'https://github.com/ChristopherAlphonse/Noted'
   },
   {
-    id: "Funky-Junkie",
-    name: "Funky Junkie",
+    id: 'Funky-Junkie',
+    name: 'Funky Junkie',
     image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/funy_x5ygvq.jpg",
-    category: "Store-front",
-    description: "Urban clothing store from Boston, build with Shopify.",
-    description2: "1",
-    stack: ["HydrogenJS, TS"],
-    view: "https://www.funkyjunkieco.com/",
-    learnMore: "",
-  },
-  {
-    id: "Pure-by-Mel",
-    name: "Pure by Mel",
-    image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1655672313/cld-sample-4.jpg",
-    category: "Web development",
+      'https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/funy_x5ygvq.jpg',
+    category: 'Store-front',
     description:
-      "A smoothy store base in Randolph, MA. Focus on providing sweet to your love ones for the holiday",
+      'Shopify store for an urban clothing store based in Canton, MA',
     description2:
-      "Our Mission is to make every guests day better by serving great tasting products as a celebration of health and happiness.",
-    stack: ["NextJS, TailwindCSS, TypeScript, Stripe, etc.."],
-    view: "https://github.com/ChristopherAlphonse/ye",
+      'I worked on improving the SEO, theme, and styling of the Shopify store for an urban clothing store. My role was more consultative than hands-on coding, and we used tools like Contentful, Stripe, and others to handle merchandise orders using a drop shipping approach.',
+    stack: ['SEO, Contentful, Stripe'],
+    view: 'https://www.funkyjunkieco.com/'
   },
   {
-    id: "Benivi",
-    name: "Benivi",
+    id: 'Pure-by-Mel',
+    name: 'Pure by Mel',
     image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/BENIVI_xkjp6l.jpg",
-    category: "Store-front",
-    description: "Urban shopify store-front, build with Shopify.",
-    description2: "1",
-    stack: ["Stripe, Shopify"],
-    view: "https://beniviclothing.com/",
-    learnMore: "/projects/benivi",
-  },
-  {
-    id: "Melissa-and-Lexis",
-    name: "Melissa and Lexis",
-    image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/me_cjagc2.jpg",
-    category: "Store-front",
+      'https://res.cloudinary.com/img-api-pager-2/image/upload/v1655672313/cld-sample-4.jpg',
+    category: 'Web development',
     description:
-      "SquareSpace, SEO and maintenance maintained by me, V2 will be utilizing NextJS  ",
-    stack: ["SquareSpace, Contentful"],
-    description2: "1",
-    view: "https://melissaandlexis.square.site/",
-    learnMore: "",
+      'Smoothie store based in Randolph, MA, and specialize in providing sweet treats for your loved ones during the holiday season',
+    description2:
+      'Pure by Mel is still being developed - it is the second version of this online store, which was originally created using Squarespace. I am using a range of technologies, including TypeScript, NextJS, TailwindCSS, Framer Motion, Stripe, and Sanity.io, to build a new and improved online store. ',
+    stack: [
+      'NextJS, TailwindCSS, TypeScript, Stripe, Sanity.io, Framer Motion, MongoDB'
+    ],
+    view: 'https://github.com/ChristopherAlphonse/ye'
   },
   {
-    id: "Admin-Dashboard",
-    name: "Admin Dashboard",
+    id: 'Melissa-and-Lexis',
+    name: 'Melissa and Lexis',
     image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656382/screenshot1_gthucf.png",
-    category: "Web development",
-    description: "Dashboard for management/workflow helper",
+      'https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/me_cjagc2.jpg',
+    category: 'Store-front',
+    description:
+      'This local store specializes in providing delicious sweets and smoothies for intimate occasions. From romantic desserts to refreshing smoothies, they have a wide variety of treats that are perfect for any special moment. ',
+    stack: ['SquareSpace, Contentful'],
     description2:
-      "The Admin Dashboard displays tabs for multiple pages that provide a personalized view of BI performance, data correctness, required cube maintenance and required administrative actions. These pages contain the results of detailed analyses, represented by links, images, graphs, pie charts and BI reports.",
-    stack: ["Vite, TS, Node, Sass"],
-    view: "https://github.com/ChristopherAlphonse/admindashboard",
-    learnMore: "/projects/admindashboard",
+      'My primary focus for this project was on marketing and SEO. I helped the store owner develop and implement strategies for increasing traffic and sales on the website. I also brought my knowledge of customer engagement and user experience design to the table, to help enhance the overall user experience on the site.',
+    view: 'https://melissaandlexis.square.site/'
   },
-];
+  {
+    id: 'Admin-Dashboard',
+    name: 'Admin Dashboard',
+    image:
+      'https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656382/screenshot1_gthucf.png',
+    category: 'Web development',
+    description:
+      'This dashboard is designed to support effective management and workflow management. It provides a comprehensive, yet user-friendly interface that allows managers to quickly access and analyze key data ',
+    description2:
+      "This dashboard is designed to support effective management and workflow management. It provides a comprehensive, yet user-friendly interface that allows managers to quickly access and analyze key performance data, track progress on projects and tasks, and identify opportunities for improvement. With this tool, managers can gain real-time visibility into their team's performance and make informed decisions to optimize their workflow and drive better results.",
+    stack: ['Vite, TypeScript, Node, Sass, MongoDB, Express, Cloudinary'],
+    view: 'https://github.com/ChristopherAlphonse/admindashboard'
+  }
+]
 
 // projects
 export const projectsNav = [
   {
-    name: "All",
+    name: 'All'
   },
   {
-    name: "Store-front",
+    name: 'Store-front'
   },
   {
-    name: "Web development",
+    name: 'Web development'
   },
   {
-    name: "Theme",
-  },
-];
-
-export const aboutData = {
-  title: "About Me:",
-  subtitle1:
-    "In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.",
-  subtitle2:
-    "Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.",
-  btnText: "Know more",
-  btnIcon: <IoMdArrowForward />,
-};
+    name: 'Theme'
+  }
+]

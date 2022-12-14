@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.primary_title {
+  font-family: var(--font-face-primary);
+}
+
+.secondary_title {
+  font-family: var(--font-face-secondary);
+}
+
 @layer base {
   body {
-    @apply font-body text-paragraph leading-6 bg-gray-200;
+    @apply bg-gray-200 font-body leading-6 text-paragraph;
   }
   h1,
   h2,
@@ -12,19 +20,19 @@
   h4,
   h5,
   h6 {
-    @apply text-white font-primary;
+    @apply font-primary text-white;
   }
   .section {
     @apply py-12 lg:py-32;
   }
   .section-title {
-    @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
+    @apply mb-5 text-3xl font-medium lg:text-4xl lg:font-extrabold;
   }
   .subtitle {
-    @apply text-base text-paragraph mb-16 lg:mb-24 max-w-[520px];
+    @apply mb-16 max-w-[520px] text-base text-paragraph lg:mb-24;
   }
   .btn {
-    @apply py-4 px-7 font-medium text-white flex items-center justify-center rounded-sm hover:bg-accent-hover transition-all;
+    @apply flex items-center justify-center rounded-sm py-4 px-7 font-medium text-white transition-all hover:bg-accent-hover;
   }
   .btn-lg {
     @apply h-[54px];
@@ -33,10 +41,10 @@
     @apply h-[48px];
   }
   .input {
-    @apply bg-secondary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 focus:outline-accent;
+    @apply h-[60px] w-full rounded-sm bg-secondary pl-6 font-body text-[15px] text-paragraph outline-none focus:outline focus:outline-1 focus:outline-accent;
   }
   .textarea {
-    @apply bg-secondary resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-accent;
+    @apply h-[200px] w-full resize-none rounded-sm bg-secondary p-6 outline-none focus:outline focus:outline-1 focus:outline-accent;
   }
   .active {
     @apply text-accent;

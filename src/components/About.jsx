@@ -7,7 +7,7 @@ const About = () => {
   return (
     <LazyMotion features={domAnimation}>
       <section
-        className="section h-full bg-zinc-900 dark:bg-zinc-50"
+        className="section h-full bg-zinc-800 dark:bg-zinc-50"
         id="about"
       >
         <div className="container mx-auto">
@@ -20,7 +20,7 @@ const About = () => {
           >
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
               <div className="flex flex-col">
-                <h2 className="before:content-about relative mb-3 text-3xl font-medium before:absolute before:-top-[2rem] before:hidden before:opacity-40 dark:text-zinc-900 lg:text-4xl lg:font-extrabold before:lg:block">
+                <h2 className="before:content-about relative mb-3 font-primary text-4xl font-medium before:absolute before:-top-[2rem] before:hidden before:opacity-40 dark:text-zinc-900  md:text-6xl  lg:font-extrabold before:lg:block xl:text-8xl ">
                   Christopher Alphonse
                 </h2>
                 <m.p
@@ -57,13 +57,11 @@ const About = () => {
                   <br />
                   My journey began in early 2022, when I decided to take a leap
                   of faith and signed up for a bootcamp. The boot camp was the
-                  first step in my journey to pursuing my passion for computers
-                  and cybersecurity.
-                  <br />
-                  <br /> I have always loved tinkering with computers, building
-                  my own machines and experimenting with different software and
-                  settings. However, I never considered pursuing a career in
-                  technology because I lacked the formal education and training.
+                  first step in my journey to pursuing my passion. I have always
+                  loved tinkering with computers, building my own machines and
+                  experimenting with different software and settings. However, I
+                  never considered pursuing a career in technology because I
+                  lacked the formal education and training.
                   <br />
                   <br />
                   But with the encouragement of my friends and mentors, I
@@ -77,6 +75,14 @@ const About = () => {
                   incredibly rewarding. I learned a huge amount in a short
                   amount of time, and I gained the confidence and skills I
                   needed to start my career in technology.
+                  <br />
+                  <br />
+                  My passion for technology drives me to continuously learn and
+                  expand my knowledge, and I have expertise in various
+                  technologies such as MERN stack, TypeScript, Tailwind CSS,
+                  GraphQL, MySQL, and more. I am dedicated to using my skills to
+                  help businesses and organizations achieve their goals through
+                  innovative solutions.
                 </m.p>
               </div>
             </div>

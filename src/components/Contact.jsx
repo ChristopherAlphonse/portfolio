@@ -59,7 +59,7 @@ const Contact = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.4 }}
-              className="front-primary bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-5xl font-semibold  capitalize italic text-transparent  dark:from-blue-600 dark:to-blue-300  lg:text-4xl
+              className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text font-primary text-5xl font-semibold  capitalize italic text-transparent  dark:from-blue-600 dark:to-blue-300  lg:text-4xl
             "
             >
               Get in Touch
@@ -70,10 +70,11 @@ const Contact = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.4 }}
-              className="title-para py-2 font-body text-slate-100 dark:text-slate-900"
+              className="title-para py-2 font-body font-bold text-zinc-500 dark:text-zinc-600"
             >
-              I'd be delighted to hear from you. Please message me. As soon as
-              it is received, I will reply.
+              I'm always happy to connect with new people. Please use the form
+              below to send me a message, and I'll be sure to get back to you as
+              soon as possible.
             </m.h2>
           </div>
           <div className="mt-10 flex flex-col justify-center lg:flex-row lg:gap-x-8">

@@ -13,8 +13,8 @@ const Project = ({ project }) => {
 
   return (
     <LazyMotion features={domAnimation}>
-      <div className="ye">
-        <div className="  drop-shadow-9xl mt-8 rounded-lg bg-zinc-900/70 p-1  text-white  shadow-xl transition  duration-300 ease-in-out dark:bg-zinc-300 dark:text-black md:mt-16 md:grid-cols-2 xl:grid-cols-3 xl:hover:scale-110 ">
+      <div>
+        <div className="  drop-shadow-9xl mt-8 rounded-lg bg-blue-600 p-1  text-white  shadow-xl transition  duration-300 ease-in-out dark:bg-zinc-300 dark:text-black md:mt-16 md:grid-cols-2 xl:grid-cols-3 xl:hover:scale-110 ">
           <div className="bg-zinc-900 text-center dark:bg-zinc-200">
             <div className="relative ">
               <div>
@@ -51,7 +51,7 @@ const Project = ({ project }) => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.6 }}
-              className="mt-6 text-xl font-semibold text-white dark:text-black "
+              className=" mt-1 font-primary  text-3xl  font-bold uppercase italic  text-white dark:text-black "
             >
               {name}
             </m.h1>
@@ -60,12 +60,12 @@ const Project = ({ project }) => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.6 }}
-              className="text-md mb-6 max-w-2xl font-bold text-slate-300 dark:text-slate-900   "
+              className="text-md ye mx-3 mt-2 max-w-2xl  font-bold text-zinc-500 dark:text-zinc-600"
             >
               {description}
             </m.p>
 
-            <div className="container mx-auto flex flex-col items-center justify-center px-4 py-6 xl:flex-row ">
+            <div className="container mx-auto flex flex-col items-center justify-center px-4 py-3 xl:flex-row ">
               <m.div
                 variants={fadeIn('up')}
                 initial="hidden"
@@ -88,7 +88,7 @@ const Project = ({ project }) => {
 
                 <a
                   href={`/project/${id}`}
-                  className=" mx-2  mt-4 justify-center overflow-hidden rounded-lg  border-2 border-blue-600/50  bg-blue-600 px-5 py-3 text-zinc-100 shadow
+                  className=" mx-2  mt-2 justify-center overflow-hidden rounded-lg  border-2 border-blue-600/50  bg-blue-600 px-5 py-3 text-zinc-100 shadow
                   transition-colors duration-300 hover:border-blue-600/50 
 hover:bg-zinc-900
 dark:hover:bg-zinc-100/50
