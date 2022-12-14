@@ -2,7 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import React, { Suspense, useState } from "react";
 
 import PropagateLoader from "react-spinners/PropagateLoader";
-import { ResponsiveNavBar } from "./head";
+import { ResponsiveNavBar } from "../components/head";
 import { projectsData } from "../data";
 import { useParams } from "react-router-dom";
 

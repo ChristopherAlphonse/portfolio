@@ -1,13 +1,8 @@
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import { LazyMotion, domAnimation, m } from 'framer-motion'
 
-import React from "react";
-import { fadeIn } from "../FramerVariant/variants";
+import React from 'react'
+import { fadeIn } from '../FramerVariant/variants'
 
-const ImageProps = {
-  width: 200,
-  height: 200,
-  alt: "christopher alphonse image",
-};
 const About = () => {
   return (
     <LazyMotion features={domAnimation}>
@@ -17,31 +12,31 @@ const About = () => {
       >
         <div className="container mx-auto">
           <m.div
-            variants={fadeIn("up")}
+            variants={fadeIn('up')}
             initial="hidden"
-            whileInView={"show"}
+            whileInView={'show'}
             viewport={{ once: false, amount: 0.1 }}
-            className="flex flex-col xl:flex-row gap-24"
+            className="flex flex-col gap-24 xl:flex-row"
           >
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
               <div className="flex flex-col">
-                <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block dark:text-zinc-900">
+                <h2 className="before:content-about relative mb-3 text-3xl font-medium before:absolute before:-top-[2rem] before:hidden before:opacity-40 dark:text-zinc-900 lg:text-4xl lg:font-extrabold before:lg:block">
                   Christopher Alphonse
                 </h2>
                 <m.p
-                  variants={fadeIn("down")}
+                  variants={fadeIn('down')}
                   initial="hidden"
-                  whileInView={"show"}
+                  whileInView={'show'}
                   className="mb-4 text-accent dark:text-blue-600"
                 >
                   Full-Stack Software Engineer
                 </m.p>
                 <hr className="mb-8 opacity-5" />
                 <m.p
-                  variants={fadeIn("up")}
+                  variants={fadeIn('up')}
                   initial="hidden"
-                  whileInView={"show"}
-                  className="mb-8  dark:text-zinc-900 text-xl"
+                  whileInView={'show'}
+                  className="mb-8  text-xl dark:text-zinc-900"
                 >
                   As a programmer with experience in front and back end
                   development, I specialize in creating engaging online user
@@ -89,7 +84,7 @@ const About = () => {
         </div>
       </section>
     </LazyMotion>
-  );
-};
+  )
+}
 
-export default About;
+export default About

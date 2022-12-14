@@ -2,41 +2,42 @@
 
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx,md,html}",
-    "./node_modules/flowbite/**/*.js",
+    './src/**/*.{js,jsx,ts,tsx,md,html}',
+    './node_modules/flowbite/**/*.js'
   ],
-  darkMode: "class",
+  darkMode: 'class',
   theme: {
     fontFamily: {
-      primary: "Playfair Display",
-      body: "Work Sans",
+      primary: 'Playfair Display',
+      body: 'Work Sans'
     },
     container: {
       padding: {
-        DEFAULT: ".9rem",
-        lg: "2.5rem",
-      },
+        DEFAULT: '.9rem',
+        lg: '2.5rem'
+      }
     },
 
     screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px'
     },
 
     extend: {
       colors: {
-        primary: "#050402",
-        secondary: "#1C1D24",
-        tertiary: "#1C1D24",
+        primary: '#050402',
+        secondary: '#1C1D24',
+        tertiary: '#1C1D24',
         accent: {
-          DEFAULT: "#7FC7EB",
-          hover: "#639CB8",
+          DEFAULT: '#7FC7EB',
+          hover: '#639CB8'
         },
-        paragraph: "#D1D1D1",
-      },
-    },
+        paragraph: '#D1D1D1'
+      }
+    }
   },
-  plugins: [require("flowbite/plugin")],
-};
+  plugins: [require('flowbite/plugin')],
+  plugins: [require('prettier-plugin-tailwindcss')]
+}

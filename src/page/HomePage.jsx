@@ -1,4 +1,4 @@
-import "./index.css";
+import './index.css'
 
 import {
   About,
@@ -6,23 +6,23 @@ import {
   Contact,
   Footer,
   Hero,
-  Projects,
-} from "./components/compIndex";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import React, { Suspense, useState } from "react";
+  Projects
+} from '../components/compIndex'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
+import React, { Suspense, useState } from 'react'
 
-import PropagateLoader from "react-spinners/PropagateLoader";
-import { ResponsiveNavBar } from "./components/head";
+import PropagateLoader from 'react-spinners/PropagateLoader'
+import { ResponsiveNavBar } from '../components/Head'
 
 const HomePage = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false)
 
   React.useEffect(() => {
-    setLoading(true);
+    setLoading(true)
     setTimeout(() => {
-      setLoading(false);
-    }, 1200);
-  }, []);
+      setLoading(false)
+    }, 1200)
+  }, [])
 
   return (
     <HelmetProvider>
@@ -45,13 +45,13 @@ const HomePage = () => {
             size={20}
             speedMultiplier={2}
             cssOverride={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              textAlign: "center",
-              minHeight: "100vh",
-              width: "100%",
-              background: "#18181b",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'center',
+              minHeight: '100vh',
+              width: '100%',
+              background: '#18181b'
             }}
           />
         ) : (
@@ -79,7 +79,7 @@ const HomePage = () => {
         )}
       </div>
     </HelmetProvider>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage

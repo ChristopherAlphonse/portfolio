@@ -2,30 +2,30 @@ import {
   AiFillCodepenCircle,
   AiFillGithub,
   AiFillLinkedin,
-  AiFillWindows,
-} from "react-icons/ai";
+  AiFillWindows
+} from 'react-icons/ai'
 
-import React from "react";
+import React from 'react'
 
-const github = "https://github.com/ChristopherAlphonse";
+const github = 'https://github.com/ChristopherAlphonse'
 const msStore =
-  "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme";
-const linkedin = "https://www.linkedin.com/in/christopher-alphonse/";
-const codepen = "https://codepen.io/christopheralphonse/";
+  'https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme'
+const linkedin = 'https://www.linkedin.com/in/christopher-alphonse/'
+const codepen = 'https://codepen.io/christopheralphonse/'
 
 const Footer = () => {
-  const today = new Date();
-  const year = today.getFullYear();
+  const today = new Date()
+  const year = today.getFullYear()
   return (
     <footer
       id="section2"
-      className="flex flex-col items-center justify-between p-6  sm:flex-row md:h-[10vh] bg-tertiary dark:bg-gray-200
+      className="flex flex-col items-center justify-between bg-tertiary  p-6 text-zinc-500 dark:bg-gray-200 dark:text-zinc-700
       
       
-      text-zinc-500 dark:text-zinc-700
+      sm:flex-row md:h-[10vh]
        "
     >
-      <div className="items-center grid-flow-col">
+      <div className="grid-flow-col items-center">
         <p>Copyright © 2022 - {year} - All right reserved</p>
       </div>
       <div className="grid-flow-col gap-6 md:place-self-center  md:justify-self-end">
@@ -43,7 +43,7 @@ const Footer = () => {
         </a>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

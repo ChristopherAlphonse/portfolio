@@ -1,15 +1,15 @@
-import { lazy } from "react";
+import { lazy } from 'react'
 
-const Project = lazy(() => import("./Project"));
-const Projects = lazy(() => import("./Projects"));
-const BackTopBtn = lazy(() => import("./BackTopBtn"));
-const DownBtn = lazy(() => import("./DownBtn"));
-const Contact = lazy(() => import("./Contact"));
-const Footer = lazy(() => import("./Footer"));
-const Head = lazy(() => import("./Head"));
-const Hero = lazy(() => import("./Hero"));
-const ProjectDetails = lazy(() => import("./ProjectDetails"));
-const About = lazy(() => import("./About"));
+const Project = lazy(() => import('./Project'))
+const Projects = lazy(() => import('./Projects'))
+const BackTopBtn = lazy(() => import('./BackTopBtn'))
+const DownBtn = lazy(() => import('./DownBtn'))
+const Contact = lazy(() => import('./Contact'))
+const Footer = lazy(() => import('./Footer'))
+const Head = lazy(() => import('./Head'))
+const Hero = lazy(() => import('./Hero'))
+const ProjectDetails = lazy(() => import('./ProjectDetails'))
+const About = lazy(() => import('./About'))
 
 export {
   Project,
@@ -21,5 +21,5 @@ export {
   Head,
   Hero,
   ProjectDetails,
-  About,
-};
+  About
+}
