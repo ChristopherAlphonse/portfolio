@@ -1,15 +1,15 @@
-import { LazyMotion, domAnimation, m } from 'framer-motion'
-import { fadeIn, transition } from '../FramerVariant/variants'
+import { LazyMotion, domAnimation, m } from "framer-motion";
+import { fadeIn, transition } from "../FramerVariant/variants";
 
-import React from 'react'
+import React from "react";
 
 const logoProps = {
   height: 96,
-  width: 96
-}
+  width: 96,
+};
 
 const Project = ({ project }) => {
-  const { id, image, description, stack, view, name } = project
+  const { id, image, description, stack, view, name } = project;
 
   return (
     <LazyMotion features={domAnimation}>
@@ -19,9 +19,9 @@ const Project = ({ project }) => {
             <div className="relative ">
               <div>
                 <m.img
-                  variants={transition('right')}
+                  variants={transition("right")}
                   initial="hidden"
-                  whileInView={'show'}
+                  whileInView={"show"}
                   viewport={{ once: false, amount: 0.6 }}
                   className=" hover:scale-44 block h-full w-full object-cover  object-center duration-500 ease-in"
                   alt={id}
@@ -36,9 +36,9 @@ const Project = ({ project }) => {
            "
               >
                 <m.div
-                  variants={transition('left')}
+                  variants={transition("left")}
                   initial="hidden"
-                  whileInView={'show'}
+                  whileInView={"show"}
                   viewport={{ once: false, amount: 0.6 }}
                   className="mx-6"
                 >
@@ -47,18 +47,18 @@ const Project = ({ project }) => {
               </div>
             </div>
             <m.h1
-              variants={transition('up')}
+              variants={transition("up")}
               initial="hidden"
-              whileInView={'show'}
+              whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
               className=" mt-1 font-primary  text-3xl  font-bold uppercase italic  text-white dark:text-black "
             >
               {name}
             </m.h1>
             <m.p
-              variants={transition('down')}
+              variants={transition("down")}
               initial="hidden"
-              whileInView={'show'}
+              whileInView={"show"}
               viewport={{ once: false, amount: 0.6 }}
               className="text-md ye mx-3 mt-2 max-w-2xl  font-bold text-zinc-500 dark:text-zinc-600"
             >
@@ -67,13 +67,14 @@ const Project = ({ project }) => {
 
             <div className="container mx-auto flex flex-col items-center justify-center px-4 py-3 xl:flex-row ">
               <m.div
-                variants={fadeIn('up')}
+                variants={fadeIn("up")}
                 initial="hidden"
-                whileInView={'show'}
+                whileInView={"show"}
                 viewport={{ once: false, amount: 0.2 }}
                 className="mt-6 sm:-mx-2"
               >
                 <a
+                  target="_blank"
                   href={view}
                   className=" mt-4  justify-center overflow-hidden rounded-lg border-2  border-blue-600/50 px-5  py-3 text-zinc-100 shadow transition-colors duration-300 hover:bg-blue-600/50
                   dark:text-zinc-900  dark:hover:bg-blue-600
@@ -107,7 +108,7 @@ sm:w-auto
         </div>
       </div>
     </LazyMotion>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

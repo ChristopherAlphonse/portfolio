@@ -1,32 +1,38 @@
-import { Helmet, HelmetProvider } from 'react-helmet-async'
-import React, { Suspense, useState } from 'react'
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import React, { Suspense, useState } from "react";
 
-import PropagateLoader from 'react-spinners/PropagateLoader'
-import { ResponsiveNavBar } from '../components/head'
-import { projectsData } from '../data'
-import { useParams } from 'react-router-dom'
+import PropagateLoader from "react-spinners/PropagateLoader";
+import { ResponsiveNavBar } from "../components/head";
+import { projectsData } from "../data";
+import { useParams } from "react-router-dom";
 
 const ProjectDetails = () => {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   React.useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false)
-    }, 800)
-  }, [])
+      setLoading(false);
+    }, 800);
+  }, []);
 
-  const { id } = useParams()
+  const { id } = useParams();
 
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse | {id}</title>
+        <title>
+          Christopher Alphonse | {id} | Full-Stack Developer | Boston, MA
+        </title>
+
+        <meta
+          name="keywords"
+          content="Christopher Alphonse, full-stack developer, Boston, MA, software engineer, web development, front-end development, back-end development"
+        />
 
         <meta
           name="description"
-          content=" I specialize in designing and building amazing digital experiences that are both functional and engaging.
-          At the moment, I'm concentrating on learning new technologies and improving human-centered services ."
+          content="Christopher Alphonse is a full-stack developer based in Boston, MA. With experience in front-end and back-end development, Christopher is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. Check out his portfolio to learn more about his work and skills."
         />
       </Helmet>
 
@@ -37,13 +43,13 @@ const ProjectDetails = () => {
             size={20}
             speedMultiplier={2}
             cssOverride={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              textAlign: 'center',
-              minHeight: '100vh',
-              width: '100%',
-              background: ' #3f3f46 '
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              minHeight: "100vh",
+              width: "100%",
+              background: " #3f3f46 ",
             }}
           />
         ) : (
@@ -74,7 +80,7 @@ const ProjectDetails = () => {
                           </div>
                         </div>
                       </section>
-                    )
+                    );
                   })}
               </section>
             </Suspense>
@@ -82,7 +88,7 @@ const ProjectDetails = () => {
         )}
       </div>
     </HelmetProvider>
-  )
-}
+  );
+};
 
-export default ProjectDetails
+export default ProjectDetails;

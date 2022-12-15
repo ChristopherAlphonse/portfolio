@@ -1,4 +1,4 @@
-import '../index.css'
+import "../index.css";
 
 import {
   About,
@@ -6,36 +6,37 @@ import {
   Contact,
   Footer,
   Hero,
-  Projects
-} from '../components/compIndex'
-import { Helmet, HelmetProvider } from 'react-helmet-async'
-import React, { Suspense, useState } from 'react'
+  Projects,
+  ResponsiveNavBar,
+} from "../components/compIndex";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import React, { Suspense, useState } from "react";
 
-import PropagateLoader from 'react-spinners/PropagateLoader'
-import { ResponsiveNavBar } from '../components/Head'
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 const HomePage = () => {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   React.useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false)
-    }, 1200)
-  }, [])
+      setLoading(false);
+    }, 1200);
+  }, []);
 
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>
-          Christopher Alphonse | Full Stack Developer, Software Engineer, Front
-          end & App Developer.
-        </title>
+        <title>Christopher Alphonse | Full-Stack Developer | Boston, MA</title>
+
+        <meta
+          name="keywords"
+          content="Christopher Alphonse, full-stack developer, Boston, MA, software engineer, web development, front-end development, back-end development"
+        />
 
         <meta
           name="description"
-          content=" I specialize in designing and building amazing digital experiences that are both functional and engaging.
-          At the moment, I'm concentrating on learning new technologies and improving human-centered services ."
+          content="Christopher Alphonse is a full-stack developer based in Boston, MA. With experience in front-end and back-end development, Christopher is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. Check out his portfolio to learn more about his work and skills."
         />
       </Helmet>
       <div className="">
@@ -45,13 +46,13 @@ const HomePage = () => {
             size={20}
             speedMultiplier={2}
             cssOverride={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              textAlign: 'center',
-              minHeight: '100vh',
-              width: '100%',
-              background: '#18181b'
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              minHeight: "100vh",
+              width: "100%",
+              background: "#18181b",
             }}
           />
         ) : (
@@ -79,7 +80,7 @@ const HomePage = () => {
         )}
       </div>
     </HelmetProvider>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

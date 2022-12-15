@@ -1,16 +1,17 @@
-import '../index.css'
+import "../index.css";
 
-import { Helmet, HelmetProvider } from 'react-helmet-async'
-import React, { lazy } from 'react'
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import React, { lazy } from "react";
 
-import { ResponsiveNavBar } from '../components/head'
-import Theme from '../comp/ThemeIndex'
+import { ResponsiveNavBar } from "../components/head";
 
 const pageNotFound = () => {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse | 404 </title>
+        <title>
+          Christopher Alphonse | 404 | Full-Stack Developer | Boston, MA
+        </title>
 
         <meta
           name="description"
@@ -27,7 +28,7 @@ const pageNotFound = () => {
           </h1>
           <button>
             <a
-              className="md:btn-lg mt-9 mr-2 bg-blue-600  px-20  transition-all hover:bg-blue-600/50 dark:bg-blue-700 dark:hover:bg-blue-700/70    "
+              className="md:btn-lg mt-9 mr-2 bg-blue-600  px-20  transition-all hover:bg-blue-600/50 dark:bg-blue-700 dark:hover:bg-blue-700/70"
               href="/"
             >
               Return Home
@@ -36,7 +37,7 @@ const pageNotFound = () => {
         </div>
       </>
     </HelmetProvider>
-  )
-}
+  );
+};
 
-export default pageNotFound
+export default pageNotFound;
