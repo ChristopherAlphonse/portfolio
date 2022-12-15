@@ -1,44 +1,49 @@
-import { Logo, Resume } from '../../src/assets'
-import React, { lazy, useEffect, useState } from 'react'
+import { Logo, Resume } from "../../src/assets";
+import React, { lazy, useEffect, useState } from "react";
 
-const Theme = lazy(() => import('../comp/ThemeToggle'))
+const Theme = lazy(() => import("../comp/ThemeToggle"));
+
+const ImageProps = {
+  width: 48,
+  height: 48,
+};
 
 const navigation = [
   {
-    name: 'Resume',
-    href: `${Resume}`
+    name: "Resume",
+    href: `${Resume}`,
   },
   {
-    name: 'Cert',
-    href: 'https://drive.google.com/file/d/1k1qrYWQeJOyMB743MuDphaMmcZG5hTlR/view?usp=sharing'
+    name: "Cert",
+    href: "https://drive.google.com/file/d/1k1qrYWQeJOyMB743MuDphaMmcZG5hTlR/view?usp=sharing",
   },
   {
-    name: 'GitHub',
-    href: 'https://github.com/ChristopherAlphonse'
+    name: "GitHub",
+    href: "https://github.com/ChristopherAlphonse",
   },
   {
-    name: 'linkedin',
-    href: 'https://www.linkedin.com/in/christopher-alphonse'
+    name: "linkedin",
+    href: "https://www.linkedin.com/in/christopher-alphonse",
   },
   {
     name: <Theme />,
-    href: null
-  }
-]
+    href: null,
+  },
+];
 
 export const ResponsiveNavBar = () => {
-  const [bg, setBg] = useState(false)
+  const [bg, setBg] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      return window.scrollY > 10 ? setBg(true) : setBg(false)
-    })
-  })
-  const [menuOpen, setMenuOpen] = useState(false)
+    window.addEventListener("scroll", () => {
+      return window.scrollY > 10 ? setBg(true) : setBg(false);
+    });
+  });
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div
       className={`${
-        bg ? 'h-20  bg-zinc-900 shadow-md dark:bg-zinc-100 ' : 'h-24 '
+        bg ? "h-20  bg-zinc-900 shadow-md dark:bg-zinc-100 " : "h-24 "
       }  fixed top-0 z-10 w-full text-white  transition-all duration-300 dark:text-zinc-700 `}
     >
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -55,8 +60,8 @@ export const ResponsiveNavBar = () => {
         {menuOpen && <MobileMenu>{navLinks}</MobileMenu>}
       </div>
     </div>
-  )
-}
+  );
+};
 
 const navLinks = navigation.map((page) => (
   <a
@@ -72,7 +77,7 @@ const navLinks = navigation.map((page) => (
   >
     {page.name}
   </a>
-))
+));
 
 const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className="flex items-center justify-between p-4">
@@ -91,19 +96,27 @@ const Navbar = ({ menuOpen, setMenuOpen }) => (
       <MenuAlt4Svg menuOpen={menuOpen} />
     </button>
   </div>
-)
+);
 
 const MobileMenu = ({ children }) => (
   <nav className="flex flex-col space-y-3 p-4 md:hidden ">{children}</nav>
-)
+);
 
-const FireSvg = () => <img src={Logo} alt="logo" className="h-12 w-12 " />
+const FireSvg = () => (
+  <img
+    src={Logo}
+    alt="logo"
+    loading="lazy"
+    className="h-12 w-12"
+    {...ImageProps}
+  />
+);
 
 const MenuAlt4Svg = ({ menuOpen }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={`ease h-8 w-8 transition duration-100 ${
-      menuOpen ? 'rotate-90 transform' : ''
+      menuOpen ? "rotate-90 transform" : ""
     }`}
     viewBox="0 0 20 20"
     fill="currentColor"
@@ -114,4 +127,4 @@ const MenuAlt4Svg = ({ menuOpen }) => (
       clipRule="evenodd"
     />
   </svg>
-)
+);

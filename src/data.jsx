@@ -1,9 +1,10 @@
+import { AD, AZ, FU, ME, NO, PU } from "./assets";
+
 export const projectsData = [
   {
     id: "Azalais-Dark-Theme",
     name: "Azalais Dark Theme",
-    image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670386320/Aza%20Theme/SERVER_zayubs.jpg",
+    image: AZ,
     category: "theme",
     description:
       "Azalais Dark Theme is the perfect solution for anyone who spends a lot of time in a text editor. I designed it to be easy on the eyes and reduce eye fatigue, and it's become my daily theme for VS Code.",
@@ -16,8 +17,7 @@ export const projectsData = [
   {
     id: "Noted",
     name: "Noted",
-    image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1667619885/Noted/logo-white_scpd27.png",
+    image: NO,
     category: "Web development",
     description:
       "Note taking app with full stack for web and desktop. Native features include password reset and sign in/up. Still in development ",
@@ -29,8 +29,7 @@ export const projectsData = [
   {
     id: "Funky-Junkie",
     name: "Funky Junkie",
-    image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/funy_x5ygvq.jpg",
+    image: FU,
     category: "Store-front",
     description:
       "Shopify store for an urban clothing store based in Canton, MA",
@@ -42,8 +41,7 @@ export const projectsData = [
   {
     id: "Pure-by-Mel",
     name: "Pure by Mel",
-    image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1655672313/cld-sample-4.jpg",
+    image: PU,
     category: "Web development",
     description:
       "Smoothie store based in Randolph, MA, and specialize in providing sweet treats for your loved ones during the holiday season",
@@ -57,8 +55,7 @@ export const projectsData = [
   {
     id: "Melissa-and-Lexis",
     name: "Melissa and Lexis",
-    image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656004/portfolio/me_cjagc2.jpg",
+    image: ME,
     category: "Store-front",
     description:
       "This local store specializes in providing delicious sweets and smoothies for intimate occasions. From romantic desserts to refreshing smoothies, they have a wide variety of treats that are perfect for any special moment. ",
@@ -70,8 +67,7 @@ export const projectsData = [
   {
     id: "Admin-Dashboard",
     name: "Admin Dashboard",
-    image:
-      "https://res.cloudinary.com/img-api-pager-2/image/upload/v1670656382/screenshot1_gthucf.png",
+    image: AD,
     category: "Web development",
     description:
       "This dashboard is designed to support effective management and workflow management. It provides a comprehensive, yet user-friendly interface that allows managers to quickly access and analyze key data ",

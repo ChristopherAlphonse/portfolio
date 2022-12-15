@@ -4,8 +4,8 @@ import { fadeIn, transition } from "../FramerVariant/variants";
 import React from "react";
 
 const logoProps = {
-  height: 96,
-  width: 96,
+  height: 563,
+  width: 1000,
 };
 
 const Project = ({ project }) => {
@@ -14,8 +14,8 @@ const Project = ({ project }) => {
   return (
     <LazyMotion features={domAnimation}>
       <div>
-        <div className="  drop-shadow-9xl mt-8 rounded-sm  p-0.5  text-white  shadow-xl transition  duration-300 ease-in-out dark:bg-zinc-300 dark:text-black md:mt-16 md:grid-cols-2 xl:grid-cols-3 xl:hover:scale-110 ">
-          <div className="bg-zinc-900 text-center dark:bg-zinc-200">
+        <div className="  drop-shadow-9xl mt-8 rounded-sm  p-0.5  text-white  shadow-xl  dark:bg-zinc-300 dark:text-black md:mt-16 md:grid-cols-2 xl:grid-cols-3   ">
+          <div className="bg-zinc-900 text-center dark:bg-zinc-200  ">
             <div className="relative ">
               <div>
                 <m.img
@@ -23,7 +23,7 @@ const Project = ({ project }) => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.6 }}
-                  className=" hover:scale-44 block h-full w-full object-cover  object-center duration-500 ease-in"
+                  className=" im hover:scale-44 block h-full w-full object-cover  object-center duration-500 ease-in"
                   alt={id}
                   src={image}
                   loading="lazy"

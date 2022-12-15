@@ -6,6 +6,10 @@
   font-family: var(--font-face-primary);
 }
 
+.im {
+  width: 96rem;
+  height: 24rem;
+}
 .secondary_title {
   font-family: var(--font-face-secondary);
 }
