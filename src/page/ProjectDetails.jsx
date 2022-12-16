@@ -11,6 +11,11 @@ import { TfiWorld } from "react-icons/tfi";
 import { projectsData } from "../data";
 import { useParams } from "react-router-dom";
 
+const ImageProps = {
+  width: 48,
+  height: 48,
+};
+
 const ProjectDetails = () => {
   const [loading, setLoading] = useState(false);
 
@@ -62,7 +67,7 @@ const ProjectDetails = () => {
             <Suspense fallback={<div />}>
               <ResponsiveNavBar />
               <LazyMotion features={domAnimation}>
-                <section className="containerr flex h-full lg:h-[100vh] items-center justify-center overflow-hidden bg-zinc-800 py-32 dark:bg-slate-50 lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0">
+                <section className="containerr flex h-full lg:h-[100vh] items-center justify-center  bg-zinc-800 py-32 dark:bg-slate-50 ">
                   {projectsData
                     .filter((z) => z.id === id)
                     .map((z) => {
@@ -83,9 +88,10 @@ const ProjectDetails = () => {
                             </h1>
                             <div className=" mx-auto flex flex-wrap">
                               <img
-                                alt={`${z.name}, ${z.short}`}
                                 className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
                                 src={z.image}
+                                alt={`${z.name}, ${z.short} image`}
+                                {...ImageProps}
                               />
                               <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                                 <div className="flex mb-4 ">

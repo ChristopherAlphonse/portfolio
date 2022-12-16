@@ -8,6 +8,7 @@ import {
   Hero,
   Projects,
   ResponsiveNavBar,
+  TimeLine,
 } from "../components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import React, { Suspense, useState } from "react";
@@ -62,6 +63,7 @@ const HomePage = () => {
 
               <Hero />
               <About />
+              <TimeLine />
             </Suspense>
 
             <Suspense fallback={<div />}>
