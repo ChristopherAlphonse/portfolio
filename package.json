@@ -15,7 +15,6 @@
   "dependencies": {
     "@builder.io/partytown": "^0.7.3",
     "@emailjs/browser": "^3.10.0",
-    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@headlessui/react": "^1.7.5",
     "axios": "^1.2.1",
     "classnames": "^2.3.2",

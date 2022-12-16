@@ -1,8 +1,13 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { Suspense, useState } from "react";
+import { fadeIn, transition } from "../FramerVariant/variants";
 
+import { BsArrowReturnLeft } from "react-icons/bs";
+import { Footer } from "../components/compIndex";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { ResponsiveNavBar } from "../components/head";
+import { TfiWorld } from "react-icons/tfi";
 import { projectsData } from "../data";
 import { useParams } from "react-router-dom";
 
@@ -56,36 +61,80 @@ const ProjectDetails = () => {
           <>
             <Suspense fallback={<div />}>
               <ResponsiveNavBar />
-
-              <section className="containerr flex h-[100vh] items-center overflow-hidden bg-zinc-800 py-32 dark:bg-slate-50 lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0">
-                {projectsData
-                  .filter((z) => z.id === id)
-                  .map((z) => {
-                    return (
-                      <section className="bg-white dark:bg-gray-900" key={z.id}>
-                        <div className="mx-auto max-w-screen-xl items-center gap-16 py-8 px-4 lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-                          <div className="font-light text-gray-500 dark:text-gray-400 sm:text-lg">
-                            <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+              <LazyMotion features={domAnimation}>
+                <section className="containerr flex h-full lg:h-[100vh] items-center justify-center overflow-hidden bg-zinc-800 py-32 dark:bg-slate-50 lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0">
+                  {projectsData
+                    .filter((z) => z.id === id)
+                    .map((z) => {
+                      return (
+                        <section key={z.id}>
+                          <div className="container px-5 py-24 mx-auto">
+                            <m.h2
+                              variants={transition("down")}
+                              initial="hidden"
+                              whileInView={"show"}
+                              viewport={{ once: false, amount: 0.7 }}
+                              className="title-font text-3xl md:text-7xl  dark:text-zinc-900  tracking-widest mb-1"
+                            >
                               {z.name}
-                            </h2>
-                            <p className="mb-4">{z.description2}</p>
-                            <p>{z.stack}</p>
+                            </m.h2>
+                            <h1 className="font-body text-gray-500 text-sm md:text-lg title-font font-medium mb-1">
+                              {z.short}
+                            </h1>
+                            <div className=" mx-auto flex flex-wrap">
+                              <img
+                                alt={`${z.name}, ${z.short}`}
+                                className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                                src={z.image}
+                              />
+                              <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <div className="flex mb-4 ">
+                                  <span className="flex items-center text-blue-300">
+                                    <span>{z.stack}</span>
+                                  </span>
+                                </div>
+                                <button className="mb-5 px-6 bg-slate-500">
+                                  {z.status}
+                                </button>
+                                <p className="leading-relaxed md:text-md">
+                                  {z.description2}
+                                </p>
+                                <div className="flex mt-2 items-center pb-5 border-b-2 border-zinc-100 mb-5"></div>
+                                <div className="flex">
+                                  <span className="flex ml-1 pl-3 py-1 text-blue-600 space-x-2  transition-all hover:text-blue-600/50 items-center dark:text-blue-700 dark:hover:text-blue-700/70">
+                                    <a
+                                      href={z.view}
+                                      className="flex items-center"
+                                    >
+                                      <TfiWorld />{" "}
+                                      <span className="ml-2 items-center">
+                                        V I S I T
+                                      </span>
+                                    </a>
+                                  </span>
+
+                                  <a
+                                    href="/"
+                                    className="flex ml-auto text-white  border-0 py-1 px-9 btn btn-md md:btn-lg  bg-blue-600  transition-all hover:bg-blue-600/50 items-center dark:bg-blue-700 dark:hover:bg-blue-700/70 rounded"
+                                  >
+                                    <BsArrowReturnLeft />{" "}
+                                    <span className="ml-2 items-center">
+                                      R E T U R N
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div className="mt-8 grid grid-cols-2 gap-4">
-                            <img
-                              className="w-full rounded-lg"
-                              src={z.image}
-                              alt={z.name}
-                            />
-                          </div>
-                        </div>
-                      </section>
-                    );
-                  })}
-              </section>
+                        </section>
+                      );
+                    })}
+                </section>
+              </LazyMotion>
             </Suspense>
           </>
         )}
+        <Footer />
       </div>
     </HelmetProvider>
   );
