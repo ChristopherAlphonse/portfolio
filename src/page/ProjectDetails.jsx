@@ -67,7 +67,7 @@ const ProjectDetails = () => {
             <Suspense fallback={<div />}>
               <ResponsiveNavBar />
               <LazyMotion features={domAnimation}>
-                <section className="containerr flex h-full lg:h-[100vh] items-center justify-center  bg-zinc-800 py-32 dark:bg-slate-50 ">
+                <section className="containerr flex h-full lg:h-[100vh] items-center justify-center  bg-zinc-800 py-32 dark:bg-zinc-50 ">
                   {projectsData
                     .filter((z) => z.id === id)
                     .map((z) => {
@@ -83,7 +83,7 @@ const ProjectDetails = () => {
                             >
                               {z.name}
                             </m.h2>
-                            <h1 className="font-body text-gray-500 text-sm md:text-lg title-font font-medium mb-1">
+                            <h1 className="font-body text-zinc-500 text-sm md:text-lg title-font font-medium mb-1">
                               {z.short}
                             </h1>
                             <div className=" mx-auto flex flex-wrap">
@@ -102,7 +102,7 @@ const ProjectDetails = () => {
                                 <button className="mb-5 px-6 bg-slate-500">
                                   {z.status}
                                 </button>
-                                <p className="leading-relaxed md:text-md">
+                                <p className="leading-relaxed md:text-lg text-zinc-500">
                                   {z.description2}
                                 </p>
                                 <div className="flex mt-2 items-center pb-5 border-b-2 border-zinc-100 mb-5"></div>
