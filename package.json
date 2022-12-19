@@ -10,7 +10,7 @@
     "devi": "yarn global add npm-check-updates && ncu -u && yarn install && yarn autoclean --force",
     "deploy": "yarn party && vite build && firebase deploy --only hosting",
     "firebase": "firebase login && firebase init",
-    "style": "eslint .",
+    "style": "eslint",
     "party": "partytown copylib public/~partytown"
   },
   "dependencies": {
