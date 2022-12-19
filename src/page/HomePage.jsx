@@ -1,4 +1,4 @@
-import "../index.css";
+import '../index.css';
 
 import {
   About,
@@ -9,11 +9,13 @@ import {
   Projects,
   ResponsiveNavBar,
   TimeLine,
-} from "../components/compIndex";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import React, { Suspense, useState } from "react";
+} from '../components/compIndex';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { Suspense, useState } from 'react';
 
-import PropagateLoader from "react-spinners/PropagateLoader";
+import { Note } from '../components/Note';
+import PropagateLoader from 'react-spinners/PropagateLoader';
+import TempHero from '../components/TempHero';
 
 const HomePage = () => {
   const [loading, setLoading] = useState(false);
@@ -31,29 +33,29 @@ const HomePage = () => {
         <title>Christopher Alphonse | Full-Stack Developer | Boston, MA</title>
 
         <meta
-          name="keywords"
-          content="Christopher Alphonse, full-stack developer, Boston, MA, software engineer, web development, front-end development, back-end development"
+          name='keywords'
+          content='Christopher Alphonse, full-stack developer, Boston, MA, software engineer, web development, front-end development, back-end development'
         />
 
         <meta
-          name="description"
-          content="Christopher Alphonse is a full-stack developer based in Boston, MA. With experience in front-end and back-end development, Christopher is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. Check out his portfolio to learn more about his work and skills."
+          name='description'
+          content='Christopher Alphonse is a full-stack developer based in Boston, MA. With experience in front-end and back-end development, Christopher is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. Check out his portfolio to learn more about his work and skills.'
         />
       </Helmet>
-      <div className="">
+      <div className=''>
         {loading ? (
           <PropagateLoader
-            color="#36c8d6"
+            color='#36c8d6'
             size={20}
             speedMultiplier={2}
             cssOverride={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              textAlign: "center",
-              minHeight: "100vh",
-              width: "100%",
-              background: "#18181b",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'center',
+              minHeight: '100vh',
+              width: '100%',
+              background: '#18181b',
             }}
           />
         ) : (
@@ -67,7 +69,8 @@ const HomePage = () => {
             </Suspense>
 
             <Suspense fallback={<div />}>
-              <Projects />
+              <TempHero />
+              <Note />
             </Suspense>
 
             <Suspense fallback={<div />}>
