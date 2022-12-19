@@ -1,16 +1,16 @@
 /* eslint-disable no-lone-blocks */
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import { BsArrowUp } from 'react-icons/bs'
+import { BsArrowUp } from "react-icons/bs";
 
 const BackTopBtn = () => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      return window.scrollY > 1000 ? setShow(true) : setShow(false)
-    })
-  })
+    window.addEventListener("scroll", () => {
+      return window.scrollY > 1000 ? setShow(true) : setShow(false);
+    });
+  });
 
   {
     return (
@@ -22,8 +22,8 @@ const BackTopBtn = () => {
           <BsArrowUp className="h-6 w-6 text-blue-300" />
         </a>
       )
-    )
+    );
   }
-}
+};
 
-export default BackTopBtn
+export default BackTopBtn;

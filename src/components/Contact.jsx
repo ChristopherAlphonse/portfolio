@@ -1,50 +1,50 @@
-import { LazyMotion, domAnimation, m } from 'framer-motion'
-import React, { useRef } from 'react'
-import toast, { Toaster } from 'react-hot-toast'
+import { LazyMotion, domAnimation, m } from "framer-motion";
+import React, { useRef } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
-import emailjs from '@emailjs/browser'
-import { fadeIn } from '../FramerVariant/variants'
+import emailjs from "@emailjs/browser";
+import { fadeIn } from "../FramerVariant/variants";
 
-const Service = import.meta.env.VITE_SERVICE_ID
-const Template = import.meta.env.VITE_TEMPLATE_ID
-const Key = import.meta.env.VITE_PUBLIC_KEY
+const Service = import.meta.env.VITE_SERVICE_ID;
+const Template = import.meta.env.VITE_TEMPLATE_ID;
+const Key = import.meta.env.VITE_PUBLIC_KEY;
 
 const Contact = () => {
-  const form = useRef()
-  const fullRef = useRef('')
-  const emailRef = useRef('')
-  const subjectRef = useRef('')
-  const messageRef = useRef('')
+  const form = useRef();
+  const fullRef = useRef("");
+  const emailRef = useRef("");
+  const subjectRef = useRef("");
+  const messageRef = useRef("");
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     let params = {
       name: e.target.user_name.value,
       email: e.target.user_email.value,
       subject: e.target.user_subject.value,
-      message: e.target.message.value
-    }
+      message: e.target.message.value,
+    };
 
-    console.table(params)
+    console.table(params);
     const notify = () => {
-      toast.success('Email sent', {
+      toast.success("Email sent", {
         duration: 1100,
-        position: 'top-right'
-      })
-    }
+        position: "top-right",
+      });
+    };
 
     emailjs.sendForm(Service, Template, form.current, Key).then(
       (result) => {
-        console.log(result.text)
-        notify()
+        console.log(result.text);
+        notify();
       },
       (error) => {
-        console.log(error.text)
+        console.log(error.text);
       }
-    )
-    e.target.reset()
-  }
+    );
+    e.target.reset();
+  };
 
   return (
     <LazyMotion features={domAnimation}>
@@ -55,9 +55,9 @@ const Contact = () => {
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">
             <m.p
-              variants={fadeIn('right')}
+              variants={fadeIn("right")}
               initial="hidden"
-              whileInView={'show'}
+              whileInView={"show"}
               viewport={{ once: false, amount: 0.4 }}
               className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text font-primary text-5xl font-semibold  capitalize italic text-transparent  dark:from-blue-600 dark:to-blue-300  lg:text-4xl
             "
@@ -66,9 +66,9 @@ const Contact = () => {
             </m.p>
 
             <m.h2
-              variants={fadeIn('right')}
+              variants={fadeIn("right")}
               initial="hidden"
-              whileInView={'show'}
+              whileInView={"show"}
               viewport={{ once: false, amount: 0.4 }}
               className="title-para py-2 font-body font-bold text-zinc-500 dark:text-zinc-600"
             >
@@ -79,9 +79,9 @@ const Contact = () => {
           </div>
           <div className="mt-10 flex flex-col justify-center lg:flex-row lg:gap-x-8">
             <m.form
-              variants={fadeIn('left')}
+              variants={fadeIn("left")}
               initial="hidden"
-              whileInView={'show'}
+              whileInView={"show"}
               viewport={{ once: false, amount: 0.4 }}
               ref={form}
               onSubmit={sendEmail}
@@ -148,21 +148,21 @@ const Contact = () => {
                 containerStyle={{}}
                 toastOptions={{
                   // Define default options
-                  className: '',
+                  className: "",
                   duration: 1000,
                   style: {
-                    background: '#363636',
-                    color: '#fff'
+                    background: "#363636",
+                    color: "#fff",
                   },
 
                   // Default options for specific types
                   success: {
                     duration: 1000,
                     theme: {
-                      primary: 'green',
-                      secondary: 'black'
-                    }
-                  }
+                      primary: "green",
+                      secondary: "black",
+                    },
+                  },
                 }}
               />
             </m.form>
@@ -170,7 +170,7 @@ const Contact = () => {
         </div>
       </section>
     </LazyMotion>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

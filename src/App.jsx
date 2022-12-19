@@ -1,9 +1,9 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import { HomePage, PageNotFound, ProjectDetails } from './page/index'
-import React, { Suspense } from 'react'
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HomePage, PageNotFound, ProjectDetails } from "./page/index";
+import React, { Suspense } from "react";
 
-import { AnimatePresence } from 'framer-motion'
-import { Resume } from './assets/index'
+import { AnimatePresence } from "framer-motion";
+import { Resume } from "./assets/index";
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
         </BrowserRouter>
       </div>
     </AnimatePresence>
-  )
-}
+  );
+};
 
-export default App
+export default App;

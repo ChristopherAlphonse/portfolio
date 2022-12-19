@@ -2,20 +2,20 @@ import {
   AiFillCodepenCircle,
   AiFillGithub,
   AiFillLinkedin,
-  AiFillWindows
-} from 'react-icons/ai'
+  AiFillWindows,
+} from "react-icons/ai";
 
-import React from 'react'
+import React from "react";
 
-const github = 'https://github.com/ChristopherAlphonse'
+const github = "https://github.com/ChristopherAlphonse";
 const msStore =
-  'https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme'
-const linkedin = 'https://www.linkedin.com/in/christopher-alphonse/'
-const codepen = 'https://codepen.io/christopheralphonse/'
+  "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme";
+const linkedin = "https://www.linkedin.com/in/christopher-alphonse/";
+const codepen = "https://codepen.io/christopheralphonse/";
 
 const Footer = () => {
-  const today = new Date()
-  const year = today.getFullYear()
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <footer
       id="section2"
@@ -43,7 +43,7 @@ const Footer = () => {
         </a>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

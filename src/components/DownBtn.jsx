@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import { BsArrowDown } from 'react-icons/bs'
+import { BsArrowDown } from "react-icons/bs";
 
 const BackBottomBtn = () => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      return window.scrollY < 1000 ? setShow(true) : setShow(false)
-    })
-  })
+    window.addEventListener("scroll", () => {
+      return window.scrollY < 1000 ? setShow(true) : setShow(false);
+    });
+  });
 
   {
     return (
@@ -20,8 +20,8 @@ const BackBottomBtn = () => {
           <BsArrowDown className="h-6 w-6 text-blue-300" />
         </a>
       )
-    )
+    );
   }
-}
+};
 
-export default BackBottomBtn
+export default BackBottomBtn;

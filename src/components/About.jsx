@@ -1,7 +1,7 @@
-import { LazyMotion, domAnimation, m } from 'framer-motion'
+import { LazyMotion, domAnimation, m } from "framer-motion";
 
-import React from 'react'
-import { fadeIn } from '../FramerVariant/variants'
+import React from "react";
+import { fadeIn } from "../FramerVariant/variants";
 
 const About = () => {
   return (
@@ -12,9 +12,9 @@ const About = () => {
       >
         <div className="container mx-auto">
           <m.div
-            variants={fadeIn('up')}
+            variants={fadeIn("up")}
             initial="hidden"
-            whileInView={'show'}
+            whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
             className="flex flex-col gap-24 xl:flex-row"
           >
@@ -24,18 +24,18 @@ const About = () => {
                   Christopher Alphonse
                 </h2>
                 <m.p
-                  variants={fadeIn('down')}
+                  variants={fadeIn("down")}
                   initial="hidden"
-                  whileInView={'show'}
+                  whileInView={"show"}
                   className="mb-4 text-accent dark:text-blue-600"
                 >
                   Full-Stack Software Engineer
                 </m.p>
                 <hr className="mb-8 opacity-5" />
                 <m.p
-                  variants={fadeIn('up')}
+                  variants={fadeIn("up")}
                   initial="hidden"
-                  whileInView={'show'}
+                  whileInView={"show"}
                   className="mb-8  text-xl dark:text-zinc-900"
                 >
                   As a programmer with experience in front and back end
@@ -90,7 +90,7 @@ const About = () => {
         </div>
       </section>
     </LazyMotion>
-  )
-}
+  );
+};
 
-export default About
+export default About;
