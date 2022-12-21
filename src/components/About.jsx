@@ -92,5 +92,4 @@ const About = () => {
     </LazyMotion>
   );
 };
-
 export default About;

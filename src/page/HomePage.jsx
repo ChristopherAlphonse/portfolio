@@ -13,29 +13,25 @@ import {
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import React, { Suspense, useState } from "react";
 
+import Featured from "../components/Featured/Featured";
 import PropagateLoader from "react-spinners/PropagateLoader";
-import TempHero from "../components/TempHero";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(false);
-
   React.useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 1200);
   }, []);
-
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
         <title>Christopher Alphonse | Full-Stack Developer | Boston, MA</title>
-
         <meta
           name="keywords"
           content="Christopher Alphonse, full-stack developer, Boston, MA, software engineer, web development, front-end development, back-end development"
         />
-
         <meta
           name="description"
           content="Christopher Alphonse is a full-stack developer based in Boston, MA. With experience in front-end and back-end development, Christopher is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. Check out his portfolio to learn more about his work and skills."
@@ -61,20 +57,16 @@ const HomePage = () => {
           <>
             <Suspense fallback={<div />}>
               <ResponsiveNavBar />
-
               <Hero />
               <About />
-              <TimeLine />
             </Suspense>
-
             <Suspense fallback={<div />}>
-              <TempHero />
+              <TimeLine />
+              <Featured />
             </Suspense>
-
             <Suspense fallback={<div />}>
               <Contact />
             </Suspense>
-
             <Suspense fallback={<div />}>
               <Footer />
               <BackTopBtn />
@@ -85,5 +77,4 @@ const HomePage = () => {
     </HelmetProvider>
   );
 };
-
 export default HomePage;

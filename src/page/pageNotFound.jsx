@@ -12,14 +12,12 @@ const pageNotFound = () => {
         <title>
           Christopher Alphonse | 404 | Full-Stack Developer | Boston, MA
         </title>
-
         <meta
           name="description"
           content=" I specialize in designing and building amazing digital experiences that are both functional and engaging.
         At the moment, I'm concentrating on learning new technologies and improving human-centered services ."
         />
       </Helmet>
-
       <>
         <ResponsiveNavBar />
         <div className="containerr  grid h-screen place-content-center items-center overflow-hidden  bg-zinc-900 px-4 py-32 dark:bg-zinc-50 lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0">
@@ -39,5 +37,4 @@ const pageNotFound = () => {
     </HelmetProvider>
   );
 };
-
 export default pageNotFound;

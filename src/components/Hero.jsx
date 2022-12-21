@@ -71,22 +71,17 @@ const Hero = () => {
                 </span>
                 services .
               </m.p>
-              <button
-                className="btn btn-md md:btn-lg  bg-blue-600
-            transition-all hover:bg-blue-600/50
-            
-            dark:bg-blue-700 dark:hover:bg-blue-700/70 "
-              >
-                <a href="#contact"> Work with me</a>
-              </button>
+              <a href="#contact" className="btn-holder ">
+                <button className="hero-btn hero-btn-3 hover-border-2 focus-none">
+                  <a href="#contact"> Work with me</a>
+                </button>
+              </a>
             </div>
           </div>
-
           <DownBtn />
         </div>
       </section>
     </LazyMotion>
   );
 };
-
 export default Hero;

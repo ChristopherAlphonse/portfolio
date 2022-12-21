@@ -15,37 +15,30 @@ const ImageProps = {
   width: 48,
   height: 48,
 };
-
 const ProjectDetails = () => {
   const [loading, setLoading] = useState(false);
-
   React.useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 800);
   }, []);
-
   const { id } = useParams();
-
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
         <title>
           Christopher Alphonse | {id} | Full-Stack Developer | Boston, MA
         </title>
-
         <meta
           name="keywords"
           content="Christopher Alphonse, full-stack developer, Boston, MA, software engineer, web development, front-end development, back-end development"
         />
-
         <meta
           name="description"
           content="Christopher Alphonse is a full-stack developer based in Boston, MA. With experience in front-end and back-end development, Christopher is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. Check out his portfolio to learn more about his work and skills."
         />
       </Helmet>
-
       <div className="">
         {loading ? (
           <PropagateLoader
@@ -118,7 +111,6 @@ const ProjectDetails = () => {
                                       </span>
                                     </a>
                                   </span>
-
                                   <a
                                     href="/"
                                     className="btn btn-md md:btn-lg  ml-auto flex items-center rounded border-0 bg-blue-600  py-1  px-9 text-white transition-all hover:bg-blue-600/50 dark:bg-blue-700 dark:hover:bg-blue-700/70"
@@ -145,5 +137,4 @@ const ProjectDetails = () => {
     </HelmetProvider>
   );
 };
-
 export default ProjectDetails;

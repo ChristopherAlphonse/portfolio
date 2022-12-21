@@ -11,7 +11,6 @@ const BackTopBtn = () => {
       return window.scrollY > 1000 ? setShow(true) : setShow(false);
     });
   });
-
   {
     return (
       show && (
@@ -25,5 +24,4 @@ const BackTopBtn = () => {
     );
   }
 };
-
 export default BackTopBtn;

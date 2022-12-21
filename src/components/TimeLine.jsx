@@ -38,7 +38,7 @@ const Timeline = () => {
                   viewport={{ once: false, amount: 0.1 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
-                  <h3 className="text-xl font-semibold tracking-wide">
+                  <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
                     Full-Stack Software Developer -{" "}
                     <span className="text-pink-500">Pure by Mel </span>
                   </h3>
@@ -102,12 +102,12 @@ const Timeline = () => {
                   viewport={{ once: false, amount: 0.1 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
-                  <h3 className="text-xl font-semibold tracking-wide">
+                  <h3 className="text-xl font-semibold tracking-wide  text-zinc-100 dark:text-zinc-900">
                     Full-Stack Software Developer -{" "}
                     <span className="text-[#ea335e]">Coin Whistle </span>
                   </h3>
                   <time className="text-xs uppercase tracking-wide dark:text-gray-400">
-                    Aug - October 2022 | Freelance
+                    Aug - Oct 2022 | Freelance
                   </time>
                   <div className="mt-3">
                     <p className="flex items-center text-zinc-400">
@@ -165,7 +165,7 @@ const Timeline = () => {
                   viewport={{ once: false, amount: 0.1 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
-                  <h3 className="text-xl font-semibold tracking-wide">
+                  <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
                     Patient Support Advocate -{" "}
                     <span className="text-[#184765]">
                       Shields Health Solutions{" "}
@@ -233,7 +233,7 @@ const Timeline = () => {
                   viewport={{ once: false, amount: 0.1 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
-                  <h3 className="text-xl font-semibold tracking-wide">
+                  <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
                     Clinical Pharmacy Technician -{" "}
                     <span className="text-[#3c96d5]">
                       New England Sinai Hospital{" "}
@@ -295,7 +295,7 @@ const Timeline = () => {
                   viewport={{ once: false, amount: 0.1 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
-                  <h3 className="text-xl font-semibold tracking-wide">
+                  <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
                     Lead Pharmacy Technician -{" "}
                     <span className="text-[#b54035]">CVS Health </span>
                   </h3>
@@ -359,5 +359,4 @@ const Timeline = () => {
     </LazyMotion>
   );
 };
-
 export default Timeline;

@@ -2,12 +2,10 @@ import { Logo, Resume } from "../../src/assets";
 import React, { lazy, useEffect, useState } from "react";
 
 const Theme = lazy(() => import("../comp/ThemeToggle"));
-
 const ImageProps = {
   width: 48,
   height: 48,
 };
-
 const navigation = [
   {
     name: "Resume",
@@ -30,10 +28,8 @@ const navigation = [
     href: null,
   },
 ];
-
 export const ResponsiveNavBar = () => {
   const [bg, setBg] = useState(false);
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
       return window.scrollY > 10 ? setBg(true) : setBg(false);
@@ -48,13 +44,7 @@ export const ResponsiveNavBar = () => {
     >
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div
-        className="bg-zinc-900/90  dark:bg-zinc-100/90 
-      
-      
-      
-      
-      
-      
+        className="bg-zinc-900/90  dark:bg-zinc-100/90
       "
       >
         {menuOpen && <MobileMenu>{navLinks}</MobileMenu>}
@@ -62,23 +52,19 @@ export const ResponsiveNavBar = () => {
     </div>
   );
 };
-
 const navLinks = navigation.map((page) => (
   <a
     key={page.name}
     className="font-semibold
      text-accent no-underline
-     hover:text-zinc-100  
-    
+     hover:text-zinc-100
     dark:text-zinc-800
-    
      dark:hover:text-blue-600"
     href={page.href}
   >
     {page.name}
   </a>
 ));
-
 const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className="flex items-center justify-between p-4">
     <div className="flex items-center">
@@ -97,11 +83,9 @@ const Navbar = ({ menuOpen, setMenuOpen }) => (
     </button>
   </div>
 );
-
 const MobileMenu = ({ children }) => (
   <nav className="flex flex-col space-y-3 p-4 md:hidden ">{children}</nav>
 );
-
 const FireSvg = () => (
   <img
     src={Logo}
@@ -111,7 +95,6 @@ const FireSvg = () => (
     {...ImageProps}
   />
 );
-
 const MenuAlt4Svg = ({ menuOpen }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

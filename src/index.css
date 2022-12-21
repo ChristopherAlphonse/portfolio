@@ -1,11 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .primary_title {
   font-family: var(--font-face-primary);
 }
-
 .im {
   width: 96rem;
   height: 24rem;
@@ -13,7 +11,6 @@
 .secondary_title {
   font-family: var(--font-face-secondary);
 }
-
 @layer base {
   body {
     @apply bg-gray-200 font-body leading-6 text-paragraph;
@@ -53,4 +50,108 @@
   .active {
     @apply text-accent;
   }
+}
+/* css btn Hero */
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
+.btn-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 10px auto 35px;
+}
+.hero-btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px 25px 15px;
+  min-width: 150px;
+}
+.hero-btn a {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+.hero-btn-3 {
+  padding: 5px;
+}
+.hero-btn-3 a {
+  color: rgb(255, 255, 255);
+  background-color: #2563eb;
+}
+.hero-btn-3::before,
+.hero-btn-3::after {
+  background: transparent;
+  z-index: 2;
+}
+.hero-btn.hover-border-2::before,
+.hero-btn.hover-border-2::after {
+  width: 10%;
+  height: 25%;
+  transition: 0.35s;
+}
+.hero-btn.hover-border-2::before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #7fc7eb;
+  border-bottom: 1px solid #7fc7eb;
+}
+.hero-btn.hover-border-2::after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid#7fc7eb;
+  border-top: 1px solid #7fc7eb;
+}
+.hero-btn.hover-border-2:hover::before,
+.hero-btn.hover-border-2:hover::after {
+  width: 99%;
+  height: 99%;
+}
+.hero-btn.hover-border-3::before,
+.hero-btn.hover-border-3::after {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  transition: width 0.2s 0.15s linear, height 0.15s linear, opacity 0s 0.35s;
+}
+.hero-btn.hover-border-3::before {
+  top: 0;
+  right: 0;
+  border-top: 1px solid rgb(28, 31, 30);
+  border-left: 1px solid rgb(28, 31, 30);
+}
+.hero-btn.hover-border-3::after {
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid rgb(28, 31, 30);
+  border-right: 1px solid rgb(28, 31, 30);
+}
+.hero-btn.hover-border-3:hover::before,
+.hero-btn.hover-border-3:hover::after {
+  width: 100%;
+  height: 99%;
+  opacity: 1;
+  transition: width 0.2s linear, height 0.15s 0.2s linear, opacity 0s;
 }

@@ -8,24 +8,20 @@ import { fadeIn } from "../FramerVariant/variants";
 const Service = import.meta.env.VITE_SERVICE_ID;
 const Template = import.meta.env.VITE_TEMPLATE_ID;
 const Key = import.meta.env.VITE_PUBLIC_KEY;
-
 const Contact = () => {
   const form = useRef();
   const fullRef = useRef("");
   const emailRef = useRef("");
   const subjectRef = useRef("");
   const messageRef = useRef("");
-
   const sendEmail = (e) => {
     e.preventDefault();
-
     let params = {
       name: e.target.user_name.value,
       email: e.target.user_email.value,
       subject: e.target.user_subject.value,
       message: e.target.message.value,
     };
-
     console.table(params);
     const notify = () => {
       toast.success("Email sent", {
@@ -33,7 +29,6 @@ const Contact = () => {
         position: "top-right",
       });
     };
-
     emailjs.sendForm(Service, Template, form.current, Key).then(
       (result) => {
         console.log(result.text);
@@ -45,7 +40,6 @@ const Contact = () => {
     );
     e.target.reset();
   };
-
   return (
     <LazyMotion features={domAnimation}>
       <section
@@ -64,7 +58,6 @@ const Contact = () => {
             >
               Get in Touch
             </m.p>
-
             <m.h2
               variants={fadeIn("right")}
               initial="hidden"
@@ -96,7 +89,6 @@ const Contact = () => {
                   name="user_name"
                   id="user_name"
                 />
-
                 <input
                   ref={emailRef}
                   className="input bg-zinc-100 text-zinc-800"
@@ -114,7 +106,6 @@ const Contact = () => {
                 name="user_subject"
                 id="user_subject"
               />
-
               <textarea
                 ref={messageRef}
                 className="textarea bg-zinc-100 text-gray-800"
@@ -123,16 +114,7 @@ const Contact = () => {
                 id="message"
               ></textarea>
               <button
-                className="btn btn-lg  first-letter:  chi
-              bg-blue-600 hover:bg-blue-600/50  
-              
-              
-              
-              
-              dark:bg-blue-700
-              
-              
-              dark:hover:bg-blue-700/70"
+                className="btn btn-lg chi bg-blue-600 hover:bg-blue-600/50 dark:bg-blue-700 dark:hover:bg-blue-700/70"
                 onSubmit={sendEmail}
                 value="send"
                 type="submit"
@@ -154,7 +136,6 @@ const Contact = () => {
                     background: "#363636",
                     color: "#fff",
                   },
-
                   // Default options for specific types
                   success: {
                     duration: 1000,
@@ -172,5 +153,4 @@ const Contact = () => {
     </LazyMotion>
   );
 };
-
 export default Contact;

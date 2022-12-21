@@ -12,7 +12,6 @@ const msStore =
   "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme";
 const linkedin = "https://www.linkedin.com/in/christopher-alphonse/";
 const codepen = "https://codepen.io/christopheralphonse/";
-
 const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
@@ -20,8 +19,6 @@ const Footer = () => {
     <footer
       id="section2"
       className="flex flex-col items-center justify-between bg-tertiary  p-6 text-zinc-500 dark:bg-gray-200 dark:text-zinc-700
-      
-      
       sm:flex-row md:h-[10vh]
        "
     >
@@ -45,5 +42,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

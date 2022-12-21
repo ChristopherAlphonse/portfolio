@@ -36,7 +36,6 @@ export const transition = (direction) => {
     },
   };
 };
-
 export const container = {
   hidden: {},
   show: {

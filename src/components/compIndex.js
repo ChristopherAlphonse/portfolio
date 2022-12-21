@@ -11,7 +11,6 @@ const Footer = lazy(() => import("./Footer"));
 const Head = lazy(() => import("./Head"));
 const Hero = lazy(() => import("./Hero"));
 const About = lazy(() => import("./About"));
-
 export {
   Project,
   Projects,

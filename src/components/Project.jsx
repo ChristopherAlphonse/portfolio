@@ -7,10 +7,8 @@ const logoProps = {
   height: 563,
   width: 1000,
 };
-
 const Project = ({ project }) => {
   const { id, image, description, stack, view, name } = project;
-
   return (
     <LazyMotion features={domAnimation}>
       <div className=" rounded object-cover object-center ">
@@ -30,9 +28,8 @@ const Project = ({ project }) => {
                   {...logoProps}
                 />
               </div>
-
               <div
-                className="dark absolute bottom-0 flex  bg-gray-900 p-1 dark:bg-slate-50 
+                className="dark absolute bottom-0 flex  bg-gray-900 p-1 dark:bg-slate-50
            "
               >
                 <m.div
@@ -64,7 +61,6 @@ const Project = ({ project }) => {
             >
               {description}
             </m.p>
-
             <div className="container mx-auto flex flex-col items-center justify-center px-4 py-3 xl:flex-row ">
               <m.div
                 variants={fadeIn("up")}
@@ -78,26 +74,21 @@ const Project = ({ project }) => {
                   href={view}
                   className=" mt-4  justify-center overflow-hidden rounded-lg border-2  border-blue-600/50 px-5  py-3 text-zinc-100 shadow transition-colors duration-300 hover:bg-blue-600/50
                   dark:text-zinc-900  dark:hover:bg-blue-600
-                  dark:hover:text-zinc-100 
-                  
-                  sm:mx-2 sm:mt-0 sm:w-auto 
-                  
+                  dark:hover:text-zinc-100
+                  sm:mx-2 sm:mt-0 sm:w-auto
                   "
                 >
                   <span className="mx-2 ">Visit</span>
                 </a>
-
                 <a
                   href={`/project/${id}`}
                   className=" mx-2  mt-2 justify-center overflow-hidden rounded-lg  border-2 border-blue-600/50  bg-blue-600 px-5 py-3 text-zinc-100 shadow
-                  transition-colors duration-300 hover:border-blue-600/50 
+                  transition-colors duration-300 hover:border-blue-600/50
 hover:bg-zinc-900
 dark:hover:bg-zinc-100/50
  dark:hover:text-zinc-900
  sm:mt-0
-
 sm:w-auto
-
                      "
                 >
                   <span className="mx-2  ">Learn More</span>
@@ -110,5 +101,4 @@ sm:w-auto
     </LazyMotion>
   );
 };
-
 export default Project;

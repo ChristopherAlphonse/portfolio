@@ -9,7 +9,6 @@ const Projects = () => {
   const [item, setItem] = useState({ name: "all" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
-
   useMemo(() => {
     if (item.name === "all") {
       setProjects(projectsData);
@@ -20,12 +19,10 @@ const Projects = () => {
       setProjects(newProjects);
     }
   }, [item]);
-
   const handleClick = (e, index) => {
     setItem({ name: e.target.textContent.toLowerCase() });
     setActive(index);
   };
-
   return (
     <LazyMotion features={domAnimation}>
       <section className="bg-[#27272af5] dark:bg-[#fffffff5] ">
@@ -37,23 +34,18 @@ const Projects = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className=" bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text font-primary text-5xl font-semibold  capitalize italic text-transparent  dark:from-blue-600 dark:to-blue-300  lg:text-4xl
-            
               "
             >
               My latest work
             </m.h1>
           </div>
-
           <m.nav
             variants={fadeIn("left")}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="mx-auto mb-1 max-w-xl text-xl md:mt-4 md:rounded-full md:border md:border-gray-900 md:bg-gray-900  
-          
-          
+            className="mx-auto mb-1 max-w-xl text-xl md:mt-4 md:rounded-full md:border md:border-gray-900 md:bg-gray-900
           md:py-1 md:shadow dark:md:border-gray-200
-        
         dark:md:bg-gray-200
         "
           >
@@ -90,5 +82,4 @@ const Projects = () => {
     </LazyMotion>
   );
 };
-
 export default Projects;

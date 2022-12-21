@@ -27,5 +27,4 @@ const App = () => {
     </AnimatePresence>
   );
 };
-
 export default App;
