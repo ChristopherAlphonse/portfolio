@@ -4,14 +4,42 @@
     <link rel="icon" href="/logo_files/favicon.ico" type="image/png" />
 
     <link rel="apple-touch-icon" sizes="48x48" href="/logo_files/" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/logo_files/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="96x96" href="/logo_files/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/logo_files/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="256x256" href="/logo_files/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="384x384" href="/logo_files/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="/logo_files/android-chrome-192x192.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/logo_files/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="96x96"
+      href="/logo_files/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/logo_files/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="256x256"
+      href="/logo_files/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="384x384"
+      href="/logo_files/apple-touch-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/logo_files/android-chrome-192x192.png"
+    />
 
-    <link rel="apple-touch-icon" sizes="512x512" href="/logo_files/android-chrome-512x512.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="/logo_files/android-chrome-512x512.png"
+    />
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
@@ -75,7 +103,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
@@ -90,8 +121,48 @@
     <style type="text/css">
       :root {
         --accent-color: #7fc7eb;
-        --font-face-primary: 'Playfair Display SC', serif;
-        --font-face-secondary: 'Open Sans', sans-serif;
+        --font-face-primary: "Playfair Display SC", serif;
+        --font-face-secondary: "Open Sans", sans-serif;
+      }
+
+      button {
+        box-sizing: border-box;
+      }
+      .bb {
+        border: 2px solid #2563eb;
+        background: transparent;
+        padding: 0.5rem 3rem;
+        line-height: 24px;
+      }
+
+      .bb:hover {
+        transition: all ease-in 0.2s;
+        background-color: #2563eb;
+        color: black;
+      }
+
+      .ml-7 {
+        background: #2563eb;
+        border: 2px solid transparent;
+      }
+      .ml-7:hover {
+        background-color: transparent;
+        transition: all ease-in 0.2s;
+        color: white;
+        border: 2px solid black;
+      }
+
+      .ye,
+      img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+
+      .ye,
+      img:hover {
+        transition: filter 0.5s ease-in-out;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
       }
 
       * {
@@ -241,7 +312,10 @@
       }
     </style>
     <meta charset="UTF-8" />
-    <meta name="copyright" content="Copyright 2022. All rights reserved for Christopher Alphonse" />
+    <meta
+      name="copyright"
+      content="Copyright 2022. All rights reserved for Christopher Alphonse"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
@@ -275,7 +349,10 @@
     <link rel="home" href="https://christopheralphonse.com/" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="Christopher Alphonse | Full Stack Developer" />
+    <meta
+      property="og:title"
+      content="Christopher Alphonse | Full Stack Developer"
+    />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
@@ -295,9 +372,9 @@
     <script type="module" src="./src/index.jsx"></script>
 
     <script type="module">
-      import { partytownSnippet } from '@builder.io/partytown/integration';
+      import { partytownSnippet } from "@builder.io/partytown/integration";
       const snippetText = partytownSnippet();
-      const foo = document.createElement('script');
+      const foo = document.createElement("script");
       foo.innerText = snippetText;
       document.body.appendChild(foo);
     </script>

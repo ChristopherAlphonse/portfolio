@@ -13,7 +13,6 @@ import {
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import React, { Suspense, useState } from "react";
 
-import { Note } from "../components/Note";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import TempHero from "../components/TempHero";
 
@@ -70,7 +69,6 @@ const HomePage = () => {
 
             <Suspense fallback={<div />}>
               <TempHero />
-              <Note />
             </Suspense>
 
             <Suspense fallback={<div />}>
