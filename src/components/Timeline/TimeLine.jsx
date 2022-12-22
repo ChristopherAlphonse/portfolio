@@ -15,14 +15,14 @@ const Timeline = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.3 }}
-                className="mb-20  text-center before:mx-auto before:mb-2 before:block before:h-1 before:w-24 before:rounded-sm before:bg-blue-400 sm:text-left sm:before:mx-0"
+                className="mb-20 before:mx-auto before:mb-2 before:block before:h-1 before:w-24 before:rounded-sm before:bg-blue-400 sm:text-left sm:before:mx-0"
               >
                 <m.h3
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.3 }}
-                  className="text-3xl  dark:text-zinc-900"
+                  className="text-3xl dark:text-zinc-900"
                 >
                   Experience
                 </m.h3>

@@ -55,7 +55,7 @@ const Contact = () => {
               viewport={{ once: false, amount: 0.4 }}
               className="  text-3xl dark:text-zinc-800 md:text-5xl"
             >
-              get in touch
+              Contact me
             </m.h1>
 
             <m.h2

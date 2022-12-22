@@ -1,13 +1,12 @@
 import { FeaturedData, projectsData } from "../data";
+import { Footer, ResponsiveNavBar } from "../components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { Suspense, useState } from "react";
 import { fadeIn, transition } from "../FramerVariant/variants";
 
 import { BsArrowReturnLeft } from "react-icons/bs";
-import { Footer } from "../components/compIndex";
 import PropagateLoader from "react-spinners/PropagateLoader";
-import { ResponsiveNavBar } from "../components/head";
 import { TfiWorld } from "react-icons/tfi";
 import { useParams } from "react-router-dom";
 

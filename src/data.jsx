@@ -59,50 +59,7 @@ export const projectsNav = [
     name: "Theme",
   },
 ];
-export const TimelineData = [
-  {
-    description:
-      " Developed an e-commerce site using JavaScript's framework NextJS with TypesScript, by converting client requirements for user experience and stories into functionality, with  the purpose of increasing sales.",
-    description1:
-      "Incorporating the Stripe API for payment to reduce payment issues and errors by 60% by adding custom validations and  maintaining packages with Yarn.",
-    description2:
-      "Developed a RESTful API for managing user sessions, routes, HTTPS requests, and errors, as well as testing and debugging.",
-    startDate: "Nov",
-    endDate: "Nov 2022",
-    company: "Pure by Mel",
-    role: "Full-Stack Software Develope",
-  },
-  {
-    description:
-      "Implemented user roles and permissions to allow for flexible and customizable access to the blog or website, including roles such as writer, blogger, and admin",
-    description1:
-      " Developed and maintained a blog using the Wagtail CMS, Python, and pip to create and manage virtual environments.",
-    description2:
-      " Using jQuery and RESTful routing to render 24+ HTML templates, we integrated the front-end template with the back-end logic, resulting in seamless intuitive navigation and interaction.",
-    startDate: "Aug",
-    endDate: "Oct 2022",
-    company: "Coin Whistle ",
-    role: "Full-Stack Software Developer",
-  },
-  {
-    description: "",
-    description1: "",
-    description2: "",
-    startDate: "",
-    endDate: "",
-    company: "",
-    role: "",
-  },
-  {
-    description: "",
-    description1: "",
-    description2: "",
-    startDate: "",
-    endDate: "",
-    company: "",
-    role: "",
-  },
-];
+
 export const FeaturedData = [
   {
     id: "Azalais-Dark-Theme",
