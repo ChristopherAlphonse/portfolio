@@ -1,18 +1,17 @@
-import { ResponsiveNavBar } from "./Head";
+import { ResponsiveNavBar } from "./NavBar/head";
 import { lazy } from "react";
 
-const Project = lazy(() => import("./Project"));
-const TimeLine = lazy(() => import("./TimeLine"));
 const Projects = lazy(() => import("./Projects"));
-const BackTopBtn = lazy(() => import("./BackTopBtn"));
-const DownBtn = lazy(() => import("./DownBtn"));
-const Contact = lazy(() => import("./Contact"));
-const Footer = lazy(() => import("./Footer"));
-const Head = lazy(() => import("./Head"));
-const Hero = lazy(() => import("./Hero"));
-const About = lazy(() => import("./About"));
+const TimeLine = lazy(() => import("./Timeline/TimeLine"));
+const BackTopBtn = lazy(() => import("./Btn/BackTopBtn"));
+const DownBtn = lazy(() => import("./Btn/DownBtn"));
+const Contact = lazy(() => import("./Contact/Contact"));
+const Footer = lazy(() => import("./Footer/Footer"));
+const Head = lazy(() => import("./NavBar/head"));
+const Hero = lazy(() => import("./Hero/Hero"));
+const About = lazy(() => import("./About/About"));
+
 export {
-  Project,
   Projects,
   BackTopBtn,
   DownBtn,

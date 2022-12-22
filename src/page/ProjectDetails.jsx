@@ -1,3 +1,4 @@
+import { FeaturedData, projectsData } from "../data";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { Suspense, useState } from "react";
@@ -8,7 +9,6 @@ import { Footer } from "../components/compIndex";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { ResponsiveNavBar } from "../components/head";
 import { TfiWorld } from "react-icons/tfi";
-import { projectsData } from "../data";
 import { useParams } from "react-router-dom";
 
 const ImageProps = {
@@ -61,9 +61,8 @@ const ProjectDetails = () => {
               <ResponsiveNavBar />
               <LazyMotion features={domAnimation}>
                 <section className="containerr flex h-full items-center justify-center bg-zinc-800  py-32 dark:bg-zinc-50 lg:h-[100vh] ">
-                  {projectsData
-                    .filter((z) => z.id === id)
-                    .map((z) => {
+                  {projectsData &&
+                    FeaturedData.filter((z) => z.id === id).map((z) => {
                       return (
                         <section key={z.id}>
                           <div className="container mx-auto px-5 py-24">

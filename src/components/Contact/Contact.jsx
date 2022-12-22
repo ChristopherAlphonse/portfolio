@@ -1,9 +1,9 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { useRef } from "react";
+import { fadeIn, transition } from "../../FramerVariant/variants";
 import toast, { Toaster } from "react-hot-toast";
 
 import emailjs from "@emailjs/browser";
-import { fadeIn } from "../FramerVariant/variants";
 
 const Service = import.meta.env.VITE_SERVICE_ID;
 const Template = import.meta.env.VITE_TEMPLATE_ID;
@@ -44,20 +44,20 @@ const Contact = () => {
     <LazyMotion features={domAnimation}>
       <section
         id="contact"
-        className="containerr flex h-[100vh] items-center overflow-hidden bg-zinc-800 py-32 dark:bg-slate-50 lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
+        className="containerr flex h-[100vh] items-center overflow-hidden bg-zinc-900 py-32  dark:bg-white  lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
       >
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">
-            <m.p
-              variants={fadeIn("right")}
+            <m.h1
+              variants={transition("down")}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.4 }}
-              className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text font-primary text-5xl font-semibold  capitalize italic text-transparent  dark:from-blue-600 dark:to-blue-300  lg:text-4xl
-            "
+              className="  text-3xl dark:text-zinc-800 md:text-5xl"
             >
-              Get in Touch
-            </m.p>
+              get in touch
+            </m.h1>
+
             <m.h2
               variants={fadeIn("right")}
               initial="hidden"
@@ -88,8 +88,10 @@ const Contact = () => {
                   type="text"
                   name="user_name"
                   id="user_name"
+                  required
                 />
                 <input
+                  required
                   ref={emailRef}
                   className="input bg-zinc-100 text-zinc-800"
                   placeholder="Your email"
@@ -99,6 +101,7 @@ const Contact = () => {
                 />
               </div>
               <input
+                required
                 ref={subjectRef}
                 className="input bg-zinc-100 text-zinc-800"
                 placeholder="Subject"
@@ -107,6 +110,8 @@ const Contact = () => {
                 id="user_subject"
               />
               <textarea
+                required
+                minLength="20"
                 ref={messageRef}
                 className="textarea bg-zinc-100 text-gray-800"
                 placeholder="Your message"

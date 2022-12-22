@@ -1,12 +1,12 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import { fadeIn, transition } from "../FramerVariant/variants";
+import { fadeIn, transition } from "../../FramerVariant/variants";
 
 import { MdOutlineDoubleArrow } from "react-icons/md";
 
 const Timeline = () => {
   return (
     <LazyMotion features={domAnimation}>
-      <m.section className="bg-zinc-800 py-32 dark:bg-zinc-50">
+      <m.section className="bg-zinc-900 py-32  dark:bg-white ">
         <div className="max-w-9xl container mx-auto px-4 py-12">
           <div className="mx-4 grid gap-4 sm:grid-cols-12">
             <div className="col-span-12 sm:col-span-3">
@@ -14,14 +14,14 @@ const Timeline = () => {
                 variants={fadeIn("up")}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: false, amount: 0.3 }}
                 className="mb-20  text-center before:mx-auto before:mb-2 before:block before:h-1 before:w-24 before:rounded-sm before:bg-blue-400 sm:text-left sm:before:mx-0"
               >
                 <m.h3
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: false, amount: 0.3 }}
                   className="text-3xl  dark:text-zinc-900"
                 >
                   Experience
@@ -35,7 +35,7 @@ const Timeline = () => {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: false, amount: 0.3 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
@@ -51,7 +51,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -67,7 +67,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -82,7 +82,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -99,7 +99,7 @@ const Timeline = () => {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: false, amount: 0.3 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide  text-zinc-100 dark:text-zinc-900">
@@ -115,7 +115,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -130,7 +130,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -144,7 +144,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -162,7 +162,7 @@ const Timeline = () => {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: false, amount: 0.3 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
@@ -180,7 +180,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -197,7 +197,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -213,7 +213,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -230,7 +230,7 @@ const Timeline = () => {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: false, amount: 0.3 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
@@ -240,14 +240,14 @@ const Timeline = () => {
                     </span>
                   </h3>
                   <time className="text-xs uppercase tracking-wide dark:text-gray-400">
-                    Oct 2019 - 2020
+                    Oct 20.3 - 2020
                   </time>
                   <p className="mt-3 flex items-center text-zinc-400">
                     <m.span
                       variants={transition("right")}
                       initial="hidden"
                       whileInView={"show"}
-                      viewport={{ once: false, amount: 0.1 }}
+                      viewport={{ once: false, amount: 0.3 }}
                       className="flex "
                     >
                       {" "}
@@ -262,7 +262,7 @@ const Timeline = () => {
                       variants={transition("right")}
                       initial="hidden"
                       whileInView={"show"}
-                      viewport={{ once: false, amount: 0.1 }}
+                      viewport={{ once: false, amount: 0.3 }}
                       className="flex "
                     >
                       {" "}
@@ -276,7 +276,7 @@ const Timeline = () => {
                       variants={transition("right")}
                       initial="hidden"
                       whileInView={"show"}
-                      viewport={{ once: false, amount: 0.1 }}
+                      viewport={{ once: false, amount: 0.3 }}
                       className="flex "
                     >
                       {" "}
@@ -292,7 +292,7 @@ const Timeline = () => {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: false, amount: 0.3 }}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
@@ -308,7 +308,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -323,7 +323,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}
@@ -338,7 +338,7 @@ const Timeline = () => {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.1 }}
+                        viewport={{ once: false, amount: 0.3 }}
                         className="flex "
                       >
                         {" "}

@@ -1,7 +1,7 @@
-import { Logo, Resume } from "../../src/assets";
+import { Logo, Resume } from "../../assets";
 import React, { lazy, useEffect, useState } from "react";
 
-const Theme = lazy(() => import("../comp/ThemeToggle"));
+const Theme = lazy(() => import("../../Theme/ThemeToggle"));
 const ImageProps = {
   width: 48,
   height: 48,
@@ -39,8 +39,10 @@ export const ResponsiveNavBar = () => {
   return (
     <div
       className={`${
-        bg ? "h-20  bg-zinc-900 shadow-md dark:bg-zinc-100 " : "h-24 "
-      }  fixed top-0 z-10 w-full text-white  transition-all duration-300 dark:text-zinc-700 `}
+        bg
+          ? "h-20  bg-zinc-900 shadow-md shadow-blue-900/40 dark:bg-zinc-100 "
+          : "h-24 "
+      }  fixed top-0 z-10 w-full  text-white   transition-all duration-300 dark:text-zinc-700 `}
     >
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div

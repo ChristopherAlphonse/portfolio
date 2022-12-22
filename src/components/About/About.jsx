@@ -1,7 +1,7 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 
 import React from "react";
-import { fadeIn } from "../FramerVariant/variants";
+import { fadeIn } from "../../FramerVariant/variants";
 
 const About = () => {
   return (

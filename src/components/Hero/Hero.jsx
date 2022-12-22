@@ -1,15 +1,15 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 
-import { DownBtn } from "./compIndex";
+import { DownBtn } from "../compIndex";
 import React from "react";
-import { fadeIn } from "../FramerVariant/variants";
+import { fadeIn } from "../../FramerVariant/variants";
 
 const Hero = () => {
   return (
     <LazyMotion features={domAnimation}>
       <section
         id="section1"
-        className="containerr flex h-[100vh] items-center  overflow-hidden bg-zinc-900 py-32 dark:bg-zinc-50 lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
+        className="containerr flex h-screen items-center justify-center  overflow-hidden bg-zinc-900 py-32 dark:bg-white lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
       >
         <div className="container mx-auto h-full">
           <div className="flex h-full items-center pt-8">
@@ -28,7 +28,7 @@ const Hero = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.6 }}
-                className="text-5xl font-bold leading-[44px] dark:text-zinc-900 sm:text-6xl md:text-5xl md:leading-tight md:tracking-[-2px] lg:text-7xl lg:leading-[1.2] xl:text-9xl"
+                className="text-4xl font-bold leading-[44px] dark:text-zinc-900 md:text-6xl md:leading-tight md:tracking-[-2px] lg:text-7xl lg:leading-[1.2] xl:text-9xl"
               >
                 I Build & Design <br /> Web Applications.
               </m.h1>
@@ -37,7 +37,7 @@ const Hero = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.6 }}
-                className="max-w-6xl pt-4 pb-8 text-center text-lg text-zinc-500 dark:text-zinc-600 md:pt-6 md:pb-12 lg:text-left"
+                className=" max-w-6xl pt-4 pb-8 text-center text-xs text-zinc-500 dark:text-zinc-600 sm:text-sm md:pt-6 md:pb-12 md:text-lg lg:text-left"
               >
                 I specialize in{" "}
                 <span className="text-accent dark:text-blue-600">
@@ -71,9 +71,11 @@ const Hero = () => {
                 </span>
                 services .
               </m.p>
-              <a href="#contact" className="btn-holder ">
-                <button className="hero-btn hero-btn-3 hover-border-2 focus-none">
-                  <a href="#contact"> Work with me</a>
+              <a href="#contact" className="btn-holder  ">
+                <button className=" hero-btn hero-btn-3 hover-border-2 focus-none ">
+                  <span href="#contact" className="">
+                    Work with me
+                  </span>
                 </button>
               </a>
             </div>
