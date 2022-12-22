@@ -9,7 +9,7 @@ export const projectsData = [
     short: "Shopify Store",
     status: "Production",
     description:
-      "Shopify store for an urban clothing store based in Canton, MA",
+      "Launched new Shopify store for urban clothing store in Canton, Massachusetts, Offered wide range of high-quality clothing and accessories, Focused on excellent customer service and competitive pricing",
     description2:
       "As a consultant for an urban clothing store, I worked on improving the SEO, theme, and styling of their Shopify store. My primary focus was on identifying opportunities for growth and providing recommendations for how to capitalize on those opportunities. This included conducting keyword research, optimizing on-page elements. In addition to my work on SEO, I also helped the store owner select and customize a theme that would best suit their brand and target audience. I provided guidance on color schemes, typography, and layout to create a cohesive and visually appealing online store. To handle merchandise orders, we implemented a drop shipping approach using tools like Contentful and Stripe. My role was more consultative than hands-on coding, but I worked closely with the store owner to ensure that the drop shipping system was set up effectively and efficiently.",
     stack: ["SEO, Contentful, Stripe"],

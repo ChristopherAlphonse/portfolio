@@ -44,7 +44,7 @@ const Contact = () => {
     <LazyMotion features={domAnimation}>
       <section
         id="contact"
-        className="containerr flex h-[100vh] items-center overflow-hidden bg-zinc-900 py-32  dark:bg-white  lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
+        className="containerr flex h-[100vh] items-center overflow-hidden bg-zinc-800 py-32  dark:bg-white "
       >
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">

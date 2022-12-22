@@ -10,6 +10,7 @@ const Head = lazy(() => import("./NavBar/head"));
 const Hero = lazy(() => import("./Hero/Hero"));
 const About = lazy(() => import("./About/About"));
 const Featured = lazy(() => import("./Featured/Featured"));
+const Projects = lazy(() => import("./Projects/Projects"));
 
 export {
   BackTopBtn,
@@ -21,5 +22,6 @@ export {
   Hero,
   About,
   TimeLine,
+  Projects,
   ResponsiveNavBar,
 };

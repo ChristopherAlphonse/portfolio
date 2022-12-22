@@ -6,6 +6,7 @@ import {
   Contact,
   Footer,
   Hero,
+  Projects,
   ResponsiveNavBar,
   TimeLine,
 } from "../components/compIndex";
@@ -65,9 +66,10 @@ const HomePage = () => {
             </Suspense>
             <Suspense fallback={<div />}>
               <Featured />
-              <Contact />
+              <Projects />
             </Suspense>
             <Suspense fallback={<div />}>
+              <Contact />
               <Footer />
             </Suspense>
           </>

@@ -1,5 +1,10 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { HomePage, PageNotFound, ProjectDetails } from "./page/index";
+import {
+  FeaturedDetails,
+  HomePage,
+  PageNotFound,
+  ProjectDetails,
+} from "./page/index";
 
 import React from "react";
 import { Resume } from "./assets/index";
@@ -17,6 +22,7 @@ const App = () => {
             element={<Resume />}
           />
           <Route path="/project/:id" element={<ProjectDetails />} />
+          <Route path="/projects/:id" element={<FeaturedDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
