@@ -38,13 +38,13 @@ const TempHero = ({ featured }) => {
                   <a
                     href={view}
                     target="_blank"
-                    className="bb  md:text-md inline-flex rounded-3xl text-sm text-zinc-50 dark:text-zinc-500  dark:hover:text-white "
+                    className="bb  md:text-md inline-flex justify-center rounded-3xl text-center text-sm  text-zinc-50 dark:text-zinc-500 dark:hover:text-white sm:px-6 sm:py-2 "
                   >
                     VIEW
                   </a>
                   <a
                     href={`/project/${id}`}
-                    className="text-md ml-7 inline-flex rounded-3xl py-2 px-6 text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500"
+                    className=" text-md ml-7  inline-flex rounded-3xl text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500 sm:px-6 sm:py-2 "
                   >
                     LEARN MORE
                   </a>

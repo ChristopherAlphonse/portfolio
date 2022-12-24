@@ -6,7 +6,7 @@ import { MdOutlineDoubleArrow } from "react-icons/md";
 const Timeline = () => {
   return (
     <LazyMotion features={domAnimation}>
-      <m.section className="bg-zinc-900 py-32  dark:bg-white ">
+      <section className="bg-zinc-900 py-32  dark:bg-white ">
         <div className="max-w-9xl container mx-auto px-4 py-12">
           <div className="mx-4 grid gap-4 sm:grid-cols-12">
             <div className="col-span-12 sm:col-span-3">
@@ -355,7 +355,7 @@ const Timeline = () => {
             </div>
           </div>
         </div>
-      </m.section>
+      </section>
     </LazyMotion>
   );
 };

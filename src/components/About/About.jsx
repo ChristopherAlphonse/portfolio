@@ -38,10 +38,12 @@ const About = () => {
                   whileInView={"show"}
                   className="mb-8  text-xl dark:text-zinc-900"
                 >
-                  As a highly motivated and passionate developer with a strong
-                  foundation in front and back end development, I am excited to
-                  bring my skills and knowledge to a company where I can make a
-                  meaningful contribution and grow as a professional.
+                  I am a software developer with 1 year experience. My passion
+                  for software development started when I wrote my first Hello
+                  World program in HTML. Since then, I have gained a wide range
+                  of skills and expertise in various technologies and
+                  programming languages, including JavaScript, TypeScript, and
+                  React.
                   <br />
                   <br />
                   I have always been drawn to technology and the endless

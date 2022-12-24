@@ -7,9 +7,9 @@ import { transition } from "../../FramerVariant/variants";
 const Projects = () => {
   return (
     <LazyMotion features={domAnimation}>
-      <div className="bg-zinc-900 py-9 ">
+      <div className=" bg-zinc-900 py-9 dark:bg-zinc-50 ">
         <div className=" mb-9 ">
-          <h1 className=" text-center text-3xl dark:text-zinc-800 md:text-5xl">
+          <h1 className=" text-center text-3xl text-zinc-400 dark:text-zinc-800 md:text-5xl">
             Others
           </h1>
 
@@ -24,15 +24,17 @@ const Projects = () => {
               const { id, name, description, short } = project;
               return (
                 <ul key={id}>
-                  <li className="p-4 ">
-                    <div className="relative h-80 max-w-xl overflow-hidden rounded-lg bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 text-center">
-                      <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-gray-500">
+                  <li className=" p-4">
+                    <div className=" relative overflow-hidden rounded-lg bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 text-center shadow-xl dark:bg-gray-300 xs:h-screen  xl:h-80 xl:max-h-80">
+                      <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-gray-500 dark:text-gray-700">
                         {short}
                       </h2>
-                      <h1 className="title-font mb-3 text-xl font-medium text-white sm:text-2xl">
+                      <h1 className="title-font mb-3 text-xl font-medium dark:text-zinc-800 sm:text-2xl">
                         {name}
                       </h1>
-                      <p className="mb-3 leading-relaxed">{description}</p>
+                      <p className="mb-3 leading-relaxed dark:text-zinc-700">
+                        {description}
+                      </p>
                       <a
                         href={`/projects/${id}`}
                         className="inline-flex items-center text-blue-500 hover:text-blue-400 "

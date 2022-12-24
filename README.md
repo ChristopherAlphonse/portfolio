@@ -2,12 +2,6 @@
 
 Welcome to my portfolio! This site showcases my work as a software developer and serves as a way for potential clients or employers to learn more about me and my skills.
 
-# About Me
-
-I am a software developer with 1 year and 3 months of experience. My passion for software development started when I wrote my first Hello World program in HTML. Since then, I have gained a wide range of skills and expertise in various technologies and programming languages, including JavaScript, TypeScript, and React.
-
-I am always looking for new opportunities to create innovative software solutions and make a positive impact in the world. If you have a project that you think I might be a good fit for, please don't hesitate to reach out to me.
-
 ## Technologies and Dependencies
 
 This portfolio application is built with a variety of technologies and dependencies, including:
