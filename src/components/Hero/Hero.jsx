@@ -9,7 +9,7 @@ const Hero = () => {
     <LazyMotion features={domAnimation}>
       <section
         id="section1"
-        className="containerr flex h-screen items-center justify-center  overflow-hidden bg-zinc-900 py-32 dark:bg-white lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
+        className="max-w-screen flex h-screen items-center justify-center  overflow-hidden bg-zinc-900 py-32 dark:bg-white lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
       >
         <div className="container mx-auto h-full">
           <div className="flex h-full items-center pt-8">
@@ -28,7 +28,7 @@ const Hero = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.6 }}
-                className="text-4xl font-bold leading-[44px] dark:text-zinc-900 md:text-6xl md:leading-tight md:tracking-[-2px] lg:text-7xl lg:leading-[1.2] xl:text-9xl"
+                className="text-3xl font-bold leading-[44px] dark:text-zinc-900 md:text-6xl md:leading-tight md:tracking-[-2px] lg:text-7xl lg:leading-[1.2] xl:text-9xl"
               >
                 I Build & Design <br /> Web Applications.
               </m.h1>
