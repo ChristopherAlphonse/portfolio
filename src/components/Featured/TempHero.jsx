@@ -1,15 +1,17 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import { fadeIn, transition } from "../../FramerVariant/variants";
+import React, { useMemo } from "react";
 
-import React from "react";
+import { fadeIn } from "../../FramerVariant/variants";
 
 const TempHero = ({ featured }) => {
-  const { id, image, description, stack, view, name } = featured;
   const logoProps = {
     width: "600",
     height: "400",
   };
-  // console.log(featured);
+
+  const featuredMemoized = useMemo(() => featured, [featured]);
+  const { id, image, description, stack, view, name } = featuredMemoized;
+
   return (
     <LazyMotion features={domAnimation}>
       <m.div

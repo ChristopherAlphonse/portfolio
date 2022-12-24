@@ -1,8 +1,8 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import { fadeIn, transition } from "../../FramerVariant/variants";
 
 import React from "react";
 import { projectsData } from "../../data";
+import { transition } from "../../FramerVariant/variants";
 
 const Projects = () => {
   return (
@@ -13,9 +13,15 @@ const Projects = () => {
             Others
           </h1>
 
-          <div className="flex flex-wrap items-center justify-center text-center md:flex-nowrap">
+          <m.div
+            variants={transition("right")}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex flex-wrap items-center justify-center text-center md:flex-nowrap"
+          >
             {projectsData.map((project) => {
-              const { id, name, description, stack, short } = project;
+              const { id, name, description, short } = project;
               return (
                 <ul key={id}>
                   <li className="p-4 ">
@@ -50,7 +56,7 @@ const Projects = () => {
                 </ul>
               );
             })}
-          </div>
+          </m.div>
         </div>
       </div>
     </LazyMotion>

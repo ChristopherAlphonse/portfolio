@@ -1,7 +1,8 @@
 import { Logo, Resume } from "../../assets";
-import React, { lazy, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const Theme = lazy(() => import("../../Theme/ThemeToggle"));
+import Theme from "../../Theme/ThemeIndex";
+
 const ImageProps = {
   width: 48,
   height: 48,
@@ -10,10 +11,6 @@ const navigation = [
   {
     name: "Resume",
     href: `${Resume}`,
-  },
-  {
-    name: "Cert",
-    href: "https://drive.google.com/file/d/1k1qrYWQeJOyMB743MuDphaMmcZG5hTlR/view?usp=sharing",
   },
   {
     name: "GitHub",

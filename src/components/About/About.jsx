@@ -1,7 +1,7 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
+import { fadeIn, transition } from "../../FramerVariant/variants";
 
 import React from "react";
-import { fadeIn } from "../../FramerVariant/variants";
 
 const About = () => {
   return (
@@ -24,7 +24,7 @@ const About = () => {
                   Christopher Alphonse
                 </h2>
                 <m.p
-                  variants={fadeIn("down")}
+                  variants={transition("left")}
                   initial="hidden"
                   whileInView={"show"}
                   className="mb-4 text-accent dark:text-blue-600"
@@ -38,51 +38,37 @@ const About = () => {
                   whileInView={"show"}
                   className="mb-8  text-xl dark:text-zinc-900"
                 >
-                  As a programmer with experience in front and back end
-                  development, I specialize in creating engaging online user
-                  experiences, developing robust servers and databases for
-                  website operation, and coding for mobile and desktop
-                  platforms. I'm passionate about using my skills and knowledge
-                  to create innovative solutions that help businesses and
-                  organizations achieve their goals.
-                  <br />
-                  <br /> I believe that the key to successful programming is a
-                  combination of technical expertise and creative
-                  problem-solving. By combining these skills, I'm able to create
-                  solutions that are not only effective, but also intuitive and
-                  user-friendly. I'm excited to continue learning and growing as
-                  a programmer, and to continue finding new and innovative ways
-                  to solve complex problems.
+                  As a highly motivated and passionate developer with a strong
+                  foundation in front and back end development, I am excited to
+                  bring my skills and knowledge to a company where I can make a
+                  meaningful contribution and grow as a professional.
                   <br />
                   <br />
-                  My journey began in early 2022, when I decided to take a leap
-                  of faith and signed up for a bootcamp. The boot camp was the
-                  first step in my journey to pursuing my passion. I have always
-                  loved tinkering with computers, building my own machines and
-                  experimenting with different software and settings. However, I
-                  never considered pursuing a career in technology because I
-                  lacked the formal education and training.
+                  I have always been drawn to technology and the endless
+                  possibilities it offers for innovation and problem-solving.
+                  That's why I decided to take a leap of faith and enroll in a
+                  bootcamp in early 2022, determined to pursue my dream of
+                  working in the tech industry. The bootcamp was intense and
+                  demanding, but it was also incredibly rewarding, and I gained
+                  the confidence and skills I needed to start my career in
+                  technology.
                   <br />
                   <br />
-                  But with the encouragement of my friends and mentors, I
-                  decided to take the plunge and enroll in the bootcamp. I was
-                  excited and nervous, but I knew that this was my chance to
-                  make a real change in my life and pursue my dream of working
-                  in the tech industry.
+                  Since then, I have been dedicated to continuously learning and
+                  expanding my knowledge, and I have expertise in a variety of
+                  technologies such as the MERN stack, TypeScript, Tailwind CSS,
+                  GraphQL, MySQL, and more. I am confident that my technical
+                  skills, combined with my passion for problem-solving and
+                  creativity, make me well-suited to contribute to a team of
+                  professionals in the tech industry.
                   <br />
-                  <br />
-                  The bootcamp was intense and challenging, but it was also
-                  incredibly rewarding. I learned a huge amount in a short
-                  amount of time, and I gained the confidence and skills I
-                  needed to start my career in technology.
-                  <br />
-                  <br />
-                  My passion for technology drives me to continuously learn and
-                  expand my knowledge, and I have expertise in various
-                  technologies such as MERN stack, TypeScript, Tailwind CSS,
-                  GraphQL, MySQL, and more. I am dedicated to using my skills to
-                  help businesses and organizations achieve their goals through
-                  innovative solutions.
+                  <br />I am excited to join a company where I can use my skills
+                  and knowledge to create innovative solutions and help
+                  businesses and organizations achieve their goals. I am eager
+                  to continue learning and growing as a developer, and I am
+                  committed to staying up-to-date on the latest technologies and
+                  trends in the field. I am confident that my passion and
+                  dedication will make me a valuable asset to any team.
                 </m.p>
               </div>
             </div>

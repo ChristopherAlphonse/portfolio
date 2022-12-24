@@ -5,6 +5,7 @@ import Logo from "./Project_files/logo.webp";
 import ME from "./Project_files/melnd.webp";
 import NO from "./Project_files/nmoted.webp";
 import PU from "./Project_files/pure.webp";
+import Profile from "./Project_files/ye.jpg";
 import Resume from "./PDF/Chris_Alphonse.pdf";
 
-export { Resume, Logo, AD, FU, ME, NO, PU, AZ };
+export { Resume, Logo, AD, FU, ME, NO, PU, AZ, Profile };
