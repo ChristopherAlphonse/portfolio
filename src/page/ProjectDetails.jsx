@@ -2,7 +2,7 @@ import { FeaturedData, projectsData } from "../data";
 import { Footer, ResponsiveNavBar } from "../components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { fadeIn, transition } from "../FramerVariant/variants";
 
 import { BsArrowReturnLeft } from "react-icons/bs";
@@ -14,15 +14,17 @@ const ImageProps = {
   width: 48,
   height: 48,
 };
+
 const ProjectDetails = () => {
   const [loading, setLoading] = useState(false);
-  React.useEffect(() => {
+  const { id } = useParams();
+
+  useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 800);
   }, []);
-  const { id } = useParams();
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
@@ -31,11 +33,11 @@ const ProjectDetails = () => {
         </title>
         <meta
           name="keywords"
-          content="Christopher Alphonse, full-stack developer, Boston, MA, software engineer, web development, front-end development, back-end development"
+          content="Christopher Alphonse, full-stack developer, Boston, Massachusetts, software engineer, web development, front-end, back-end, JavaScript, React, Node.js"
         />
         <meta
           name="description"
-          content="Christopher Alphonse is a full-stack developer based in Boston, MA. With experience in front-end and back-end development, Christopher is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. Check out his portfolio to learn more about his work and skills."
+          content="Christopher Alphonse is a highly skilled full-stack developer based in Boston, MA. With expertise in front-end and back-end development, Christopher uses technologies such as JavaScript, React, and Node.js to build scalable and effective web applications. His portfolio showcases his experience and capabilities in building a wide range of web applications. Contact Christopher for all your web development needs in the Boston area."
         />
       </Helmet>
       <div className="">

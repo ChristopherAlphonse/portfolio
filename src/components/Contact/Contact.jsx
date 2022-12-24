@@ -40,6 +40,7 @@ const Contact = () => {
     );
     e.target.reset();
   };
+
   return (
     <LazyMotion features={domAnimation}>
       <section
@@ -65,9 +66,8 @@ const Contact = () => {
               viewport={{ once: false, amount: 0.4 }}
               className="title-para py-2 font-body font-bold text-zinc-500 dark:text-zinc-600"
             >
-              I'm always happy to connect with new people. Please use the form
-              below to send me a message, and I'll be sure to get back to you as
-              soon as possible.
+              Feel free to reach out to me with any questions or inquiries. I'll
+              get back to you as soon as possible.
             </m.h2>
           </div>
           <div className="mt-10 flex flex-col justify-center lg:flex-row lg:gap-x-8">

@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite ",
+    "dev": "vite --host",
     "build": "vite build ",
     "preview": "yarn party && vite build && yarn vite preview",
     "devi": "yarn global add npm-check-updates && ncu -u && yarn install && yarn autoclean --force",

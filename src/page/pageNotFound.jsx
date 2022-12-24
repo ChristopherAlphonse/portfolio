@@ -1,26 +1,29 @@
 import "../index.css";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import React, { lazy } from "react";
 
-import { ResponsiveNavBar } from "../components/head";
+import React from "react";
+import { ResponsiveNavBar } from "../components/compIndex";
 
-const pageNotFound = () => {
+const PageNotFound = () => {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
         <title>Christopher Alphonse | 404 | Full-Stack Developer</title>
         <meta
           name="description"
-          content=" I specialize in designing and building amazing digital experiences that are both functional and engaging.
-        At the moment, I'm concentrating on learning new technologies and improving human-centered services ."
+          content="404 error: the page you are looking for does not exist on Christopher Alphonse's website. Christopher is a full-stack developer specializing in designing and building amazing digital experiences that are both functional and engaging. He is currently focusing on learning new technologies and improving human-centered services."
+        />
+        <meta
+          name="keywords"
+          content="404, error, page not found, Christopher Alphonse, full-stack developer, digital experiences, human-centered services"
         />
       </Helmet>
       <>
         <ResponsiveNavBar />
         <section
           id="section1"
-          className="containerr flex h-screen items-center justify-center  overflow-hidden bg-zinc-900 py-32 dark:bg-white lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
+          className="max-w-screen flex h-screen items-center justify-center  overflow-hidden bg-zinc-900 py-32 dark:bg-white lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
         >
           <div className="container mx-auto h-full">
             <div className="flex h-full items-center pt-8">
@@ -42,4 +45,4 @@ const pageNotFound = () => {
     </HelmetProvider>
   );
 };
-export default pageNotFound;
+export default PageNotFound;
