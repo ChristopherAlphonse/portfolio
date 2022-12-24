@@ -10,6 +10,7 @@ const PageNotFound = () => {
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
         <title>Christopher Alphonse | 404 | Full-Stack Developer</title>
+        <link rel="canonical" href={`https://christopheralphonse.com/404`} />
         <meta
           name="description"
           content="404 error: the page you are looking for does not exist on Christopher Alphonse's website. Christopher is a full-stack developer specializing in designing and building amazing digital experiences that are both functional and engaging. He is currently focusing on learning new technologies and improving human-centered services."

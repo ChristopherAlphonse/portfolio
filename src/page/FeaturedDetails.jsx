@@ -4,6 +4,7 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { Suspense, useState } from "react";
 
 import { BsArrowReturnLeft } from "react-icons/bs";
+import { Profile } from "../assets/index";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { TfiWorld } from "react-icons/tfi";
 import { projectsData } from "../data";
@@ -36,6 +37,26 @@ const FeaturedDetails = () => {
         <meta
           name="description"
           content="Christopher Alphonse is a full-stack developer based in Boston, MA. With experience in front-end and back-end development, Christopher is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. Check out his portfolio to learn more about his work and skills."
+        />
+        <meta property="twitter:image" content={Profile} />
+        <meta name="author" content="Christopher Alphonse" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`https://christopheralphonse.com/${id}`} />
+        <meta
+          property="og:url"
+          content={`https://christopheralphonse.com/${id}`}
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Christopher Alphonse" />
+
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:site" content="christopheralphonse" />
+        <meta property="twitter:creator" content="Christopher Alphonse" />
+
+        <meta
+          name="copyright"
+          content="Copyright 2022. All rights reserved for Christopher Alphonse"
         />
       </Helmet>
       <div className="">
