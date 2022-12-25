@@ -30,8 +30,8 @@ module.exports = {
         secondary: "#1C1D24",
         tertiary: "#1C1D24",
         accent: {
-          DEFAULT: "#7FC7EB",
-          hover: "#639CB8",
+          DEFAULT: "rgb(28 100 242 )",
+          hover: "rgb(28 100 242 )",
         },
         paragraph: "#D1D1D1",
       },

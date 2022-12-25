@@ -19,7 +19,7 @@ const Hero = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-md mb-[22px] text-lg text-accent dark:text-blue-600"
+                className="text-md mb-[22px] text-lg text-blue-600"
               >
                 Hey, I'm Chris 👋
               </m.p>
@@ -40,35 +40,16 @@ const Hero = () => {
                 className=" max-w-6xl pt-4 pb-8 text-center text-xs text-zinc-500 dark:text-zinc-600 sm:text-sm md:pt-6 md:pb-12 md:text-lg lg:text-left"
               >
                 I specialize in{" "}
-                <span className="text-accent dark:text-blue-600">
-                  {" "}
-                  designing
-                </span>{" "}
-                and{" "}
-                <span className="text-accent dark:text-blue-600">
-                  {" "}
-                  building{" "}
-                </span>{" "}
-                amazing digital experiences that are both{" "}
-                <span className="text-accent dark:text-blue-600">
-                  functional
-                </span>{" "}
-                and{" "}
-                <span className="text-accent dark:text-blue-600">
-                  {" "}
-                  engaging
-                </span>
+                <span className="text-blue-600"> designing</span> and{" "}
+                <span className="text-blue-600"> building </span> amazing
+                digital experiences that are both{" "}
+                <span className="text-blue-600">functional</span> and{" "}
+                <span className="text-blue-600"> engaging</span>
                 .
                 <br /> At the moment, I'm concentrating on{" "}
-                <span className="text-accent dark:text-blue-600">
-                  {" "}
-                  learning
-                </span>{" "}
-                new technologies and improving{" "}
-                <span className="text-accent dark:text-blue-600">
-                  {" "}
-                  human-centered{" "}
-                </span>
+                <span className="text-blue-600"> learning</span> new
+                technologies and improving{" "}
+                <span className="text-blue-600"> human-centered </span>
                 services .
               </m.p>
               <a href="#contact" className="btn-holder  ">

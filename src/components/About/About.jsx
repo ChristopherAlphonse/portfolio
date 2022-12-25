@@ -64,13 +64,7 @@ const About = () => {
                   creativity, make me well-suited to contribute to a team of
                   professionals in the tech industry.
                   <br />
-                  <br />I am excited to join a company where I can use my skills
-                  and knowledge to create innovative solutions and help
-                  businesses and organizations achieve their goals. I am eager
-                  to continue learning and growing as a developer, and I am
-                  committed to staying up-to-date on the latest technologies and
-                  trends in the field. I am confident that my passion and
-                  dedication will make me a valuable asset to any team.
+                  <br />
                 </m.p>
               </div>
             </div>
