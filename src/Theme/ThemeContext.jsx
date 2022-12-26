@@ -33,6 +33,20 @@ export const ThemeProvider = ({ initialTheme, children }) => {
   useEffect(() => {
     rawSetTheme(theme);
   }, [theme]);
+
+  useEffect(() => {
+    const userMedia = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleColorSchemeChange = (event) => {
+      if (event.matches) {
+        setTheme("dark");
+      } else {
+        setTheme("light");
+      }
+    };
+    userMedia.addListener(handleColorSchemeChange);
+    return () => userMedia.removeListener(handleColorSchemeChange);
+  }, []);
+
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
