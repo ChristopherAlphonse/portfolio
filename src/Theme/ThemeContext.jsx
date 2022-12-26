@@ -28,23 +28,32 @@ export const ThemeProvider = ({ initialTheme, children }) => {
   useEffect(() => {
     if (initialTheme) {
       rawSetTheme(initialTheme);
+      console.log("ran in line 31 ThemeContext");
     }
   }, []);
   useEffect(() => {
     rawSetTheme(theme);
+    console.log("ran in line 36 ThemeContext");
   }, [theme]);
 
   useEffect(() => {
     const userMedia = window.matchMedia("(prefers-color-scheme: dark)");
-    const handleColorSchemeChange = (event) => {
-      if (event.matches) {
+    const handleColorSchemeChange = (e) => {
+      if (e.matches) {
         setTheme("dark");
       } else {
         setTheme("light");
+        console.log("ran in line 46 ThemeContext");
       }
     };
-    userMedia.addListener(handleColorSchemeChange);
-    return () => userMedia.removeListener(handleColorSchemeChange);
+
+    //     That setTimeout is called the moment you call addEventListener, and the return value of setTimeout (The timeout id) is passed to addEventListener.
+    // You need to wrap the setTimeout in a function
+
+    userMedia.addEventListener("load", () =>
+      setTimeout(handleColorSchemeChange(), 3000)
+    );
+    return () => userMedia.removeEventListener(handleColorSchemeChange);
   }, []);
 
   return (

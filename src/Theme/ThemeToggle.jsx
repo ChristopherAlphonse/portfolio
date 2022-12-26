@@ -36,8 +36,8 @@ const Toggle = () => {
         </span>
       </h1>
     ) : (
-      <h1 className="inline-flex items-center text-[#ffffff] hover:text-white">
-        S Y S T E M{" "}
+      <h1 className="inline-flex items-center text-zinc-900 hover:text-zinc-500">
+        S Y S T E M
         <span>
           <BsGear size={20} className="ml-3" />
         </span>

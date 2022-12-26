@@ -1,6 +1,7 @@
 import { Logo, Resume } from "../../assets";
 import React, { useEffect, useState } from "react";
 
+import Download from "./Download";
 import Theme from "../../Theme/ThemeIndex";
 
 const ImageProps = {
@@ -9,8 +10,8 @@ const ImageProps = {
 };
 const navigation = [
   {
-    name: "Resume",
-    href: `${Resume}`,
+    name: <Download />,
+    href: null,
   },
   {
     name: "GitHub",

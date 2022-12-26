@@ -41,10 +41,13 @@ const FeaturedDetails = () => {
         <meta property="twitter:image" content={Profile} />
         <meta name="author" content="Christopher Alphonse" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`https://christopheralphonse.com/${id}`} />
+        <link
+          rel="canonical"
+          href={`https://christopheralphonse.com/project/${id}`}
+        />
         <meta
           property="og:url"
-          content={`https://christopheralphonse.com/${id}`}
+          href={`https://christopheralphonse.com/project/${id}`}
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />

@@ -36,7 +36,7 @@ const HomePage = () => {
         />
         <meta
           name="keywords"
-          content="developer, technology, front end development, back end development, MERN stack, TypeScript, Tailwind CSS, GraphQL, MySQL,full-stack developer, Boston, MA, front-end development, back-end development, JavaScript, React, Node.js, web applications, MERN stack, TypeScript, Tailwind CSS, GraphQL, MySQL, portfolio, skills, entry level javascript developer,junior javascript developer, node js debugger, react developers, Christopher Alphonse Boston, Christopher Alphonse developer, Christopher Alphonse engineer,Christopher Alphonse full stack, Christopher Alphonse software engineer, Christopher Alphonse LinkedIn, Christopher Alphonse GitHub, Christopher Alphonse Twitter, Christopher Alphonse facebook, Christopher Alphonse Tiktok, Christopher Alphonse Codepen, software engineer Boston, full-stack developer Boston, front-end developer Boston, back-end developer Boston, software developer Boston, web development Boston, software engineer services,  full-stack development services Boston,front-end development services Boston, back-end development services Boston, software engineer jobs"
+          content="developer, christopher developer boston, technology, front end development, back end development, MERN stack, TypeScript, Tailwind CSS, GraphQL, MySQL,full-stack developer, Boston, MA, front-end development, back-end development, JavaScript, React, Node.js, web applications, MERN stack, TypeScript, Tailwind CSS, GraphQL, MySQL, portfolio, skills, entry level javascript developer,junior javascript developer, node js debugger, react developers, Christopher Alphonse Boston, Christopher Alphonse developer, Christopher Alphonse engineer,Christopher Alphonse full stack, Christopher Alphonse software engineer, Christopher Alphonse LinkedIn, Christopher Alphonse GitHub, Christopher Alphonse Twitter, Christopher Alphonse facebook, Christopher Alphonse Tiktok, Christopher Alphonse Codepen, software engineer Boston, full-stack developer Boston, front-end developer Boston, back-end developer Boston, software developer Boston, web development Boston, software engineer services,  full-stack development services Boston,front-end development services Boston, back-end development services Boston, software engineer jobs"
         />
         <meta
           property="og:title"
@@ -58,7 +58,7 @@ const HomePage = () => {
         <meta property="twitter:image" content={Profile} />
         <meta name="author" content="Christopher Alphonse" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://christopheralphonse.com/" />
+        <link rel="canonical" href="https://christopheralphonse.com/v1/" />
         <meta property="og:url" content="https://christopheralphonse.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
