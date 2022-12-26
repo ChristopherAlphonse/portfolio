@@ -1,19 +1,23 @@
+import "react-toastify/dist/ReactToastify.css";
+
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
 import { fadeIn, transition } from "../../FramerVariant/variants";
-import toast, { Toaster } from "react-hot-toast";
 
 import emailjs from "@emailjs/browser";
 
 const Service = import.meta.env.VITE_SERVICE_ID;
 const Template = import.meta.env.VITE_TEMPLATE_ID;
 const Key = import.meta.env.VITE_PUBLIC_KEY;
+
 const Contact = () => {
   const form = useRef();
   const fullRef = useRef("");
   const emailRef = useRef("");
   const subjectRef = useRef("");
   const messageRef = useRef("");
+
   const sendEmail = (e) => {
     e.preventDefault();
     let params = {
@@ -23,21 +27,21 @@ const Contact = () => {
       message: e.target.message.value,
     };
 
-    const notify = () => {
-      toast.success("Email sent", {
-        duration: 1100,
-        position: "top-right",
+    //
+
+    emailjs
+      .sendForm(Service, Template, form.current, Key)
+      .then((response) => {
+        console.table("Email successfully sent!");
+        toast.success("Email sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        toast.error("Error sending email");
       });
-    };
-    emailjs.sendForm(Service, Template, form.current, Key).then(
-      (result) => {
-        console.log(result.text);
-        notify();
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+
+    //
+
     e.target.reset();
   };
 
@@ -127,29 +131,17 @@ const Contact = () => {
               >
                 Send message
               </button>
-              <Toaster
-                position="top-right"
-                reverseOrder={false}
-                gutter={8}
-                containerClassName=""
-                containerStyle={{}}
-                toastOptions={{
-                  // Define default options
-                  className: "",
-                  duration: 1000,
-                  style: {
-                    background: "#363636",
-                    color: "#fff",
-                  },
-                  // Default options for specific types
-                  success: {
-                    duration: 1000,
-                    theme: {
-                      primary: "green",
-                      secondary: "black",
-                    },
-                  },
-                }}
+              <ToastContainer
+                position="bottom-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
               />
             </m.form>
           </div>
