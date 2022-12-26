@@ -22,7 +22,7 @@ const Contact = () => {
       subject: e.target.user_subject.value,
       message: e.target.message.value,
     };
-    console.table(params);
+
     const notify = () => {
       toast.success("Email sent", {
         duration: 1100,
