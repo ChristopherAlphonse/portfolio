@@ -11,8 +11,7 @@ export default defineConfig({
         name: "Christopher Alphonse Developer",
         short_name: "Christopher Alphonse",
         description:
-          "Christopher Alphonse is a software developer/engineer based in Boston, MA that specializes in web applications and web development. Proficient at utilizing the MERN Stack to complete Full-Stack Applications.",
-        display: "standalone",
+          "Christopher Alphonse is a full-stack developer based in Boston, MA who is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. As a new developer with a passion for technology and a strong foundation in front-end and back-end development, I am eager to use my skills and knowledge to create innovative solutions for businesses and organizations. My expertise includes the MERN stack, TypeScript, Tailwind CSS, GraphQL, and MySQL. Check out my portfolio to learn more about my work and skills.",
         background_color: "#000000",
         lang: "en",
         scope: "/",

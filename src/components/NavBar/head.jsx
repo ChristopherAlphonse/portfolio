@@ -1,7 +1,7 @@
 import { Logo, Resume } from "../../assets";
 import React, { useEffect, useState } from "react";
 
-import Download from "./Download";
+import { Link } from "react-router-dom";
 import Theme from "../../Theme/ThemeIndex";
 
 const ImageProps = {
@@ -10,18 +10,27 @@ const ImageProps = {
 };
 const navigation = [
   {
-    name: <Download />,
+    name: (
+      <Link to={Resume} target="_blank">
+        {" "}
+        Resume
+      </Link>
+    ),
+    key: 1,
     href: null,
   },
   {
+    key: 2,
     name: "GitHub",
     href: "https://github.com/ChristopherAlphonse",
   },
   {
+    key: 3,
     name: "linkedin",
     href: "https://www.linkedin.com/in/christopher-alphonse",
   },
   {
+    key: 4,
     name: <Theme />,
     href: null,
   },
@@ -54,7 +63,8 @@ export const ResponsiveNavBar = () => {
 };
 const navLinks = navigation.map((page) => (
   <a
-    key={page.name}
+    as="li"
+    key={page.key}
     className="font-semibold
      text-accent no-underline
      hover:text-zinc-100
