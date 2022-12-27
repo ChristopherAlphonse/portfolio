@@ -59,6 +59,12 @@ const Projects = () => {
               );
             })}
           </m.div>
+          <div className="flex justify-center ">
+            <button className=" text-md ml-7 flex items-center justify-center rounded-3xl  px-6 py-3 text-center text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500 sm:px-6 sm:py-1">
+              {" "}
+              Show More
+            </button>
+          </div>
         </div>
       </div>
     </LazyMotion>

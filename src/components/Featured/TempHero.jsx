@@ -1,7 +1,6 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { useMemo } from "react";
-
-import { fadeIn } from "../../FramerVariant/variants";
+import { fadeIn, transition } from "../../FramerVariant/variants";
 
 const TempHero = ({ featured }) => {
   const logoProps = {
@@ -15,11 +14,11 @@ const TempHero = ({ featured }) => {
   return (
     <LazyMotion features={domAnimation}>
       <m.div
-        variants={fadeIn("up")}
+        variants={transition("up")}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.4 }}
-        className="box mt-2 mb-9  max-w-6xl place-items-center rounded-xl  bg-zinc-900 shadow-xl  shadow-blue-900/40 dark:bg-zinc-100"
+        viewport={{ once: false, amount: 0.2 }}
+        className="box mt-2 mb-9  max-w-6xl place-items-center rounded-xl  bg-zinc-900 shadow-lg  shadow-blue-900/40 dark:bg-zinc-100"
       >
         <p className=" mx-3 mb-5 flex justify-center py-2  text-zinc-300 dark:text-zinc-400  lg:relative lg:bottom-9 lg:justify-end lg:bg-transparent">
           {stack}
