@@ -155,8 +155,8 @@ const FeaturedDetails = () => {
             </Suspense>
           </>
         )}
-        <Footer />
-      </div>
+      </div>{" "}
+      <Footer />
     </HelmetProvider>
   );
 };

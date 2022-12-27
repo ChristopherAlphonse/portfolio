@@ -6,6 +6,7 @@ import {
   ProjectDetails,
 } from "./page/index";
 
+import { Gallery } from "./components/compIndex";
 import React from "react";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="*" element={<PageNotFound />} />
 
           <Route path="/project/:id" element={<ProjectDetails />} />
+          <Route path="/projects/" element={<Gallery />} />
           <Route path="/projects/:id" element={<FeaturedDetails />} />
         </Routes>
       </BrowserRouter>

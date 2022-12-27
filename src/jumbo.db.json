@@ -1,0 +1,85 @@
+[
+  {
+    "id": "Funky-Junkie",
+    "name": "Funky Junkie",
+    "category": "Store-front",
+    "short": "Shopify Store",
+    "status": "Production",
+    "description": "Launched new Shopify store for urban clothing store in Canton, Massachusetts, Offered wide range of high-quality clothing and accessories, Focused on excellent customer service and competitive pricing",
+    "stack": ["SEO", "Contentful", "Stripe"],
+    "view": "https://www.funkyjunkieco.com/"
+  },
+  {
+    "id": "Melissa-and-Lexis",
+    "name": "Melissa and Lexis",
+    "short": "E-Commerce Store",
+    "status": "Production",
+    "category": "Store-front",
+    "description": "This local store specialized in providing delicious sweets and smoothies for intimate occasions. From romantic desserts to refreshing smoothies, they have a wide variety of treats that are perfect for any special moment.",
+    "view": "https://melissaandlexis.square.site/"
+  },
+  {
+    "id": "Admin-Dashboard",
+    "name": "Admin Dashboard",
+    "category": "Web development",
+    "short": "Workflow Helper/ Time Management System",
+    "status": "Development",
+    "description": "This dashboard is designed to support effective management and workflow management. It provides a comprehensive, yet user-friendly interface that allows managers to quickly access and analyze key data",
+    "stack": [
+      "Vite",
+      "TypeScript",
+      "Node",
+      "Sass",
+      "MongoDB",
+      "Express",
+      "Cloudinary"
+    ],
+    "view": "https://github.com/ChristopherAlphonse/admindashboard"
+  },
+  {
+    "id": "Azalais-Dark-Theme",
+    "name": "Azalais Dark Theme",
+    "category": "theme",
+    "short": "Dark Theme for Visual Studio Code",
+    "status": "Production",
+    "description": "Azalais Dark Theme is the perfect solution for anyone who spends a lot of time in a text editor. I designed it to be easy on the eyes and reduce eye fatigue, and it's become my daily theme for VS Code.",
+    "stack": ["JSON", "XML", "Yo code", "NPM", "VSCE"],
+    "view": "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme&ssr=false#overview"
+  },
+  {
+    "id": "Noted",
+    "name": "Noted",
+    "short": "Note Taking app Landing page & Desktop App",
+    "status": "Development",
+    "category": "Web development",
+    "description": "Note taking app with full stack for web and desktop. Native features include password reset and sign in/up. Still in development",
+    "stack": [
+      "Vite",
+      "TypeScript",
+      "Node",
+      "Rust",
+      "TauriJS",
+      "Tailwind",
+      "MongoDB"
+    ],
+    "view": "https://github.com/ChristopherAlphonse/Noted"
+  },
+  {
+    "id": "Pure-by-Mel",
+    "name": "Pure by Mel",
+    "short": "E-Commerce Store",
+    "status": "Development",
+    "category": "Web development",
+    "description": "Smoothie store based in Randolph, MA, and specialize in providing sweet treats for your loved ones during the holiday season",
+    "stack": [
+      "NextJS",
+      "TailwindCSS",
+      "TypeScript",
+      "Stripe",
+      "Sanity.io",
+      "Framer Motion",
+      "MongoDB"
+    ],
+    "view": "https://github.com/ChristopherAlphonse/ye"
+  }
+]

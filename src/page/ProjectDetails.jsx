@@ -131,8 +131,8 @@ const ProjectDetails = () => {
             </Suspense>
           </>
         )}
-        <Footer />
-      </div>
+      </div>{" "}
+      <Footer />
     </HelmetProvider>
   );
 };
