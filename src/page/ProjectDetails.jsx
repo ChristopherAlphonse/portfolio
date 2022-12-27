@@ -105,7 +105,7 @@ const ProjectDetails = () => {
                                     className="flex items-center"
                                   >
                                     <TfiWorld />{" "}
-                                    <span className="ml-2 items-center">
+                                    <span className="ml-2 items-center text-xs sm:text-sm">
                                       V I S I T
                                     </span>
                                   </a>
@@ -115,7 +115,7 @@ const ProjectDetails = () => {
                                   className="btn btn-md md:btn-lg  ml-auto flex items-center rounded border-0 bg-blue-600  py-1  px-9 text-white transition-all hover:bg-blue-600/50 dark:bg-blue-700 dark:hover:bg-blue-700/70"
                                 >
                                   <BsArrowReturnLeft />{" "}
-                                  <span className="ml-2 items-center">
+                                  <span className="ml-2 items-center text-xs sm:text-sm">
                                     R E T U R N
                                   </span>
                                 </a>

@@ -7,7 +7,6 @@ import {
 } from "./page/index";
 
 import React from "react";
-import { Resume } from "./assets/index";
 
 const App = () => {
   return (
@@ -17,10 +16,7 @@ const App = () => {
           <Route path="/v1/" element={<HomePage />} />
           <Route path="/" element={<Navigate to="/v1/" />} />
           <Route path="*" element={<PageNotFound />} />
-          <Route
-            path="/src/assets/PDF/Chris_Alphonse.pdf"
-            element={<Resume />}
-          />
+
           <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/projects/:id" element={<FeaturedDetails />} />
         </Routes>

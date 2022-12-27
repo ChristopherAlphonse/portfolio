@@ -1,7 +1,6 @@
-import { Logo, Resume } from "../../assets";
 import React, { useEffect, useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Logo } from "../../assets";
 import Theme from "../../Theme/ThemeIndex";
 
 const ImageProps = {
@@ -10,14 +9,9 @@ const ImageProps = {
 };
 const navigation = [
   {
-    name: (
-      <Link to={Resume} target="_blank">
-        {" "}
-        Resume
-      </Link>
-    ),
+    name: "Resume",
     key: 1,
-    href: null,
+    href: "https://drive.google.com/file/d/1kxLSsXRC1VO3pAg3HqsXjI0wnpS16uRN/view?usp=share_link",
   },
   {
     key: 2,
@@ -65,6 +59,7 @@ const navLinks = navigation.map((page) => (
   <a
     as="li"
     key={page.key}
+    target="_blank"
     className="font-semibold
      text-accent no-underline
      hover:text-zinc-100
