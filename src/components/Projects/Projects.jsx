@@ -60,13 +60,19 @@ const Projects = () => {
             })}
           </m.div>
           <div className="flex justify-center ">
-            <a
-              href="/projects"
-              className=" text-md ml-7 flex cursor-pointer items-center justify-center  rounded-3xl px-6 py-3 text-center text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500 sm:px-6 sm:py-1"
+            <button
+              disabled
+              className="cursor-b cursor-not-allowed "
+              aria-label="Work in progress, come back at a later time"
             >
-              {" "}
-              Show More
-            </a>
+              <a
+                // href="/projects"
+                className=" text-md ml-7 flex cursor-not-allowed items-center  justify-center rounded-3xl px-6 py-3 text-center text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500 sm:px-6 sm:py-1"
+              >
+                {" "}
+                Show More
+              </a>
+            </button>
           </div>
         </div>
       </div>

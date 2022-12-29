@@ -204,3 +204,27 @@
   height: 100%;
   object-fit: cover;
 }
+
+button {
+  position: relative;
+}
+
+button[aria-label]:focus:after,
+button[aria-label]:hover:after {
+  position: absolute;
+  z-index: 1;
+  top: -3em;
+  left: -5rem;
+  display: block;
+  overflow: hidden;
+  width: 22rem;
+  height: 2em;
+  border-radius: 0.2em;
+  padding: 0 0.7em;
+  content: attr(aria-label);
+  color: #fff;
+  background: #2563eb;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: left;
+}
