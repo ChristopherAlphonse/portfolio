@@ -3680,10 +3680,10 @@ react-multi-carousel@^2.8.2:
   resolved "https://registry.yarnpkg.com/react-multi-carousel/-/react-multi-carousel-2.8.2.tgz#4bbd7a9656d8e49e081745331593e5500eefdbe4"
   integrity sha512-M9Y7DfAp8bA/r6yexttU6RLA7uyppje4c0ELRuCHZWswH+u7nr0uVP6qHNPjc4XGOEY1MYFOb5nBg7JvoKutuQ==
 
-react-pdf@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/react-pdf/-/react-pdf-6.2.0.tgz#2b0d9a07fc56da2e471c2714d2b1e32622b6b683"
-  integrity sha512-FKUoUKKxoIipIbRHzXQZui1j+f1QcEuFuVL03qI1GFDm0jC4eUrMyOCpPR98lY7+rsCswPn1rjfKd+8k9PrZmQ==
+react-pdf@^6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/react-pdf/-/react-pdf-6.2.1.tgz#282915dd7c90f9b15152aa5c7d66646e4887c670"
+  integrity sha512-yTMMFebYardEwRTLInT/ShVU2Flssh8ccgkc1DCAW8m+ONEynWWqgFy6VVkax4mpSoAPNXRgbfV7rETLQFJBNw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     clsx "^1.2.1"
