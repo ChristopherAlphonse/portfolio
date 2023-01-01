@@ -1,13 +1,9 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { useMemo } from "react";
-import { fadeIn, transition } from "../../FramerVariant/variants";
+
+import { transition } from "../../FramerVariant/variants";
 
 const TempHero = ({ featured }) => {
-  const logoProps = {
-    width: "600",
-    height: "400",
-  };
-
   const featuredMemoized = useMemo(() => featured, [featured]);
   const { id, image, description, stack, view, name } = featuredMemoized;
 
@@ -55,7 +51,14 @@ const TempHero = ({ featured }) => {
                     alt={name}
                     className="object-fit object-center"
                     src={image}
-                    {...logoProps}
+                    width="300"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                    srcSet={image}
+                    sizes="(min-width: 66em) 33vw,
+                    (min-width: 44em) 50vw,
+                    100vw"
                   />
                 </div>
               </div>
