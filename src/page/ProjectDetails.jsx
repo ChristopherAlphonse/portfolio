@@ -1,4 +1,4 @@
-import { FeaturedData, projectsData } from "../data";
+import { FeaturedData, projectsData } from "../Data/data";
 import { Footer, ResponsiveNavBar } from "../components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { LazyMotion, domAnimation, m } from "framer-motion";

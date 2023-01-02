@@ -1,4 +1,4 @@
-import { AD, AZ, FU, ME, NO, PU } from "./assets";
+import { AD, AZ, FU, ME, NO, PU } from "../assets";
 
 export const projectsData = [
   {

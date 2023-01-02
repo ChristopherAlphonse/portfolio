@@ -7,7 +7,7 @@ import { BsArrowReturnLeft } from "react-icons/bs";
 import { Profile } from "../assets/index";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { TfiWorld } from "react-icons/tfi";
-import { projectsData } from "../data";
+import { projectsData } from "../Data/data";
 import { transition } from "../FramerVariant/variants";
 import { useParams } from "react-router-dom";
 

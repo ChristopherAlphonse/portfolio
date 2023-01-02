@@ -1,7 +1,7 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 
 import React from "react";
-import { projectsData } from "../../data";
+import { projectsData } from "../../Data/data";
 import { transition } from "../../FramerVariant/variants";
 
 const Projects = () => {
