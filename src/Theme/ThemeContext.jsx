@@ -33,7 +33,6 @@ export const ThemeProvider = ({ initialTheme, children }) => {
   }, []);
   useEffect(() => {
     rawSetTheme(theme);
-    console.log("ran in line 36 ThemeContext");
   }, [theme]);
 
   return (

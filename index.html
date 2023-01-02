@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us" class="dark">
   <head>
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet" />
-
-    <link rel="icon" href="/favicon.ico" type="image/png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="96x96" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="256x256" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="384x384" href="/apple-touch-icon.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="/android-chrome-192x192.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="512x512"
-      href="/android-chrome-512x512.png" />
-    <link rel="mask-icon" href="/favicon.ico" color="#000000" />
-    <meta name="theme-color" content="#000000" />
     <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+
+      :root {
+        --accent-color: #7fc7eb;
+        --font-face-primary: "Playfair Display SC", serif;
+        --font-face-secondary: "Open Sans", sans-serif;
+      }
+
       html {
         scroll-behavior: smooth;
       }
@@ -52,13 +35,7 @@
         background-color: rgb(55, 54, 54);
         border-radius: 2rem;
       }
-    </style>
-    <style type="text/css">
-      :root {
-        --accent-color: #7fc7eb;
-        --font-face-primary: "Playfair Display SC", serif;
-        --font-face-secondary: "Open Sans", sans-serif;
-      }
+
       button {
         box-sizing: border-box;
       }
@@ -165,6 +142,22 @@
       content="https://Christopheralphonse.com"
       data-react-helmet="true" />
     <meta name="twitter:card" content="summary" data-react-helmet="true" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="96x96" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="256x256" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="384x384" href="/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/android-chrome-192x192.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="/android-chrome-512x512.png" />
+    <link rel="mask-icon" href="/favicon.ico" color="#000000" />
+    <meta name="theme-color" content="#000000" />
   </head>
   <body>
     <div id="root"></div>
