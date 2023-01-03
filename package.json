@@ -12,7 +12,6 @@
     "devi": "yarn global add npm-check-updates && ncu -u && yarn install && yarn autoclean --force",
     "deploy": " vite build && firebase deploy --only hosting",
     "firebase": "firebase login && firebase init",
-    "ye": "firebase emulators:start",
     "style": "eslint"
   },
   "dependencies": {
@@ -67,7 +66,7 @@
     "@vitest/coverage-istanbul": "0.26.3",
     "commitizen": "4.2.6",
     "css-mediaquery": "0.1.2",
-    "cypress": "12.2.0",
+    "cypress": "12.3.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.31.0",
     "eslint-config-airbnb": "19.0.4",

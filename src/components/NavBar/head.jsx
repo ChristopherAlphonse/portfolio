@@ -49,7 +49,6 @@ export const ResponsiveNavBar = () => {
 };
 const navLinks = navigation.map((page) => (
   <a
-    as='li'
     key={page.key}
     target='_blank'
     className='text-accent
