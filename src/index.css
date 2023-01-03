@@ -13,7 +13,7 @@
 }
 @layer base {
   body {
-    @apply bg-gray-200 font-body leading-6 text-paragraph;
+    @apply font-body text-paragraph bg-gray-200 leading-6;
   }
   h1,
   h2,
@@ -30,10 +30,10 @@
     @apply mb-5 text-3xl font-medium lg:text-4xl lg:font-extrabold;
   }
   .subtitle {
-    @apply mb-16 max-w-[520px] text-base text-paragraph lg:mb-24;
+    @apply text-paragraph mb-16 max-w-[520px] text-base lg:mb-24;
   }
   .btn {
-    @apply flex items-center justify-center rounded-sm py-4 px-7 font-medium text-white transition-all hover:bg-accent-hover;
+    @apply hover:bg-accent-hover flex items-center justify-center rounded-sm py-4 px-7 font-medium text-white transition-all;
   }
   .btn-lg {
     @apply h-[54px];
@@ -42,10 +42,10 @@
     @apply h-[48px];
   }
   .input {
-    @apply h-[60px] w-full rounded-sm bg-secondary pl-6 font-body text-[15px] text-paragraph outline-none focus:outline focus:outline-1 focus:outline-accent;
+    @apply bg-secondary font-body text-paragraph focus:outline-accent h-[60px] w-full rounded-sm pl-6 text-[15px] outline-none focus:outline focus:outline-1;
   }
   .textarea {
-    @apply h-[200px] w-full resize-none rounded-sm bg-secondary p-6 outline-none focus:outline focus:outline-1 focus:outline-accent;
+    @apply bg-secondary focus:outline-accent h-[200px] w-full resize-none rounded-sm p-6 outline-none focus:outline focus:outline-1;
   }
   .active {
     @apply text-accent;

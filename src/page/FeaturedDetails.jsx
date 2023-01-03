@@ -27,9 +27,7 @@ const FeaturedDetails = () => {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>
-          Christopher Alphonse | {id} | Full-Stack Developer | Boston, MA
-        </title>
+        <title>Christopher Alphonse | {id} | Full-Stack Developer | Boston, MA</title>
         <meta
           name='keywords'
           content='Christopher Alphonse, full-stack developer, Boston, MA, software engineer, web development, front-end development, back-end development'
@@ -41,14 +39,8 @@ const FeaturedDetails = () => {
         <meta property='twitter:image' content={Profile} />
         <meta name='author' content='Christopher Alphonse' />
         <meta name='robots' content='index, follow' />
-        <link
-          rel='canonical'
-          href={`https://christopheralphonse.com/project/${id}`}
-        />
-        <meta
-          property='og:url'
-          href={`https://christopheralphonse.com/project/${id}`}
-        />
+        <link rel='canonical' href={`https://christopheralphonse.com/project/${id}`} />
+        <meta property='og:url' href={`https://christopheralphonse.com/project/${id}`} />
         <meta property='og:type' content='website' />
         <meta property='og:locale' content='en_US' />
         <meta property='og:site_name' content='Christopher Alphonse' />
@@ -98,7 +90,7 @@ const FeaturedDetails = () => {
                               className='title-font mb-1 text-3xl tracking-widest  dark:text-zinc-900  md:text-4xl lg:text-5xl '>
                               {z.name}
                             </m.h2>
-                            <h1 className='title-font mb-1 font-body text-sm font-medium text-zinc-500 md:text-lg'>
+                            <h1 className='title-font font-body mb-1 text-sm font-medium text-zinc-500 md:text-lg'>
                               {z.short}
                             </h1>
                             <div className=' mx-auto flex flex-wrap'>
@@ -114,18 +106,14 @@ const FeaturedDetails = () => {
                                     <span>{z.stack}</span>
                                   </span>
                                 </div>
-                                <button className='mb-5 bg-slate-500 px-6'>
-                                  {z.status}
-                                </button>
+                                <button className='mb-5 bg-slate-500 px-6'>{z.status}</button>
                                 <p className='leading-relaxed text-zinc-500 md:text-lg'>
                                   {z.description2}
                                 </p>
                                 <div className='mt-2 mb-5 flex items-center border-b-2 border-zinc-100 pb-5'></div>
                                 <div className='flex'>
                                   <span className='ml-1 flex items-center space-x-2 py-1 pl-3  text-blue-600 transition-all hover:text-blue-600/50 dark:text-blue-700 dark:hover:text-blue-700/70'>
-                                    <a
-                                      href={z.view}
-                                      className='flex items-center'>
+                                    <a href={z.view} className='flex items-center'>
                                       <TfiWorld />{" "}
                                       <span className='ml-2 items-center text-xs sm:text-sm'>
                                         V I S I T

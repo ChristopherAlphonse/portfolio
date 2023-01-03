@@ -34,14 +34,8 @@ const Gallery = () => {
         <meta property='twitter:image' content='projects' />
         <meta name='author' content='Christopher Alphonse' />
         <meta name='robots' content='index, follow' />
-        <link
-          rel='canonical'
-          href={`https://christopheralphonse.com/projects`}
-        />
-        <meta
-          property='og:url'
-          href={`https://christopheralphonse.com/projects`}
-        />
+        <link rel='canonical' href={`https://christopheralphonse.com/projects`} />
+        <meta property='og:url' href={`https://christopheralphonse.com/projects`} />
         <meta property='og:type' content='website' />
         <meta property='og:locale' content='en_US' />
         <meta property='og:site_name' content='Christopher Alphonse' />
@@ -81,13 +75,11 @@ const Gallery = () => {
                         Welcome & Thank you for visiting
                       </h1>
                       <p className='mx-auto text-base leading-relaxed lg:w-2/3'>
-                        These projects are a selection of projects that have
-                        been created or are in development. The projects include
-                        a variety of web development projects, such as an
-                        e-commerce store, a workflow management system, and a
-                        note taking app, as well as a theme for Visual Studio
-                        Code. Each project includes a brief description and
-                        information about the technologies used.
+                        These projects are a selection of projects that have been created or are in
+                        development. The projects include a variety of web development projects,
+                        such as an e-commerce store, a workflow management system, and a note taking
+                        app, as well as a theme for Visual Studio Code. Each project includes a
+                        brief description and information about the technologies used.
                       </p>
                     </div>
                     <div className='-m-4 flex flex-wrap'>
@@ -124,9 +116,7 @@ const Gallery = () => {
                                   <h1 className='title-font mb-3 text-lg font-medium text-gray-400'>
                                     {name}
                                   </h1>
-                                  <p className='leading-relaxed text-zinc-50'>
-                                    {description}
-                                  </p>
+                                  <p className='leading-relaxed text-zinc-50'>{description}</p>
                                 </div>
                               </div>
                             </Link>

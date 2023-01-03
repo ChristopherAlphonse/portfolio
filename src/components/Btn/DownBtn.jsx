@@ -15,11 +15,10 @@ const BackBottomBtn = () => {
   return (
     showMemoized && (
       <a
-        href="#section2"
-        className="fixed right-5
-          bottom-24 flex h-6 w-6 cursor-pointer items-center justify-end rounded-full bg-none text-white shadow-orange-50 transition-all md:block"
-      >
-        <BsArrowDown className="h-6 w-6 text-blue-300" />
+        href='#section2'
+        className='fixed right-5
+          bottom-24 flex h-6 w-6 cursor-pointer items-center justify-end rounded-full bg-none text-white shadow-orange-50 transition-all md:block'>
+        <BsArrowDown className='h-6 w-6 text-blue-300' />
       </a>
     )
   );

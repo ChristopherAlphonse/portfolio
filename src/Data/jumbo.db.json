@@ -25,15 +25,7 @@
     "short": "Workflow Helper/ Time Management System",
     "status": "Development",
     "description": "This dashboard is designed to support effective management and workflow management. It provides a comprehensive, yet user-friendly interface that allows managers to quickly access and analyze key data",
-    "stack": [
-      "Vite",
-      "TypeScript",
-      "Node",
-      "Sass",
-      "MongoDB",
-      "Express",
-      "Cloudinary"
-    ],
+    "stack": ["Vite", "TypeScript", "Node", "Sass", "MongoDB", "Express", "Cloudinary"],
     "view": "https://github.com/ChristopherAlphonse/admindashboard"
   },
   {
@@ -53,15 +45,7 @@
     "status": "Development",
     "category": "Web development",
     "description": "Note taking app with full stack for web and desktop. Native features include password reset and sign in/up. Still in development",
-    "stack": [
-      "Vite",
-      "TypeScript",
-      "Node",
-      "Rust",
-      "TauriJS",
-      "Tailwind",
-      "MongoDB"
-    ],
+    "stack": ["Vite", "TypeScript", "Node", "Rust", "TauriJS", "Tailwind", "MongoDB"],
     "view": "https://github.com/ChristopherAlphonse/Noted"
   },
   {
