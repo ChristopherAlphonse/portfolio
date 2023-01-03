@@ -20,12 +20,12 @@ import PropagateLoader from "react-spinners/PropagateLoader";
 const HomePage = () => {
   const [loading, setLoading] = useState(false);
 
-  useMemo(
-    () => setLoading(true),
+  useMemo(() => {
+    setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1100)
-  );
+    }, 800);
+  }, []);
 
   return (
     <HelmetProvider>

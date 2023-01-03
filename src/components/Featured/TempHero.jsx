@@ -34,7 +34,7 @@ const TempHero = ({ featured }) => {
                     VIEW
                   </a>
                   <a
-                    href={`/project/${id}`}
+                    href={`https://christopheralphonse.com/project/${id}`}
                     className=' text-md ml-7  inline-flex rounded-3xl text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500 sm:px-6 sm:py-2 '>
                     LEARN MORE
                   </a>

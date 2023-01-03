@@ -15,7 +15,6 @@ const App = () => {
             <Route path='/v1/' element={<HomePage />} />
             <Route path='/' element={<Navigate to='/v1/' />} />
             <Route path='*' element={<PageNotFound />} />
-
             <Route path='/project/:id' element={<ProjectDetails />} />
             <Route path='/projects/' element={<Gallery />} />
             <Route path='/projects/:id' element={<FeaturedDetails />} />
