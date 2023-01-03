@@ -46,8 +46,8 @@ const TempHero = ({ featured }) => {
                     alt={name}
                     className='object-fit object-center'
                     src={image}
-                    width='300'
-                    height='200'
+                    width={500}
+                    height={500}
                     loading='lazy'
                     decoding='async'
                     srcSet={image}

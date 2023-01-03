@@ -97,18 +97,19 @@ const Gallery = () => {
                             <Link to={view} target='_blank'>
                               <div className='relative flex' as='li'>
                                 <img
-                                  alt='gallery'
-                                  className='absolute inset-0 h-full w-full object-cover object-center'
                                   src={ye}
-                                  width='300'
-                                  height='200'
-                                  loading='lazy'
-                                  decoding='async'
+                                  height={300}
+                                  width={200}
+                                  alt='gallery'
                                   srcSet={ye}
+                                  loading='lazy'
+                                  className='absolute inset-0 h-full w-full object-cover object-center'
+                                  decoding='async'
                                   sizes='(min-width: 66em) 33vw,
                                   (min-width: 44em) 50vw,
                                   100vw'
                                 />
+
                                 <div className='relative z-10 w-full border-4 border-zinc-900 bg-zinc-900 px-8 py-10 opacity-0 hover:opacity-70'>
                                   <h2 className='title-font mb-1 text-xs font-medium tracking-widest text-zinc-300'>
                                     {short}

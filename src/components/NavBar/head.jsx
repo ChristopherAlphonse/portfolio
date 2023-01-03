@@ -3,10 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Logo } from "../../assets";
 import Theme from "../../Theme/ThemeIndex";
 
-const ImageProps = {
-  width: 48,
-  height: 48,
-};
 const navigation = [
   {
     name: "Resume",
@@ -86,8 +82,11 @@ const MobileMenu = ({ children }) => (
   <nav className='flex flex-col space-y-3 p-4 md:hidden '>{children}</nav>
 );
 const FireSvg = () => (
-  <img src={Logo} alt='logo' loading='lazy' className='h-12 w-12' {...ImageProps} />
+  <a href='/'>
+    <img src={Logo} height={40} width={40} alt='logo' />
+  </a>
 );
+
 const MenuAlt4Svg = ({ menuOpen }) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'

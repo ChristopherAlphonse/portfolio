@@ -15,11 +15,6 @@ export default defineConfig({
       devOptions: {
         enabled: true,
       },
-      workbox: {
-        globDirectory: "D:/Dev/portfolio/dev-dist",
-        globPattern: "**/*.{svg,png,jpg,gif,ico}",
-        globIgnores: ["**/node_modules/**/*", "sw.js", "workbox-*.js"],
-      },
     }),
   ],
   resolve: {
