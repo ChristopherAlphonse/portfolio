@@ -11,21 +11,6 @@ export default defineConfig(({ mode }) => ({
       include: [],
     },
   },
-  test: {
-    css: false,
-    include: ["src/**/__tests__/*"],
-    globals: true,
-    environment: "jsdom",
-    setupFiles: "src/setupTests.ts",
-    clearMocks: true,
-    coverage: {
-      provider: "istanbul",
-      enabled: true,
-      100: true,
-      reporter: ["text", "lcov"],
-      reportsDirectory: "coverage",
-    },
-  },
   plugins: [
     react(),
     ...(mode !== "test"
@@ -34,10 +19,10 @@ export default defineConfig(({ mode }) => ({
             registerType: "autoUpdate",
             includeAssets: [
               "favicon.png",
+              "assets/resume.pdf",
               "robots.txt",
               "apple-touch-icon.png",
               "icons/*.svg",
-              "fonts/*.woff2",
             ],
             manifest: {
               theme_color: "#BD34FE",

@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import PDF from "./resume.pdf";
+import PDF from "../../assets/resume.pdf";
 import React from "react";
 
 export const Test = () => {
@@ -7,7 +6,8 @@ export const Test = () => {
     <button
       className='uppercase  tracking-widest '
       onClick={() => {
-        window.open(`${PDF}`);
+        window.open(PDF, "_blank");
+        alert("i was clicked");
       }}>
       Resume
     </button>
