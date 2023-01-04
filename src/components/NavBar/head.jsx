@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 import { Logo } from "../../assets";
+import { Test } from "./res";
 import Theme from "../../Theme/ThemeIndex";
 
 const navigation = [
   {
-    name: "Resume",
+    name: <Test />,
     key: 1,
-    href: "https://drive.google.com/file/d/1kxLSsXRC1VO3pAg3HqsXjI0wnpS16uRN/view?usp=share_link",
+    href: null,
   },
   {
     key: 2,
@@ -51,6 +52,8 @@ const navLinks = navigation.map((page) => (
   <a
     key={page.key}
     target='_blank'
+    child-src='true'
+    rel='noopener noreferrer'
     className='text-accent
      font-semibold no-underline
      hover:text-zinc-100
