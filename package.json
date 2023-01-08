@@ -20,7 +20,7 @@
     "react-router-dom": "6.6.1"
   },
   "devDependencies": {
-    "@builder.io/partytown": "^0.7.3",
+    "@builder.io/partytown": "^0.7.4",
     "@emailjs/browser": "^3.10.0",
     "@headlessui/react": "^1.7.7",
     "blurhash": "^2.0.4",
