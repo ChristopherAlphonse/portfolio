@@ -151,6 +151,12 @@
     <div id="root"></div>
     <link rel="stylesheet" href="./src/index.css" />
     <script type="module" src="./src/index.jsx"></script>
+
+    <script src="module" type="module">
+      if (!('__WB_DISABLE_DEV_LOGS' in self)) {
+        self.__WB_DISABLE_DEV_LOGS = true;
+      }
+    </script>
     <script type="module">
       import { partytownSnippet } from "@builder.io/partytown/integration";
       const snippetText = partytownSnippet();

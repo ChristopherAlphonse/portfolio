@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 
 import { Logo } from "../../assets";
-import { Test } from "./res";
 import Theme from "../../Theme/ThemeIndex";
 
 const navigation = [
   {
-    name: <Test />,
+    name: "Resume",
     key: 1,
-    href: null,
+    href: "/resume",
   },
   {
     key: 2,
@@ -26,6 +25,7 @@ const navigation = [
     href: null,
   },
 ];
+
 export const ResponsiveNavBar = () => {
   const [bg, setBg] = useState(false);
   useEffect(() => {
@@ -51,8 +51,8 @@ export const ResponsiveNavBar = () => {
 const navLinks = navigation.map((page) => (
   <a
     key={page.key}
-    target='_blank'
     child-src='true'
+    target='_blank'
     rel='noopener noreferrer'
     className='text-accent
      font-semibold no-underline
@@ -63,6 +63,7 @@ const navLinks = navigation.map((page) => (
     {page.name}
   </a>
 ));
+
 const Navbar = ({ menuOpen, setMenuOpen }) => (
   <div className='flex items-center justify-between p-4'>
     <div className='flex items-center'>
