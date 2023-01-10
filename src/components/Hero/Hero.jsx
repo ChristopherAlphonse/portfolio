@@ -1,8 +1,8 @@
-import {LazyMotion, domAnimation, m} from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 
-import {DownBtn} from "../compIndex";
+import { DownBtn } from "../compIndex";
 import React from "react";
-import {fadeIn} from "../../FramerVariant/variants";
+import { fadeIn } from "../../FramerVariant/variants";
 
 function Hero() {
   return (
@@ -18,7 +18,7 @@ function Hero() {
                 variants={fadeIn("right")}
                 initial="hidden"
                 whileInView="show"
-                viewport={{once: false, amount: 0.7}}
+                viewport={{ once: false, amount: 0.7 }}
                 className="text-md mb-[22px] text-lg text-blue-600"
               >
                 Hey, I'm Chris 👋
@@ -27,7 +27,7 @@ function Hero() {
                 variants={fadeIn("left")}
                 initial="hidden"
                 whileInView="show"
-                viewport={{once: false, amount: 0.6}}
+                viewport={{ once: false, amount: 0.6 }}
                 className="text-3xl font-bold leading-[44px] dark:text-zinc-900 md:text-6xl md:leading-tight md:tracking-[-2px] lg:text-7xl lg:leading-[1.2] xl:text-9xl"
               >
                 I Build & Design <br /> Web Applications.
@@ -36,7 +36,7 @@ function Hero() {
                 variants={fadeIn("right")}
                 initial="hidden"
                 whileInView="show"
-                viewport={{once: false, amount: 0.6}}
+                viewport={{ once: false, amount: 0.6 }}
                 className=" max-w-6xl pt-4 pb-8 text-center text-xs text-zinc-500 dark:text-zinc-600 sm:text-sm md:pt-6 md:pb-12 md:text-lg lg:text-left"
               >
                 I specialize in <span className="text-blue-600"> designing</span> and{" "}

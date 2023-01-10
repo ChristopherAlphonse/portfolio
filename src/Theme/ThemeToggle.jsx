@@ -1,10 +1,10 @@
-import {BsFillMoonFill, BsFillSunFill} from "react-icons/bs";
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 
-import {ThemeContext} from "./ThemeContext";
-import {useContext} from "react";
+import { ThemeContext } from "./ThemeContext";
+import { useContext } from "react";
 
 function Toggle() {
-  const {theme, setTheme} = useContext(ThemeContext);
+  const { theme, setTheme } = useContext(ThemeContext);
   const changeTheme = () => {
     if (theme === "light") {
       setTheme("dark");

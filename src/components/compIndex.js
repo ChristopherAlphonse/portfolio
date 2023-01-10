@@ -1,5 +1,5 @@
-import {ResponsiveNavBar} from "./NavBar/head";
-import {lazy} from "react";
+import { ResponsiveNavBar } from "./NavBar/head";
+import { lazy } from "react";
 
 const TimeLine = lazy(() => import("./Timeline/TimeLine"));
 const BackTopBtn = lazy(() => import("./Btn/BackTopBtn"));

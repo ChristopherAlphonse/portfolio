@@ -94,7 +94,7 @@ export function ResponsiveNavBar() {
   const [bg, setBg] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () =>
-      window.scrollY > 10 ? setBg(true) : setBg(false),
+      (window.scrollY > 10 ? setBg(true) : setBg(false)),
     );
   });
   const [menuOpen, setMenuOpen] = useState(false);

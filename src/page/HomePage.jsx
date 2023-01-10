@@ -10,11 +10,11 @@ import {
   ResponsiveNavBar,
   TimeLine,
 } from "../components/compIndex";
-import {Helmet, HelmetProvider} from "react-helmet-async";
-import React, {Suspense, useMemo, useState} from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import React, { Suspense, useMemo, useState } from "react";
 
 import Featured from "../components/Featured/Featured";
-import {Profile} from "../assets/index";
+import { Profile } from "../assets/index";
 import PropagateLoader from "react-spinners/PropagateLoader";
 
 function HomePage() {

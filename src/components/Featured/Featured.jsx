@@ -1,4 +1,4 @@
-import {FeaturedData} from "../../Data/data";
+import { FeaturedData } from "../../Data/data";
 import React from "react";
 import TempHero from "./TempHero";
 

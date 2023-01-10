@@ -1,9 +1,9 @@
 import "react-toastify/dist/ReactToastify.css";
 
-import {LazyMotion, domAnimation, m} from "framer-motion";
-import React, {useRef} from "react";
-import {ToastContainer, toast} from "react-toastify";
-import {fadeIn, transition} from "../../FramerVariant/variants";
+import { LazyMotion, domAnimation, m } from "framer-motion";
+import React, { useRef } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import { fadeIn, transition } from "../../FramerVariant/variants";
 
 import emailjs from "@emailjs/browser";
 
@@ -57,7 +57,7 @@ function Contact() {
               variants={transition("down")}
               initial="hidden"
               whileInView="show"
-              viewport={{once: false, amount: 0.4}}
+              viewport={{ once: false, amount: 0.4 }}
               className="  text-3xl dark:text-zinc-800 md:text-5xl"
             >
               Contact me
@@ -67,7 +67,7 @@ function Contact() {
               variants={fadeIn("right")}
               initial="hidden"
               whileInView="show"
-              viewport={{once: false, amount: 0.4}}
+              viewport={{ once: false, amount: 0.4 }}
               className="title-para font-body py-2 font-bold text-zinc-500 dark:text-zinc-600"
             >
               Feel free to reach out to me with any questions or inquiries. I'll get back to you as
@@ -79,7 +79,7 @@ function Contact() {
               variants={fadeIn("left")}
               initial="hidden"
               whileInView="show"
-              viewport={{once: false, amount: 0.4}}
+              viewport={{ once: false, amount: 0.4 }}
               ref={form}
               onSubmit={sendEmail}
               className="relative w-full max-w-[780px] space-y-9 "

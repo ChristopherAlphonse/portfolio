@@ -1,4 +1,4 @@
-import {AD, AZ, FU, ME, NO, PU} from "../assets/index";
+import { AD, AZ, FU, ME, NO, PU } from "../assets/index";
 
 export const projectsData = [
   {
@@ -100,7 +100,9 @@ export const FeaturedData = [
       "Smoothie store based in Randolph, MA, and specialize in providing sweet treats for your loved ones during the holiday season",
     description2:
       "Currently in development. It's the second version of the store, which was originally created using Squarespace. To create a new and improved version, I am utilizing a variety of technologies to achieve a minimalistic and user-friendly interface, type-safe code, server-side rendering, and optimized search engine visibility. By using TypeScript , I ensure that the codebase is less prone to errors and easier to work with as the project grows. I use NextJS as my go to for SSR, resulting in faster page load times and better search engine visibility. I use Tailwind for rapid prototyping and easy customization of styles. By using Tailwind CSS, I can quickly create a consistent and visually appealing design. I integrated Stripe to  provide a secure and convenient way for customers to purchase products. By using Sanity.io, I can easily manage and update the store's product catalog and other content without the need for a traditional CMS.     Overall, the combination of these technologies allows me to build a fast, user-friendly, and SEO-optimized store.",
-    stack: ["NextJS, TailwindCSS, TypeScript, Stripe, Sanity.io, Framer Motion, MongoDB"],
+    stack: [
+      "NextJS, TailwindCSS, TypeScript, Stripe, Sanity.io, Framer Motion, MongoDB",
+    ],
     view: "https://github.com/ChristopherAlphonse/ye",
   },
 ];

@@ -1,4 +1,4 @@
-import {AiFillCodepenCircle, AiFillGithub, AiFillLinkedin, AiFillWindows} from "react-icons/ai";
+import { AiFillCodepenCircle, AiFillGithub, AiFillLinkedin, AiFillWindows } from "react-icons/ai";
 
 import React from "react";
 

@@ -7,4 +7,4 @@ import NO from "./Project_files/nmoted.webp";
 import PU from "./Project_files/pure.webp";
 import Profile from "./Project_files/ye.jpg";
 
-export {Logo, AD, FU, ME, NO, PU, AZ, Profile};
+export { Logo, AD, FU, ME, NO, PU, AZ, Profile };

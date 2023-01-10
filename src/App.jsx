@@ -1,4 +1,4 @@
-import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import {
   FeaturedDetails,
   HomePage,
@@ -6,7 +6,7 @@ import {
   ProjectDetails,
 } from "./page/index";
 
-import {Gallery} from "./components/compIndex";
+import { Gallery } from "./components/compIndex";
 import Resume from "./components/NavBar/Resume";
 
 function App() {
