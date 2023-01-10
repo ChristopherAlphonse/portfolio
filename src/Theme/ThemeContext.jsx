@@ -16,7 +16,7 @@ const getInitialTheme = () => {
 
 export const ThemeContext = React.createContext();
 
-export const ThemeProvider = ({ initialTheme, children }) => {
+export function ThemeProvider({ initialTheme, children }) {
   const [theme, setTheme] = useState(getInitialTheme);
   const rawSetTheme = (rawTheme) => {
     const root = window.document.documentElement;
@@ -36,4 +36,4 @@ export const ThemeProvider = ({ initialTheme, children }) => {
   }, [theme]);
 
   return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
-};
+}

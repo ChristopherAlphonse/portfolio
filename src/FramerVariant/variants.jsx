@@ -1,5 +1,4 @@
-export const fadeIn = (direction) => {
-  return {
+export const fadeIn = (direction) => ({
     hidden: {
       y: direction === "up" ? 80 : direction === "down" ? -80 : 0,
       opacity: 0,
@@ -15,10 +14,8 @@ export const fadeIn = (direction) => {
         ease: [0.25, 0.25, 0.25, 0.75],
       },
     },
-  };
-};
-export const transition = (direction) => {
-  return {
+  });
+export const transition = (direction) => ({
     hidden: {
       y: direction === "up" ? 80 : direction === "down" ? -80 : 0,
       opacity: 0,
@@ -34,8 +31,7 @@ export const transition = (direction) => {
         ease: [0.25, 0.25, 0.25, 0.75],
       },
     },
-  };
-};
+  });
 export const container = {
   hidden: {},
   show: {

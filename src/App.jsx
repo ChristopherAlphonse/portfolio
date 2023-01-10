@@ -5,21 +5,21 @@ import { Gallery } from "./components/compIndex";
 import React from "react";
 import Resume from "./components/NavBar/Resume";
 
-const App = () => {
+function App() {
   return (
-    <div className='overflow-hidden'>
+    <div className="overflow-hidden">
       <BrowserRouter>
         <Routes>
-          <Route path='/v1/' element={<HomePage />} />
-          <Route path='/' element={<Navigate to='/v1/' />} />
-          <Route path='*' element={<PageNotFound />} />
-          <Route path='/project/:id' element={<ProjectDetails />} />
-          <Route path='/projects/' element={<Gallery />} />
-          <Route path='/projects/:id' element={<FeaturedDetails />} />
-          <Route path='/resume' element={<Resume />} />
+          <Route path="/v1/" element={<HomePage />} />
+          <Route path="/" element={<Navigate to="/v1/" />} />
+          <Route path="*" element={<PageNotFound />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
+          <Route path="/projects/" element={<Gallery />} />
+          <Route path="/projects/:id" element={<FeaturedDetails />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </BrowserRouter>
     </div>
   );
-};
+}
 export default App;
