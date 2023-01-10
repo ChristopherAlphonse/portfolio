@@ -1,8 +1,12 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { FeaturedDetails, HomePage, PageNotFound, ProjectDetails } from "./page/index";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import {
+  FeaturedDetails,
+  HomePage,
+  PageNotFound,
+  ProjectDetails,
+} from "./page/index";
 
-import { Gallery } from "./components/compIndex";
-import React from "react";
+import {Gallery} from "./components/compIndex";
 import Resume from "./components/NavBar/Resume";
 
 function App() {

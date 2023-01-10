@@ -1,7 +1,7 @@
 import React from "react";
 
 function LoadingOrError(props) {
-  const { error } = props;
+  const {error} = props;
   return (
     <div className="flex min-h-screen items-center justify-center">
       <h1 className="text-xl" data-testid="LoadingOrError">

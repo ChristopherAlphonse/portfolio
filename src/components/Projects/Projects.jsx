@@ -1,8 +1,8 @@
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import {LazyMotion, domAnimation, m} from "framer-motion";
 
 import React from "react";
-import { projectsData } from "../../Data/data";
-import { transition } from "../../FramerVariant/variants";
+import {projectsData} from "../../Data/data";
+import {transition} from "../../FramerVariant/variants";
 
 function Projects() {
   return (
@@ -24,7 +24,7 @@ function Projects() {
             className="flex flex-wrap items-center justify-center text-center md:flex-nowrap"
           >
             {projectsData.map((project) => {
-              const { id, name, description, short } = project;
+              const {id, name, description, short} = project;
               return (
                 <ul key={id}>
                   <li className=" p-4">

@@ -1,5 +1,5 @@
-import { LazyMotion, domAnimation, m } from "framer-motion";
-import { fadeIn, transition } from "../../FramerVariant/variants";
+import {LazyMotion, domAnimation, m} from "framer-motion";
+import {fadeIn, transition} from "../../FramerVariant/variants";
 
 import React from "react";
 
@@ -12,7 +12,7 @@ function About() {
             variants={fadeIn("up")}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{once: false, amount: 0.1}}
             className="flex flex-col gap-24 xl:flex-row"
           >
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left">

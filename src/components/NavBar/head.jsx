@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Logo } from "../../assets";
 import Theme from "../../Theme/ThemeIndex";
@@ -7,7 +7,7 @@ const navigation = [
   {
     name: "Resume",
     key: 1,
-    href: "/resume",
+    href: "/resume.pdf",
   },
   {
     key: 2,
@@ -26,36 +26,13 @@ const navigation = [
   },
 ];
 
-export function ResponsiveNavBar() {
-  const [bg, setBg] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => (window.scrollY > 10 ? setBg(true) : setBg(false)));
-  });
-  const [menuOpen, setMenuOpen] = useState(false);
-  return (
-    <div
-      className={`${
-        bg ? "h-20  bg-zinc-900 shadow-md shadow-blue-900/40 dark:bg-zinc-100 " : "h-24 "
-      }  fixed top-0 z-10 w-full  text-white   transition-all duration-300 dark:text-zinc-700 `}
-    >
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div
-        className="bg-zinc-900/90  dark:bg-zinc-100/90
-      "
-      >
-        {menuOpen && <MobileMenu>{navLinks}</MobileMenu>}
-      </div>
-    </div>
-  );
-}
 const navLinks = navigation.map((page) => (
   <a
     key={page.key}
-    child-src="true"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-accent
-     font-semibold no-underline
+    className="font-semibold
+     text-accent no-underline
      hover:text-zinc-100
     dark:text-zinc-800
      dark:hover:text-blue-600"
@@ -86,7 +63,9 @@ function Navbar({ menuOpen, setMenuOpen }) {
   );
 }
 function MobileMenu({ children }) {
-  return <nav className="flex flex-col space-y-3 p-4 md:hidden ">{children}</nav>;
+  return (
+    <nav className="flex flex-col space-y-3 p-4 md:hidden ">{children}</nav>
+  );
 }
 function FireSvg() {
   return <img src={Logo} height={40} width={40} alt="logo" />;
@@ -96,7 +75,9 @@ function MenuAlt4Svg({ menuOpen }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`ease h-8 w-8 transition duration-100 ${menuOpen ? "rotate-90 transform" : ""}`}
+      className={`ease h-8 w-8 transition duration-100 ${
+        menuOpen ? "rotate-90 transform" : ""
+      }`}
       viewBox="0 0 20 20"
       fill="currentColor"
     >
@@ -106,5 +87,32 @@ function MenuAlt4Svg({ menuOpen }) {
         clipRule="evenodd"
       />
     </svg>
+  );
+}
+
+export function ResponsiveNavBar() {
+  const [bg, setBg] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () =>
+      window.scrollY > 10 ? setBg(true) : setBg(false),
+    );
+  });
+  const [menuOpen, setMenuOpen] = useState(false);
+  return (
+    <div
+      className={`${
+        bg
+          ? "h-20  bg-zinc-900 shadow-md shadow-blue-900/40 dark:bg-zinc-100 "
+          : "h-24 "
+      }  fixed top-0 z-10 w-full  text-white   transition-all duration-300 dark:text-zinc-700 `}
+    >
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <div
+        className="bg-zinc-900/90  dark:bg-zinc-100/90
+      "
+      >
+        {menuOpen && <MobileMenu>{navLinks}</MobileMenu>}
+      </div>
+    </div>
   );
 }

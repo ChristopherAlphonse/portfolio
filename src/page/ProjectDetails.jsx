@@ -1,14 +1,14 @@
-import { Footer, ResponsiveNavBar } from "../components/compIndex";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { LazyMotion, domAnimation, m } from "framer-motion";
-import React, { Suspense, useEffect, useState } from "react";
+import {Footer, ResponsiveNavBar} from "../components/compIndex";
+import {Helmet, HelmetProvider} from "react-helmet-async";
+import {LazyMotion, domAnimation, m} from "framer-motion";
+import React, {Suspense, useEffect, useState} from "react";
 
-import { BsArrowReturnLeft } from "react-icons/bs";
-import { FeaturedData } from "../Data/data";
+import {BsArrowReturnLeft} from "react-icons/bs";
+import {FeaturedData} from "../Data/data";
 import PropagateLoader from "react-spinners/PropagateLoader";
-import { TfiWorld } from "react-icons/tfi";
-import { transition } from "../FramerVariant/variants";
-import { useParams } from "react-router-dom";
+import {TfiWorld} from "react-icons/tfi";
+import {transition} from "../FramerVariant/variants";
+import {useParams} from "react-router-dom";
 
 const ImageProps = {
   width: 48,
@@ -17,7 +17,7 @@ const ImageProps = {
 
 function ProjectDetails() {
   const [loading, setLoading] = useState(false);
-  const { id } = useParams();
+  const {id} = useParams();
 
   useEffect(() => {
     setLoading(true);
@@ -67,7 +67,7 @@ function ProjectDetails() {
                           variants={transition("down")}
                           initial="hidden"
                           whileInView="show"
-                          viewport={{ once: false, amount: 0.7 }}
+                          viewport={{once: false, amount: 0.7}}
                           className="title-font mb-1 text-3xl tracking-widest  dark:text-zinc-900  md:text-4xl lg:text-5xl "
                         >
                           {z.name}
@@ -96,11 +96,11 @@ function ProjectDetails() {
                             <div className="flex">
                               <span className="ml-1 flex items-center space-x-2 py-1 pl-3  text-blue-600 transition-all hover:text-blue-600/50 dark:text-blue-700 dark:hover:text-blue-700/70">
                                 <a href={z.view} className="flex items-center">
-                                    <TfiWorld />{" "}
-                                    <span className="ml-2 items-center text-xs sm:text-sm">
-                                      V I S I T
-                                    </span>
-                                  </a>
+                                  <TfiWorld />{" "}
+                                  <span className="ml-2 items-center text-xs sm:text-sm">
+                                    V I S I T
+                                  </span>
+                                </a>
                               </span>
                               <a
                                 href="/"
@@ -108,8 +108,8 @@ function ProjectDetails() {
                               >
                                 <BsArrowReturnLeft />{" "}
                                 <span className="ml-2 items-center text-xs sm:text-sm">
-                                    R E T U R N
-                                  </span>
+                                  R E T U R N
+                                </span>
                               </a>
                             </div>
                           </div>

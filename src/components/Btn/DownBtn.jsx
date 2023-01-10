@@ -1,6 +1,6 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, {useEffect, useMemo, useState} from "react";
 
-import { BsArrowDown } from "react-icons/bs";
+import {BsArrowDown} from "react-icons/bs";
 
 function BackBottomBtn() {
   const [show, setShow] = useState(false);

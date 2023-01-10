@@ -6,3 +6,5 @@ node_modules
 .git
 build
 dist
+index.css
+/index.css

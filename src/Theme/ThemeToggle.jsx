@@ -1,10 +1,10 @@
-import { BsFillMoonFill, BsFillSunFill, BsGear } from "react-icons/bs";
-import React, { useContext } from "react";
+import {BsFillMoonFill, BsFillSunFill} from "react-icons/bs";
 
-import { ThemeContext } from "./ThemeContext";
+import {ThemeContext} from "./ThemeContext";
+import {useContext} from "react";
 
 function Toggle() {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const {theme, setTheme} = useContext(ThemeContext);
   const changeTheme = () => {
     if (theme === "light") {
       setTheme("dark");
@@ -22,14 +22,14 @@ function Toggle() {
   };
   const icon =
     theme === "light" ? (
-      <h1 className="font-body inline-flex items-center  uppercase tracking-widest  text-[#c69f26] hover:text-yellow-300">
+      <h1 className="inline-flex items-center font-body  uppercase tracking-widest  text-[#c69f26] hover:text-yellow-300">
         L I G H T
         <span>
           <BsFillSunFill size={20} color="#c69f26" className="ml-3" />
         </span>
       </h1>
     ) : (
-      <h1 className="font-body inline-flex items-center uppercase tracking-widest  text-[#000080] hover:text-blue-800">
+      <h1 className="inline-flex items-center font-body uppercase tracking-widest  text-[#000080] hover:text-blue-800">
         D A R K
         <span>
           <BsFillMoonFill size={20} color="#000080" className="ml-3" />
@@ -39,7 +39,9 @@ function Toggle() {
 
   return (
     <div className="rounded-full transition duration-500 ease-in-out">
-      <button onClick={changeTheme}>{icon}</button>
+      <button type="button" onClick={changeTheme}>
+        {icon}
+      </button>
     </div>
   );
 }

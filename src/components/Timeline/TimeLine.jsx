@@ -1,7 +1,7 @@
-import { LazyMotion, domAnimation, m } from "framer-motion";
-import { fadeIn, transition } from "../../FramerVariant/variants";
+import {LazyMotion, domAnimation, m} from "framer-motion";
+import {fadeIn, transition} from "../../FramerVariant/variants";
 
-import { MdOutlineDoubleArrow } from "react-icons/md";
+import {MdOutlineDoubleArrow} from "react-icons/md";
 
 function Timeline() {
   return (
@@ -14,14 +14,14 @@ function Timeline() {
                 variants={fadeIn("up")}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{once: false, amount: 0.3}}
                 className="mb-20 before:mx-auto before:mb-2 before:block before:h-1 before:w-24 before:rounded-sm before:bg-blue-400 sm:text-left sm:before:mx-0"
               >
                 <m.h3
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.3 }}
+                  viewport={{once: false, amount: 0.3}}
                   className="text-3xl dark:text-zinc-900"
                 >
                   Experience
@@ -35,7 +35,7 @@ function Timeline() {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.3 }}
+                  viewport={{once: false, amount: 0.3}}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
@@ -51,7 +51,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -66,7 +66,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -80,7 +80,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -96,7 +96,7 @@ function Timeline() {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.3 }}
+                  viewport={{once: false, amount: 0.3}}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide  text-zinc-100 dark:text-zinc-900">
@@ -112,7 +112,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -127,7 +127,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -141,7 +141,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -158,7 +158,7 @@ function Timeline() {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.3 }}
+                  viewport={{once: false, amount: 0.3}}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
@@ -174,7 +174,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -190,7 +190,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -205,7 +205,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -222,7 +222,7 @@ function Timeline() {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.3 }}
+                  viewport={{once: false, amount: 0.3}}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
@@ -237,7 +237,7 @@ function Timeline() {
                       variants={transition("right")}
                       initial="hidden"
                       whileInView="show"
-                      viewport={{ once: false, amount: 0.3 }}
+                      viewport={{once: false, amount: 0.3}}
                       className="flex "
                     >
                       {" "}
@@ -251,7 +251,7 @@ function Timeline() {
                       variants={transition("right")}
                       initial="hidden"
                       whileInView="show"
-                      viewport={{ once: false, amount: 0.3 }}
+                      viewport={{once: false, amount: 0.3}}
                       className="flex "
                     >
                       {" "}
@@ -265,7 +265,7 @@ function Timeline() {
                       variants={transition("right")}
                       initial="hidden"
                       whileInView="show"
-                      viewport={{ once: false, amount: 0.3 }}
+                      viewport={{once: false, amount: 0.3}}
                       className="flex "
                     >
                       {" "}
@@ -280,7 +280,7 @@ function Timeline() {
                   variants={fadeIn("up")}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.3 }}
+                  viewport={{once: false, amount: 0.3}}
                   className="flex flex-col before:bg-blue-400 sm:relative sm:before:absolute sm:before:top-2 sm:before:left-[-35px] sm:before:z-[1] sm:before:h-4 sm:before:w-4 sm:before:rounded-full"
                 >
                   <h3 className="text-xl font-semibold tracking-wide text-zinc-100 dark:text-zinc-900">
@@ -295,7 +295,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -309,7 +309,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}
@@ -323,7 +323,7 @@ function Timeline() {
                         variants={transition("right")}
                         initial="hidden"
                         whileInView="show"
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{once: false, amount: 0.3}}
                         className="flex "
                       >
                         {" "}

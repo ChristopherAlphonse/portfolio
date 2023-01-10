@@ -1,12 +1,12 @@
-import { Footer, ResponsiveNavBar } from "../compIndex";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { LazyMotion, domAnimation, m } from "framer-motion";
-import React, { Suspense, useEffect, useState } from "react";
+import {Footer, ResponsiveNavBar} from "../compIndex";
+import {Helmet, HelmetProvider} from "react-helmet-async";
+import {LazyMotion, domAnimation, m} from "framer-motion";
+import React, {Suspense, useEffect, useState} from "react";
 
 import DataBase from "../../Data/jumbo.db.json";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import PropagateLoader from "react-spinners/PropagateLoader";
-import { transition } from "../../FramerVariant/variants";
+import {transition} from "../../FramerVariant/variants";
 import ye from "./ye.jpg";
 
 function Gallery() {
@@ -84,13 +84,13 @@ function Gallery() {
                     </div>
                     <div className="-m-4 flex flex-wrap">
                       {DataBase.map((items) => {
-                        const { id, name, short, description, view } = items;
+                        const {id, name, short, description, view} = items;
                         return (
                           <m.div
                             variants={transition("down")}
                             initial="hidden"
                             whileInView="show"
-                            viewport={{ once: false, amount: 0.7 }}
+                            viewport={{once: false, amount: 0.7}}
                             className="p-4 sm:w-1/2 lg:w-1/3 "
                             as="ul"
                             key={id}
