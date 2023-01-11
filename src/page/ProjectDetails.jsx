@@ -1,7 +1,7 @@
 import { Footer, ResponsiveNavBar } from "../components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import React, { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import { BsArrowReturnLeft } from "react-icons/bs";
 import { FeaturedData } from "../Data/data";
@@ -28,14 +28,19 @@ function ProjectDetails() {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse | {id} | Full-Stack Developer | Boston, MA</title>
+        <title>
+          Christopher Alphonse | {id} | Full-Stack Developer | Boston, MA
+        </title>
         <meta
           name="keywords"
           content="Christopher Alphonse, full-stack developer, Boston, Massachusetts, software engineer, web development, front-end, back-end, JavaScript, React, Node.js"
         />
         <meta
           name="description"
-          content="Christopher Alphonse is a highly skilled full-stack developer based in Boston, MA. With expertise in front-end and back-end development, Christopher uses technologies such as JavaScript, React, and Node.js to build scalable and effective web applications. His portfolio showcases his experience and capabilities in building a wide range of web applications. Contact Christopher for all your web development needs in the Boston area."
+          content="Christopher Alphonse is a highly skilled full-stack developer based in Boston, MA.
+           With expertise in front-end and back-end development, Christopher uses technologies such as JavaScript,
+            React, and Node.js to build scalable and effective web applications. His portfolio showcases his
+             experience and capabilities in building a wide range of web applications. Contact Christopher for all your web development needs in the Boston area."
         />
       </Helmet>
       <div className="">
@@ -72,14 +77,14 @@ function ProjectDetails() {
                         >
                           {z.name}
                         </m.h2>
-                        <h1 className="title-font font-body mb-1 text-sm font-medium text-zinc-500 md:text-lg">
+                        <h1 className="title-font mb-1 font-body text-sm font-medium text-zinc-500 md:text-lg">
                           {z.short}
                         </h1>
                         <div className=" mx-auto flex flex-wrap">
                           <img
                             className="h-64 w-full rounded object-cover object-center lg:h-auto lg:w-1/2"
                             src={z.image}
-                            alt={`${z.name}, ${z.short} image`}
+                            alt={`${z.name}, ${z.short} `}
                             {...ImageProps}
                           />
                           <div className="mt-6 w-full lg:mt-0 lg:w-1/2 lg:py-6 lg:pl-10">
@@ -88,7 +93,12 @@ function ProjectDetails() {
                                 <span>{z.stack}</span>
                               </span>
                             </div>
-                            <button className="mb-5 bg-slate-500 px-6">{z.status}</button>
+                            <button
+                              type="button"
+                              className="mb-5 bg-slate-500 px-6"
+                            >
+                              {z.status}
+                            </button>
                             <p className="leading-relaxed text-zinc-500 md:text-lg">
                               {z.description2}
                             </p>
@@ -116,7 +126,7 @@ function ProjectDetails() {
                         </div>
                       </div>
                     </section>
-                    ))}
+                  ))}
                 </section>
               </LazyMotion>
             </Suspense>

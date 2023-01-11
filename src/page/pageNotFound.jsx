@@ -2,7 +2,6 @@ import "../index.css";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import React from "react";
 import { ResponsiveNavBar } from "../components/compIndex";
 
 function PageNotFound() {
@@ -13,7 +12,8 @@ function PageNotFound() {
         <link rel="canonical" href="https://christopheralphonse.com/404" />
         <meta
           name="description"
-          content="404 error: the page you are looking for does not exist on Christopher Alphonse's website. Christopher is a full-stack developer specializing in designing and building amazing digital experiences that are both functional and engaging. He is currently focusing on learning new technologies and improving human-centered services."
+          content="404 error: the page you are looking for does not exist on Christopher Alphonse's website.
+           Christopher is a full-stack developer specializing in designing and building amazing digital experiences that are both functional and engaging. He is currently focusing on learning new technologies and improving human-centered services."
         />
         <meta
           name="keywords"
@@ -34,7 +34,10 @@ function PageNotFound() {
                 </h1>
 
                 <a href="/" className="btn-holder ">
-                  <button className="hero-btn hero-btn-3 hover-border-2 focus-none">
+                  <button
+                    type="button"
+                    className="hero-btn hero-btn-3 hover-border-2 focus-none"
+                  >
                     <span href="/"> Return Home</span>
                   </button>
                 </a>
