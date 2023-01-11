@@ -1,7 +1,7 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 
-import { DownBtn } from "../compIndex";
 import React from "react";
+import { DownBtn } from "../compIndex";
 import { fadeIn } from "../../FramerVariant/variants";
 
 function Hero() {
@@ -39,13 +39,16 @@ function Hero() {
                 viewport={{ once: false, amount: 0.6 }}
                 className=" max-w-6xl pt-4 pb-8 text-center text-xs text-zinc-500 dark:text-zinc-600 sm:text-sm md:pt-6 md:pb-12 md:text-lg lg:text-left"
               >
-                I specialize in <span className="text-blue-600"> designing</span> and{" "}
-                <span className="text-blue-600"> building </span> amazing digital experiences that
-                are both <span className="text-blue-600">functional</span> and{" "}
+                I specialize in{" "}
+                <span className="text-blue-600"> designing</span> and{" "}
+                <span className="text-blue-600"> building </span> amazing
+                digital experiences that are both{" "}
+                <span className="text-blue-600">functional</span> and{" "}
                 <span className="text-blue-600"> engaging</span>
                 .
                 <br /> At the moment, I'm concentrating on{" "}
-                <span className="text-blue-600"> learning</span> new technologies and improving{" "}
+                <span className="text-blue-600"> learning</span> new
+                technologies and improving{" "}
                 <span className="text-blue-600"> human-centered </span>
                 services .
               </m.p>

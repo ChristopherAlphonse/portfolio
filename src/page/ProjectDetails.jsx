@@ -65,7 +65,7 @@ function ProjectDetails() {
               <ResponsiveNavBar />
               <LazyMotion features={domAnimation}>
                 <section className="containerr flex h-full items-center justify-center bg-zinc-800  py-32 dark:bg-zinc-50 lg:h-[100vh] ">
-                  {FeaturedData.filter((z) => z.id === id).map((z) => (
+                  {FeaturedData.filter(z => z.id === id).map(z => (
                     <section key={z.id}>
                       <div className="container mx-auto px-5 py-24">
                         <m.h2

@@ -8,22 +8,34 @@
       "version": "detect"
     }
   },
-  "extends": ["plugin:react/recommended", "airbnb"],
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "prettier"
+  ],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
 
-  "plugins": ["react", "react-hooks", "prettier"],
+  "plugins": ["react", "react-hooks", "prettier", "node"],
   "rules": {
-    "quotes": [
-      "error",
-      "double",
-      {
-        "avoidEscape": true
-      }
-    ],
+    "block-scoped-var": "error",
+    "eqeqeq": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "eol-last": "error",
+    "prefer-arrow-callback": "error",
+    "no-trailing-spaces": "error",
+    "quotes": ["error", "double", { "avoidEscape": true }],
+    "node/no-empty-function": "off",
+    "node/no-unsupported-features/es-syntax": "off",
 
     "react/react-in-jsx-scope": "off",
     "react/jsx-uses-react": "off",
@@ -32,7 +44,6 @@
     "react-hooks/rules-of-hooks": "error",
     "no-console": "off",
     "react/prop-types": 0,
-    "max-len": ["error", { "code": 250 }],
     "operator-linebreak": "off",
     "import/prefer-default-export": "off",
     "react/jsx-one-expression-per-line": "off",
@@ -47,6 +58,7 @@
     "jsx-a11y/anchor-is-valid": "off",
     "function-paren-newline": "off",
     "react-hooks/exhaustive-deps": "off",
+    "no-dupe-class-members": "off",
     "indent": "off",
     "radix": "off",
     "no-new": "off",

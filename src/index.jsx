@@ -1,8 +1,8 @@
 import "./index.css";
 
-import App from "./App";
 import { HelmetProvider } from "react-helmet-async";
 import ReactDOM from "react-dom/client";
+import App from "./App";
 import { ThemeProvider } from "./Theme/ThemeContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -10,5 +10,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <ThemeProvider>
       <App />
     </ThemeProvider>
-  </HelmetProvider>,
+  </HelmetProvider>
 );

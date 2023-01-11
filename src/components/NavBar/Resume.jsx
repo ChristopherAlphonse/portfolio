@@ -69,7 +69,8 @@ function Resume() {
               an utilize m<span className="_ _0" />y technical
             </div>
             <div className="t m0 x3 h3 y5 ff2 fs1 fc0 sc0 ls0 ws8">
-              skills and problem-solving abilities in a f<span className="_ _0" />
+              skills and problem-solving abilities in a f
+              <span className="_ _0" />
               ast
               <span className="_ _0" />
               -paced en
@@ -92,7 +93,8 @@ function Resume() {
               esulting in a 25% increase in ef
               <span className="_ _0" />
               ficiency
-              <span className="_ _1" />. Reliable and able t<span className="_ _0" />o
+              <span className="_ _1" />. Reliable and able t
+              <span className="_ _0" />o
             </div>
             <div className="t m0 x3 h3 y7 ff2 fs1 fc0 sc0 ls0 ws8">
               support k<span className="_ _0" />
@@ -100,7 +102,8 @@ function Resume() {
               <span className="_ _0" />
               es. Looking for a challenging r<span className="_ _0" />
               ole where I can mak
-              <span className="_ _1" />e a positive impact and continue t<span className="_ _0" />
+              <span className="_ _1" />e a positive impact and continue t
+              <span className="_ _0" />
               o grow as a dev
               <span className="_ _0" />
               eloper
@@ -136,7 +139,9 @@ function Resume() {
               om validations and Y<span className="_ _2" />
               arn
             </div>
-            <div className="t m0 x3 h3 yc ff2 fs1 fc0 sc0 ls0 ws1">maintenance.</div>
+            <div className="t m0 x3 h3 yc ff2 fs1 fc0 sc0 ls0 ws1">
+              maintenance.
+            </div>
             <div className="t m0 x3 h3 yd ff2 fs1 fc0 sc0 ls0 ws8">
               • Developed a RE
               <span className="_ _0" />
@@ -325,7 +330,9 @@ function Resume() {
               Softwar
               <span className="_ _0" />e Engineering
             </div>
-            <div className="t m0 x3 h3 y20 ff2 fs1 fc0 sc0 ls0 ws8">Coding Dojo • 2022</div>
+            <div className="t m0 x3 h3 y20 ff2 fs1 fc0 sc0 ls0 ws8">
+              Coding Dojo • 2022
+            </div>
             <div className="t m0 x3 h3 y21 ff2 fs1 fc0 sc0 ls0 ws8">
               Full-Stack Softw
               <span className="_ _0" />
@@ -340,54 +347,69 @@ function Resume() {
               ORK
             </div>
             <div className="t m0 x3 h3 y23 ff2 fs1 fc0 sc0 ls0 ws2">
-              Data<span className="_ _3"> </span>Structures<span className="_ _3"> </span>and
-              <span className="_ _4"> </span>Algorithms<span className="_ _3"> </span>|
-              <span className="_ _4"> </span>Software<span className="_"> </span>Dev
+              Data<span className="_ _3"> </span>Structures
+              <span className="_ _3"> </span>and
+              <span className="_ _4"> </span>Algorithms
+              <span className="_ _3"> </span>|<span className="_ _4"> </span>
+              Software<span className="_"> </span>Dev
               <span className="_ _0" />
               elopment<span className="_"> </span>Fundament
               <span className="_ _0" />
               als<span className="_"> </span>|<span className="_"> </span>Intr
               <span className="_ _0" />
-              oduction<span className="_"> </span>to<span className="_"> </span>Scrum,
+              oduction<span className="_"> </span>to<span className="_"> </span>
+              Scrum,
               <span className="_"> </span>Agile,<span className="_"> </span>and
-              <span className="_"> </span>Project<span className="_"> </span>Deliv
+              <span className="_"> </span>Project<span className="_"> </span>
+              Deliv
               <span className="_ _0" />
               ery<span className="_"> </span>|
             </div>
             <div className="t m0 x3 h3 y24 ff2 fs1 fc0 sc0 ls0 ws3">
               Model-View
               <span className="_ _0" />
-              -Controller<span className="_ _5" />(MVC)<span className="_ _5"> </span>|
-              <span className="_"> </span>Design<span className="_"> </span>Higher-Or
+              -Controller
+              <span className="_ _5" />
+              (MVC)<span className="_ _5"> </span>|<span className="_"> </span>
+              Design<span className="_"> </span>Higher-Or
               <span className="_ _0" />
-              der<span className="_"> </span>Components<span className="_"> </span>(HOC)
-              <span className="_"> </span>|<span className="_"> </span>Continuous
+              der<span className="_"> </span>Components
+              <span className="_"> </span>(HOC)
+              <span className="_"> </span>|<span className="_"> </span>
+              Continuous
               <span className="_"> </span>In
               <span className="_ _0" />
               tegr
               <span className="_ _0" />
-              ation/Continuous<span className="_" />Deliv
+              ation/Continuous
+              <span className="_" />
+              Deliv
               <span className="_ _0" />
-              ery<span className="_"> </span>(CI/CD)<span className="_"> </span>|
+              ery<span className="_"> </span>(CI/CD)<span className="_"> </span>
+              |
             </div>
             <div className="t m0 x3 h3 y25 ff2 fs1 fc0 sc0 ls0 ws4">
               Asynchr
               <span className="_ _0" />
               onous<span className="_ _6"> </span>Jav
               <span className="_ _0" />
-              aScript<span className="_ _6"> </span>and<span className="_ _6"> </span>XML
+              aScript<span className="_ _6"> </span>and
+              <span className="_ _6"> </span>XML
               <span className="_ _6"> </span>(AJAX)<span className="_"> </span>|
               <span className="_"> </span>Softwar
               <span className="_ _0" />e<span className="_"> </span>Development
               <span className="_"> </span>Lif
               <span className="_ _1" />e<span className="_"> </span>Cycle
-              <span className="_" />(SDLC)<span className="_"> </span>|
-              <span className="_"> </span>Crea
+              <span className="_" />
+              (SDLC)<span className="_"> </span>|<span className="_"> </span>
+              Crea
               <span className="_ _0" />
-              te,<span className="_"> </span>Read,<span className="_"> </span>Upda
+              te,<span className="_"> </span>Read,<span className="_"> </span>
+              Upda
               <span className="_ _0" />
               te,<span className="_"> </span>Delet
-              <span className="_ _0" />e<span className="_" />(CRUD)
+              <span className="_ _0" />e<span className="_" />
+              (CRUD)
             </div>
             <div className="t m0 x3 h3 y26 ff2 fs1 fc0 sc0 ls0 ws8">
               Opera
@@ -403,7 +425,8 @@ function Resume() {
                 Ja
                 <span className="_ _0" />
                 vaScript, T<span className="_ _1" />
-                ypeScript, HTML/CSS/Sass,<span className="_"> </span>MySQL, GraphqlLibr
+                ypeScript, HTML/CSS/Sass,<span className="_"> </span>MySQL,
+                GraphqlLibr
                 <span className="_ _0" />
                 aries and
               </span>
@@ -414,16 +437,19 @@ function Resume() {
               meworks:<span className="_"> </span>
               <span className="ff2 fs1 ws7">
                 T<span className="_ _2" />
-                auriJS,<span className="_"> </span>React,<span className="_"> </span>Node.js,
+                auriJS,<span className="_"> </span>React,
+                <span className="_"> </span>Node.js,
                 <span className="_"> </span>Expr
                 <span className="_ _0" />
                 ess,<span className="_ _6"> </span>T<span className="_ _1" />
-                ailwind,<span className="_ _6"> </span>NextJS,<span className="_ _6"> </span>
+                ailwind,<span className="_ _6"> </span>NextJS,
+                <span className="_ _6"> </span>
                 MongoDB
                 <span className="_ _0" />,<span className="_ _6"> </span>SQLite,
                 <span className="_ _6"> </span>Sock
                 <span className="_ _1" />
-                et.io,<span className="_ _6"> </span>Firebase,<span className="_ _6"> </span>
+                et.io,<span className="_ _6"> </span>Firebase,
+                <span className="_ _6"> </span>
                 Bootstr
                 <span className="_ _1" />
                 ap,<span className="_ _6"> </span>Framer
@@ -442,8 +468,9 @@ function Resume() {
             <div className="t m0 x3 h7 y2d ff2 fs4 fc0 sc0 ls0 ws8">
               • Creat
               <span className="_ _0" />
-              ed a Visual Studio Code theme using Y<span className="_ _2" />o Code, XML, and JSON,
-              and successfully deployed it t<span className="_ _0" />o the mark
+              ed a Visual Studio Code theme using Y<span className="_ _2" />o
+              Code, XML, and JSON, and successfully deployed it t
+              <span className="_ _0" />o the mark
               <span className="_ _0" />
               etplace using Azure.
             </div>
@@ -506,7 +533,10 @@ function Resume() {
               ory management to enhance functionalit
               <span className="_ _0" />y
             </div>
-            <a className="l" href="https://github.com/ChristopherAlphonse/azalais-dark-">
+            <a
+              className="l"
+              href="https://github.com/ChristopherAlphonse/azalais-dark-"
+            >
               <div
                 className="d m1"
                 style={{
@@ -520,7 +550,10 @@ function Resume() {
                 }}
               />
             </a>
-            <a className="l" href="https://github.com/ChristopherAlphonse/Noted">
+            <a
+              className="l"
+              href="https://github.com/ChristopherAlphonse/Noted"
+            >
               <div
                 className="d m1"
                 style={{
@@ -534,7 +567,10 @@ function Resume() {
                 }}
               />
             </a>
-            <a className="l" href="https://github.com/ChristopherAlphonse/admindashboard">
+            <a
+              className="l"
+              href="https://github.com/ChristopherAlphonse/admindashboard"
+            >
               <div
                 className="d m1"
                 style={{

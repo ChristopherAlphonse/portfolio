@@ -28,14 +28,16 @@ function Projects() {
               return (
                 <ul key={id}>
                   <li className=" p-4">
-                    <div className=" xs:h-screen relative overflow-hidden rounded-lg bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 text-center shadow-xl dark:bg-gray-300  xl:h-80 xl:max-h-80">
+                    <div className=" relative overflow-hidden rounded-lg bg-gray-800 bg-opacity-40 px-8 pt-16 pb-24 text-center shadow-xl dark:bg-gray-300 xs:h-screen  xl:h-80 xl:max-h-80">
                       <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-gray-500 dark:text-gray-700">
                         {short}
                       </h2>
                       <h1 className="title-font mb-3 text-xl font-medium dark:text-zinc-800 sm:text-2xl">
                         {name}
                       </h1>
-                      <p className="mb-3 leading-relaxed dark:text-zinc-700">{description}</p>
+                      <p className="mb-3 leading-relaxed dark:text-zinc-700">
+                        {description}
+                      </p>
                       <a
                         href={`/projects/${id}`}
                         className="inline-flex items-center text-blue-500 hover:text-blue-400 "

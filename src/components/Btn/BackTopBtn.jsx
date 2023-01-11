@@ -6,7 +6,7 @@ function BackTopBtn() {
   const [show, setShow] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () =>
-      (window.scrollY > 1000 ? setShow(true) : setShow(false)),
+      window.scrollY > 1000 ? setShow(true) : setShow(false)
     );
   });
   {

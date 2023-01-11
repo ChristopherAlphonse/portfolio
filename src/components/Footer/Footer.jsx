@@ -1,4 +1,9 @@
-import { AiFillCodepenCircle, AiFillGithub, AiFillLinkedin, AiFillWindows } from "react-icons/ai";
+import {
+  AiFillCodepenCircle,
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillWindows,
+} from "react-icons/ai";
 
 import React from "react";
 
@@ -13,7 +18,7 @@ function Footer() {
   return (
     <footer
       id="section2"
-      className="bg-tertiary flex flex-col items-center justify-between  p-6 text-zinc-500 dark:bg-gray-200 dark:text-zinc-700
+      className="flex flex-col items-center justify-between bg-tertiary  p-6 text-zinc-500 dark:bg-gray-200 dark:text-zinc-700
       sm:flex-row md:h-[10vh]
        "
     >
@@ -21,16 +26,36 @@ function Footer() {
         <p>Copyright © 2022 - {year} - All right reserved</p>
       </div>
       <div className="grid-flow-col gap-6 md:place-self-center  md:justify-self-end">
-        <a href={github} target="_blank" className="hover:text-zinc-100  " rel="noreferrer">
+        <a
+          href={github}
+          target="_blank"
+          className="hover:text-zinc-100  "
+          rel="noreferrer"
+        >
           <AiFillGithub size="20" />
         </a>
-        <a href={codepen} target="_blank" className="hover:text-zinc-100   " rel="noreferrer">
+        <a
+          href={codepen}
+          target="_blank"
+          className="hover:text-zinc-100   "
+          rel="noreferrer"
+        >
           <AiFillCodepenCircle size="20" />
         </a>
-        <a href={linkedin} target="_blank" className="hover:text-zinc-100   " rel="noreferrer">
+        <a
+          href={linkedin}
+          target="_blank"
+          className="hover:text-zinc-100   "
+          rel="noreferrer"
+        >
           <AiFillLinkedin size="20" />
         </a>
-        <a href={msStore} target="_blank" className="hover:text-zinc-100  " rel="noreferrer">
+        <a
+          href={msStore}
+          target="_blank"
+          className="hover:text-zinc-100  "
+          rel="noreferrer"
+        >
           <AiFillWindows size="20" />
         </a>
       </div>

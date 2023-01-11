@@ -11,7 +11,7 @@ import {
   TimeLine,
 } from "../components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import React, { Suspense, useMemo, useState } from "react";
+import { Suspense, useMemo, useState } from "react";
 
 import Featured from "../components/Featured/Featured";
 import { Profile } from "../assets/index";
@@ -80,7 +80,10 @@ function HomePage() {
         />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="apple-mobile-web-app-title" content="Christopher Alphonse" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="Christopher Alphonse"
+        />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       </Helmet>
       <div>
