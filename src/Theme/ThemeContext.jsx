@@ -28,12 +28,15 @@ export function ThemeProvider({ initialTheme, children }) {
   useEffect(() => {
     if (initialTheme) {
       rawSetTheme(initialTheme);
-      console.log("ran in line 31 ThemeContext");
     }
   }, []);
   useEffect(() => {
     rawSetTheme(theme);
   }, [theme]);
 
-  return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 }

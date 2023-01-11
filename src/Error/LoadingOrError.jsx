@@ -1,5 +1,3 @@
-import React from "react";
-
 function LoadingOrError(props) {
   const { error } = props;
   return (
