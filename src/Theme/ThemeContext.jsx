@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 const getInitialTheme = () => {
   if (typeof window !== "undefined" && window.localStorage) {
@@ -18,7 +18,7 @@ export const ThemeContext = React.createContext();
 
 export function ThemeProvider({ initialTheme, children }) {
   const [theme, setTheme] = useState(getInitialTheme);
-  const rawSetTheme = (rawTheme) => {
+  const rawSetTheme = rawTheme => {
     const root = window.document.documentElement;
     const isDark = rawTheme === "dark";
     root.classList.remove(isDark ? "light" : "dark");
@@ -30,7 +30,7 @@ export function ThemeProvider({ initialTheme, children }) {
       rawSetTheme(initialTheme);
     }
   }, []);
-  useEffect(() => {
+  useMemo(() => {
     rawSetTheme(theme);
   }, [theme]);
 

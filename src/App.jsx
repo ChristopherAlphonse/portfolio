@@ -7,7 +7,6 @@ import {
 } from "./page/index";
 
 import { Gallery } from "./components/compIndex";
-import Resume from "./components/NavBar/Resume";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
           <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/projects/" element={<Gallery />} />
           <Route path="/projects/:id" element={<FeaturedDetails />} />
-          <Route path="/resume" element={<Resume />} />
         </Routes>
       </BrowserRouter>
     </div>

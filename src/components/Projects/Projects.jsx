@@ -1,6 +1,5 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 
-import React from "react";
 import { projectsData } from "../../Data/data";
 import { transition } from "../../FramerVariant/variants";
 
@@ -64,6 +63,7 @@ function Projects() {
           </m.div>
           <div className="flex justify-center ">
             <button
+              type="button"
               disabled
               className="cursor-b cursor-not-allowed "
               aria-label="Work in progress, come back at a later time"

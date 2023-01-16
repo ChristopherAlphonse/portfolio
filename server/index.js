@@ -1,6 +1,11 @@
+import express from "express";
 import fs from "fs";
 import http from "http";
 import path from "path";
+
+app.use(express());
+
+app.use("/pdf", express.static(`${__dirname}/file.resume.pdf`));
 
 const server = http.createServer((req, res) => {
   if (req.url === "/resume.pdf") {
@@ -9,6 +14,7 @@ const server = http.createServer((req, res) => {
     const readStream = fs.createReadStream(filePath);
 
     res.setHeader("Content-Type", "application/pdf");
+
     readStream.pipe(res);
   } else {
     res.statusCode = 404;

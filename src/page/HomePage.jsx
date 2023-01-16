@@ -33,11 +33,23 @@ function HomePage() {
         <title>Christopher Alphonse | Software Developer | Boston, MA</title>
         <meta
           name="description"
-          content="Christopher Alphonse is a full-stack developer based in Boston, MA who is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. As a new developer with a passion for technology and a strong foundation in front-end and back-end development, I am eager to use my skills and knowledge to create innovative solutions for businesses and organizations. My expertise includes the MERN stack, TypeScript, Tailwind CSS, GraphQL, and MySQL. Check out my portfolio to learn more about my work and skills."
+          content="Christopher Alphonse is a full-stack developer based in Boston, MA who is skilled in
+           using technologies like JavaScript, React, and Node.js to build scalable and effective web applications.
+           As a new developer with a passion for technology and a strong foundation in front-end and back-end development,
+           I am eager to use my skills and knowledge to create innovative solutions for businesses and organizations.
+           My expertise includes the MERN stack, TypeScript, Tailwind CSS, GraphQL, and MySQL. Check out my portfolio to learn more about my work and skills."
         />
         <meta
           name="keywords"
-          content="developer, chris alphonse, christopher developer boston, technology, front end development, back end development, MERN stack, TypeScript, Tailwind CSS, GraphQL, MySQL,full-stack developer, Boston, MA, front-end development, back-end development, JavaScript, React, Node.js, web applications, MERN stack, TypeScript, Tailwind CSS, GraphQL, MySQL, portfolio, skills, entry level javascript developer,junior javascript developer, node js debugger, react developers, Christopher Alphonse Boston, Christopher Alphonse developer, Christopher Alphonse engineer,Christopher Alphonse full stack, Christopher Alphonse software engineer, Christopher Alphonse LinkedIn, Christopher Alphonse GitHub, Christopher Alphonse Twitter, Christopher Alphonse facebook, Christopher Alphonse Tiktok, Christopher Alphonse Codepen, software engineer Boston, full-stack developer Boston, front-end developer Boston, back-end developer Boston, software developer Boston, web development Boston, software engineer services,  full-stack development services Boston,front-end development services Boston, back-end development services Boston, software engineer jobs"
+          content="developer, chris alphonse, christopher developer boston, technology, front end development, back end development,
+          MERN stack, TypeScript, Tailwind CSS, GraphQL, MySQL,full-stack developer, Boston, MA, front-end development, back-end
+          development, JavaScript, React, Node.js, web applications, MERN stack, TypeScript, Tailwind CSS, GraphQL, MySQL, portfolio,
+          skills, entry level javascript developer,junior javascript developer, node js debugger, react developers, Christopher Alphonse
+           Boston, Christopher Alphonse developer, Christopher Alphonse engineer,Christopher Alphonse full stack, Christopher Alphonse
+            software engineer, Christopher Alphonse LinkedIn, Christopher Alphonse GitHub, Christopher Alphonse Twitter, Christopher
+            Alphonse facebook, Christopher Alphonse Tiktok, Christopher Alphonse Codepen, software engineer Boston, full-stack developer
+             Boston, front-end developer Boston, back-end developer Boston, software developer Boston, web development Boston, software engineer
+             services,  full-stack development services Boston,front-end development services Boston, back-end development services Boston, software engineer jobs"
         />
         <meta
           property="og:title"

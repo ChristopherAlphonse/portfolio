@@ -1,7 +1,6 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
 
-import React from "react";
-import { DownBtn } from "../compIndex";
+import DownBtn from "../Btn/DownBtn";
 import { fadeIn } from "../../FramerVariant/variants";
 
 function Hero() {
@@ -21,7 +20,7 @@ function Hero() {
                 viewport={{ once: false, amount: 0.7 }}
                 className="text-md mb-[22px] text-lg text-blue-600"
               >
-                Hey, I'm Chris 👋
+                Hey, I&apos;m Chris 👋
               </m.p>
               <m.h1
                 variants={fadeIn("left")}
@@ -46,14 +45,17 @@ function Hero() {
                 <span className="text-blue-600">functional</span> and{" "}
                 <span className="text-blue-600"> engaging</span>
                 .
-                <br /> At the moment, I'm concentrating on{" "}
+                <br /> At the moment, I&apos;m concentrating on{" "}
                 <span className="text-blue-600"> learning</span> new
                 technologies and improving{" "}
                 <span className="text-blue-600"> human-centered </span>
                 services .
               </m.p>
               <a href="#contact" className="btn-holder  ">
-                <button className=" hero-btn hero-btn-3 hover-border-2 focus-none ">
+                <button
+                  type="button"
+                  className=" hero-btn hero-btn-3 hover-border-2 focus-none "
+                >
                   <span href="#contact" className="">
                     Work with me
                   </span>

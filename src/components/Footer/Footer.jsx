@@ -5,8 +5,6 @@ import {
   AiFillWindows,
 } from "react-icons/ai";
 
-import React from "react";
-
 const github = "https://github.com/ChristopherAlphonse";
 const msStore =
   "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme";
