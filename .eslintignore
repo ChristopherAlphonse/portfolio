@@ -11,3 +11,16 @@ index.css
 server
 /server
 vite.config.js
+node_modules
+node_modules/*
+public
+build
+dist
+node_modules
+/.cache
+/.husky
+.eslintignore
+.gitignore
+.git
+.prettierignore
+.prettierrc.json
