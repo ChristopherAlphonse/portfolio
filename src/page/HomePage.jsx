@@ -18,6 +18,16 @@ import { Profile } from "../assets/index";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import ReactGA from "react-ga4";
 
+const ID = import.meta.env.VITE_TRACKING_ID;
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", ID);
+
 function HomePage() {
   const [loading, setLoading] = useState(false);
 
@@ -33,6 +43,11 @@ function HomePage() {
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
         <title>Christopher Alphonse | Software Developer | Boston, MA</title>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${ID}`}
+        />
+        ;
         <meta
           name="description"
           content="Christopher Alphonse is a full-stack developer based in Boston, MA who is skilled in
@@ -78,11 +93,9 @@ function HomePage() {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Christopher Alphonse" />
-
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:site" content="christopheralphonse" />
         <meta property="twitter:creator" content="Christopher Alphonse" />
-
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="Christopher Alphonse" />
