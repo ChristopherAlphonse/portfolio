@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 const app = express();
 const PORT = 3000;
 
-app.get("/", function (req, res) {
+app.get("/resume.pdf", function (req, res) {
   const filePath = "/server/file/resume.pdf";
 
   readFile(__dirname + filePath, function (err, data) {
