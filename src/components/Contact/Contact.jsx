@@ -1,10 +1,11 @@
 import "react-toastify/dist/ReactToastify.css";
 
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import React, { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import emailjs from "@emailjs/browser";
 import { fadeIn, transition } from "../../FramerVariant/variants";
+
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const Service = import.meta.env.VITE_SERVICE_ID;
 const Template = import.meta.env.VITE_TEMPLATE_ID;
@@ -69,8 +70,8 @@ function Contact() {
               viewport={{ once: false, amount: 0.4 }}
               className="title-para py-2 font-body font-bold text-zinc-500 dark:text-zinc-600"
             >
-              Feel free to reach out to me with any questions or inquiries. I'll
-              get back to you as soon as possible.
+              Feel free to reach out to me with any questions or inquiries.
+              I`&apos;ll get back to you as soon as possible.
             </m.h2>
           </div>
           <div className="mt-10 flex flex-col justify-center lg:flex-row lg:gap-x-8">

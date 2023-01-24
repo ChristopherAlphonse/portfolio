@@ -1,28 +1,24 @@
 import express from "express";
-import fs from "fs";
-import http from "http";
 import path from "path";
+import { readFile } from "fs";
 
-app.use(express());
+const __dirname = path.resolve();
 
-app.use("/pdf", express.static(`${__dirname}/file.resume.pdf`));
+const app = express();
+const PORT = 3000;
 
-const server = http.createServer((req, res) => {
-  if (req.url === "/resume.pdf") {
-    const filePath = path.join(process.cwd(), "server/file/resume.pdf");
+app.get("/", function (req, res) {
+  const filePath = "/server/file/resume.pdf";
 
-    const readStream = fs.createReadStream(filePath);
-
-    res.setHeader("Content-Type", "application/pdf");
-
-    readStream.pipe(res);
-  } else {
-    res.statusCode = 404;
-    res.end();
-  }
+  readFile(__dirname + filePath, function (err, data) {
+    if (err) {
+      console.log(`Error:${err}`);
+    }
+    res.contentType("application/pdf");
+    res.send(data);
+  });
 });
 
-const port = 5173;
-server.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+app.listen(PORT, function () {
+  console.log(`Listening to ${PORT}`);
 });

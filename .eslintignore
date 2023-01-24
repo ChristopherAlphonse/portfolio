@@ -8,3 +8,6 @@ build
 dist
 index.css
 /index.css
+server
+/server
+vite.config.js

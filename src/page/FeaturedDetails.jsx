@@ -10,11 +10,6 @@ import { TfiWorld } from "react-icons/tfi";
 import { transition } from "../FramerVariant/variants";
 import { useParams } from "react-router-dom";
 
-const ImageProps = {
-  width: 48,
-  height: 48,
-};
-
 function FeaturedDetails() {
   const [loading, setLoading] = useState(false);
   const { id } = useParams();
@@ -65,7 +60,7 @@ function FeaturedDetails() {
               <ResponsiveNavBar />
               <LazyMotion features={domAnimation}>
                 <section className="containerr flex h-full items-center justify-center bg-zinc-800  py-32 dark:bg-zinc-50 lg:h-[100vh] ">
-                  {FeaturedData.filter(z => z.id === id).map(z => (
+                  {FeaturedData.filter((z) => z.id === id).map((z) => (
                     <section key={z.id}>
                       <div className="container mx-auto px-5 py-24">
                         <m.h2
@@ -85,7 +80,8 @@ function FeaturedDetails() {
                             className="h-64 w-full rounded object-cover object-center lg:h-auto lg:w-1/2"
                             src={z.image}
                             alt={`${z.name}, ${z.short} `}
-                            {...ImageProps}
+                            width={48}
+                            height={48}
                           />
                           <div className="mt-6 w-full lg:mt-0 lg:w-1/2 lg:py-6 lg:pl-10">
                             <div className="mb-4 flex ">

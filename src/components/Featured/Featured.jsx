@@ -1,4 +1,3 @@
-import React from "react";
 import { FeaturedData } from "../../Data/data";
 import TempHero from "./TempHero";
 

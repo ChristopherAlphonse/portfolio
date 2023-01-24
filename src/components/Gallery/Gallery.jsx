@@ -1,7 +1,7 @@
 import { Footer, ResponsiveNavBar } from "../compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import React, { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import DataBase from "../../Data/jumbo.db.json";
 import { Link } from "react-router-dom";
@@ -88,7 +88,7 @@ function Gallery() {
                       </p>
                     </div>
                     <div className="-m-4 flex flex-wrap">
-                      {DataBase.map(items => {
+                      {DataBase.map((items) => {
                         const { id, name, short, description, view } = items;
                         return (
                           <m.div

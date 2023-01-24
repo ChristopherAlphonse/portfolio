@@ -1,7 +1,7 @@
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import React, { useMemo } from "react";
 
 import { transition } from "../../FramerVariant/variants";
+import { useMemo } from "react";
 
 function TempHero({ featured }) {
   const featuredMemoized = useMemo(() => featured, [featured]);

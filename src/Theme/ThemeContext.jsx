@@ -18,7 +18,7 @@ export const ThemeContext = React.createContext();
 
 export function ThemeProvider({ initialTheme, children }) {
   const [theme, setTheme] = useState(getInitialTheme);
-  const rawSetTheme = rawTheme => {
+  const rawSetTheme = (rawTheme) => {
     const root = window.document.documentElement;
     const isDark = rawTheme === "dark";
     root.classList.remove(isDark ? "light" : "dark");

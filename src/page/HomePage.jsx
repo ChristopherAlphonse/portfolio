@@ -11,16 +11,18 @@ import {
   TimeLine,
 } from "../components/compIndex";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Suspense, useMemo, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import Featured from "../components/Featured/Featured";
 import { Profile } from "../assets/index";
 import PropagateLoader from "react-spinners/PropagateLoader";
+import ReactGA from "react-ga4";
 
 function HomePage() {
   const [loading, setLoading] = useState(false);
 
-  useMemo(() => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.hostname);
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
