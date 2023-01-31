@@ -69,7 +69,7 @@
     "cz-conventional-changelog": "3.3.0",
     "dotenv": "^16.0.3",
     "eol": "^0.9.1",
-    "eslint": "^8.32.0",
+    "eslint": "^8.33.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "2.27.5",
