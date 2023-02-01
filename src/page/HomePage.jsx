@@ -1,4 +1,4 @@
-import "../index.css";
+import '../index.css';
 
 import {
   About,
@@ -8,14 +8,14 @@ import {
   Hero,
   Projects,
   ResponsiveNavBar,
-  TimeLine,
-} from "../components/compIndex";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Suspense, useEffect, useState } from "react";
+  TimeLine
+} from '../components/compIndex';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Suspense, useEffect, useState } from 'react';
 
-import Featured from "../components/Featured/Featured";
-import { Profile } from "../assets/index";
-import PropagateLoader from "react-spinners/PropagateLoader";
+import Featured from '../components/Featured/Featured';
+import { Profile } from '../assets/index';
+import PropagateLoader from 'react-spinners/PropagateLoader';
 
 function HomePage() {
   const [loading, setLoading] = useState(false);
@@ -30,8 +30,13 @@ function HomePage() {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse | Software Developer | Boston, MA</title>
+        <title>Christopher Alphonse - Software Developer - Boston, MA</title>
         ;
+        <link
+          rel="shortcut icon"
+          href="./public/favicon.ico"
+          type="image/x-icon"
+        />
         <meta
           name="description"
           content="Christopher Alphonse is a full-stack developer based in Boston, MA who is skilled in
@@ -104,13 +109,13 @@ function HomePage() {
             size={20}
             speedMultiplier={2}
             cssOverride={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              textAlign: "center",
-              minHeight: "100vh",
-              width: "100%",
-              background: "#18181b",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'center',
+              minHeight: '100vh',
+              width: '100%',
+              background: '#18181b'
             }}
           />
         ) : (

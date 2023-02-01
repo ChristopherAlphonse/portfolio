@@ -11,10 +11,11 @@
     <meta
       name="description"
       content="Christopher Alphonse is a full-stack developer based in Boston, MA who is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. As a new developer with a passion for technology and a strong foundation in front-end and back-end development, I am eager to use my skills and knowledge to create innovative solutions for businesses and organizations. My expertise includes the MERN stack, TypeScript, Tailwind CSS, GraphQL, and MySQL. Check out my portfolio to learn more about my work and skills."
-    />   <link rel="manifest" href="/manifest.json" />
+    />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://christopheralphonse.com/v1/" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
 
     <meta
       property="og:site_name"
@@ -55,14 +56,14 @@
   </head>
   <body>
     <style type="text/css">
-      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 
       :root {
         --accent-color: #7fc7eb;
-        --font-face-primary: "Playfair Display SC", serif;
-        --font-face-secondary: "Open Sans", sans-serif;
+        --font-face-primary: 'Playfair Display SC', serif;
+        --font-face-secondary: 'Open Sans', sans-serif;
       }
 
       html {
@@ -70,10 +71,10 @@
       }
       .App {
         display: flex;
-        justify-content: center;
         align-items: center;
-        text-align: center;
+        justify-content: center;
         min-height: 100vh;
+        text-align: center;
       }
       .target {
         color: #7fc7eb;
@@ -93,27 +94,27 @@
         box-sizing: border-box;
       }
       .bb {
-        border: 2px solid #2563eb;
-        background: transparent;
-        padding: 0.5rem 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0.5rem 3rem;
         line-height: 24px;
+        background: transparent;
+        border: 2px solid #2563eb;
       }
       .bb:hover {
-        transition: all ease-in 0.2s;
         background-color: #2563eb;
+        transition: all ease-in 0.2s;
       }
       .ml-7 {
         background: #2563eb;
         border: 2px solid transparent;
       }
       .ml-7:hover {
-        background-color: transparent;
-        transition: all ease-in 0.2s;
         color: white;
+        background-color: transparent;
         border: 2px solid #2563eb;
+        transition: all ease-in 0.2s;
       }
       .ye,
       img {
@@ -122,9 +123,9 @@
       }
       .ye,
       img:hover {
-        transition: filter 0.5s ease-in-out;
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
+        transition: filter 0.5s ease-in-out;
       }
       * {
         scrollbar-width: auto;
@@ -138,8 +139,8 @@
       }
       *::-webkit-scrollbar-thumb {
         background-color: var(--accent-color);
-        border-radius: 5px;
         border: 3px solid #18181b;
+        border-radius: 5px;
       }
       .logo {
         font-weight: 900;
@@ -150,13 +151,13 @@
         border: 1px solid var(--accent-color);
       }
       a {
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0.15em;
+        position: relative;
         display: inline-block;
         padding: 15px 20px;
-        position: relative;
+        color: #fff;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        text-decoration: none;
       }
       .chi {
         letter-spacing: 0.15em;
@@ -176,9 +177,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-238195740-1");
+      gtag('config', 'UA-238195740-1');
     </script>
 
     <link rel="stylesheet" href="./src/index.css" />

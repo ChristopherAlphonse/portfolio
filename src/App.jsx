@@ -6,10 +6,9 @@ import {
   ProjectDetails
 } from './page/index';
 
+import FirebaseAnalytics from './FirebaseAnalytics';
 import { Gallery } from './components/compIndex';
 import Resume from './components/Resume/Resume';
-import { Gallery } from './components/compIndex';
-import FirebaseAnalytics from './FirebaseAnalytics';
 
 function App() {
   return (
