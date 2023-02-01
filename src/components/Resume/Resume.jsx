@@ -1,14 +1,14 @@
 import React from 'react';
-import ResumePDF from '../../assets/sample.pdf';
+import ResumePDF from '../../assets/Christopher_Alphonse.docx.pdf';
 
 const Resume = () => {
-  let className = 'position:absolute;right:0; top:0; bottom:0; width:100%;';
   return (
-    <div className="h-[100vh] bg-red-600">
+    <div style={{ height: '100vh', width: '100vw', backgroundColor: 'red' }}>
       <div id="pdf">
         <iframe
-          className={className}
-          src={`${ResumePDF}?#zoom=100&scrollbar=1&toolbar=1&navpanes=1`}
+          style={{ height: '100vh', width: '100vw', position: 'absolute' }}
+          src={`${ResumePDF}#zoom=FitH`}
+          border="0"
         ></iframe>
       </div>
     </div>
