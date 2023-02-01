@@ -8,11 +8,14 @@ import {
 
 import { Gallery } from './components/compIndex';
 import Resume from './components/Resume/Resume';
+import { Gallery } from './components/compIndex';
+import FirebaseAnalytics from './FirebaseAnalytics';
 
 function App() {
   return (
     <div className="overflow-hidden">
       <BrowserRouter>
+        <FirebaseAnalytics />
         <Routes>
           <Route path="/v1/" element={<HomePage />} />
           <Route path="/" element={<Navigate to="/v1/" />} />
