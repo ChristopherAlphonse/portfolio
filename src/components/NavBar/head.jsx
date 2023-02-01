@@ -1,32 +1,32 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Logo } from "../../assets";
-import Theme from "../../Theme/ThemeIndex";
+import { Logo } from '../../assets';
+import Theme from '../../Theme/ThemeIndex';
 
 const navigation = [
   {
-    name: "Resume",
+    name: 'Resume',
     key: 1,
-    href: "/resume.pdf",
+    href: 'resume'
   },
   {
     key: 2,
-    name: "GitHub",
-    href: "https://github.com/ChristopherAlphonse",
+    name: 'GitHub',
+    href: 'https://github.com/ChristopherAlphonse'
   },
   {
     key: 3,
-    name: "linkedin",
-    href: "https://www.linkedin.com/in/christopher-alphonse",
+    name: 'linkedin',
+    href: 'https://www.linkedin.com/in/christopher-alphonse'
   },
   {
     key: 4,
     name: <Theme />,
-    href: null,
-  },
+    href: null
+  }
 ];
 
-const navLinks = navigation.map((page) => (
+const navLinks = navigation.map(page => (
   <a
     key={page.key}
     target="_blank"
@@ -76,7 +76,7 @@ function MenuAlt4Svg({ menuOpen }) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className={`ease h-8 w-8 transition duration-100 ${
-        menuOpen ? "rotate-90 transform" : ""
+        menuOpen ? 'rotate-90 transform' : ''
       }`}
       viewBox="0 0 20 20"
       fill="currentColor"
@@ -93,8 +93,8 @@ function MenuAlt4Svg({ menuOpen }) {
 export function ResponsiveNavBar() {
   const [bg, setBg] = useState(false);
   useEffect(() => {
-    window.addEventListener("scroll", () =>
-      (window.scrollY > 10 ? setBg(true) : setBg(false)),
+    window.addEventListener('scroll', () =>
+      window.scrollY > 10 ? setBg(true) : setBg(false)
     );
   });
   const [menuOpen, setMenuOpen] = useState(false);
@@ -102,8 +102,8 @@ export function ResponsiveNavBar() {
     <div
       className={`${
         bg
-          ? "h-20  bg-zinc-900 shadow-md shadow-blue-900/40 dark:bg-zinc-100 "
-          : "h-24 "
+          ? 'h-20  bg-zinc-900 shadow-md shadow-blue-900/40 dark:bg-zinc-100 '
+          : 'h-24 '
       }  fixed top-0 z-10 w-full  text-white   transition-all duration-300 dark:text-zinc-700 `}
     >
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

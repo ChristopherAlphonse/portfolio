@@ -1,12 +1,13 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import {
   FeaturedDetails,
   HomePage,
   PageNotFound,
-  ProjectDetails,
-} from "./page/index";
+  ProjectDetails
+} from './page/index';
 
-import { Gallery } from "./components/compIndex";
+import { Gallery } from './components/compIndex';
+import Resume from './components/Resume/Resume';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/projects/" element={<Gallery />} />
           <Route path="/projects/:id" element={<FeaturedDetails />} />
+          <Route path="v1/resume" element={<Resume />} />
         </Routes>
       </BrowserRouter>
     </div>

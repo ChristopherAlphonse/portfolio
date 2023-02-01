@@ -7,8 +7,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "nodemon server/index.js",
-    "start:dev": "concurrently \"vite\" \"node --experimental-modules server/index.js\"",
     "build": "vite build --mode production",
     "preview": "vite build && yarn vite preview",
     "deploy": " vite build && firebase deploy --only hosting",
