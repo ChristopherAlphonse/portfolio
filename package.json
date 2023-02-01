@@ -7,9 +7,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prep": "rimraf node_modules dist && yarn && yarn deploy",
     "build": "vite build --mode production",
     "preview": "vite build && yarn vite preview",
-    "deploy": " vite build && firebase deploy --only hosting",
+    "deploy": "vite build && firebase deploy --only hosting",
     "firebase": "firebase login && firebase init",
     "checked": "ncu && ncu -u && yarn install && yarn autoclean --force",
     "prepare": "husky install",
@@ -41,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "rimraf": "^4.1.2",
     "@builder.io/partytown": "^0.7.5",
     "@emailjs/browser": "^3.10.0",
     "@namics/stylelint-bem": "^8.0.0",
