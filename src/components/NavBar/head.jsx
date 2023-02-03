@@ -4,11 +4,11 @@ import { Logo } from '../../assets';
 import Theme from '../../Theme/ThemeIndex';
 
 const navigation = [
-  {
-    name: 'Resume',
-    key: 1,
-    href: 'blob:https://angel.co/e0e9d3fc-a799-406a-b8ac-33081b2d461c'
-  },
+  // {
+  //   name: 'Resume',
+  //   key: 1,
+  //   href: 'blob:https://angel.co/e0e9d3fc-a799-406a-b8ac-33081b2d461c'
+  // },
   {
     key: 2,
     name: 'GitHub',
