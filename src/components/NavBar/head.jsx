@@ -7,7 +7,7 @@ const navigation = [
   {
     name: 'Resume',
     key: 1,
-    href: 'resume'
+    href: 'blob:https://angel.co/e0e9d3fc-a799-406a-b8ac-33081b2d461c'
   },
   {
     key: 2,

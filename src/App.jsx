@@ -8,7 +8,6 @@ import {
 
 import FirebaseAnalytics from './FirebaseAnalytics';
 import { Gallery } from './components/compIndex';
-import Resume from './components/Resume/Resume';
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
           <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/projects/" element={<Gallery />} />
           <Route path="/projects/:id" element={<FeaturedDetails />} />
-          <Route path="v1/resume" element={<Resume />} />
         </Routes>
       </BrowserRouter>
     </div>
