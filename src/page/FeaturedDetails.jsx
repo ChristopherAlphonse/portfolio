@@ -1,14 +1,14 @@
-import { Footer, ResponsiveNavBar } from "../components/compIndex";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { LazyMotion, domAnimation, m } from "framer-motion";
-import { Suspense, useEffect, useState } from "react";
+import { Footer, ResponsiveNavBar } from '../components/compIndex';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { LazyMotion, domAnimation, m } from 'framer-motion';
+import { Suspense, useEffect, useState } from 'react';
 
-import { BsArrowReturnLeft } from "react-icons/bs";
-import { FeaturedData } from "../Data/data";
-import PropagateLoader from "react-spinners/PropagateLoader";
-import { TfiWorld } from "react-icons/tfi";
-import { transition } from "../FramerVariant/variants";
-import { useParams } from "react-router-dom";
+import { BsArrowReturnLeft } from 'react-icons/bs';
+import { FeaturedData } from '../Data/data';
+import PropagateLoader from 'react-spinners/PropagateLoader';
+import { TfiWorld } from 'react-icons/tfi';
+import { transition } from '../FramerVariant/variants';
+import { useParams } from 'react-router-dom';
 
 function FeaturedDetails() {
   const [loading, setLoading] = useState(false);
@@ -26,17 +26,6 @@ function FeaturedDetails() {
         <title>
           Christopher Alphonse | {id} | Full-Stack Developer | Boston, MA
         </title>
-        <meta
-          name="keywords"
-          content="Christopher Alphonse, full-stack developer, Boston, Massachusetts, software engineer, web development, front-end, back-end, JavaScript, React, Node.js"
-        />
-        <meta
-          name="description"
-          content="Christopher Alphonse is a highly skilled full-stack developer based in Boston, MA.
-           With expertise in front-end and back-end development, Christopher uses technologies such as JavaScript,
-            React, and Node.js to build scalable and effective web applications. His portfolio showcases his
-             experience and capabilities in building a wide range of web applications. Contact Christopher for all your web development needs in the Boston area."
-        />
       </Helmet>
       <div className="">
         {loading ? (
@@ -45,13 +34,13 @@ function FeaturedDetails() {
             size={20}
             speedMultiplier={2}
             cssOverride={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              textAlign: "center",
-              minHeight: "100vh",
-              width: "100%",
-              background: " #3f3f46 ",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'center',
+              minHeight: '100vh',
+              width: '100%',
+              background: ' #3f3f46 '
             }}
           />
         ) : (
@@ -60,11 +49,11 @@ function FeaturedDetails() {
               <ResponsiveNavBar />
               <LazyMotion features={domAnimation}>
                 <section className="containerr flex h-full items-center justify-center bg-zinc-800  py-32 dark:bg-zinc-50 lg:h-[100vh] ">
-                  {FeaturedData.filter((z) => z.id === id).map((z) => (
+                  {FeaturedData.filter(z => z.id === id).map(z => (
                     <section key={z.id}>
                       <div className="container mx-auto px-5 py-24">
                         <m.h2
-                          variants={transition("down")}
+                          variants={transition('down')}
                           initial="hidden"
                           whileInView="show"
                           viewport={{ once: false, amount: 0.7 }}
@@ -102,7 +91,7 @@ function FeaturedDetails() {
                             <div className="flex">
                               <span className="ml-1 flex items-center space-x-2 py-1 pl-3  text-blue-600 transition-all hover:text-blue-600/50 dark:text-blue-700 dark:hover:text-blue-700/70">
                                 <a href={z.view} className="flex items-center">
-                                  <TfiWorld />{" "}
+                                  <TfiWorld />{' '}
                                   <span className="ml-2 items-center text-xs sm:text-sm">
                                     V I S I T
                                   </span>
@@ -112,7 +101,7 @@ function FeaturedDetails() {
                                 href="/"
                                 className="btn btn-md md:btn-lg  ml-auto flex items-center rounded border-0 bg-blue-600  py-1  px-9 text-white transition-all hover:bg-blue-600/50 dark:bg-blue-700 dark:hover:bg-blue-700/70"
                               >
-                                <BsArrowReturnLeft />{" "}
+                                <BsArrowReturnLeft />{' '}
                                 <span className="ml-2 items-center text-xs sm:text-sm">
                                   R E T U R N
                                 </span>
@@ -128,7 +117,7 @@ function FeaturedDetails() {
             </Suspense>
           </>
         )}
-      </div>{" "}
+      </div>{' '}
       <Footer />
     </HelmetProvider>
   );
