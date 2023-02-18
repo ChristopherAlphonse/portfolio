@@ -1,7 +1,7 @@
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import { LazyMotion, domAnimation, m } from 'framer-motion';
 
-import { transition } from "../../FramerVariant/variants";
-import { useMemo } from "react";
+import { transition } from '../../FramerVariant/variants';
+import { useMemo } from 'react';
 
 function TempHero({ featured }) {
   const featuredMemoized = useMemo(() => featured, [featured]);
@@ -10,7 +10,7 @@ function TempHero({ featured }) {
   return (
     <LazyMotion features={domAnimation}>
       <m.div
-        variants={transition("up")}
+        variants={transition('up')}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.2 }}
@@ -48,19 +48,21 @@ function TempHero({ featured }) {
               </div>
               <div className="ye z-0 mb-10 px-9 pb-9 sm:w-1/2">
                 <div className="h-70">
-                  <img
-                    alt={name}
-                    className="object-fit object-center"
-                    src={image}
-                    width={500}
-                    height={500}
-                    loading="lazy"
-                    decoding="async"
-                    srcSet={image}
-                    sizes="(min-width: 66em) 33vw,
+                  <picture>
+                    <img
+                      alt={name}
+                      className="object-fit object-center"
+                      src={image}
+                      width={500}
+                      height={500}
+                      loading="lazy"
+                      decoding="async"
+                      srcSet={image}
+                      sizes="(min-width: 66em) 33vw,
                     (min-width: 44em) 50vw,
                     100vw"
-                  />
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
