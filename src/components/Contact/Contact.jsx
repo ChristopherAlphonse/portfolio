@@ -1,43 +1,44 @@
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.css';
 
-import { LazyMotion, domAnimation, m } from "framer-motion";
-import { ToastContainer, toast } from "react-toastify";
-import { fadeIn, transition } from "../../FramerVariant/variants";
+import { LazyMotion, domAnimation, m } from 'framer-motion';
+import { ToastContainer, toast } from 'react-toastify';
+import { fadeIn, transition } from '../../FramerVariant/variants';
 
-import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { Console } from 'console';
 
-const Service = import.meta.env.VITE_SERVICE_ID;
-const Template = import.meta.env.VITE_TEMPLATE_ID;
-const Key = import.meta.env.VITE_PUBLIC_KEY;
+const { VITE_SEND_GRID_APKI_KEY } = process.env;
+console.log(VITE_SEND_GRID_APKI_KEY);
+
+const sendGrid = require('@sendgrid/mail');
+sendGrid.setApiKey(VITE_SEND_GRID_APKI_KEY);
 
 function Contact() {
   const form = useRef();
-  const fullRef = useRef("");
-  const emailRef = useRef("");
-  const subjectRef = useRef("");
-  const messageRef = useRef("");
+  const fullRef = useRef('');
+  const emailRef = useRef('');
+  const subjectRef = useRef('');
+  const messageRef = useRef('');
 
-  const sendEmail = (e) => {
+  const sendEmail = e => {
     e.preventDefault();
     const params = {
       name: e.target.user_name.value,
       email: e.target.user_email.value,
       subject: e.target.user_subject.value,
-      message: e.target.message.value,
+      message: e.target.message.value
     };
 
     //
 
     emailjs
       .sendForm(Service, Template, form.current, Key)
-      .then((response) => {
-        console.table("Email successfully sent!");
-        toast.success("Email sent successfully!");
+      .then(response => {
+        console.table('Email successfully sent!');
+        toast.success('Email sent successfully!');
       })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-        toast.error("Error sending email");
+      .catch(error => {
+        console.error('Error sending email:', error);
+        toast.error('Error sending email');
       });
 
     //
@@ -54,7 +55,7 @@ function Contact() {
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">
             <m.h1
-              variants={transition("down")}
+              variants={transition('down')}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.4 }}
@@ -64,7 +65,7 @@ function Contact() {
             </m.h1>
 
             <m.h2
-              variants={fadeIn("right")}
+              variants={fadeIn('right')}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.4 }}
@@ -76,7 +77,7 @@ function Contact() {
           </div>
           <div className="mt-10 flex flex-col justify-center lg:flex-row lg:gap-x-8">
             <m.form
-              variants={fadeIn("left")}
+              variants={fadeIn('left')}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.4 }}

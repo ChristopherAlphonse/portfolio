@@ -1,32 +1,10 @@
 import { VitePWA } from 'vite-plugin-pwa';
-import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { splitVendorChunkPlugin } from 'vite';
 
 export default defineConfig(({ mode }) => ({
-  optimizeDeps: {
-    disabled: false
-  },
-  build: {
-    commonjsOptions: {
-      include: []
-    }
-  },
-  test: {
-    css: false,
-    include: ['src/**/__tests__/*'],
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: 'src/setupTests.ts',
-    clearMocks: true,
-    coverage: {
-      provider: 'istanbul',
-      enabled: true,
-      100: true,
-      reporter: ['text', 'lcov'],
-      reportsDirectory: 'coverage'
-    }
-  },
   plugins: [
+    splitVendorChunkPlugin(),
     react(),
     ...(mode !== 'test'
       ? [
