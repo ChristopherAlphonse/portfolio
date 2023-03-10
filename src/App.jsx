@@ -5,15 +5,19 @@ import {
   PageNotFound,
   ProjectDetails
 } from './page/index';
+import { initGA, logPageView } from './FirebaseAnalytics';
 
-import FirebaseAnalytics from './FirebaseAnalytics';
 import { Gallery } from './components/compIndex';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    initGA();
+    logPageView();
+  }, []);
   return (
     <div className="overflow-hidden">
       <BrowserRouter>
-        <FirebaseAnalytics />
         <Routes>
           <Route path="/v1/" element={<HomePage />} />
           <Route path="/" element={<Navigate to="/v1/" />} />

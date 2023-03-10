@@ -1,49 +1,37 @@
 import 'react-toastify/dist/ReactToastify.css';
 
 import { LazyMotion, domAnimation, m } from 'framer-motion';
+import React, { useRef } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { fadeIn, transition } from '../../FramerVariant/variants';
 
-import { Console } from 'console';
+import emailjs from '@emailjs/browser';
 
-const { VITE_SEND_GRID_APKI_KEY } = process.env;
-console.log(VITE_SEND_GRID_APKI_KEY);
+const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
-const sendGrid = require('@sendgrid/mail');
-sendGrid.setApiKey(VITE_SEND_GRID_APKI_KEY);
-
-function Contact() {
+export const Contact = () => {
   const form = useRef();
-  const fullRef = useRef('');
-  const emailRef = useRef('');
-  const subjectRef = useRef('');
-  const messageRef = useRef('');
 
   const sendEmail = e => {
     e.preventDefault();
-    const params = {
-      name: e.target.user_name.value,
-      email: e.target.user_email.value,
-      subject: e.target.user_subject.value,
-      message: e.target.message.value
-    };
-
-    //
 
     emailjs
-      .sendForm(Service, Template, form.current, Key)
-      .then(response => {
-        console.table('Email successfully sent!');
-        toast.success('Email sent successfully!');
-      })
-      .catch(error => {
-        console.error('Error sending email:', error);
-        toast.error('Error sending email');
-      });
-
-    //
-
-    e.target.reset();
+      .sendForm(
+        VITE_SERVICE_ID,
+        VITE_TEMPLATE_ID,
+        form.current,
+        VITE_PUBLIC_KEY
+      )
+      .then(
+        result => {
+          console.log(result.text);
+          toast.success('Your email has been sent!');
+        },
+        error => {
+          console.log(error.text);
+          toast.error('An error occurred. Please try again later');
+        }
+      );
   };
 
   return (
@@ -87,7 +75,6 @@ function Contact() {
             >
               <div className="flex gap-8 ">
                 <input
-                  ref={fullRef}
                   className="input bg-zinc-100 text-zinc-800  "
                   placeholder="Your name"
                   type="text"
@@ -97,7 +84,6 @@ function Contact() {
                 />
                 <input
                   required
-                  ref={emailRef}
                   className="input bg-zinc-100 text-zinc-800"
                   placeholder="Your email"
                   type="email"
@@ -107,7 +93,6 @@ function Contact() {
               </div>
               <input
                 required
-                ref={subjectRef}
                 className="input bg-zinc-100 text-zinc-800"
                 placeholder="Subject"
                 type="text"
@@ -117,7 +102,6 @@ function Contact() {
               <textarea
                 required
                 minLength="20"
-                ref={messageRef}
                 className="textarea bg-zinc-100 text-gray-800"
                 placeholder="Your message"
                 name="message"
@@ -125,7 +109,6 @@ function Contact() {
               />
               <button
                 className="btn btn-lg chi bg-blue-600 hover:bg-blue-600/50 dark:bg-blue-700 dark:hover:bg-blue-700/70"
-                onSubmit={sendEmail}
                 value="send"
                 type="submit"
                 id="button"
@@ -150,5 +133,5 @@ function Contact() {
       </section>
     </LazyMotion>
   );
-}
+};
 export default Contact;
