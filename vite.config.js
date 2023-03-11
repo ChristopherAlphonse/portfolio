@@ -6,10 +6,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
-    define: {
-      __APP_ENV__: env.APP_ENV,
-      process: process.env
-    },
+    // define: {
+    //   __APP_ENV__: env.APP_ENV,
+    //   process: process.env
+    // },
     plugins: [
       react(),
       ...(mode !== 'production'

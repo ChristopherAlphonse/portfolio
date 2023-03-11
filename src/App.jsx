@@ -1,3 +1,5 @@
+import * as dotenv from 'dotenv';
+
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import {
   FeaturedDetails,
@@ -9,6 +11,8 @@ import { initializeGA, logPageView } from './FirebaseAnalytics';
 
 import { Gallery } from './components/compIndex';
 import { useEffect } from 'react';
+
+dotenv.config();
 
 function App() {
   useEffect(() => {

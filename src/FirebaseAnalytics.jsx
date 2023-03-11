@@ -1,8 +1,7 @@
 import ReactGA from 'react-ga';
 
 const initializeGA = () => {
-  // console.log('GA init');
-  const TrackingId = import.meta.env.VITE_TRACKING_ID;
+  const TrackingId = process.env.VITE_TRACKING_ID;
   ReactGA.initialize(TrackingId);
 };
 
