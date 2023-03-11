@@ -1,8 +1,8 @@
-import "../index.css";
+import '../index.css';
 
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import { ResponsiveNavBar } from "../components/compIndex";
+import { ResponsiveNavBar } from '../components/compIndex';
 
 function PageNotFound() {
   return (

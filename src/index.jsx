@@ -5,12 +5,8 @@ import React, { StrictMode, Suspense, startTransition } from 'react';
 import App from './App';
 import { HelmetProvider } from 'react-helmet-async';
 import ReactDOM from 'react-dom/client';
-import ReactGA from 'react-ga4';
 import { ThemeProvider } from './Theme/ThemeContext';
 import { registerSW } from 'virtual:pwa-register';
-
-const TrackingId = import.meta.env.VITE_TRACKING_ID;
-ReactGA.initialize(TrackingId);
 
 registerSW();
 

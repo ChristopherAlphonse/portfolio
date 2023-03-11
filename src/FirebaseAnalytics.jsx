@@ -1,24 +1,28 @@
 import ReactGA from 'react-ga';
 
-export const initGA = () => {
-  console.log('GA init');
-  ReactGA.initialize('UA-238195740-1');
+const initializeGA = () => {
+  // console.log('GA init');
+  const TrackingId = import.meta.env.VITE_TRACKING_ID;
+  ReactGA.initialize(TrackingId);
 };
 
-export const logPageView = () => {
-  console.log(`Logging pageview for ${window.location.pathname}`);
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
+const logPageView = () => {
+  const { pathname } = window.location;
+  console.log(`Logging pageview for ${pathname}`);
+  ReactGA.set({ page: pathname });
+  ReactGA.pageview(pathname);
 };
 
-export const logEvent = (category = '', action = '') => {
+const logEvent = (category = '', action = '') => {
   if (category && action) {
     ReactGA.event({ category, action });
   }
 };
 
-export const logException = (description = '', fatal = false) => {
+const logException = (description = '', fatal = false) => {
   if (description) {
     ReactGA.exception({ description, fatal });
   }
 };
+
+export { initializeGA, logPageView, logEvent, logException };

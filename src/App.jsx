@@ -5,16 +5,17 @@ import {
   PageNotFound,
   ProjectDetails
 } from './page/index';
-import { initGA, logPageView } from './FirebaseAnalytics';
+import { initializeGA, logPageView } from './FirebaseAnalytics';
 
 import { Gallery } from './components/compIndex';
 import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    initGA();
+    initializeGA();
     logPageView();
   }, []);
+
   return (
     <div className="overflow-hidden">
       <BrowserRouter>

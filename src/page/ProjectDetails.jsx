@@ -7,6 +7,7 @@ import { BsArrowReturnLeft } from 'react-icons/bs';
 import { FeaturedData } from '../Data/data';
 import PropagateLoader from 'react-spinners/PropagateLoader';
 import { TfiWorld } from 'react-icons/tfi';
+import { logPageView } from '../FirebaseAnalytics';
 import { transition } from '../FramerVariant/variants';
 import { useParams } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ function ProjectDetails() {
   const { id } = useParams();
 
   useEffect(() => {
+    logPageView();
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
