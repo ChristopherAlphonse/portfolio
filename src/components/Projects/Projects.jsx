@@ -1,7 +1,7 @@
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import { LazyMotion, domAnimation, m } from 'framer-motion';
 
-import { projectsData } from "../../Data/data";
-import { transition } from "../../FramerVariant/variants";
+import { projectsData } from '../../Data/data';
+import { transition } from '../../FramerVariant/variants';
 
 function Projects() {
   return (
@@ -13,16 +13,16 @@ function Projects() {
           </h1>
 
           <m.div
-            variants={transition("right")}
+            variants={transition('right')}
             initial="hidden"
             whileInView="show"
             viewport={{
               once: false,
-              amount: 0.3,
+              amount: 0.3
             }}
             className="flex flex-wrap items-center justify-center text-center md:flex-nowrap"
           >
-            {projectsData.map((project) => {
+            {projectsData.map(project => {
               const { id, name, description, short } = project;
               return (
                 <ul key={id}>
@@ -38,7 +38,7 @@ function Projects() {
                         {description}
                       </p>
                       <a
-                        href={`/projects/${id}`}
+                        href={`https://christopheralphonse.com/project/${id}`}
                         className="inline-flex items-center text-blue-500 hover:text-blue-400 "
                       >
                         Learn More
@@ -68,11 +68,7 @@ function Projects() {
               className="cursor-b cursor-not-allowed "
               aria-label="Work in progress, come back at a later time"
             >
-              <p
-                // href="/projects"
-                className=" text-md ml-7 flex cursor-not-allowed items-center  justify-center rounded-3xl px-6 py-3 text-center text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500 sm:px-6 sm:py-1"
-              >
-                {" "}
+              <p className=" text-md ml-7 flex cursor-not-allowed items-center  justify-center  px-6 py-3 text-center text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500 sm:px-6 sm:py-1">
                 Show More
               </p>
             </button>

@@ -33,14 +33,14 @@ function TempHero({ featured }) {
                   <a
                     href={view}
                     target="_blank"
-                    className="bb  md:text-md inline-flex justify-center rounded-3xl text-center text-sm  text-zinc-50 dark:text-zinc-500 dark:hover:text-white sm:px-6 sm:py-2 "
+                    className="bb  md:text-md inline-flex justify-center  text-center text-sm  text-zinc-50 dark:text-zinc-500 dark:hover:text-white sm:px-6 sm:py-2 "
                     rel="noreferrer"
                   >
                     VIEW
                   </a>
                   <a
-                    href={`https://christopheralphonse.com/project/${id}`}
-                    className=" text-md ml-7  inline-flex rounded-3xl text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500 sm:px-6 sm:py-2 "
+                    href={`https://christopheralphonse.com/featured/${id}`}
+                    className=" text-md ml-7  inline-flex  text-sm text-gray-50 hover:text-zinc-300 dark:hover:text-zinc-500 sm:px-6 sm:py-2 "
                   >
                     LEARN MORE
                   </a>

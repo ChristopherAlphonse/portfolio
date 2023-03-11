@@ -25,7 +25,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
           <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/projects/" element={<Gallery />} />
-          <Route path="/projects/:id" element={<FeaturedDetails />} />
+          <Route path="/featured/:id" element={<FeaturedDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
