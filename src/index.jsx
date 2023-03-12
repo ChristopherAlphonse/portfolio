@@ -1,6 +1,6 @@
 import './index.css';
 
-import React, { StrictMode, Suspense, startTransition } from 'react';
+import React, { StrictMode, Suspense } from 'react';
 
 import App from './App';
 import { HelmetProvider } from 'react-helmet-async';

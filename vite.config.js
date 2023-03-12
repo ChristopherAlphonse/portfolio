@@ -1,47 +1,34 @@
-import { defineConfig, loadEnv } from 'vite';
+import * as path from 'path';
 
 import { VitePWA } from 'vite-plugin-pwa';
+import { defineConfig } from 'vite';
+import manifest from './manifest.json';
 import react from '@vitejs/plugin-react';
 
-export default defineConfig(({ command, mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
-  return {
-    // define: {
-    //   __APP_ENV__: env.APP_ENV,
-    //   process: process.env
-    // },
-    plugins: [
-      react(),
-      ...(mode !== 'production'
-        ? [
-            VitePWA({
-              registerType: 'autoUpdate',
-              includeAssets: [
-                'favicon.png',
-                'robots.txt',
-                'apple-touch-icon.png',
-                'icons/*.svg',
-                'fonts/*.woff2'
-              ],
-              manifest: {
-                theme_color: '#BD34FE',
-                icons: [
-                  {
-                    src: '/logo192.webp',
-                    sizes: '192x192',
-                    type: 'image/webp',
-                    purpose: 'any maskable'
-                  },
-                  {
-                    src: '/logo512.webp',
-                    sizes: '512x512',
-                    type: 'image/png'
-                  }
-                ]
-              }
-            })
-          ]
-        : [])
-    ]
-  };
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    VitePWA({
+      manifest,
+      includeAssets: [
+        'favicon.svg',
+        'favicon.ico',
+        'robots.txt',
+        'apple-touch-icon.png'
+      ],
+      // switch to "true" to enable sw on development
+      devOptions: {
+        enabled: false
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html}', '**/*.{svg,png,jpg,gif}']
+      }
+    })
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  }
 });
