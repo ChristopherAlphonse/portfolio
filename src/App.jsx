@@ -1,18 +1,9 @@
-import * as dotenv from 'dotenv';
-
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import {
-  FeaturedDetails,
-  HomePage,
-  PageNotFound,
-  ProjectDetails
-} from './page/index';
-import { initializeGA, logPageView } from './FirebaseAnalytics';
-
-import { Gallery } from './components/compIndex';
 import { useEffect } from 'react';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
-dotenv.config();
+import { initializeGA, logPageView } from './FirebaseAnalytics';
+import { Gallery } from './components/compIndex';
+import { FeaturedDetails, HomePage, PageNotFound, ProjectDetails } from './page/index';
 
 function App() {
   useEffect(() => {

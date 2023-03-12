@@ -1,9 +1,9 @@
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 
-import DownBtn from '../Btn/DownBtn';
-import { fadeIn } from '../../FramerVariant/variants';
-import files from '../../../public/files/resume.pdf';
 import { logEvent } from '../../FirebaseAnalytics';
+import { fadeIn } from '../../FramerVariant/variants';
+import files from '../../files/resume.pdf';
+import DownBtn from '../Btn/DownBtn';
 
 function Hero() {
   const log = () => {
@@ -44,54 +44,32 @@ function Hero() {
                 viewport={{ once: false, amount: 0.6 }}
                 className=" max-w-6xl pt-4 pb-8 text-center text-xs text-zinc-500 dark:text-zinc-600 sm:text-sm md:pt-6 md:pb-12 md:text-lg lg:text-left"
               >
-                I specialize in{' '}
-                <span className="text-blue-600"> designing</span> and{' '}
-                <span className="text-blue-600"> building </span> amazing
-                digital experiences that are both{' '}
-                <span className="text-blue-600">functional</span> and{' '}
-                <span className="text-blue-600"> engaging</span>
+                I specialize in <span className="text-blue-600"> designing</span> and{' '}
+                <span className="text-blue-600"> building </span> amazing digital experiences that are both{' '}
+                <span className="text-blue-600">functional</span> and <span className="text-blue-600"> engaging</span>
                 .
-                <br /> At the moment, I&apos;m concentrating on{' '}
-                <span className="text-blue-600"> learning</span> new
-                technologies and improving{' '}
-                <span className="text-blue-600"> human-centered </span>
+                <br /> At the moment, I&apos;m concentrating on <span className="text-blue-600"> learning</span> new
+                technologies and improving <span className="text-blue-600"> human-centered </span>
                 services .
               </m.p>
-              <div className="flex">
+
+              <div className="mt-6">
                 <a
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     window.location.href = files;
-                    logEvent(
-                      'Resume Download',
-                      'User clicked on the resume download button'
-                    );
+                    logEvent('Resume Download', 'User clicked on the resume download button');
                   }}
-                  className="btn-holder"
+                  className="inline-flex items-center justify-center w-full px-4 py-2.5 overflow-hidden text-sm text-white transition-colors duration-300 bg-gray-800 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80 cursor-pointer"
                 >
-                  <button
-                    type="button"
-                    className=" hero-btn hero-btn-3 hover-border-2 hover-border-9 focus-none  "
-                  >
-                    <span className="my-resume">My Resume</span>
-                  </button>
+                  <span className="mx-2">My Resume</span>
                 </a>
+
                 <a
                   href="#contact"
-                  className="btn-holder   "
-                  onClick={e => {
-                    logEvent(
-                      'My Contact',
-                      'User clicked on the My Contact button'
-                    );
-                  }}
+                  className="inline-flex items-center justify-center w-full px-4 py-2.5 mt-4 overflow-hidden text-sm text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
                 >
-                  <button
-                    type="button"
-                    className=" hero-btn hero-btn-3 hover-border-2 focus-none "
-                  >
-                    <span href="#contact">My Contact</span>
-                  </button>
+                  <span className="mx-2">My Contact</span>
                 </a>
               </div>
             </div>

@@ -150,14 +150,14 @@
 .hero-btn.hover-border-9::before {
   bottom: 0;
   left: 0;
-  border-bottom: 1px solid #ffffff;
-  border-left: 1px solid #fbfbfb;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000;
 }
 .hero-btn.hover-border-9::after {
   top: 0;
   right: 0;
-  border-top: 1px solid #ffffff;
-  border-right: 1px solid#ffffff;
+  border-top: 1px solid #000;
+  border-right: 1px solid#000;
 }
 .hero-btn.hover-border-2:hover::before,
 .hero-btn.hover-border-2:hover::after {

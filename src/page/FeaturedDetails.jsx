@@ -1,14 +1,15 @@
-import { Footer, ResponsiveNavBar } from '../components/compIndex';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { LazyMotion, domAnimation, m } from 'framer-motion';
 import { Suspense, useEffect, useState } from 'react';
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { BsArrowReturnLeft } from 'react-icons/bs';
-import { FeaturedData } from '../Data/data';
-import PropagateLoader from 'react-spinners/PropagateLoader';
 import { TfiWorld } from 'react-icons/tfi';
-import { transition } from '../FramerVariant/variants';
 import { useParams } from 'react-router-dom';
+import PropagateLoader from 'react-spinners/PropagateLoader';
+
+import { LazyMotion, domAnimation, m } from 'framer-motion';
+
+import { FeaturedData } from '../Data/data';
+import { transition } from '../FramerVariant/variants';
+import { Footer, ResponsiveNavBar } from '../components/compIndex';
 
 function FeaturedDetails() {
   const [loading, setLoading] = useState(false);
@@ -23,9 +24,7 @@ function FeaturedDetails() {
   return (
     <HelmetProvider>
       <Helmet prioritizeSeoTags>
-        <title>
-          Christopher Alphonse | {id} | Full-Stack Developer | Boston, MA
-        </title>
+        <title>Christopher Alphonse | {id} | Full-Stack Developer | Boston, MA</title>
       </Helmet>
       <div className="">
         {loading ? (
@@ -40,7 +39,7 @@ function FeaturedDetails() {
               textAlign: 'center',
               minHeight: '100vh',
               width: '100%',
-              background: ' #3f3f46 '
+              background: ' #3f3f46 ',
             }}
           />
         ) : (
@@ -49,7 +48,7 @@ function FeaturedDetails() {
               <ResponsiveNavBar />
               <LazyMotion features={domAnimation}>
                 <section className="containerr flex h-full items-center justify-center bg-zinc-800  py-32 dark:bg-zinc-50 lg:h-[100vh] ">
-                  {FeaturedData.filter(z => z.id === id).map(z => (
+                  {FeaturedData.filter((z) => z.id === id).map((z) => (
                     <section key={z.id}>
                       <div className="container mx-auto px-5 py-24">
                         <m.h2
@@ -78,23 +77,15 @@ function FeaturedDetails() {
                                 <span>{z.stack}</span>
                               </span>
                             </div>
-                            <button
-                              type="button"
-                              className="mb-5 bg-slate-500 px-6"
-                            >
+                            <button type="button" className="mb-5 bg-slate-500 px-6">
                               {z.status}
                             </button>
-                            <p className="leading-relaxed text-zinc-500 md:text-lg">
-                              {z.description2}
-                            </p>
+                            <p className="leading-relaxed text-zinc-500 md:text-lg">{z.description2}</p>
                             <div className="mt-2 mb-5 flex items-center border-b-2 border-zinc-100 pb-5" />
                             <div className="flex">
                               <span className="ml-1 flex items-center space-x-2 py-1 pl-3  text-blue-600 transition-all hover:text-blue-600/50 dark:text-blue-700 dark:hover:text-blue-700/70">
                                 <a href={z.view} className="flex items-center">
-                                  <TfiWorld />{' '}
-                                  <span className="ml-2 items-center text-xs sm:text-sm">
-                                    V I S I T
-                                  </span>
+                                  <TfiWorld /> <span className="ml-2 items-center text-xs sm:text-sm">V I S I T</span>
                                 </a>
                               </span>
                               <a
@@ -102,9 +93,7 @@ function FeaturedDetails() {
                                 className="btn btn-md md:btn-lg  ml-auto flex items-center rounded border-0 bg-blue-600  py-1  px-9 text-white transition-all hover:bg-blue-600/50 dark:bg-blue-700 dark:hover:bg-blue-700/70"
                               >
                                 <BsArrowReturnLeft />{' '}
-                                <span className="ml-2 items-center text-xs sm:text-sm">
-                                  R E T U R N
-                                </span>
+                                <span className="ml-2 items-center text-xs sm:text-sm">R E T U R N</span>
                               </a>
                             </div>
                           </div>

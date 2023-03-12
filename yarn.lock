@@ -9552,11 +9552,6 @@ which@^2.0.1, which@^2.0.2:
   dependencies:
     isexe "^2.0.0"
 
-why@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/why/-/why-0.6.2.tgz#bab014b3c7497542b1acbae48a6f115b1d0d8fa1"
-  integrity sha512-7M43dnp3p+5HRMYS5ImUftNAQQSIZmwnAd8yyjEj3cpK+6nbBfikwTvxXRUFvydaPJmgu+EofRnJKNDMbIuzXg==
-
 wide-align@^1.1.0:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/wide-align/-/wide-align-1.1.5.tgz#df1d4c206854369ecf3c9a4898f1b23fbd9d15d3"

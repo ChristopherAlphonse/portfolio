@@ -1,5 +1,9 @@
-import '../index.css';
+import { Suspense, useEffect, useState } from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import PropagateLoader from 'react-spinners/PropagateLoader';
 
+import { Profile } from '../assets/index';
+import Featured from '../components/Featured/Featured';
 import {
   About,
   BackTopBtn,
@@ -8,14 +12,9 @@ import {
   Hero,
   Projects,
   ResponsiveNavBar,
-  TimeLine
+  TimeLine,
 } from '../components/compIndex';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Suspense, useEffect, useState } from 'react';
-
-import Featured from '../components/Featured/Featured';
-import { Profile } from '../assets/index';
-import PropagateLoader from 'react-spinners/PropagateLoader';
+import '../index.css';
 
 function HomePage() {
   const [loading, setLoading] = useState(false);
@@ -49,7 +48,7 @@ function HomePage() {
               textAlign: 'center',
               minHeight: '100vh',
               width: '100%',
-              background: '#18181b'
+              background: '#18181b',
             }}
           />
         ) : (
