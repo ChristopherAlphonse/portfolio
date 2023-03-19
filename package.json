@@ -120,7 +120,7 @@
     "vite": "^4.1.4",
     "vite-plugin-pwa": "^0.14.4",
     "web-vitals": "^3.3.0",
-    "webpack": "^5.76.1",
+    "webpack": "^5.76.2",
     "whatwg-fetch": "3.6.2",
     "workbox-build": "6.5.4",
     "workbox-window": "6.5.4"
