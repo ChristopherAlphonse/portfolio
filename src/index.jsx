@@ -1,11 +1,10 @@
-import './index.css';
-
 import React, { StrictMode, Suspense } from 'react';
+import ReactDOM from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
 
 import App from './App';
-import { HelmetProvider } from 'react-helmet-async';
-import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from './Theme/ThemeContext';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,5 +15,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Suspense>
       </ThemeProvider>
     </HelmetProvider>
-  </StrictMode>
+  </StrictMode>,
 );
