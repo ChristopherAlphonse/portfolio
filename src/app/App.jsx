@@ -2,12 +2,11 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, useLocation } from 'react-router-dom';
 
 import '../../src/index.css';
+import HeaderMain from '../components/header/Header';
 import AnimatedCursor from '../hooks/AnimatedCursor';
 import withRouter from '../hooks/withRouter';
 import '../main.css';
 import AppRoutes from './AppRoutes';
-
-// import Headermain from "../header";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -32,7 +31,7 @@ function App() {
         />
       </div>
       <ScrollToTop>
-        {/* <Headermain /> */}
+        <HeaderMain />
         <AppRoutes />
       </ScrollToTop>
     </BrowserRouter>

@@ -5,6 +5,7 @@ import PropagateLoader from 'react-spinners/PropagateLoader';
 
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 
+import { meta } from '../../../src/Data/compData';
 import DataBase from '../../Data/jumbo.db.json';
 import { transition } from '../../FramerVariant/variants';
 import ye from './ye.jpg';
@@ -21,29 +22,7 @@ function Gallery() {
 
   return (
     <HelmetProvider>
-      <Helmet prioritizeSeoTags>
-        <title>Christopher Alphonse | Full-Stack Developer | Boston, MA</title>
-        <meta
-          name="keywords"
-          content="Christopher Alphonse, full-stack developer, Boston, MA, software engineer, web development, front-end development, back-end development"
-        />
-        <meta
-          name="description"
-          content="Christopher Alphonse is a full-stack developer based in Boston, MA. With experience in front-end and back-end development, Christopher is skilled in using technologies like JavaScript, React, and Node.js to build scalable and effective web applications. Check out his portfolio to learn more about his work and skills."
-        />
-        <meta property="twitter:image" content="projects" />
-        <meta name="author" content="Christopher Alphonse" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://christopheralphonse.com/projects" />
-        <meta property="og:url" href="https://christopheralphonse.com/projects" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Christopher Alphonse" />
-        <meta property="twitter:card" content="summary" />
-        <meta property="twitter:site" content="christopheralphonse" />
-        <meta property="twitter:creator" content="Christopher Alphonse" />
-        <meta name="copyright" content="Copyright 2022. All rights reserved for Christopher Alphonse" />
-      </Helmet>
+      <Helmet prioritizeSeoTags></Helmet>
       <Suspense fallback={<div />}>
         {loading ? (
           <PropagateLoader
@@ -64,7 +43,7 @@ function Gallery() {
           <>
             <Suspense fallback={<div />}>
               <LazyMotion features={domAnimation}>
-                <section className="body-font text-gray-600">
+                <section className=" body-font text-gray-600">
                   <div className="container mx-auto px-5 py-24">
                     <div className="mb-20 flex w-full flex-col text-center">
                       <h1 className="title-font mb-4 text-2xl font-medium text-gray-900 sm:text-3xl">

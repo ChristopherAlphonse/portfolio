@@ -7,6 +7,16 @@ module.exports = {
       primary: 'Marcellus',
       body: 'Nunito Sans',
     },
+    fontSize: {
+      normal: 20,
+      xl: 64,
+      lg: 30,
+    },
+    letterSpacing: {
+      wide: '.3em',
+      wider: '.5em',
+      widest: '.7em',
+    },
     container: {
       padding: {
         DEFAULT: '.9rem',

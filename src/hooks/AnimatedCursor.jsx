@@ -244,7 +244,7 @@ function CursorCore({
   // Cursor Styles
   const styles = {
     cursorInner: {
-      zIndex: 999,
+      zIndex: 9999999,
       display: 'block',
       position: 'fixed',
       borderRadius: '50%',
@@ -256,14 +256,14 @@ function CursorCore({
       transition: 'opacity 0.15s ease-in-out, transform 0.25s ease-in-out',
     },
     cursorOuter: {
-      zIndex: 999,
+      zIndex: 99999999,
       display: 'block',
       position: 'fixed',
       borderRadius: '50%',
       pointerEvents: 'none',
       width: outerSize,
       height: outerSize,
-      backgroundColor: '#000',
+      backgroundColor: '#00000090',
       transition: 'opacity 0.15s ease-in-out, transform 0.15s ease-in-out',
       willChange: 'transform',
       ...(outerStyle && outerStyle),

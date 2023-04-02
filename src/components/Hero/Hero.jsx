@@ -25,28 +25,20 @@ function Hero() {
           <div className="container mx-auto h-full">
             <div className="flex h-full items-center pt-8">
               <div className="flex flex-1 flex-col items-center lg:items-center">
-                <m.p
-                  variants={fadeIn('right')}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: false, amount: 0.7 }}
-                  className="text-md mb-[22px] text-lg text-blue-600"
-                ></m.p>
-
-                <h1 className="text-normal title text-black">
+                <h1 className="md:text-xl text-lg title text-black">
                   {introData.title}
-                  <span className="title text-normal ">{introData.name} </span>
+                  <span className="title md:text-xl text-lg ">{introData.name} </span>
                 </h1>
                 <h1 className="span text-black"> {introData.span}</h1>
-                <p className="mb-1x text-normal  text-center p">{introData.description}</p>
+                <p className="mt-2 text-normal  text-center p">{introData.description}</p>
                 <div className="intro_btn-action ">
-                  <Link to="/portfolio" className="text_2 it menu_item">
+                  <Link to="/portfolio" className="text_2  menu_item">
                     <div id="button_p" className="ac_btn btn ">
                       My Portfolio
                     </div>
                   </Link>
                   <Link
-                    className="it menu_item"
+                    className=" menu_item"
                     to="/contact"
                     onClick={(e) => {
                       e.preventDefault();

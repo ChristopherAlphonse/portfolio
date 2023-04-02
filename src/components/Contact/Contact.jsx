@@ -1,137 +1,163 @@
+import React, { useState } from 'react';
+import { Alert, Col } from 'react-bootstrap';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { HiOutlineChevronDown } from 'react-icons/hi';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { LazyMotion, domAnimation, m } from 'framer-motion';
-import React, { useRef } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import { fadeIn, transition } from '../../FramerVariant/variants';
+import { contactConfig, meta } from '../../../src/Data/compData';
 
-import emailjs from '@emailjs/browser';
+const ContactSubject = ['Freelance', 'Website Critics', 'Job Offer'];
 
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
-export const Contact = () => {
-  const form = useRef();
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+    name: '',
+    message: '',
+    subject: '',
+    loading: false,
+    show: false,
+    alertMessage: '',
+    variant: undefined,
+  });
 
-  const sendEmail = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    setFormData({ ...formData, loading: true });
 
-    emailjs
-      .sendForm(
-        VITE_SERVICE_ID,
-        VITE_TEMPLATE_ID,
-        form.current,
-        VITE_PUBLIC_KEY
-      )
-      .then(
-        result => {
-          console.log(result.text);
-          toast.success('Your email has been sent!');
-        },
-        error => {
-          console.log(error.text);
-          toast.error('An error occurred. Please try again later');
-        }
-      );
+    const { email, name, message, subject } = formData;
+    const templateParams = {
+      from_name: email,
+      user_name: name,
+      to_name: contactConfig.EMAIL,
+      message: message,
+      SUBJECT: subject || ContactSubject,
+    };
+
+    emailjs.send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, templateParams, VITE_PUBLIC_KEY).then(
+      (result) => {
+        console.log(result.text);
+        setFormData({
+          email,
+          name,
+          message,
+          subject,
+          loading: false,
+          show: true,
+          alertMessage: 'SUCCESS! Thank you for your message',
+          variant: 'success',
+        });
+      },
+      (error) => {
+        console.log(error.text);
+        setFormData({
+          email,
+          name,
+          message,
+          subject,
+          loading: false,
+          show: true,
+          alertMessage: `Failed to send! ${error.text}`,
+          variant: 'danger',
+        });
+        document.getElementsByClassName('co_alert')[0].scrollIntoView();
+      },
+    );
   };
-
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
   return (
-    <LazyMotion features={domAnimation}>
+    <HelmetProvider>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{meta.title} | Contact</title>
+        <meta name="description" content={meta.description} />
+      </Helmet>
+      <Alert
+        variant={formData.variant}
+        className={`rounded-0 co_alert ${formData.show ? 'd-block z-50' : 'd-none'}`}
+        onClose={() => setFormData({ show: false })}
+        dismissible
+      >
+        <p className="my-0">{formData.alertMessage}</p>
+      </Alert>
       <section
         id="contact"
         className="containerr flex h-[100vh] items-center overflow-hidden bg-zinc-800 py-32  dark:bg-white "
       >
         <div className="container mx-auto">
           <div className="flex flex-col items-center text-center">
-            <m.h1
-              variants={transition('down')}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.4 }}
-              className="  text-3xl dark:text-zinc-800 md:text-5xl"
-            >
-              Contact me
-            </m.h1>
-
-            <m.h2
-              variants={fadeIn('right')}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.4 }}
-              className="title-para py-2 font-body font-bold text-zinc-500 dark:text-zinc-600"
-            >
-              Feel free to reach out to me with any questions or inquiries.
-              I`&apos;ll get back to you as soon as possible.
-            </m.h2>
+            <h2 className="before:content-about relative mb-3 font-primary text-4xl font-medium before:absolute before:-top-[2rem] before:hidden before:opacity-40 dark:text-zinc-900  md:text-6xl  lg:font-extrabold before:lg:block xl:text-8xl ">
+              About Me
+            </h2>
+            <h2 className=" py-2 font-body font-bold text-zinc-500 dark:text-zinc-600">
+              Feel free to reach out to me with any questions or inquiries. I&apos;ll get back to you as soon as
+              possible.
+            </h2>
           </div>
           <div className="mt-10 flex flex-col justify-center lg:flex-row lg:gap-x-8">
-            <m.form
-              variants={fadeIn('left')}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.4 }}
-              ref={form}
-              onSubmit={sendEmail}
-              className="relative w-full max-w-[780px] space-y-9 "
-            >
+            <form onSubmit={handleSubmit} className="relative w-full max-w-[780px] space-y-9 ">
               <div className="flex gap-8 ">
                 <input
-                  className="input bg-zinc-100 text-zinc-800  "
+                  className="input  text-zinc-800  "
                   placeholder="Your name"
                   type="text"
                   name="user_name"
                   id="user_name"
                   required
+                  value={formData.name || ''}
+                  onChange={handleChange}
                 />
                 <input
-                  required
-                  className="input bg-zinc-100 text-zinc-800"
+                  className="input  text-zinc-800"
                   placeholder="Your email"
                   type="email"
                   name="user_email"
                   id="user_email"
+                  value={formData.email || ''}
+                  required
+                  onChange={handleChange}
                 />
               </div>
-              <input
+
+              <select
+                className="block appearance-none w-full  border border-gray-900 hover:border-gray-500 px-4 py-4 mt-4 mb-0 pr-8 rounded  leading-tight shadow-none border-dotted"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
                 required
-                className="input bg-zinc-100 text-zinc-800"
-                placeholder="Subject"
-                type="text"
-                name="user_subject"
-                id="user_subject"
-              />
+              >
+                {ContactSubject.map((subject) => (
+                  <option key={subject} value={subject}>
+                    {subject}
+                  </option>
+                ))}
+              </select>
+
               <textarea
                 required
                 minLength="20"
-                className="textarea bg-zinc-100 text-gray-800"
+                className="textarea  text-gray-800 "
                 placeholder="Your message"
                 name="message"
                 id="message"
+                value={formData.message}
+                onChange={handleChange}
               />
-              <button
-                className="btn btn-lg chi bg-blue-600 hover:bg-blue-600/50 dark:bg-blue-700 dark:hover:bg-blue-700/70"
-                value="send"
-                type="submit"
-                id="button"
-              >
-                Send message
+              <button className="btn ac_btn text-black px-5" type="submit">
+                {formData.loading ? 'Sending...' : 'Send'}
               </button>
-              <ToastContainer
-                position="bottom-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="dark"
-              />
-            </m.form>
+            </form>
           </div>
         </div>
       </section>
-    </LazyMotion>
+    </HelmetProvider>
   );
 };
 export default Contact;
