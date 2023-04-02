@@ -1,8 +1,10 @@
+import { useMemo } from 'react';
+
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 import { transition } from '../../FramerVariant/variants';
-import { useMemo } from 'react';
 
+// eslint-disable-next-line react/prop-types
 function TempHero({ featured }) {
   const featuredMemoized = useMemo(() => featured, [featured]);
   const { id, image, description, stack, view, name } = featuredMemoized;
@@ -23,9 +25,7 @@ function TempHero({ featured }) {
           <div className="container mx-auto">
             <div className="-mx-4 -mb-10 flex flex-wrap text-center">
               <div className="mb-10 px-4 sm:w-1/2">
-                <div className="mb-1 text-7xl uppercase xs:mb-9 sm:text-5xl">
-                  {name}
-                </div>
+                <div className="mb-1 text-7xl uppercase xs:mb-9 sm:text-5xl">{name}</div>
                 <div className="title-font text-md lg:z-9 z-50 mt-6 mb-4 flex items-center bg-gray-900 p-5 text-zinc-100  shadow-md dark:bg-zinc-50 dark:text-zinc-800 lg:relative lg:left-20 lg:text-lg">
                   {description}
                 </div>

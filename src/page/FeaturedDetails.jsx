@@ -9,7 +9,6 @@ import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 import { FeaturedData } from '../Data/data';
 import { transition } from '../FramerVariant/variants';
-import { Footer, ResponsiveNavBar } from '../components/compIndex';
 
 function FeaturedDetails() {
   const [loading, setLoading] = useState(false);
@@ -45,7 +44,6 @@ function FeaturedDetails() {
         ) : (
           <>
             <Suspense fallback={<div />}>
-              <ResponsiveNavBar />
               <LazyMotion features={domAnimation}>
                 <section className="containerr flex h-full items-center justify-center bg-zinc-800  py-32 dark:bg-zinc-50 lg:h-[100vh] ">
                   {FeaturedData.filter((z) => z.id === id).map((z) => (
@@ -106,8 +104,7 @@ function FeaturedDetails() {
             </Suspense>
           </>
         )}
-      </div>{' '}
-      <Footer />
+      </div>
     </HelmetProvider>
   );
 }

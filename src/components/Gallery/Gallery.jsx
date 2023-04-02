@@ -1,13 +1,13 @@
-import { Footer, ResponsiveNavBar } from "../compIndex";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { LazyMotion, domAnimation, m } from "framer-motion";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import PropagateLoader from 'react-spinners/PropagateLoader';
 
-import DataBase from "../../Data/jumbo.db.json";
-import { Link } from "react-router-dom";
-import PropagateLoader from "react-spinners/PropagateLoader";
-import { transition } from "../../FramerVariant/variants";
-import ye from "./ye.jpg";
+import { LazyMotion, domAnimation, m } from 'framer-motion';
+
+import DataBase from '../../Data/jumbo.db.json';
+import { transition } from '../../FramerVariant/variants';
+import ye from './ye.jpg';
 
 function Gallery() {
   const [loading, setLoading] = useState(false);
@@ -35,20 +35,14 @@ function Gallery() {
         <meta name="author" content="Christopher Alphonse" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://christopheralphonse.com/projects" />
-        <meta
-          property="og:url"
-          href="https://christopheralphonse.com/projects"
-        />
+        <meta property="og:url" href="https://christopheralphonse.com/projects" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Christopher Alphonse" />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:site" content="christopheralphonse" />
         <meta property="twitter:creator" content="Christopher Alphonse" />
-        <meta
-          name="copyright"
-          content="Copyright 2022. All rights reserved for Christopher Alphonse"
-        />
+        <meta name="copyright" content="Copyright 2022. All rights reserved for Christopher Alphonse" />
       </Helmet>
       <Suspense fallback={<div />}>
         {loading ? (
@@ -57,19 +51,18 @@ function Gallery() {
             size={20}
             speedMultiplier={2}
             cssOverride={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              textAlign: "center",
-              minHeight: "100vh",
-              width: "100%",
-              background: " #3f3f46 ",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'center',
+              minHeight: '100vh',
+              width: '100%',
+              background: ' #3f3f46 ',
             }}
           />
         ) : (
           <>
             <Suspense fallback={<div />}>
-              <ResponsiveNavBar />
               <LazyMotion features={domAnimation}>
                 <section className="body-font text-gray-600">
                   <div className="container mx-auto px-5 py-24">
@@ -78,13 +71,10 @@ function Gallery() {
                         Welcome & Thank you for visiting
                       </h1>
                       <p className="mx-auto text-base leading-relaxed lg:w-2/3">
-                        These projects are a selection of projects that have
-                        been created or are in development. The projects include
-                        a variety of web development projects, such as an
-                        e-commerce store, a workflow management system, and a
-                        note taking app, as well as a theme for Visual Studio
-                        Code. Each project includes a brief description and
-                        information about the technologies used.
+                        These projects are a selection of projects that have been created or are in development. The
+                        projects include a variety of web development projects, such as an e-commerce store, a workflow
+                        management system, and a note taking app, as well as a theme for Visual Studio Code. Each
+                        project includes a brief description and information about the technologies used.
                       </p>
                     </div>
                     <div className="-m-4 flex flex-wrap">
@@ -92,7 +82,7 @@ function Gallery() {
                         const { id, name, short, description, view } = items;
                         return (
                           <m.div
-                            variants={transition("down")}
+                            variants={transition('down')}
                             initial="hidden"
                             whileInView="show"
                             viewport={{ once: false, amount: 0.7 }}
@@ -120,12 +110,8 @@ function Gallery() {
                                   <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-zinc-300">
                                     {short}
                                   </h2>
-                                  <h1 className="title-font mb-3 text-lg font-medium text-gray-400">
-                                    {name}
-                                  </h1>
-                                  <p className="leading-relaxed text-zinc-50">
-                                    {description}
-                                  </p>
+                                  <h1 className="title-font mb-3 text-lg font-medium text-gray-400">{name}</h1>
+                                  <p className="leading-relaxed text-zinc-50">{description}</p>
                                 </div>
                               </div>
                             </Link>
@@ -140,7 +126,6 @@ function Gallery() {
           </>
         )}
         )
-        <Footer />
       </Suspense>
     </HelmetProvider>
   );
