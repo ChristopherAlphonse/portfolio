@@ -1,16 +1,16 @@
-import React from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
+import FeaturedDetails from '../page/FeaturedDetails';
 import Gallery from '../components/Gallery/Gallery';
 import Home from '../components/Hero/Hero';
+import PageNotFound from '../page/pageNotFound';
+import ProjectDetails from '../page/ProjectDetails';
+import React from 'react';
 import TimeLine from '../components/Timeline/TimeLine';
 import withRouter from '../hooks/withRouter';
-import FeaturedDetails from '../page/FeaturedDetails';
-import ProjectDetails from '../page/ProjectDetails';
-import PageNotFound from '../page/pageNotFound';
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -28,7 +28,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
 
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="/v3/" element={<Home />} />
+        <Route path="/v3j/" element={<Home />} />
         <Route path="/" element={<Navigate to="/v3/" />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/project/:id" element={<ProjectDetails />} />
