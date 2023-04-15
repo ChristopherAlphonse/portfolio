@@ -20,7 +20,6 @@ const AnimatedRoutes = withRouter(({ location }) => (
         enter: 400,
         exit: 400,
       }}
-      classNames="page"
       unmountOnExit
     >
       <Routes location={location}>
@@ -28,7 +27,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
 
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="/v3j/" element={<Home />} />
+        <Route path="/v3/" element={<Home />} />
         <Route path="/" element={<Navigate to="/v3/" />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path="/project/:id" element={<ProjectDetails />} />

@@ -1,9 +1,10 @@
+import './style.css';
+
 import React, { useState } from 'react';
 import { VscClose, VscGrabber } from 'react-icons/vsc';
-import { Link } from 'react-router-dom';
-
 import { logoText, socialProfiles } from '../../Data/compData';
-import './style.css';
+
+import { Link } from 'react-router-dom';
 
 const date = new Date();
 let year = date.getFullYear();
@@ -42,22 +43,22 @@ const HeaderMain = () => {
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                    <Link onClick={handleToggle} to="/" className="my-3 it tracking-widest">
+                    <Link onClick={handleToggle} to="/" className="my-3 it tracking-wide">
                       Home
                     </Link>
                   </li>
                   <li className="menu_item">
-                    <Link onClick={handleToggle} to="/projects" className="my-3 it tracking-widest ">
+                    <Link onClick={handleToggle} to="/projects" className="my-3 it tracking-wide ">
                       Portfolio
                     </Link>
                   </li>
                   <li className="menu_item">
-                    <Link onClick={handleToggle} to="/about" className="my-3 it tracking-widest">
+                    <Link onClick={handleToggle} to="/about" className="my-3 it tracking-wide">
                       About
                     </Link>
                   </li>
                   <li className="menu_item">
-                    <Link onClick={handleToggle} to="/work" className="my-3 it tracking-widest">
+                    <Link onClick={handleToggle} to="/work" className="my-3 it tracking-wide">
                       Work
                     </Link>
                   </li>
@@ -67,7 +68,7 @@ const HeaderMain = () => {
                     </Link>
                   </li>
                   <li className="menu_item">
-                    <Link onClick={handleToggle} to="/contact" className="my-3 it tracking-widest">
+                    <Link onClick={handleToggle} to="/contact" className="my-3 it tracking-wide">
                       Contact
                     </Link>
                   </li>
