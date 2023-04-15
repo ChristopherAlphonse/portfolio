@@ -1,13 +1,11 @@
-import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
-
-import { LazyMotion, domAnimation, m } from 'framer-motion';
-
-import { introData, meta } from '../../Data/compData';
-import { fadeIn } from '../../FramerVariant/variants';
-import files from '../../files/resume.pdf';
-import DownBtn from '../Btn/DownBtn';
 import './st.css';
+
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { LazyMotion, domAnimation, m } from 'framer-motion';
+import { introData, meta } from '../../Data/compData';
+
+import DownBtn from '../Btn/DownBtn';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -32,19 +30,12 @@ function Hero() {
                 <h1 className="span text-black"> {introData.span}</h1>
                 <p className="mt-2 text-normal  text-center p">{introData.description}</p>
                 <div className="intro_btn-action ">
-                  <Link to="/portfolio" className="text_2  menu_item">
+                  <Link to="/projects" className="text_2  menu_item">
                     <div id="button_p" className="ac_btn btn ">
                       My Portfolio
                     </div>
                   </Link>
-                  <Link
-                    className=" menu_item"
-                    to="/contact"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      window.location.href = files;
-                    }}
-                  >
+                  <Link className=" menu_item" to="/contact">
                     <div id="button_h" className="ac_btn btn text-black">
                       Contact Me
                       <div className="ring three"></div>

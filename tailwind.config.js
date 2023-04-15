@@ -1,10 +1,6 @@
-import flowbitePlugin from 'flowbite/plugin';
-import prettierPlugin from 'prettier-plugin-tailwindcss';
+/** @type {import('tailwindcss').Config} */
 
-/**
- * @type {import('tailwindcss').Config}
- */
-const tailwindConfig = {
+export default {
   content: ['./src/**/*.{js,jsx,ts,tsx,md,html}', 'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
   theme: {
@@ -37,7 +33,5 @@ const tailwindConfig = {
     },
     extend: {},
   },
-  plugins: [flowbitePlugin, prettierPlugin],
+  plugins: [require('flowbite/plugin')],
 };
-
-export default tailwindConfig;

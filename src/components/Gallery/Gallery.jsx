@@ -1,12 +1,11 @@
-import { Suspense, useEffect, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { LazyMotion, domAnimation, m } from 'framer-motion';
+import { Suspense, useEffect, useState } from 'react';
+
+import DataBase from '../../Data/jumbo.db.json';
 import { Link } from 'react-router-dom';
 import PropagateLoader from 'react-spinners/PropagateLoader';
-
-import { LazyMotion, domAnimation, m } from 'framer-motion';
-
 import { meta } from '../../../src/Data/compData';
-import DataBase from '../../Data/jumbo.db.json';
 import { transition } from '../../FramerVariant/variants';
 import ye from './ye.jpg';
 
@@ -26,7 +25,7 @@ function Gallery() {
       <Suspense fallback={<div />}>
         {loading ? (
           <PropagateLoader
-            color="#36c8d6"
+            color="#000"
             size={20}
             speedMultiplier={2}
             cssOverride={{
@@ -36,14 +35,14 @@ function Gallery() {
               textAlign: 'center',
               minHeight: '100vh',
               width: '100%',
-              background: ' #3f3f46 ',
+              background: ' #fff ',
             }}
           />
         ) : (
           <>
             <Suspense fallback={<div />}>
               <LazyMotion features={domAnimation}>
-                <section className=" body-font text-gray-600">
+                <section className=" body-font text-gray-600 bg-white">
                   <div className="container mx-auto px-5 py-24">
                     <div className="mb-20 flex w-full flex-col text-center">
                       <h1 className="title-font mb-4 text-2xl font-medium text-gray-900 sm:text-3xl">

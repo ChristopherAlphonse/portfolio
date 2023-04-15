@@ -1,7 +1,6 @@
 import * as path from 'path';
 
 import { VitePWA } from 'vite-plugin-pwa';
-import compress from 'vite-plugin-compress';
 import { defineConfig } from 'vite';
 import imageminMozjpeg from 'imagemin-mozjpeg';
 import imageminWebp from 'imagemin-webp';
@@ -36,8 +35,6 @@ export default defineConfig({
         sourcemap: true,
       },
     }),
-
-    compress(),
   ],
   resolve: {
     alias: {

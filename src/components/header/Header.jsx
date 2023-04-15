@@ -20,7 +20,7 @@ const HeaderMain = () => {
   return (
     <>
       <header className="fixed-top site__header bg-transparent">
-        <div className="d-flex align-items-center justify-content-between">
+        <div className="d-flex align-items-center justify-content-between bg-white">
           <Link className="navbar-brand nav_ac" to="/">
             {logoText}
           </Link>

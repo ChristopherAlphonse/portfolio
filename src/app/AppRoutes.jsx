@@ -9,6 +9,7 @@ import Home from '../components/Hero/Hero';
 import PageNotFound from '../page/pageNotFound';
 import ProjectDetails from '../page/ProjectDetails';
 import React from 'react';
+import Resume from '../components/Resume/Resume';
 import TimeLine from '../components/Timeline/TimeLine';
 import withRouter from '../hooks/withRouter';
 
@@ -34,6 +35,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/projects/" element={<Gallery />} />
         <Route path="/featured/:id" element={<FeaturedDetails />} />
         <Route path="/work" element={<TimeLine />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </CSSTransition>
   </TransitionGroup>
