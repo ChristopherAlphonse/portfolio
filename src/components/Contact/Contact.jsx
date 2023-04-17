@@ -7,8 +7,6 @@ import React, { useState } from 'react';
 import { Alert } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 
-// const ContactSubject = ['Freelance', 'Website Critics', 'Job Offer'];
-
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
 const Contact = () => {
@@ -125,20 +123,20 @@ const Contact = () => {
                   onChange={handleChange}
                 />
               </div>
-
               <select
-                className="block appearance-none w-full  border border-gray-900 hover:border-gray-500 px-4 py-4 mt-4 mb-0 pr-8 rounded  leading-tight shadow-none border-dotted"
+                className="block appearance-none w-full    px-4 py-4 mt-4 mb-0 pr-8 rounded  leading-tight shadow-none border-black"
                 id="subject"
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
                 required
               >
-                <option key={ContactSubject} value={ContactSubject}>
-                  {ContactSubject}
-                </option>
+                {Object.keys(ContactSubject).map((key) => (
+                  <option key={key} value={key} className="font-semibold">
+                    {ContactSubject[key]}
+                  </option>
+                ))}
               </select>
-
               <textarea
                 required
                 minLength="20"
