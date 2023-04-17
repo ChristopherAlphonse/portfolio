@@ -4,6 +4,12 @@ const meta = {
   description: 'I’m Chris',
 };
 
+const ContactSubject = {
+  FreeLance: 'Freelance',
+  WebsiteCritics: 'Website Critics',
+  JobOffer: 'Job Offer',
+};
+
 const introData = {
   title: 'HEY, I’M  ',
   name: 'CHRISTOPHER ALPHONSE',
@@ -114,6 +120,7 @@ const socialProfiles = {
 export {
   meta,
   contactConfig,
+  ContactSubject,
   socialProfiles,
   dataAbout,
   dataPortfolio,

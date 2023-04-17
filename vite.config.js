@@ -15,10 +15,16 @@ export default defineConfig({
     viteImagemin({
       plugins: {
         jpg: imageminMozjpeg(),
+        jpeg: imageminMozjpeg(),
+        png: imageminMozjpeg(),
+        svg: imageminMozjpeg(),
       },
       makeWebp: {
         plugins: {
           jpg: imageminWebp(),
+          jpeg: imageminWebp(),
+          png: imageminWebp(),
+          svg: imageminWebp(),
         },
       },
     }),

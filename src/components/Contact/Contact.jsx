@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import { Alert, Col } from 'react-bootstrap';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { HiOutlineChevronDown } from 'react-icons/hi';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { contactConfig, meta } from '../../../src/Data/compData';
+import { ContactSubject, contactConfig, meta } from '../../../src/Data/compData';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { useState } from 'react';
 
-const ContactSubject = ['Freelance', 'Website Critics', 'Job Offer'];
+import { Alert } from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
+
+// const ContactSubject = ['Freelance', 'Website Critics', 'Job Offer'];
 
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
@@ -133,11 +134,9 @@ const Contact = () => {
                 onChange={handleChange}
                 required
               >
-                {ContactSubject.map((subject) => (
-                  <option key={subject} value={subject}>
-                    {subject}
-                  </option>
-                ))}
+                <option key={ContactSubject} value={ContactSubject}>
+                  {ContactSubject}
+                </option>
               </select>
 
               <textarea
