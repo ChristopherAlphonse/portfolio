@@ -21,7 +21,11 @@ function Gallery() {
 
   return (
     <HelmetProvider>
-      <Helmet prioritizeSeoTags></Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> {meta.title} | Portfolio</title>
+        <meta name="description" content={meta.description} />
+      </Helmet>
       <Suspense fallback={<div />}>
         {loading ? (
           <PropagateLoader

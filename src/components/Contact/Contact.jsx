@@ -103,7 +103,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="relative w-full max-w-[780px] space-y-9 ">
               <div className="flex gap-8 ">
                 <input
-                  className="input  text-zinc-800  "
+                  className="input  text-zinc-800 border-black  "
                   placeholder="Your name"
                   type="text"
                   name="user_name"
@@ -113,7 +113,7 @@ const Contact = () => {
                   onChange={handleChange}
                 />
                 <input
-                  className="input  text-zinc-800"
+                  className="input border-black text-zinc-800"
                   placeholder="Your email"
                   type="email"
                   name="user_email"
@@ -132,7 +132,7 @@ const Contact = () => {
                 required
               >
                 {Object.keys(ContactSubject).map((key) => (
-                  <option key={key} value={key} className="font-semibold">
+                  <option key={key} value={key} className="font-semibold border-black">
                     {ContactSubject[key]}
                   </option>
                 ))}
@@ -140,7 +140,7 @@ const Contact = () => {
               <textarea
                 required
                 minLength="20"
-                className="textarea  text-gray-800 "
+                className="textarea  text-gray-800 border-black"
                 placeholder="Your message"
                 name="message"
                 id="message"

@@ -1,9 +1,8 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-
 import { LazyMotion, domAnimation, m } from 'framer-motion';
+import { fadeIn, transition } from '../../FramerVariant/variants';
 
 import { meta } from '../../Data/compData';
-import { fadeIn, transition } from '../../FramerVariant/variants';
 
 function About() {
   return (
@@ -12,7 +11,7 @@ function About() {
         <section className="section h-full bg-zinc-800 dark:bg-zinc-50" id="about">
           <Helmet>
             <meta charSet="utf-8" />
-            <title> {meta.title}</title>
+            <title> {meta.title} | About</title>
             <meta name="description" content={meta.description} />
           </Helmet>
           <div className="container mx-auto">

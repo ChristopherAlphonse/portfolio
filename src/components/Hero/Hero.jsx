@@ -17,7 +17,7 @@ function Hero() {
         >
           <Helmet>
             <meta charSet="utf-8" />
-            <title> {meta.title}</title>
+            <title> {meta.title} | Home</title>
             <meta name="description" content={meta.description} />
           </Helmet>
           <div className="container mx-auto h-full">
