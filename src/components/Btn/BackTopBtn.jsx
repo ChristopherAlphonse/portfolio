@@ -1,13 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { BsArrowUp } from "react-icons/bs";
+import { BsArrowUp } from 'react-icons/bs';
 
 function BackTopBtn() {
   const [show, setShow] = useState(false);
   useEffect(() => {
-    window.addEventListener("scroll", () =>
-      (window.scrollY > 1000 ? setShow(true) : setShow(false)),
-    );
+    window.addEventListener('scroll', () => (window.scrollY > 1000 ? setShow(true) : setShow(false)));
   });
   {
     return (

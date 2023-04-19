@@ -1,8 +1,8 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
+import { MdOutlineDoubleArrow } from 'react-icons/md';
 import { fadeIn, transition } from '../../FramerVariant/variants';
 
-import { MdOutlineDoubleArrow } from 'react-icons/md';
 import { meta } from '../../Data/compData';
 
 function Timeline() {

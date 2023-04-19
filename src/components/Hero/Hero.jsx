@@ -2,10 +2,10 @@ import './st.css';
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { introData, meta } from '../../Data/compData';
 
 import DownBtn from '../Btn/DownBtn';
-import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -38,7 +38,7 @@ function Hero() {
                   <Link className=" menu_item" to="/contact">
                     <div id="button_h" className="ac_btn btn text-black">
                       Contact Me
-                      <div className="ring three"></div>
+                      <div className="ring three" />
                     </div>
                   </Link>
                 </div>

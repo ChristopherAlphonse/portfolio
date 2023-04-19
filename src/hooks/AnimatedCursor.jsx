@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 const IsDevice = (() => {
-  if (typeof navigator == 'undefined') return;
+  if (typeof navigator === 'undefined') return;
 
-  let ua = navigator.userAgent;
+  const ua = navigator.userAgent;
 
   return {
     info: ua,
@@ -114,8 +114,8 @@ function CursorCore({
   const [isVisible, setIsVisible] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [isActiveClickable, setIsActiveClickable] = useState(false);
-  let endX = useRef(0);
-  let endY = useRef(0);
+  const endX = useRef(0);
+  const endY = useRef(0);
 
   /**
    * Primary Mouse move event
@@ -274,10 +274,10 @@ function CursorCore({
   document.body.style.cursor = 'none';
 
   return (
-    <React.Fragment>
+    <>
       <div ref={cursorOuterRef} style={styles.cursorOuter} />
       <div ref={cursorInnerRef} style={styles.cursorInner} />
-    </React.Fragment>
+    </>
   );
 }
 
@@ -298,7 +298,7 @@ function AnimatedCursor({
   clickables,
 }) {
   if (typeof navigator !== 'undefined' && IsDevice.any()) {
-    return <React.Fragment></React.Fragment>;
+    return <></>;
   }
   return (
     <CursorCore

@@ -1,15 +1,9 @@
-import {
-  AiFillCodepenCircle,
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillWindows,
-} from "react-icons/ai";
+import { AiFillCodepenCircle, AiFillGithub, AiFillLinkedin, AiFillWindows } from 'react-icons/ai';
 
-const github = "https://github.com/ChristopherAlphonse";
-const msStore =
-  "https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme";
-const linkedin = "https://www.linkedin.com/in/christopher-alphonse/";
-const codepen = "https://codepen.io/christopheralphonse/";
+const github = 'https://github.com/ChristopherAlphonse';
+const msStore = 'https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme';
+const linkedin = 'https://www.linkedin.com/in/christopher-alphonse/';
+const codepen = 'https://codepen.io/christopheralphonse/';
 function Footer() {
   const today = new Date();
   const year = today.getFullYear();
@@ -24,36 +18,16 @@ function Footer() {
         <p>Copyright © 2022 - {year} - All right reserved</p>
       </div>
       <div className="grid-flow-col gap-6 md:place-self-center  md:justify-self-end">
-        <a
-          href={github}
-          target="_blank"
-          className="hover:text-zinc-100  "
-          rel="noreferrer"
-        >
+        <a href={github} target="_blank" className="hover:text-zinc-100  " rel="noreferrer">
           <AiFillGithub size="20" />
         </a>
-        <a
-          href={codepen}
-          target="_blank"
-          className="hover:text-zinc-100   "
-          rel="noreferrer"
-        >
+        <a href={codepen} target="_blank" className="hover:text-zinc-100   " rel="noreferrer">
           <AiFillCodepenCircle size="20" />
         </a>
-        <a
-          href={linkedin}
-          target="_blank"
-          className="hover:text-zinc-100   "
-          rel="noreferrer"
-        >
+        <a href={linkedin} target="_blank" className="hover:text-zinc-100   " rel="noreferrer">
           <AiFillLinkedin size="20" />
         </a>
-        <a
-          href={msStore}
-          target="_blank"
-          className="hover:text-zinc-100  "
-          rel="noreferrer"
-        >
+        <a href={msStore} target="_blank" className="hover:text-zinc-100  " rel="noreferrer">
           <AiFillWindows size="20" />
         </a>
       </div>

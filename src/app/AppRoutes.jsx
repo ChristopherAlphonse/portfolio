@@ -1,6 +1,7 @@
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
+import React from 'react';
 import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
 import FeaturedDetails from '../page/FeaturedDetails';
@@ -8,7 +9,6 @@ import Gallery from '../components/Gallery/Gallery';
 import Home from '../components/Hero/Hero';
 import PageNotFound from '../page/pageNotFound';
 import ProjectDetails from '../page/ProjectDetails';
-import React from 'react';
 import Resume from '../components/Resume/Resume';
 import TimeLine from '../components/Timeline/TimeLine';
 import withRouter from '../hooks/withRouter';

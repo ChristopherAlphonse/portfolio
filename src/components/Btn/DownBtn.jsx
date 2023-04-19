@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from 'react';
 
-import { BsArrowDown } from "react-icons/bs";
+import { BsArrowDown } from 'react-icons/bs';
 
 function BackBottomBtn() {
   const [show, setShow] = useState(false);
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       setShow(window.scrollY < 1000);
     });
   });

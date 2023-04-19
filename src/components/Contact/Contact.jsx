@@ -1,15 +1,15 @@
 import 'react-toastify/dist/ReactToastify.css';
 
-import { ContactSubject, contactConfig, meta } from '../../../src/Data/compData';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import React, { useState } from 'react';
 
 import { Alert } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
+import { ContactSubject, contactConfig, meta } from '../../Data/compData';
 
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
-const Contact = () => {
+function Contact() {
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -30,7 +30,7 @@ const Contact = () => {
       from_name: email,
       user_name: name,
       to_name: contactConfig.EMAIL,
-      message: message,
+      message,
       SUBJECT: subject || ContactSubject,
     };
 
@@ -156,5 +156,5 @@ const Contact = () => {
       </section>
     </HelmetProvider>
   );
-};
+}
 export default Contact;

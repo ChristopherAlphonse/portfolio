@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, useLocation } from 'react-router-dom';
 
-import '../../src/index.css';
+import '../index.css';
 import HeaderMain from '../components/header/Header';
 import AnimatedCursor from '../hooks/AnimatedCursor';
 import withRouter from '../hooks/withRouter';

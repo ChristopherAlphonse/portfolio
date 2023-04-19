@@ -1,6 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+const flowbite = require('flowbite/plugin');
 
-export default {
+module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,md,html}', 'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
   theme: {
@@ -9,9 +9,9 @@ export default {
       body: 'Nunito Sans',
     },
     fontSize: {
-      normal: 20,
-      xl: 64,
-      lg: 30,
+      normal: '20px',
+      xl: '64px',
+      lg: '30px',
     },
     letterSpacing: {
       wide: '.3em',
@@ -33,5 +33,5 @@ export default {
     },
     extend: {},
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [flowbite],
 };

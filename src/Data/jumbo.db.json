@@ -55,15 +55,7 @@
     "status": "Development",
     "category": "Web development",
     "description": "Smoothie store based in Randolph, MA, and specialize in providing sweet treats for your loved ones during the holiday season",
-    "stack": [
-      "NextJS",
-      "TailwindCSS",
-      "TypeScript",
-      "Stripe",
-      "Sanity.io",
-      "Framer Motion",
-      "MongoDB"
-    ],
+    "stack": ["NextJS", "TailwindCSS", "TypeScript", "Stripe", "Sanity.io", "Framer Motion", "MongoDB"],
     "view": "https://github.com/ChristopherAlphonse/ye"
   }
 ]

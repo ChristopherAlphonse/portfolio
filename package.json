@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "version": "0.0.1",
-  "description": "Christopher Alphonse portfolio V1",
+  "description": "Christopher Alphonse portfolio v3",
   "homepage": "https://christopheralphonse.com/",
   "type": "module",
   "scripts": {
@@ -18,14 +18,15 @@
     "checked": "ncu && ncu -u && yarn install && yarn autoclean --force",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
+    "format": "prettier -w .",
     "lint": "eslint . --ext .js,.jsx",
     "fix:eslint": "eslint --fix  . --ext .js,.jsx",
-    "lint:fix": "stylelint **/*.{css,jsx}",
-    "fix:stylelint": "stylelint --fix  ./src/**/*.{css, jsx}"
+    "lint:fix": "stylelint **/*.{css,jsx}"
   },
   "dependencies": {
     "@vheemstra/vite-plugin-imagemin": "^1.0.8",
     "@vitejs/plugin-vue": "^4.1.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "flowbite": "^1.6.5",
     "framer-motion": "^10.12.4",
     "imagemin-mozjpeg": "^10.0.0",
