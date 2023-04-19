@@ -1,37 +1,56 @@
-import { AiFillCodepenCircle, AiFillGithub, AiFillLinkedin, AiFillWindows } from 'react-icons/ai';
+import './Footer.css'; // import your custom styles
+
+import { AiFillGithub, AiFillLinkedin, AiFillWindows } from 'react-icons/ai';
 
 const github = 'https://github.com/ChristopherAlphonse';
 const msStore = 'https://marketplace.visualstudio.com/items?itemName=ChristopherAlphonse.azalais-dark-theme';
 const linkedin = 'https://www.linkedin.com/in/christopher-alphonse/';
-const codepen = 'https://codepen.io/christopheralphonse/';
+
 function Footer() {
   const today = new Date();
   const year = today.getFullYear();
+
   return (
-    <footer
-      id="section2"
-      className="flex flex-col items-center justify-between bg-tertiary  p-6 text-zinc-500 dark:bg-gray-200 dark:text-zinc-700
-      sm:flex-row md:h-[10vh]
-       "
-    >
-      <div className="grid-flow-col items-center">
-        <p>Copyright © 2022 - {year} - All right reserved</p>
+    <div className="footer-container">
+      <div className="footer-content">
+        <footer className="bg-white dark:bg-gray-900">
+          <div className="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+            <p className="text-zinc-900 text-sm">Copyright © 2022 - {year} - All right reserved</p>
+
+            <div className="flex  icon-links">
+              <a
+                href={linkedin}
+                target="_blank"
+                className="hover:text-zinc-900 mx-2 transition-colors "
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <AiFillLinkedin size="20" />
+              </a>
+              <a
+                href={github}
+                target="_blank"
+                className="hover:text-zinc-900 mx-2 transition-colors "
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                <AiFillGithub size="20" />
+              </a>
+              <a
+                href={msStore}
+                target="_blank"
+                className="hover:text-zinc-900 mx-2 transition-colors "
+                rel="noreferrer"
+                aria-label="Microsoft Store"
+              >
+                <AiFillWindows size="20" />
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
-      <div className="grid-flow-col gap-6 md:place-self-center  md:justify-self-end">
-        <a href={github} target="_blank" className="hover:text-zinc-100  " rel="noreferrer">
-          <AiFillGithub size="20" />
-        </a>
-        <a href={codepen} target="_blank" className="hover:text-zinc-100   " rel="noreferrer">
-          <AiFillCodepenCircle size="20" />
-        </a>
-        <a href={linkedin} target="_blank" className="hover:text-zinc-100   " rel="noreferrer">
-          <AiFillLinkedin size="20" />
-        </a>
-        <a href={msStore} target="_blank" className="hover:text-zinc-100  " rel="noreferrer">
-          <AiFillWindows size="20" />
-        </a>
-      </div>
-    </footer>
+    </div>
   );
 }
+
 export default Footer;

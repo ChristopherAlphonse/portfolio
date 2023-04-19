@@ -1,19 +1,32 @@
 import './st.css';
 
+import { BackGroundVideo, BackGroundVideo2 } from '../../assets';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { introData, meta } from '../../Data/compData';
 
-import DownBtn from '../Btn/DownBtn';
+import Footer from '../Footer/Footer';
+import { Link } from 'react-router-dom';
+import { useRef } from 'react';
 
 function Hero() {
+  // const videoRef = useRef();
+
+  // const setPlaybackRate = () => {
+  //   videoRef.current.playbackRate = 1;
+  // };
+
   return (
     <HelmetProvider>
       <LazyMotion features={domAnimation}>
+        {/* <div className="video-background">
+          <video autoPlay loop muted ref={videoRef} onLoadedData={setPlaybackRate}>
+            <source src={BackGroundVideo2} type="video/mp4" />
+          </video>
+        </div> */}
         <section
           id="section1"
-          className="max-w-screen flex h-screen items-center justify-center  overflow-hidden bg-zinc-900 py-32 dark:bg-white lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
+          className="max-w-screen flex h-screen items-center justify-center overflow-hidden py-32 lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
         >
           <Helmet>
             <meta charSet="utf-8" />
@@ -44,11 +57,12 @@ function Hero() {
                 </div>
               </div>
             </div>
-            <DownBtn />
           </div>
         </section>
+        <Footer />
       </LazyMotion>
     </HelmetProvider>
   );
 }
+
 export default Hero;
