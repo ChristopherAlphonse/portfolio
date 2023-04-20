@@ -9,14 +9,26 @@ module.exports = {
       body: 'Nunito Sans',
     },
     fontSize: {
-      normal: '20px',
+      xs: '12px',
+      sm: '14px',
+
+      lg: '22px',
+      base: '20px',
+      '2xl': '24px',
+      '3xl': '30px',
+      '4xl': '36px',
+      '5xl': '48px',
       xl: '64px',
-      lg: '30px',
+      '7xl': '96px',
     },
     letterSpacing: {
-      wide: '.3em',
-      wider: '.5em',
-      widest: '.7em',
+      tighter: '-0.05em',
+      tight: '-0.025em',
+      normal: '0',
+      wide: '0.025em',
+      wider: '0.05em',
+      widest: '0.1em',
+      ultra: '0.4em',
     },
     container: {
       padding: {

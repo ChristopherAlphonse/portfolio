@@ -5,10 +5,9 @@ import React from 'react';
 import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
 import FeaturedDetails from '../page/FeaturedDetails';
-import Gallery from '../components/Gallery/Gallery';
 import Home from '../components/Hero/Hero';
 import PageNotFound from '../page/pageNotFound';
-import ProjectDetails from '../page/ProjectDetails';
+import Portfolio from '../components/Portfolio/Portfolio';
 import Resume from '../components/Resume/Resume';
 import TimeLine from '../components/Timeline/TimeLine';
 import withRouter from '../hooks/withRouter';
@@ -31,9 +30,9 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/v3/" element={<Home />} />
         <Route path="/" element={<Navigate to="/v3/" />} />
         <Route path="*" element={<PageNotFound />} />
-        <Route path="/project/:id" element={<ProjectDetails />} />
-        <Route path="/projects/" element={<Gallery />} />
-        <Route path="/featured/:id" element={<FeaturedDetails />} />
+
+        <Route path="/projects/" element={<Portfolio />} />
+        <Route path="/projects/:id" element={<FeaturedDetails />} />
         <Route path="/work" element={<TimeLine />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>

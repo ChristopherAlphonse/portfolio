@@ -11,11 +11,11 @@ function Footer() {
   const year = today.getFullYear();
 
   return (
-    <div className="footer-container">
+    <div className="footer-container sm:block hidden">
       <div className="footer-content">
         <footer className="bg-white dark:bg-gray-900">
           <div className="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
-            <p className="text-zinc-900 text-sm">Copyright © 2022 - {year} - All right reserved</p>
+            <p className="text-zinc-900 text-sm pp">Copyright © 2022 - {year} - All right reserved</p>
 
             <div className="flex  icon-links">
               <a

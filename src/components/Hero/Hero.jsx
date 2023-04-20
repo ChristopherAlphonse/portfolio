@@ -1,44 +1,28 @@
 import './st.css';
 
-import { BackGroundVideo, BackGroundVideo2 } from '../../assets';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { introData, meta } from '../../Data/compData';
 
 import Footer from '../Footer/Footer';
-import { Link } from 'react-router-dom';
-import { useRef } from 'react';
 
 function Hero() {
-  // const videoRef = useRef();
-
-  // const setPlaybackRate = () => {
-  //   videoRef.current.playbackRate = 1;
-  // };
-
   return (
     <HelmetProvider>
       <LazyMotion features={domAnimation}>
-        {/* <div className="video-background">
-          <video autoPlay loop muted ref={videoRef} onLoadedData={setPlaybackRate}>
-            <source src={BackGroundVideo2} type="video/mp4" />
-          </video>
-        </div> */}
-        <section
-          id="section1"
-          className="max-w-screen flex h-screen items-center justify-center overflow-hidden py-32 lg:bg-cover lg:bg-center lg:bg-no-repeat lg:py-0"
-        >
+        <section className="max-w-screen flex h-screen items-center justify-center overflow-hidden py-32 ">
           <Helmet>
             <meta charSet="utf-8" />
             <title> {meta.title} | Home</title>
             <meta name="description" content={meta.description} />
           </Helmet>
-          <div className="container mx-auto h-full">
-            <div className="flex h-full items-center pt-8">
+          <div className="container mx-auto h-full ">
+            <div className="flex h-full items-center pt-8 container mx-auto max-w-full">
               <div className="flex flex-1 flex-col items-center lg:items-center">
-                <h1 className="md:text-xl text-lg title text-black">
+                <h1 className=" md:text-xl  text-lg title text-black">
                   {introData.title}
-                  <span className="title md:text-xl text-lg ">{introData.name} </span>
+                  <span className="title md:text-xl    text-lg ">{introData.name} </span>
                 </h1>
                 <h1 className="span text-black"> {introData.span}</h1>
                 <p className="mt-2 text-normal  text-center p">{introData.description}</p>

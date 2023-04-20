@@ -13,6 +13,8 @@
     height: 100%;
     display: flex;
     flex-direction: row;
+    margin: -2rem;
+    padding: -5rem;
     align-items: center;
     justify-content: space-between;
     transform: rotate(90deg);
@@ -24,7 +26,7 @@
     flex-direction: column;
     align-items: center;
   }
-  p {
+  .pp {
     display: none;
   }
 }
