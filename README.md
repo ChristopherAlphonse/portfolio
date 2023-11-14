@@ -26,6 +26,18 @@ This portfolio application is built with a variety of technologies and dependenc
 - react-router-dom: a package for managing routing in React applications
 - react-spinners: a library for displaying loading indicators in React applications
 
+# Vite config portfolio 
+
+
+  ### Clone and install dependencies 
+
+```sh
+git clone https://github.com/ChristopherAlphonse/portfolio.git
+cd portfolio
+yarn
+
+```
+
 There are numerous dev dependencies as well.
 
 # My Work
