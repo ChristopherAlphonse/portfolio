@@ -68,8 +68,8 @@ devDependencies:
     specifier: ^0.38.0
     version: 0.38.0(postcss-syntax@0.36.2)(postcss@8.4.22)
   '@tailwindcss/forms':
-    specifier: 0.5.3
-    version: 0.5.3(tailwindcss@3.3.1)
+    specifier: 0.5.7
+    version: 0.5.7(tailwindcss@3.3.1)
   '@testing-library/cypress':
     specifier: 9.0.0
     version: 9.0.0(cypress@12.9.0)
@@ -182,8 +182,8 @@ devDependencies:
     specifier: 9.0.5
     version: 9.0.5(stylelint@15.5.0)
   stylelint-config-prettier-scss:
-    specifier: ^0.0.1
-    version: 0.0.1(stylelint@15.5.0)
+    specifier: ^1.0.0
+    version: 1.0.0(stylelint@15.5.0)
   stylelint-config-standard:
     specifier: 33.0.0
     version: 33.0.0(stylelint@15.5.0)
@@ -2124,8 +2124,8 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@tailwindcss/forms@0.5.3(tailwindcss@3.3.1):
-    resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
+  /@tailwindcss/forms@0.5.7(tailwindcss@3.3.1):
+    resolution: {integrity: sha512-QE7X69iQI+ZXwldE+rzasvbJiyV/ju1FGHH0Qn2W3FKbuYtqp8LKcy6iSw79fVUT5/Vvf+0XgLCeYVG+UV6hOw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
@@ -7995,15 +7995,14 @@ packages:
       stylelint-order: 5.0.0(stylelint@15.5.0)
     dev: true
 
-  /stylelint-config-prettier-scss@0.0.1(stylelint@15.5.0):
-    resolution: {integrity: sha512-lBAYG9xYOh2LeWEPC/64xeUxwOTnQ8nDyBijQoWoJb10/bMGrUwnokpt8jegGck2Vbtxh6XGwH63z5qBcVHreQ==}
-    engines: {node: '>= 12'}
+  /stylelint-config-prettier-scss@1.0.0(stylelint@15.5.0):
+    resolution: {integrity: sha512-Gr2qLiyvJGKeDk0E/+awNTrZB/UtNVPLqCDOr07na/sLekZwm26Br6yYIeBYz3ulsEcQgs5j+2IIMXCC+wsaQA==}
+    engines: {node: 14.* || 16.* || >= 18}
     hasBin: true
     peerDependencies:
-      stylelint: '>=11.0.0'
+      stylelint: '>=15.0.0'
     dependencies:
       stylelint: 15.5.0
-      stylelint-config-prettier: 9.0.5(stylelint@15.5.0)
     dev: true
 
   /stylelint-config-prettier@9.0.5(stylelint@15.5.0):
