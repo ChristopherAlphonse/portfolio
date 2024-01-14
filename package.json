@@ -81,7 +81,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "postcss": "^8.4.22",
-    "postcss-cli": "^10.1.0",
+    "postcss-cli": "^11.0.0",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.8.7",
     "prettier-plugin-style-order": "^0.2.2",
